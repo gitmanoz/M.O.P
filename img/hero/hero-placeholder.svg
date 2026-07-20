@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="960" viewBox="0 0 1120 960" role="img" aria-labelledby="title desc">
+  <title id="title">Preparação organizada para a OAB</title>
+  <desc id="desc">Placeholder visual com materiais de estudo organizados e indicadores de progresso</desc>
+  <rect width="1120" height="960" rx="48" fill="#F8F9FB"/>
+  <circle cx="905" cy="130" r="210" fill="#0F2D52" opacity=".04"/>
+  <circle cx="180" cy="800" r="260" fill="#D4AF37" opacity=".08"/>
+  <rect x="120" y="132" width="880" height="696" rx="36" fill="#FFFFFF" stroke="#0F2D52" stroke-opacity=".08" stroke-width="4"/>
+  <rect x="120" y="132" width="880" height="100" rx="36" fill="#0F2D52"/>
+  <circle cx="180" cy="182" r="12" fill="#D4AF37"/>
+  <rect x="216" y="165" width="180" height="22" rx="11" fill="#FFFFFF" opacity=".9"/>
+  <rect x="216" y="196" width="118" height="12" rx="6" fill="#FFFFFF" opacity=".45"/>
+  <rect x="176" y="296" width="360" height="210" rx="24" fill="#F8F9FB" stroke="#0F2D52" stroke-opacity=".08" stroke-width="3"/>
+  <rect x="216" y="340" width="170" height="18" rx="9" fill="#0F2D52"/>
+  <rect x="216" y="380" width="266" height="12" rx="6" fill="#6B7280" opacity=".42"/>
+  <rect x="216" y="410" width="226" height="12" rx="6" fill="#6B7280" opacity=".3"/>
+  <rect x="216" y="452" width="130" height="22" rx="11" fill="#D4AF37" opacity=".82"/>
+  <rect x="584" y="296" width="360" height="210" rx="24" fill="#0F2D52"/>
+  <circle cx="764" cy="384" r="54" fill="none" stroke="#FFFFFF" stroke-opacity=".18" stroke-width="22"/>
+  <path d="M764 330a54 54 0 0 1 46 82" fill="none" stroke="#D4AF37" stroke-width="22" stroke-linecap="round"/>
+  <rect x="694" y="460" width="140" height="14" rx="7" fill="#FFFFFF" opacity=".72"/>
+  <rect x="176" y="554" width="768" height="214" rx="24" fill="#FFFFFF" stroke="#0F2D52" stroke-opacity=".08" stroke-width="3"/>
+  <rect x="216" y="598" width="208" height="18" rx="9" fill="#0F2D52"/>
+  <rect x="216" y="646" width="560" height="16" rx="8" fill="#0F2D52" opacity=".08"/>
+  <rect x="216" y="646" width="392" height="16" rx="8" fill="#0F2D52" opacity=".72"/>
+  <circle cx="832" cy="654" r="18" fill="#D4AF37"/>
+  <rect x="216" y="694" width="410" height="12" rx="6" fill="#6B7280" opacity=".3"/>
+  <rect x="216" y="724" width="318" height="12" rx="6" fill="#6B7280" opacity=".2"/>
+</svg>

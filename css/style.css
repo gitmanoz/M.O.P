@@ -1,0 +1,798 @@
+/* ============================================
+   MISSÃO OAB — Design System
+   Sprint 5.2A: Layout base, tipografia, header,
+   hero, compromisso e botões
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* ============================================
+   LAYOUT — Base global e container
+   ============================================ */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-text);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: var(--spacing-md);
+}
+
+
+/* ============================================
+   TYPOGRAPHY — Hierarquia tipográfica
+   ============================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-primary);
+}
+
+h1 {
+  font-size: var(--font-size-hero);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  letter-spacing: -0.015em;
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+p {
+  color: var(--color-text-light);
+  max-width: 65ch;
+}
+
+small {
+  font-size: var(--font-size-small);
+}
+
+
+/* ============================================
+   SPACING — Ritmo vertical da Landing
+   ============================================ */
+
+.hero {
+  padding-block: calc(var(--spacing-xxl) + var(--spacing-md));
+}
+
+.our-commitment,
+.commitment-bar {
+  padding-block: calc(var(--spacing-xl) + var(--spacing-md));
+}
+
+.benefits,
+.method-capa,
+.how-it-works,
+.vision,
+.faq,
+.cta-final {
+  padding-block: calc(var(--spacing-xxl) + var(--spacing-md));
+}
+
+.section-header {
+  max-width: 46rem;
+  margin-bottom: calc(var(--spacing-xl) + var(--spacing-md));
+}
+
+.section-header__title {
+  margin-bottom: var(--spacing-lg);
+}
+
+.section-header__subtitle {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  line-height: 1.75;
+}
+
+
+/* ============================================
+   ACCESSIBILITY — Skip link
+   ============================================ */
+
+.skip-link {
+  position: absolute;
+  top: var(--spacing-md);
+  left: var(--spacing-md);
+  z-index: calc(var(--z-index-tooltip) + 1);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  text-decoration: none;
+  transform: translateY(-200%);
+  transition: transform var(--transition-fast);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+
+/* ============================================
+   BUTTONS — Componente base reutilizável
+   ============================================ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  min-height: 2.75rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-family: var(--font-family);
+  font-size: var(--font-size-text);
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition:
+    background-color var(--transition-normal),
+    color var(--transition-normal),
+    border-color var(--transition-normal),
+    box-shadow var(--transition-normal),
+    transform var(--transition-normal),
+    opacity var(--transition-normal);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Primary */
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: var(--shadow-light);
+}
+
+.btn--primary:hover {
+  background-color: #0a2240;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-medium);
+}
+
+.btn--primary:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-light);
+}
+
+/* Secondary */
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.btn--secondary:hover {
+  background-color: #c4a030;
+  transform: translateY(-1px);
+}
+
+.btn--secondary:active {
+  transform: translateY(0);
+}
+
+/* Outline */
+.btn--outline {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn--outline:hover {
+  background-color: rgba(15, 45, 82, 0.05);
+}
+
+.btn--outline:active {
+  background-color: rgba(15, 45, 82, 0.08);
+}
+
+/* Ghost */
+.btn--ghost {
+  background-color: transparent;
+  color: var(--color-text-light);
+  padding-inline: 1rem;
+}
+
+.btn--ghost:hover {
+  color: var(--color-primary);
+  background-color: rgba(15, 45, 82, 0.04);
+}
+
+/* Tamanhos */
+.btn--large {
+  min-height: 3.25rem;
+  padding: 1rem 2rem;
+}
+
+.btn--xlarge {
+  min-height: 3.5rem;
+  padding: 1.25rem 2.5rem;
+  font-size: 1.125rem;
+}
+
+
+/* ============================================
+   HEADER — Navegação sticky com glass effect
+   ============================================ */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-index-header);
+  height: 4.5rem;
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  transition:
+    background-color var(--transition-normal),
+    border-color var(--transition-normal),
+    box-shadow var(--transition-normal);
+}
+
+/* Scroll-driven: topo transparente → scroll sólido (progressive enhancement) */
+@supports (animation-timeline: scroll()) {
+  .header {
+    animation: header-scroll-state linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 100px;
+  }
+}
+
+@keyframes header-scroll-state {
+  from {
+    background-color: rgba(255, 255, 255, 0.55);
+    border-bottom-color: transparent;
+    box-shadow: none;
+  }
+
+  to {
+    background-color: rgba(255, 255, 255, 0.92);
+    border-bottom-color: rgba(15, 45, 82, 0.06);
+    box-shadow: var(--shadow-light);
+  }
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-lg);
+  height: 100%;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  transition: opacity var(--transition-fast);
+}
+
+.header__logo:hover {
+  opacity: 0.85;
+}
+
+.header__logo-image {
+  display: block;
+  min-width: 8.75rem;
+  height: 2.5rem;
+  width: auto;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.header__nav {
+  display: none;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.header__nav-link {
+  font-size: var(--font-size-text);
+  font-weight: 500;
+  color: var(--color-text-light);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.header__nav-link:hover {
+  color: var(--color-primary);
+}
+
+.header__nav-link:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 4px;
+  border-radius: var(--radius-sm);
+}
+
+.header__cta {
+  flex-shrink: 0;
+}
+
+
+/* ============================================
+   HERO — Proposta de valor e conversão
+   ============================================ */
+
+.hero {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(15, 45, 82, 0.04), transparent 70%),
+    var(--color-white);
+}
+
+.hero__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: var(--spacing-xxl);
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.hero__title {
+  max-width: 18ch;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-primary);
+}
+
+.hero__subtitle {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  line-height: 1.75;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-xl);
+}
+
+.hero__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-lg);
+}
+
+.hero__cta {
+  width: 100%;
+  max-width: 22rem;
+}
+
+.hero__highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.hero__highlight {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.375rem 0.875rem;
+  border-radius: var(--radius-sm);
+  background-color: rgba(15, 45, 82, 0.05);
+  border: 1px solid rgba(15, 45, 82, 0.08);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  letter-spacing: 0.01em;
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.hero__highlight:hover {
+  background-color: rgba(212, 175, 55, 0.12);
+  border-color: rgba(212, 175, 55, 0.35);
+}
+
+.hero__highlight:first-child {
+  background-color: rgba(212, 175, 55, 0.12);
+  border-color: rgba(212, 175, 55, 0.3);
+  color: #7a6218;
+}
+
+.hero__media {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__image {
+  width: 100%;
+  max-width: 35rem;
+  aspect-ratio: 7 / 6;
+  object-fit: cover;
+  background-color: var(--color-accent);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(15, 45, 82, 0.06);
+  box-shadow: var(--shadow-medium);
+}
+
+
+/* ============================================
+   NOSSO COMPROMISSO — Bloco institucional
+   ============================================ */
+
+.our-commitment {
+  background-color: var(--color-accent);
+  border-block: 1px solid rgba(15, 45, 82, 0.06);
+}
+
+.our-commitment__container {
+  max-width: 42rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.our-commitment__title {
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-h3);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.our-commitment__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  text-align: left;
+}
+
+.our-commitment__item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  background-color: var(--color-white);
+  border: 1px solid rgba(15, 45, 82, 0.06);
+  font-size: var(--font-size-text);
+  font-weight: 500;
+  color: var(--color-text);
+  line-height: 1.5;
+  transition:
+    box-shadow var(--transition-normal),
+    border-color var(--transition-normal);
+}
+
+.our-commitment__item:hover {
+  border-color: rgba(15, 45, 82, 0.12);
+  box-shadow: var(--shadow-light);
+}
+
+/* Ícone Lucide check — preparado via CSS mask */
+.our-commitment__mark {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0.125rem;
+  border-radius: var(--radius-sm);
+  background-color: rgba(15, 45, 82, 0.06);
+  font-size: 0;
+  color: transparent;
+}
+
+.our-commitment__mark::before {
+  content: "";
+  display: block;
+  width: 0.875rem;
+  height: 0.875rem;
+  background-color: var(--color-primary);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+
+/* ============================================
+   BARRA DE COMPROMISSO — Pilares da marca
+   ============================================ */
+
+.commitment-bar {
+  background-color: var(--color-white);
+}
+
+.commitment-bar__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.commitment-bar__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(15, 45, 82, 0.06);
+  text-align: center;
+  transition:
+    box-shadow var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+.commitment-bar__item:hover {
+  box-shadow: var(--shadow-light);
+  transform: translateY(-2px);
+}
+
+.commitment-bar__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--radius-md);
+  background-color: rgba(15, 45, 82, 0.06);
+}
+
+.commitment-bar__label {
+  font-size: var(--font-size-text);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* Ícones Lucide por pilar (calendar-days, compass, users) */
+.commitment-bar__item:nth-child(1) .commitment-bar__icon::before {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--color-primary);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 2v4'/%3E%3Cpath d='M16 2v4'/%3E%3Crect width='18' height='18' x='3' y='4' rx='2'/%3E%3Cpath d='M3 10h18'/%3E%3Cpath d='M8 14h.01'/%3E%3Cpath d='M12 14h.01'/%3E%3Cpath d='M16 14h.01'/%3E%3Cpath d='M8 18h.01'/%3E%3Cpath d='M12 18h.01'/%3E%3Cpath d='M16 18h.01'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 2v4'/%3E%3Cpath d='M16 2v4'/%3E%3Crect width='18' height='18' x='3' y='4' rx='2'/%3E%3Cpath d='M3 10h18'/%3E%3Cpath d='M8 14h.01'/%3E%3Cpath d='M12 14h.01'/%3E%3Cpath d='M16 14h.01'/%3E%3Cpath d='M8 18h.01'/%3E%3Cpath d='M16 18h.01'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.commitment-bar__item:nth-child(2) .commitment-bar__icon::before {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--color-secondary);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z'/%3E%3Cpath d='m7.76 7.76 5.411 1.804a2 2 0 0 1 1.265 1.265l1.804 5.411'/%3E%3Cpath d='m16.24 16.24-5.411-1.804a2 2 0 0 1-1.265-1.265L7.76 7.76'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z'/%3E%3Cpath d='m7.76 7.76 5.411 1.804a2 2 0 0 1 1.265 1.265l1.804 5.411'/%3E%3Cpath d='m16.24 16.24-5.411-1.804a2 2 0 0 1-1.265-1.265L7.76 7.76'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.commitment-bar__item:nth-child(3) .commitment-bar__icon::before {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--color-primary);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2'/%3E%3Cpath d='M16 3.128a4 4 0 0 1 0 7.744'/%3E%3Cpath d='M22 21v-2a4 4 0 0 0-3-3.87'/%3E%3Ccircle cx='9' cy='7' r='4'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2'/%3E%3Cpath d='M16 3.128a4 4 0 0 1 0 7.744'/%3E%3Cpath d='M22 21v-2a4 4 0 0 0-3-3.87'/%3E%3Ccircle cx='9' cy='7' r='4'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+
+/* ============================================
+   VISUAL RHYTHM — Alternância sutil de seções
+   ============================================ */
+
+.benefits,
+.how-it-works,
+.cta-final {
+  background-color: var(--color-white);
+}
+
+.method-capa,
+.faq {
+  background-color: var(--color-accent);
+}
+
+.vision {
+  background:
+    linear-gradient(135deg, rgba(15, 45, 82, 0.025), transparent 55%),
+    var(--color-white);
+}
+
+.benefits__container,
+.how-it-works__container {
+  max-width: 1120px;
+}
+
+.vision__container,
+.faq__container {
+  max-width: 960px;
+}
+
+
+/* ============================================
+   MÉTODO CAPA — Fluxo contínuo de evolução
+   ============================================ */
+
+.method-capa__container {
+  max-width: 1120px;
+}
+
+.method-capa .section-header {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.method-capa__subtitle {
+  margin-inline: auto;
+}
+
+.method-capa__steps {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+  margin-bottom: calc(var(--spacing-xl) + var(--spacing-md));
+}
+
+.method-capa__steps::before {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 45, 82, 0.16),
+    rgba(212, 175, 55, 0.45),
+    rgba(15, 45, 82, 0.16)
+  );
+}
+
+.method-capa__step {
+  position: relative;
+  z-index: 1;
+}
+
+.method-capa__card {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  column-gap: var(--spacing-lg);
+  align-items: start;
+}
+
+.method-capa__acronym {
+  grid-row: 1 / span 2;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgba(15, 45, 82, 0.1);
+  border-radius: var(--radius-md);
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-light);
+  color: transparent;
+  font-size: 0;
+}
+
+.method-capa__acronym::before {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--color-primary);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+/* Lucide: GraduationCap */
+.method-capa__step:nth-child(1) .method-capa__acronym::before {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 10v6M2 10l10-5 10 5-10 5z'/%3E%3Cpath d='M6 12v5c3 3 9 3 12 0v-5'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 10v6M2 10l10-5 10 5-10 5z'/%3E%3Cpath d='M6 12v5c3 3 9 3 12 0v-5'/%3E%3C/svg%3E");
+}
+
+/* Lucide: BookOpen */
+.method-capa__step:nth-child(2) .method-capa__acronym::before {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 7v14'/%3E%3Cpath d='M3 18a1 1 0 0 1-1-1V5a2 2 0 0 1 2-2h5a3 3 0 0 1 3 3v15a3 3 0 0 0-3-3z'/%3E%3Cpath d='M21 18a1 1 0 0 0 1-1V5a2 2 0 0 0-2-2h-5a3 3 0 0 0-3 3v15a3 3 0 0 1 3-3z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 7v14'/%3E%3Cpath d='M3 18a1 1 0 0 1-1-1V5a2 2 0 0 1 2-2h5a3 3 0 0 1 3 3v15a3 3 0 0 0-3-3z'/%3E%3Cpath d='M21 18a1 1 0 0 0 1-1V5a2 2 0 0 0-2-2h-5a3 3 0 0 0-3 3v15a3 3 0 0 1 3-3z'/%3E%3C/svg%3E");
+}
+
+/* Lucide: PenTool */
+.method-capa__step:nth-child(3) .method-capa__acronym::before {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m12 19 7-7 3 3-7 7-3-3z'/%3E%3Cpath d='m18 13-1.5-7.5L2 2l3.5 14.5L13 18'/%3E%3Cpath d='m2 2 7.586 7.586'/%3E%3Ccircle cx='11' cy='11' r='2'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m12 19 7-7 3 3-7 7-3-3z'/%3E%3Cpath d='m18 13-1.5-7.5L2 2l3.5 14.5L13 18'/%3E%3Cpath d='m2 2 7.586 7.586'/%3E%3Ccircle cx='11' cy='11' r='2'/%3E%3C/svg%3E");
+}
+
+/* Lucide: BadgeCheck */
+.method-capa__step:nth-child(4) .method-capa__acronym::before {
+  background-color: var(--color-secondary);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8a2 2 0 0 1 2-.8l9.34 1.9'/%3E%3Cpath d='m10.6 2 5.64 9.77'/%3E%3Ccircle cx='17.5' cy='15.5' r='5.5'/%3E%3Cpath d='m15 15 2 2 3-3'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8a2 2 0 0 1 2-.8l9.34 1.9'/%3E%3Cpath d='m10.6 2 5.64 9.77'/%3E%3Ccircle cx='17.5' cy='15.5' r='5.5'/%3E%3Cpath d='m15 15 2 2 3-3'/%3E%3C/svg%3E");
+}
+
+.method-capa__step-title {
+  margin-bottom: var(--spacing-sm);
+  padding-top: 0.125rem;
+  font-size: 1.125rem;
+  line-height: 1.35;
+}
+
+.method-capa__step-description {
+  line-height: 1.7;
+}
+
+.method-capa__note,
+.method-capa__closing {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.method-capa__note {
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.method-capa__closing {
+  font-size: var(--font-size-small);
+}

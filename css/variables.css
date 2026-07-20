@@ -1,0 +1,81 @@
+/* ============================================
+   DESIGN SYSTEM — Missão OAB
+   Tokens globais de design
+   ============================================ */
+
+:root {
+
+  /* ------------------------------------------
+     CORES
+     ------------------------------------------ */
+  --color-primary: #0F2D52;
+  --color-secondary: #D4AF37;
+  --color-accent: #F8F9FB;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-text: #1A1A2E;
+  --color-text-light: #6B7280;
+
+
+  /* ------------------------------------------
+     TIPOGRAFIA
+     ------------------------------------------ */
+  --font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --font-size-hero: clamp(2.25rem, 5vw, 3.5rem);
+  --font-size-h1: clamp(2rem, 4vw, 2.75rem);
+  --font-size-h2: clamp(1.75rem, 3vw, 2.25rem);
+  --font-size-h3: clamp(1.25rem, 2vw, 1.5rem);
+  --font-size-text: 1rem;
+  --font-size-small: 0.875rem;
+
+
+  /* ------------------------------------------
+     ESPAÇAMENTOS
+     ------------------------------------------ */
+  --spacing-xs: 0.25rem;   /*  4px */
+  --spacing-sm: 0.5rem;    /*  8px */
+  --spacing-md: 1rem;      /* 16px */
+  --spacing-lg: 1.5rem;    /* 24px */
+  --spacing-xl: 2rem;      /* 32px */
+  --spacing-xxl: 4rem;     /* 64px */
+
+
+  /* ------------------------------------------
+     BORDAS
+     ------------------------------------------ */
+  --radius-sm: 0.375rem;   /*  6px */
+  --radius-md: 0.75rem;    /* 12px */
+  --radius-lg: 1.25rem;    /* 20px */
+
+
+  /* ------------------------------------------
+     SOMBRAS
+     ------------------------------------------ */
+  --shadow-light: 0 1px 3px rgba(15, 45, 82, 0.08),
+                  0 1px 2px rgba(15, 45, 82, 0.06);
+
+  --shadow-medium: 0 4px 12px rgba(15, 45, 82, 0.10),
+                   0 2px 4px rgba(15, 45, 82, 0.06);
+
+  --shadow-strong: 0 10px 30px rgba(15, 45, 82, 0.15),
+                   0 4px 10px rgba(15, 45, 82, 0.08);
+
+
+  /* ------------------------------------------
+     TRANSIÇÕES
+     ------------------------------------------ */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+
+
+  /* ------------------------------------------
+     Z-INDEX
+     ------------------------------------------ */
+  --z-index-header: 100;
+  --z-index-menu: 200;
+  --z-index-modal: 300;
+  --z-index-tooltip: 400;
+
+}

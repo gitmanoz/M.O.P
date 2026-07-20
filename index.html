@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Sprint 5.1.1 — Melhoria #07
+       Meta description ajustada com termos de busca naturais.
+       Motivo: Ampliar relevância SEO para 1ª e 2ª fase do Exame da OAB.
+       Decisão de produto: Alinhar copy ao ICP (formandos e retorno) sem keyword stuffing. -->
+  <meta name="description" content="Entre gratuitamente na Missão OAB. Comunidade para a primeira e segunda fase do Exame da OAB, com Método CAPA e materiais de apoio especializados.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Missão OAB">
+  <title>Missão OAB | Preparação organizada para o Exame de Ordem</title>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://missaooab.com.br/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Missão OAB">
+  <meta property="og:url" content="https://missaooab.com.br/">
+  <meta property="og:title" content="Missão OAB | Preparação organizada para o Exame de Ordem">
+  <meta property="og:description" content="Comunidade gratuita com materiais de apoio especializados, Método CAPA e desafios práticos para estudar com direção.">
+  <meta property="og:image" content="https://missaooab.com.br/img/hero/og-image.webp">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Missão OAB | Preparação organizada para o Exame de Ordem">
+  <meta name="twitter:description" content="Comunidade gratuita com materiais de apoio especializados, Método CAPA e desafios práticos para estudar com direção.">
+  <meta name="twitter:image" content="https://missaooab.com.br/img/hero/og-image.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- Dados estruturados (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Missão OAB",
+    "url": "https://missaooab.com.br/",
+    "description": "Comunidade gratuita de preparação para o Exame de Ordem com Método CAPA e materiais de apoio especializados.",
+    "inLanguage": "pt-BR"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Skip link — Acessibilidade -->
+  <a href="#inicio" class="skip-link">Ir para o conteúdo principal</a>
+
+
+  <!-- ============================================
+       HEADER — Navegação principal
+       ============================================ -->
+  <header class="header" id="header" role="banner">
+    <div class="header__container container">
+
+      <a href="#inicio" class="header__logo" aria-label="Missão OAB — Página inicial">
+        <img
+          src="img/logo/logo-missao-oab.svg"
+          alt="Missão OAB"
+          class="header__logo-image"
+          width="160"
+          height="40"
+        >
+      </a>
+
+      <nav class="header__nav" aria-label="Navegação principal">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#beneficios" class="header__nav-link">Benefícios</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#metodo-capa" class="header__nav-link">Método CAPA</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#como-funciona" class="header__nav-link">Como Funciona</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#nossa-visao" class="header__nav-link">Nossa Visão</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#faq" class="header__nav-link">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sprint 5.1.1 — Melhoria #03
+           CTA do header preparado para link oficial do WhatsApp.
+           Motivo: RF-V1-005 (PRD) — conversão landing → grupo.
+           Decisão de produto: Placeholder até URL definitiva estar disponível.
+           Link definitivo: https://chat.whatsapp.com/XXXXXXXXX -->
+      <a href="#cta-final" class="btn btn--primary header__cta">
+        Quero Entrar na Missão
+      </a>
+
+    </div>
+  </header>
+
+
+  <main id="inicio">
+
+    <!-- ============================================
+         HERO — Proposta de valor principal
+         Conversão: "É para mim?"
+         ============================================ -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero__container container">
+
+        <div class="hero__content">
+          <!-- Sprint 5.1.1 — Melhoria #01
+               Hero preparado para testes A/B de headline (conversão).
+               Motivo: USER_JOURNEY O3 — otimizar mensagem de aquisição.
+               Decisão de produto: Documentar variantes; implementar apenas Versão A.
+
+               Versão A (atual):
+               "Sua aprovação na OAB começa com um plano, uma comunidade e um método."
+
+               Versão B (futuro — não implementar):
+               "Organize seus estudos para a OAB com método, comunidade e direção." -->
+          <h1 class="hero__title" id="hero-title">
+            Sua aprovação na OAB começa com um plano, uma comunidade e um método.
+          </h1>
+
+          <p class="hero__subtitle">
+            Entre gratuitamente na Missão OAB e tenha acesso a materiais de apoio especializados,
+            desafios práticos e uma comunidade criada para ajudar você a estudar com direção.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#cta-final" class="btn btn--primary btn--large hero__cta">
+              Quero Entrar na Missão
+            </a>
+
+            <ul class="hero__highlights" aria-label="Destaques da Missão OAB">
+              <li class="hero__highlight">Gratuito</li>
+              <li class="hero__highlight">Método CAPA</li>
+              <li class="hero__highlight">Comunidade de Estudos</li>
+            </ul>
+          </div>
+        </div>
+
+        <figure class="hero__media">
+          <img
+            src="img/hero/hero-placeholder.svg"
+            alt="Estudante de Direito organizando materiais de preparação para o Exame de Ordem"
+            class="hero__image"
+            width="560"
+            height="480"
+          >
+        </figure>
+
+      </div>
+    </section>
+
+
+    <!-- Sprint 5.1.1 — Melhoria #09
+         Nova seção "Nosso Compromisso" abaixo do Hero.
+         Motivo: Reforçar valores da marca (BRAND_VOICE — disciplina, organização).
+         Decisão de produto: Comunicar princípios antes dos benefícios funcionais. -->
+    <!-- ============================================
+         NOSSO COMPROMISSO — Valores da marca
+         ============================================ -->
+    <section class="our-commitment" id="nosso-compromisso" aria-labelledby="our-commitment-title">
+      <div class="our-commitment__container container">
+
+        <h2 class="our-commitment__title" id="our-commitment-title">
+          Nosso Compromisso
+        </h2>
+
+        <ul class="our-commitment__list">
+          <li class="our-commitment__item">
+            <span class="our-commitment__mark" aria-hidden="true">✓</span>
+            Organização antes da quantidade.
+          </li>
+          <li class="our-commitment__item">
+            <span class="our-commitment__mark" aria-hidden="true">✓</span>
+            Constância antes da intensidade.
+          </li>
+          <li class="our-commitment__item">
+            <span class="our-commitment__mark" aria-hidden="true">✓</span>
+            Evolução antes da comparação.
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         BARRA DE COMPROMISSO — Pilares da marca
+         Conversão: "Vale a pena?"
+         ============================================ -->
+    <section class="commitment-bar" id="compromisso" aria-label="Pilares da Missão OAB">
+      <div class="commitment-bar__container container">
+
+        <ul class="commitment-bar__list">
+          <li class="commitment-bar__item">
+            <span class="commitment-bar__icon" aria-hidden="true"></span>
+            <span class="commitment-bar__label">Organização dos Estudos</span>
+          </li>
+          <li class="commitment-bar__item">
+            <span class="commitment-bar__icon" aria-hidden="true"></span>
+            <span class="commitment-bar__label">Método CAPA</span>
+          </li>
+          <li class="commitment-bar__item">
+            <span class="commitment-bar__icon" aria-hidden="true"></span>
+            <span class="commitment-bar__label">Comunidade de Apoio</span>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         BENEFÍCIOS — O que a comunidade oferece
+         Conversão: "Vale a pena?"
+         ============================================ -->
+    <section class="benefits" id="beneficios" aria-labelledby="benefits-title">
+      <div class="benefits__container container">
+
+        <header class="section-header">
+          <h2 class="section-header__title" id="benefits-title">
+            Tudo o que você precisa para estudar com direção
+          </h2>
+          <p class="section-header__subtitle">
+            Recursos pensados para organizar sua preparação e manter a consistência ao longo da jornada.
+          </p>
+        </header>
+
+        <!-- Sprint 5.1.1 — Melhoria #02
+             Títulos dos benefícios reescritos com foco em transformação.
+             Motivo: COPYWRITING — benefício antes de feature; linguagem centrada no aluno.
+             Decisão de produto: Comunicar resultado percebido, não nome do recurso. -->
+        <ul class="benefits__grid">
+
+          <li class="benefits__grid-item">
+            <article class="benefit-card" aria-labelledby="benefit-direcao-title">
+              <div class="benefit-card__icon" aria-hidden="true"></div>
+              <h3 class="benefit-card__title" id="benefit-direcao-title">Nunca mais fique perdido no que estudar</h3>
+              <p class="benefit-card__description">
+                Materiais de apoio especializados para orientar sua preparação em cada etapa.
+              </p>
+            </article>
+          </li>
+
+          <li class="benefits__grid-item">
+            <article class="benefit-card" aria-labelledby="benefit-materiais-title">
+              <div class="benefit-card__icon" aria-hidden="true"></div>
+              <h3 class="benefit-card__title" id="benefit-materiais-title">Encontre o material certo sem perder tempo</h3>
+              <p class="benefit-card__description">
+                Conteúdos organizados por disciplina, prontos para consulta e revisão.
+              </p>
+            </article>
+          </li>
+
+          <li class="benefits__grid-item">
+            <article class="benefit-card" aria-labelledby="benefit-questoes-title">
+              <div class="benefit-card__icon" aria-hidden="true"></div>
+              <h3 class="benefit-card__title" id="benefit-questoes-title">Entenda cada questão, não apenas acerte</h3>
+              <p class="benefit-card__description">
+                Resolução detalhada de questões para fixar conteúdo e entender a lógica da prova.
+              </p>
+            </article>
+          </li>
+
+          <li class="benefits__grid-item">
+            <article class="benefit-card" aria-labelledby="benefit-comunidade-title">
+              <div class="benefit-card__icon" aria-hidden="true"></div>
+              <h3 class="benefit-card__title" id="benefit-comunidade-title">Estude com apoio, não no isolamento</h3>
+              <p class="benefit-card__description">
+                Ambiente de apoio entre estudantes que compartilham a mesma meta: a aprovação.
+              </p>
+            </article>
+          </li>
+
+          <li class="benefits__grid-item">
+            <article class="benefit-card" aria-labelledby="benefit-desafios-title">
+              <div class="benefit-card__icon" aria-hidden="true"></div>
+              <h3 class="benefit-card__title" id="benefit-desafios-title">Mantenha constância com desafios práticos</h3>
+              <p class="benefit-card__description">
+                Atividades semanais para manter ritmo, foco e evolução constante.
+              </p>
+            </article>
+          </li>
+
+          <li class="benefits__grid-item">
+            <article class="benefit-card" aria-labelledby="benefit-atualizacoes-title">
+              <div class="benefit-card__icon" aria-hidden="true"></div>
+              <h3 class="benefit-card__title" id="benefit-atualizacoes-title">Prepare-se com conteúdo sempre relevante</h3>
+              <p class="benefit-card__description">
+                Conteúdos revisados conforme mudanças na legislação e no edital do exame.
+              </p>
+            </article>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         MÉTODO CAPA — Diferencial metodológico
+         Conversão: "O que torna diferente?"
+         ============================================ -->
+    <section class="method-capa" id="metodo-capa" aria-labelledby="method-capa-title">
+      <div class="method-capa__container container">
+
+        <header class="section-header">
+          <h2 class="method-capa__title section-header__title" id="method-capa-title">
+            Conheça o Método CAPA
+          </h2>
+          <p class="method-capa__subtitle section-header__subtitle">
+            Uma metodologia criada para transformar esforço em evolução.
+          </p>
+        </header>
+
+        <ol class="method-capa__steps">
+
+          <li class="method-capa__step">
+            <article class="method-capa__card" aria-labelledby="capa-c-title">
+              <p class="method-capa__acronym" aria-hidden="true">C</p>
+              <h3 class="method-capa__step-title" id="capa-c-title">Capacitação</h3>
+              <p class="method-capa__step-description">
+                Aprenda os fundamentos utilizando materiais organizados.
+              </p>
+            </article>
+          </li>
+
+          <li class="method-capa__step">
+            <article class="method-capa__card" aria-labelledby="capa-a1-title">
+              <p class="method-capa__acronym" aria-hidden="true">A</p>
+              <h3 class="method-capa__step-title" id="capa-a1-title">Aprendizado</h3>
+              <p class="method-capa__step-description">
+                Consolide o conhecimento através de revisões e explicações.
+              </p>
+            </article>
+          </li>
+
+          <li class="method-capa__step">
+            <article class="method-capa__card" aria-labelledby="capa-p-title">
+              <p class="method-capa__acronym" aria-hidden="true">P</p>
+              <h3 class="method-capa__step-title" id="capa-p-title">Prática</h3>
+              <p class="method-capa__step-description">
+                Resolva questões e simulados para identificar oportunidades de melhoria.
+              </p>
+            </article>
+          </li>
+
+          <li class="method-capa__step">
+            <article class="method-capa__card" aria-labelledby="capa-a2-title">
+              <p class="method-capa__acronym" aria-hidden="true">A</p>
+              <h3 class="method-capa__step-title" id="capa-a2-title">Aprovação</h3>
+              <p class="method-capa__step-description">
+                Acompanhe sua evolução até o dia da prova.
+              </p>
+            </article>
+          </li>
+
+        </ol>
+
+        <p class="method-capa__note">
+          O Método CAPA representa um ciclo contínuo de evolução.
+        </p>
+
+        <!-- Sprint 5.1.1 — Melhoria #05
+             Frase institucional adicionada ao Método CAPA.
+             Motivo: Reforçar ideia de evolução contínua (ROADMAP — validação progressiva).
+             Decisão de produto: Complementar nota existente com mensagem de ciclo interdependente. -->
+        <p class="method-capa__closing">
+          Cada etapa fortalece a próxima. O aprendizado é contínuo.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         COMO FUNCIONA — Passos para entrar
+         Conversão: "Como funciona?"
+         ============================================ -->
+    <section class="how-it-works" id="como-funciona" aria-labelledby="how-it-works-title">
+      <div class="how-it-works__container container">
+
+        <header class="section-header">
+          <h2 class="section-header__title" id="how-it-works-title">
+            Como funciona
+          </h2>
+          <p class="section-header__subtitle">
+            Em quatro passos simples, você já estará dentro da comunidade e pronto para estudar.
+          </p>
+        </header>
+
+        <ol class="timeline">
+
+          <li class="timeline__item">
+            <div class="timeline__marker" aria-hidden="true">
+              <span class="timeline__step">1</span>
+            </div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Entrar gratuitamente no grupo</h3>
+              <p class="timeline__description">
+                Clique no botão e acesse a comunidade Missão OAB sem custo.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__marker" aria-hidden="true">
+              <span class="timeline__step">2</span>
+            </div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Receber materiais de apoio especializados</h3>
+              <p class="timeline__description">
+                Tenha acesso a conteúdos selecionados para organizar e orientar sua preparação.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__marker" aria-hidden="true">
+              <span class="timeline__step">3</span>
+            </div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Estudar utilizando o Método CAPA</h3>
+              <p class="timeline__description">
+                Siga o ciclo de Capacitação, Aprendizado, Prática e Aprovação nos materiais disponíveis.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__marker" aria-hidden="true">
+              <span class="timeline__step">4</span>
+            </div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Evoluir continuamente</h3>
+              <p class="timeline__description">
+                Participe dos desafios, acompanhe seu progresso e mantenha a consistência até a prova.
+              </p>
+            </div>
+          </li>
+
+        </ol>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         NOSSA VISÃO — Transparência institucional
+         Conversão: "Posso confiar?"
+         ============================================ -->
+    <section class="vision" id="nossa-visao" aria-labelledby="vision-title">
+      <div class="vision__container container">
+
+        <header class="section-header">
+          <h2 class="section-header__title" id="vision-title">
+            Nossa visão
+          </h2>
+        </header>
+
+        <!-- Sprint 5.1.1 — Melhoria #06
+             Estrutura preparada para Timeline Visual futura (Sprint posterior).
+             Motivo: ROADMAP V1→V6 — comunicar evolução do produto de forma visual.
+             Decisão de produto: Documentar etapas; implementação visual na Sprint 5.2+.
+
+             Hoje
+               ↓
+             Comunidade
+               ↓
+             Método CAPA
+               ↓
+             Inteligência Artificial
+               ↓
+             Gamificação
+               ↓
+             Plataforma Completa -->
+
+        <div class="vision__content">
+          <article class="vision__block" aria-labelledby="vision-present-title">
+            <h3 class="vision__block-title" id="vision-present-title">O que somos hoje</h3>
+            <p class="vision__text">
+              A Missão OAB é, neste momento, uma <strong>comunidade gratuita de estudos</strong>
+              para o Exame de Ordem. Reunimos estudantes de Direito e bacharéis em um ambiente
+              organizado, com materiais de apoio especializados, questões comentadas e desafios práticos
+              entregues de forma consistente.
+            </p>
+          </article>
+
+          <article class="vision__block" aria-labelledby="vision-future-title">
+            <h3 class="vision__block-title" id="vision-future-title">Para onde estamos indo</h3>
+            <p class="vision__text">
+              Nossa visão é evoluir para uma <strong>plataforma inteligente de preparação para a OAB</strong>,
+              com recursos que ajudem você a estudar com mais direção, acompanhar sua evolução
+              e manter a disciplina ao longo da jornada. Estamos construindo essa experiência
+              de forma gradual — sempre com foco em organização, qualidade e aprovação.
+            </p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         FAQ — Perguntas frequentes
+         Conversão: "Ainda tenho dúvidas?"
+         ============================================ -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="faq__container container">
+
+        <header class="section-header">
+          <h2 class="section-header__title" id="faq-title">
+            Perguntas frequentes
+          </h2>
+          <p class="section-header__subtitle">
+            Respostas claras para as dúvidas mais comuns sobre a Missão OAB.
+          </p>
+        </header>
+
+        <div class="faq__list">
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              É gratuito?
+            </summary>
+            <div class="faq__answer">
+              <p>
+                Sim. O acesso à comunidade Missão OAB e aos materiais disponibilizados
+                é totalmente gratuito. Basta entrar no grupo para começar.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              Preciso estar inscrito na OAB 47?
+            </summary>
+            <div class="faq__answer">
+              <p>
+                Não. O grupo é indicado para estudantes que estejam se preparando para a
+                primeira ou segunda fase de qualquer Exame da OAB.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              O que é o Método CAPA?
+            </summary>
+            <div class="faq__answer">
+              <p>
+                O Método CAPA é a metodologia da Missão OAB baseada em quatro etapas:
+                Capacitação, Aprendizado, Prática e Aprovação. É um ciclo contínuo que
+                transforma esforço em evolução, guiando sua preparação do conteúdo teórico
+                até a prática orientada para a prova.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              Como funciona o grupo?
+            </summary>
+            <div class="faq__answer">
+              <p>
+                Após entrar na comunidade, você recebe acesso a materiais de apoio especializados,
+                questões comentadas e desafios semanais. O conteúdo é publicado de forma
+                regular para apoiar sua rotina de estudos com organização e consistência.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              A plataforma já está pronta?
+            </summary>
+            <div class="faq__answer">
+              <p>
+                Ainda não. Hoje a Missão OAB opera como uma comunidade gratuita de estudos.
+                A plataforma inteligente de preparação está em desenvolvimento e será
+                disponibilizada gradualmente. Quem entra agora acompanha essa evolução desde o início.
+              </p>
+            </div>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         CTA FINAL — Chamada para ação
+         Conversão: "Quero entrar."
+         ============================================ -->
+    <section class="cta-final" id="cta-final" aria-labelledby="cta-final-title">
+      <div class="cta-final__container container">
+
+        <h2 class="cta-final__title" id="cta-final-title">
+          Sua aprovação não começa quando você abre a prova.
+        </h2>
+
+        <p class="cta-final__subtitle">
+          Ela começa quando você decide estudar da forma certa.
+        </p>
+
+        <!-- Sprint 5.1.1 — Melhoria #08
+             CTA final preparado para link oficial do WhatsApp.
+             Motivo: RF-V1-005 (PRD) — principal ponto de conversão da landing.
+             Decisão de produto: Placeholder até URL definitiva; substituir href abaixo.
+             Link definitivo: https://chat.whatsapp.com/XXXXXXXXX -->
+        <a href="#" class="btn btn--primary btn--xlarge cta-final__button">
+          Quero Entrar na Missão
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================
+       RODAPÉ — Informações e links legais
+       ============================================ -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="footer__container container">
+
+      <div class="footer__brand">
+        <a href="#inicio" class="footer__logo" aria-label="Missão OAB — Página inicial">
+          <img
+            src="img/logo/logo-missao-oab.svg"
+            alt="Missão OAB"
+            class="footer__logo-image"
+            width="140"
+            height="36"
+          >
+        </a>
+        <!-- Sprint 5.1.1 — Melhoria #04
+             Slogan oficial da marca adicionado ao footer.
+             Motivo: BRAND_VOICE — assinatura institucional da Missão OAB.
+             Decisão de produto: "Estude com direção. Evolua com propósito." passa a ser slogan oficial. -->
+        <p class="footer__slogan">
+          Estude com direção.<br>
+          Evolua com propósito.
+        </p>
+        <p class="footer__tagline">
+          Sua jornada rumo à aprovação na OAB começa aqui.
+        </p>
+      </div>
+
+      <!-- Sprint 5.1.1 — Melhoria #10
+           Links do footer comentados até páginas estarem disponíveis.
+           Motivo: Evitar links quebrados antes do deploy de páginas legais e canais.
+           Decisão de produto: Reativar quando contato, Instagram e páginas legais existirem. -->
+      <!--
+      <nav class="footer__nav" aria-label="Links do rodapé">
+        <ul class="footer__nav-list">
+
+          <li class="footer__nav-item">
+            <a href="mailto:contato@missaooab.com.br" class="footer__nav-link">
+              Contato
+            </a>
+          </li>
+
+          <li class="footer__nav-item">
+            <a
+              href="https://instagram.com/missaooab"
+              class="footer__nav-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram da Missão OAB (abre em nova aba)"
+            >
+              Instagram
+            </a>
+          </li>
+
+          <li class="footer__nav-item">
+            <a href="politica-de-privacidade.html" class="footer__nav-link">
+              Política de Privacidade
+            </a>
+          </li>
+
+          <li class="footer__nav-item">
+            <a href="termos-de-uso.html" class="footer__nav-link">
+              Termos de Uso
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+      -->
+
+      <p class="footer__copyright">
+        <small>&copy; <time datetime="2026">2026</time> Missão OAB. Todos os direitos reservados.</small>
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="js/app.js" defer></script>
+
+</body>
+</html>
