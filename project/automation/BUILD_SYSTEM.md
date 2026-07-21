@@ -40,14 +40,19 @@ O MOBS diferencia formalmente quatro categorias:
 
 ## Fluxo conceitual oficial
 
-O **Project Engine** é a **camada de contexto anterior** aos demais módulos:
+O **MOBS Core** é o orquestrador.  
+O **Project Engine** é a **primeira Engine** de contexto — acionada **pelo Core**, não fora dele.
 
 ```
-project.json
+Interface / CLI / CI / IA
     ↓
-Project Engine          ← contexto do projeto
+MOBS Core carrega project.json
     ↓
-MOBS Core               ← orquestra (seleciona, ordena, consolida)
+MOBS Core aciona Project Engine (primeira Engine)
+    ↓
+Project Engine resolve o contexto do projeto
+    ↓
+MOBS Core seleciona, ordena e executa os demais módulos
     ↓
 ┌───────────────────────────────────────────────────┐
 │  Brand Engine                                      │
@@ -58,20 +63,28 @@ MOBS Core               ← orquestra (seleciona, ordena, consolida)
 │  (+ Future modules)                                │
 └───────────────────────────────────────────────────┘
     ↓
-Logs consolidados + resultados
+Logs e resultados consolidados
 ```
+
+Princípios:
+
+- O Core não contém regras específicas de projeto ou marca.
+- O Core carrega o identificador/configuração inicial e **delega** ao Project Engine a resolução do contexto.
+- Após receber o contexto resolvido, o Core **continua** a orquestração.
 
 Ordem típica de execução (quando habilitados):
 
 ```
-Project Engine
-    → Brand Engine
-    → Validation Engine
-    → Documentation Engine / Asset Generator / Release Engine
-    → (Future modules)
+MOBS Core
+  → Project Engine (contexto)
+  → Brand Engine
+  → Validation Engine
+  → Documentation Engine / Asset Generator / Release Engine
+  → (Future modules)
+  → Core consolida logs e resultados
 ```
 
-A ordem exata é definida pelo Core conforme dependências declaradas — não por hardcode de produto.
+A ordem exata dos módulos após o Project Engine é definida pelo Core conforme dependências declaradas — não por hardcode de produto.
 
 ---
 
@@ -79,11 +92,13 @@ A ordem exata é definida pelo Core conforme dependências declaradas — não p
 
 ### O Core deverá
 
-- carregar configurações (`project.json`, e indiretamente `brand.json` via Brand Engine);
+- carregar o identificador/configuração inicial (`project.json`);
+- acionar o Project Engine como primeira Engine e receber o contexto resolvido;
 - validar dependências entre módulos e configs;
 - selecionar módulos habilitados;
-- ordenar a execução;
+- ordenar a execução dos demais módulos;
 - consolidar logs e resultados.
+
 
 ### O Core não deverá
 
@@ -114,10 +129,11 @@ Conteúdo de marca e de projeto vive nas configs e nas Engines de contexto.
 
 ## Detalhamento conceitual
 
-### Project Engine (contexto primeiro)
+### Project Engine (primeira Engine de contexto)
 
-Entrada: `projectId` / `project.json`.  
-Saída: contexto do projeto (paths, módulos habilitados, vínculo com marca).  
+Acionada pelo MOBS Core.  
+Entrada: `projectId` / `project.json` (via Core).  
+Saída: contexto do projeto (paths, módulos habilitados, vínculo com marca), devolvido ao Core.  
 
 → `PROJECT_ENGINE.md`
 
@@ -165,17 +181,17 @@ Reservados em `future/` e no roadmap.
 │            Interfaces (CLI / CI / IA)             │
 ├─────────────────────────────────────────────────┤
 │                   MOBS Core                       │
-│     carregar · dependências · selecionar ·       │
-│           ordenar · consolidar logs              │
+│  carregar project.json · acionar Engines ·       │
+│  selecionar · ordenar · consolidar logs          │
+│                                                   │
+│   1) Project Engine  ← primeira Engine (contexto) │
+│   2) Brand / Docs / Validate / Asset / Release    │
 ├─────────────────────────────────────────────────┤
-│              Project Engine (contexto)            │
-├──────────┬──────────┬──────────┬────────────────┤
-│  Brand   │  Docs    │ Validate │ Asset          │ ...
-│  Engine  │  Engine  │ (Valid.) │ Generator      │
-├──────────┴──────────┴──────────┴────────────────┤
 │      Project configs     │    Brand configs       │
 └─────────────────────────────────────────────────┘
 ```
+
+O Project Engine **não** opera fora do Core: é o primeiro módulo que o Core aciona.
 
 ---
 

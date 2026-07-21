@@ -6,7 +6,7 @@
 | **Versão** | 0.1.1 (Arquitetura) |
 | **Status** | Oficial — arquitetura documental **aprovada** v0.1.1 |
 | **Escopo** | Ecossistema Missão |
-| **Última atualização** | 2026-07-20 |
+| **Última atualização** | 2026-07-20 (alinhamento documental Core ↔ Project Engine) |
 
 ---
 
@@ -36,7 +36,7 @@ Padronizar e automatizar todos os processos repetitivos de engenharia do Ecossis
 5. **Escalabilidade** — novos produtos herdam a infraestrutura sem refatoração estrutural.
 6. **Documentação antes da implementação** — nenhuma automação nasce sem arquitetura aprovada.
 7. **Automações independentes** — módulos desacoplados; falha ou evolução de um não quebra os demais.
-8. **Contexto antes da ação** — Project Engine resolve o projeto antes de Generators/Validators.
+8. **Contexto antes da ação** — o Core aciona o Project Engine como primeira Engine; só então orquestra Generators/Validators e demais módulos.
 
 ---
 
@@ -61,24 +61,36 @@ O MOBS deve nascer preparado para todos eles.
 
 | Peça | Função |
 |---|---|
-| **MOBS Core** | Orquestrador: config, dependências, seleção, ordem, logs |
-| **Project Engine** | Contexto do projeto (primeira Engine no fluxo) |
-| **Brand Engine** | Contexto da marca |
+| **MOBS Core** | Orquestrador: carrega config inicial, aciona Engines, seleciona, ordena, consolida logs |
+| **Project Engine** | Primeira Engine: resolve o contexto do projeto e devolve ao Core |
+| **Brand Engine** | Contexto da marca (acionada pelo Core após o Project Engine) |
 | **Generators** | Produzem artefatos derivados (ex.: Asset Generator) |
 | **Validators** | Verificam integridade (ex.: Validation Engine) |
 | **Demais Engines** | Domínios sem geração em massa (Docs, Release, etc.) |
 
+- O **Core orquestra**.
+- O **Project Engine** resolve o contexto como **primeira Engine** (dentro do fluxo do Core).
+- Os **demais módulos** são acionados pelo Core **depois** da resolução do contexto.
+
 Taxonomia e fronteiras do Core: `BUILD_SYSTEM.md`.  
 Relação projeto↔marca: `PROJECT_ENGINE.md`.
 
-Fluxo conceitual:
+Fluxo conceitual oficial:
 
 ```
-project.json
+Interface / CLI / CI / IA
     ↓
-Project Engine
+MOBS Core carrega project.json
     ↓
-Brand Engine / Documentation Engine / Asset Generator / Validation Engine / Release Engine
+MOBS Core aciona Project Engine
+    ↓
+Project Engine resolve o contexto
+    ↓
+MOBS Core seleciona, ordena e executa os demais módulos
+    ↓
+Brand Engine / Documentation Engine / Asset Generator / Validators / Release Engine
+    ↓
+Logs e resultados consolidados
 ```
 
 ---
@@ -126,8 +138,8 @@ Com o MOBS, um novo produto deve precisar **apenas de configuração** para herd
 |---|---|
 | `MOBS.md` | Visão, missão, filosofia e papel no ecossistema |
 | `BUILD_SYSTEM.md` | Taxonomia (Core/Engine/Generator/Validator), fluxo e fronteiras do Core |
-| `BRAND_ENGINE.md` | Modelo multi-marca (config-driven) |
 | `PROJECT_ENGINE.md` | Modelo multi-projeto, contexto inicial e relação projeto↔marca |
+| `BRAND_ENGINE.md` | Modelo multi-marca (config-driven) |
 | `AUTOMATION_ROADMAP.md` | Evolução versionada dos módulos |
 | `AUTOMATION_RULES.md` | Regras permanentes de toda automação |
 | `future/` | Espaço reservado para módulos e specs futuras |

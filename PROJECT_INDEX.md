@@ -206,7 +206,15 @@ AUTOMATION_ROADMAP
 Fluxo conceitual do MOBS:
 
 ```
-project.json → Project Engine → Brand / Docs / Asset Generator / Validation / Release
+project.json
+    ↓
+MOBS Core
+    ↓ aciona
+Project Engine
+    ↓ devolve contexto
+MOBS Core
+    ↓ orquestra
+Brand / Docs / Assets / Validation / Release
 ```
 
 Esta árvore deve permanecer clara, visual e facilmente expandida no futuro.
@@ -251,7 +259,7 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `docs/product/` | Produto, roadmap, jornada, negócio, gamificação |
 | `docs/brand/` | Brand Book, voz e copywriting |
 | `DESIGN_GUIDE.md` / `UI_KIT.md` | Design System e componentes |
-| `HISTORY.md` / `CHANGELOG.md` | História institucional e mudanças versionadas |
+| `HISTORY.md` / `CHANGELOG.md` | Diário cronológico (HISTORY) e registro técnico versionável (CHANGELOG) |
 | `project/automation/` | MOBS — plataforma de engenharia do Ecossistema Missão |
 | `assets/brand/` | Identidade visual oficial do produto atual (SVGs em `source/`) |
 | `index.html` | Landing page |
@@ -279,13 +287,13 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `assets/brand/README.md` | Operação dos Brand Assets |
 | `DESIGN_GUIDE.md` | Padrões visuais e design system |
 | `UI_KIT.md` | Componentes e especificação de UI |
-| `HISTORY.md` | Histórico institucional (fases e marcos) |
+| `HISTORY.md` | Diário cronológico de produto e engenharia: contexto, decisões, impacto e próximos passos |
 | `CHANGELOG.md` | Mudanças técnicas relevantes (Keep a Changelog) |
 | `project/automation/MOBS.md` | Visão e missão da plataforma de engenharia do ecossistema |
 | `project/automation/BUILD_SYSTEM.md` | Taxonomia Core/Engine/Generator/Validator e fronteiras do Core |
-| `project/automation/BRAND_ENGINE.md` | Modelo multi-marca (config-driven) |
 | `project/automation/PROJECT_ENGINE.md` | Contexto de projeto e relação projeto↔marca |
-| `project/automation/AUTOMATION_ROADMAP.md` | Evolução versionada das Engines |
+| `project/automation/BRAND_ENGINE.md` | Modelo multi-marca (config-driven) |
+| `project/automation/AUTOMATION_ROADMAP.md` | Evolução versionada dos módulos |
 | `project/automation/AUTOMATION_RULES.md` | Regras permanentes de automações |
 
 ---

@@ -87,8 +87,8 @@ Antes de realizar mudanças relevantes, consulte os arquivos adequados:
 
 - `project/automation/MOBS.md`
 - `project/automation/BUILD_SYSTEM.md`
-- `project/automation/BRAND_ENGINE.md`
 - `project/automation/PROJECT_ENGINE.md`
+- `project/automation/BRAND_ENGINE.md`
 - `project/automation/AUTOMATION_ROADMAP.md`
 - `project/automation/AUTOMATION_RULES.md`
 

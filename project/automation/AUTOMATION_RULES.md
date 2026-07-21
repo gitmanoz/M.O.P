@@ -40,7 +40,7 @@ Toda automação deverá:
 - **Um motor, muitos projetos/marcas.**
 - Respeitar a taxonomia: **Core**, **Engine**, **Generator**, **Validator** (`BUILD_SYSTEM.md`).
 - O **Core** não gera assets, não altera docs, não embute regras de marca/projeto.
-- O **Project Engine** é contexto anterior aos demais módulos de ação.
+- O **Project Engine** é a primeira Engine de contexto, **acionada pelo MOBS Core**, antes dos demais módulos de ação.
 - **Proibido** automação “só para Missão OAB” (ou qualquer produto único) quando um campo de config resolver.
 - **Proibido** implementar sem entrada no `AUTOMATION_ROADMAP.md` (ou doc em `future/` aprovada).
 - Módulos são **independentes**: um não deve exigir gambiarra em outro.

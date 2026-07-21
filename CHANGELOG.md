@@ -43,8 +43,8 @@ Documentação da plataforma de engenharia do **Ecossistema Missão** (config-dr
 
 - `project/automation/MOBS.md`
 - `project/automation/BUILD_SYSTEM.md`
-- `project/automation/BRAND_ENGINE.md`
 - `project/automation/PROJECT_ENGINE.md`
+- `project/automation/BRAND_ENGINE.md`
 - `project/automation/AUTOMATION_ROADMAP.md`
 - `project/automation/AUTOMATION_RULES.md`
 - `project/automation/future/README.md`
@@ -87,6 +87,10 @@ Documentação da plataforma de engenharia do **Ecossistema Missão** (config-dr
 - `HISTORY.md` reorganizado como diário cronológico (data/hora/fuso America/Sao_Paulo; sem horários inventados).
 - `CHANGELOG.md` padronizado com propósito explícito e distinção formal em relação ao HISTORY.
 - `PROJECT_RULES.md` atualizado com a seção **History e Changelog**.
+- Diagramas e fluxos MOBS alinhados: `MOBS Core` → `Project Engine` → `MOBS Core` → demais módulos.
+- Project Engine documentado como primeira Engine **acionada pelo Core** (não fora dele).
+- Descrição do `HISTORY.md` no `PROJECT_INDEX` alinhada ao diário cronológico.
+- Ordem documental MOBS uniformizada: MOBS → BUILD_SYSTEM → PROJECT_ENGINE → BRAND_ENGINE → ROADMAP → RULES.
 
 ### Removed
 

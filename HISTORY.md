@@ -783,6 +783,49 @@ Aprovar o pacote completo (MOBS 0.1.1 + governança + este padrão) e, somente e
 
 ---
 
+## 2026-07-20 23:51 — Alinhamento documental MOBS Core ↔ Project Engine
+
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** MOBS 0.1.1 (clarificação documental; sem mudança de arquitetura funcional)
+
+### Contexto
+
+Diagramas em `MOBS.md`, `BUILD_SYSTEM.md` e `PROJECT_INDEX.md` sugeriam, em trechos, que o Project Engine operava antes ou fora do MOBS Core, gerando ambiguidade operacional.
+
+### Objetivo
+
+Eliminar inconsistências documentais e fixar o fluxo oficial: Core orquestra; Project Engine é a primeira Engine de contexto acionada pelo Core; após o contexto, o Core continua a orquestração dos demais módulos.
+
+### Decisões
+
+- Fluxo operacional consolidado: `MOBS Core` → `Project Engine` → `MOBS Core` → demais módulos.
+- Taxonomia e fronteiras do Core permanecem as da arquitetura 0.1.1 aprovada.
+- Sem implementação de código, schemas, scripts ou engines executáveis — apenas clareza documental.
+- Ordem de leitura MOBS uniformizada; descrição do HISTORY no Index alinhada ao diário cronológico.
+- Autorização de commit imediato válida **somente** para esta execução; `PROJECT_RULES` continua exigindo aprovação prévia em execuções futuras.
+
+### Impacto
+
+Um único modelo mental para IAs e engenheiros: Core sempre no centro da orquestração; Project Engine nunca “fora” do Core.
+
+### Áreas e documentos envolvidos
+
+- `project/automation/BUILD_SYSTEM.md`
+- `project/automation/MOBS.md`
+- `project/automation/PROJECT_ENGINE.md`
+- `project/automation/BRAND_ENGINE.md`
+- `project/automation/AUTOMATION_RULES.md`
+- `PROJECT_INDEX.md`
+- `AI_CONTEXT.md`
+- `HISTORY.md`
+- `CHANGELOG.md`
+
+### Próximos passos
+
+Manter a documentação alinhada em qualquer evolução futura do roadmap MOBS; implementação continua sujeita a `AUTOMATION_RULES` e aprovação.
+
+---
+
 ## Controles
 
 | Campo | Valor |

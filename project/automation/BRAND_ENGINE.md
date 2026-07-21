@@ -136,10 +136,14 @@ Se uma necessidade “só existe em uma marca”, primeiro avaliar se pode ser e
 
 ## Integração com projetos
 
-O Brand Engine é acionado **depois** do Project Engine quando o fluxo parte de um projeto:
+O Brand Engine é acionado **pelo MOBS Core depois** do Project Engine quando o fluxo parte de um projeto:
 
 ```
-project.json → Project Engine → Brand Engine → …
+project.json
+  → MOBS Core
+  → Project Engine (contexto)
+  → MOBS Core
+  → Brand Engine → …
 ```
 
 A associação projeto↔marca é declarativa. O modelo completo (marca independente, projeto independente, 1:1, N:1, etc.) está em `PROJECT_ENGINE.md` — seção **Relação Projeto × Marca**.

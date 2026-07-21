@@ -12,25 +12,30 @@
 
 ## Objetivo
 
-Definir como o MOBS trata **projetos** de forma genérica e posicionar o Project Engine como **camada de contexto anterior** aos demais módulos.
+Definir como o MOBS trata **projetos** de forma genérica e posicionar o Project Engine como a **primeira Engine de contexto**, acionada pelo **MOBS Core**.
 
 O Project Engine não gera assets nem docs em massa.  
-Ele **resolve o projeto** e entrega ao Core o contexto necessário para orquestrar Brand Engine, Documentation Engine, Asset Generator, Validation Engine e Release Engine.
+Ele **resolve o projeto** e **devolve o contexto ao Core**, que então orquestra Brand Engine, Documentation Engine, Asset Generator, Validation Engine e Release Engine.
 
 ---
 
 ## Posição no fluxo
 
 ```
-project.json
+Interface / CLI / CI / IA
     ↓
-Project Engine
+MOBS Core carrega project.json
     ↓
-Brand Engine / Documentation Engine / Asset Generator / Validation Engine / Release Engine
+MOBS Core aciona Project Engine
+    ↓
+Project Engine resolve o contexto e devolve ao Core
+    ↓
+MOBS Core orquestra Brand / Docs / Asset Generator / Validation / Release
 ```
 
+O Project Engine **não** existe operacionalmente fora ou antes do Core.  
 Nenhum Generator ou Validator deve assumir “qual é o projeto” por hardcode.  
-O contexto vem do Project Engine (via Core).
+O contexto vem do Project Engine, **via Core**.
 
 ---
 
@@ -110,7 +115,7 @@ Não implementar schemas nesta etapa; apenas registrar o modelo.
 - Expor contexto (paths, flags de módulos, vínculo de marca se houver).
 - Inventário conceitual de projetos do ecossistema.
 - Validação mínima estrutural da config de projeto (conceito; detalhe futuro).
-- Ser a **primeira** Engine de contexto no fluxo orquestrado pelo Core.
+- Ser a **primeira** Engine de contexto acionada pelo MOBS Core.
 
 ---
 
@@ -129,13 +134,14 @@ Não implementar schemas nesta etapa; apenas registrar o modelo.
 ## Automação de um projeto
 
 ```
-projectId
-  → Project Engine (contexto)
-  → Core seleciona módulos
+projectId / project.json
+  → MOBS Core carrega config
+  → Project Engine (contexto) ← acionado pelo Core
+  → MOBS Core seleciona e ordena módulos
   → Brand Engine (se brandId)
   → Validation Engine
   → Documentation Engine / Asset Generator / Release Engine
-  → Core consolida logs e resultados
+  → MOBS Core consolida logs e resultados
 ```
 
 O MOBS deve automatizar um projeto com **config + conteúdo**, sem código novo no Core por produto.
