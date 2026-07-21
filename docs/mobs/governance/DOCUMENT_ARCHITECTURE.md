@@ -382,8 +382,9 @@ Define para onde o crescimento **deve** convergir.
 | **1** | Novos documentos MOBS já nascem no path alvo | **Concluída** (institucionalizada) |
 | **2** | Agrupar fundação, domínio e contratos sob `docs/mobs/` | **Concluída** |
 | **3** | Consolidar governança em `docs/mobs/governance/` | **Concluída** |
-| **4** | Separar claramente **MOBS** vs **produto** em `docs/` | Mistura de escopos |
+| **4** | Identidade da raiz local: pasta `missao-oab` → `missao-mobs` (MOBS). Produto Missão OAB e `product-id` `missao-oab` preservados. Consolidação `docs/products/<id>/` **não** faz parte desta fase. | Confundir raiz com produto |
 | **5** | Migrar **assets** para modelo multi-marca (`assets/brands/`) | Já previsto em `BRAND_ENGINE` — tarefa própria |
+| *futura* | Separar claramente **MOBS** vs **produto** em `docs/` (`docs/products/<id>/`, design) | Mistura de escopos — tarefa própria, não Fase 4 desta decisão |
 
 Cada fase segue [`ARCHITECTURE_TASK_PROTOCOL.md`](ARCHITECTURE_TASK_PROTOCOL.md).
 

@@ -54,6 +54,8 @@ Categorias usadas apenas quando houver itens:
 - `PROJECT_INDEX.md` e `AI_CONTEXT.md`: rotas para Partnership, Ayla e carregamento condicional do perfil.
 - `PARTNERSHIP_MODEL.md`: ponte mínima para perfis derivados (Ayla), sem absorver a identidade.
 - Inventários em `DOCUMENT_STRUCTURE_PLAN.md` e `DOCUMENT_ARCHITECTURE.md`: modelos/parceria e perfil Ayla.
+- Fase 4 estrutural: referências de raiz/workspace preparadas para `missao-mobs`; renomeação física da pasta **pendente** (workspace em uso).
+- Consolidação de produto sob `docs/products/` marcada como **futura** (não mais escopo da Fase 4).
 
 #### MOBS — arquitetura documental 0.1.1 (conceitual)
 

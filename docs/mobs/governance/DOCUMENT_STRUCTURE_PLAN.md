@@ -153,7 +153,7 @@ Classificação segundo grupos oficiais de [`DOCUMENT_ARCHITECTURE.md`](DOCUMENT
 |---|---|---|
 | `BUILD_SYSTEM.md` | Listado como Engine em `DOCUMENT_ARCHITECTURE`; também descreve taxonomia global | Mantém grupo **Engines**; não promover a grupo próprio |
 | `DESIGN_GUIDE` / `UI_KIT` na raiz | Claramente produto; localização histórica | Grupo **Design System**; path alvo sob produto — seção 4 |
-| `docs/product/` vs `docs/products/<id>/` | Singular hoje; multi-produto futuro | Path alvo plural; legado migra na Fase 4 |
+| `docs/product/` vs `docs/products/<id>/` | Singular hoje; multi-produto futuro | Path alvo plural; legado migra em tarefa futura (não Fase 4 estrutural) |
 | Descoberta na raiz | Bootloader de todo o repositório | **Permanência definitiva na raiz** — decisão fechada |
 
 ---
@@ -279,7 +279,7 @@ Evita pastas intermediárias sem responsabilidade própria.
 3. **`docs/mobs/models/`** e **`docs/mobs/schemas/`** — separação conceitual modelo (significado transversal) vs schema (validação mecânica).
 4. **`project/automation/` mantido** — Engines e automação já vivem aqui; mover `MOBS.md` ou `AUTOMATION_RULES` custaria mais do que beneficia na Fase 1.
 5. **Raiz para descoberta e histórico** — `PROJECT_INDEX` como bootloader universal; histórico acessível sem navegar árvore MOBS.
-6. **`docs/products/<id>/`** — escala multi-produto; substitui `docs/product/` e `docs/brand/` planos na Fase 4.
+6. **`docs/products/<id>/`** — escala multi-produto; substitui `docs/product/` e `docs/brand/` planos em tarefa futura (não confundir com Fase 4 estrutural da raiz).
 7. **`assets/brands/<id>/`** — já previsto conceitualmente; elimina ambiguidade `assets/brand/` singular.
 
 ---
@@ -350,10 +350,10 @@ Até lá, novos documentos MOBS devem seguir o plano como **diretriz aprovada** 
 | `PROJECT_RULES.md` | raiz | **permanece** (definitivo) | — | Todo o repositório | **Permanente** |
 | `HISTORY.md` | raiz | **permanece** (definitivo) | — | Convenção | **Permanente** |
 | `CHANGELOG.md` | raiz | **permanece** (definitivo) | — | Keep a Changelog | **Permanente** |
-| `docs/product/*` | `docs/product/` | `docs/products/missao-oab/product/` | Médio | Links em PRD, Index | **4** |
-| `docs/brand/*` | `docs/brand/` | `docs/products/missao-oab/brand/` | Médio | Brand Book, design | **4** |
-| `DESIGN_GUIDE.md` | raiz | `docs/products/missao-oab/design/` | Médio | Landing, UI | **4** |
-| `UI_KIT.md` | raiz | `docs/products/missao-oab/design/` | Médio | Design Guide | **4** |
+| `docs/product/*` | `docs/product/` | `docs/products/missao-oab/product/` | Médio | Links em PRD, Index | *Futura* |
+| `docs/brand/*` | `docs/brand/` | `docs/products/missao-oab/brand/` | Médio | Brand Book, design | *Futura* |
+| `DESIGN_GUIDE.md` | raiz | `docs/products/missao-oab/design/` | Médio | Landing, UI | *Futura* |
+| `UI_KIT.md` | raiz | `docs/products/missao-oab/design/` | Médio | Design Guide | *Futura* |
 | `assets/brand/` | `assets/brand/` | `assets/brands/missao-oab/` | Alto | Landing, paths em código | **5** |
 
 ### Legenda de fases (alinhada a `DOCUMENT_ARCHITECTURE` §14)
@@ -364,7 +364,7 @@ Até lá, novos documentos MOBS devem seguir o plano como **diretriz aprovada** 
 | **1** | Estrutura alvo + política de nascimento — **concluída** (institucionalizada) |
 | **2** | Migrar fundação, domínio, contratos — **concluída** |
 | **3** | Migrar governança documental/arquitetural MOBS — **concluída** |
-| **4** | Consolidar produto / marca institucional / design |
+| **4** | Identidade da raiz: `missao-oab` → `missao-mobs` (estrutural) — **referências documentais preparadas; renomeação física da pasta pendente de verificação**; consolidação produto/design sob `docs/products/` permanece **futura** |
 | **5** | Migrar assets para `assets/brands/<id>/` |
 
 ---
@@ -377,8 +377,9 @@ Até lá, novos documentos MOBS devem seguir o plano como **diretriz aprovada** 
 Fase 1 (institucionalizada) → novos docs no path alvo
 Fase 2 → requer Fase 1 + atualização de descoberta
 Fase 3 → conceitualmente independente de Fase 2; recomenda-se execução sequencial (2 → 3) para reduzir conflitos de links, descoberta e referências cruzadas
-Fase 4 → independente de Fase 2–3 para conteúdo de produto
+Fase 4 → identidade da raiz local (`missao-mobs`); independente da consolidação futura de produto em `docs/products/`
 Fase 5 → depende de clareza Brand Contract + BRAND_ENGINE; pode afetar landing
+*Futura (ex-escopo antigo da Fase 4)* → reorganizar `docs/product`, `docs/brand`, design — tarefa própria
 ```
 
 ### Riscos principais
@@ -399,10 +400,9 @@ Resumo operacional pós-Fases 1–3:
 
 | Fase | Ação | Entregável |
 |---|---|---|
-| **2** | Mover fundação, domínio, contratos para `docs/mobs/` | **Concluída** |
-| **3** | Mover governança MOBS para `docs/mobs/governance/` | **Concluída** |
-| **4** | Reorganizar `docs/product`, `docs/brand`, design na raiz | `docs/products/missao-oab/` |
+| **4** | Renomear raiz local `missao-oab` → `missao-mobs`; atualizar só refs de raiz/workspace | Raiz `missao-mobs`; produto `missao-oab` preservado |
 | **5** | Migrar `assets/brand/` → `assets/brands/missao-oab/` | Tarefa com BRAND_ENGINE |
+| *Futura* | Reorganizar `docs/product`, `docs/brand`, design | `docs/products/missao-oab/` (se autorizada) |
 
 Cada fase: tarefa arquitetural → revisão → aprovação → migração → validação → commit → push.
 

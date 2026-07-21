@@ -90,7 +90,8 @@ Uma versão só avança para implementação quando:
 | **MOBS 0.2 — Fase 1 (estrutura documental)** | `docs/mobs/governance/DOCUMENT_ARCHITECTURE.md` + `docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md` — **institucionalizada** |
 | **MOBS 0.2 — Fase 2** | Fundação, domínio e contratos em `docs/mobs/` — **concluída** |
 | **MOBS 0.2 — Fase 3** | Governança em `docs/mobs/governance/` — **concluída** |
-| **MOBS 0.2 — Fase 4** | Produto, marca institucional e design — **próxima etapa arquitetural** |
+| **MOBS 0.2 — Fase 4** | Etapa **estrutural**: raiz local `missao-oab` → `missao-mobs`. Referências versionadas preparadas; **renomeação física da pasta pendente** (workspace em uso). **Não** é migração de `docs/product` nem renomeação do produto Missão OAB. |
+| **Próximo ciclo fundador** | **Core** — somente após encerramento verificado da Fase 4 |
 | v1–v10 implementação | Não iniciada |
 | Scripts oficiais | Nenhum |
 
@@ -98,12 +99,15 @@ Uma versão só avança para implementação quando:
 
 Antes de schemas e implementação de serializações de projeto/marca, a sequência documental está em `docs/mobs/domain/DOMAIN_MODEL.md` → `docs/mobs/contracts/CONFIGURATION_CONTRACTS.md` → (`docs/mobs/contracts/PROJECT_CONTRACT.md` ∥ `docs/mobs/contracts/BRAND_CONTRACT.md`).
 Essa sequência **não substitui** a linha v1–v10 deste roadmap; **precede** schemas e serialização.
+Este roadmap **não** governa ciclos fundadores paralelos (Partnership, Core); apenas registra o estado quando necessário para não contradizer a história.
 
 ### Nota sobre Fase 1 (estrutura documental)
 
 `docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md` materializa paths alvo e política de nascimento sob `docs/mobs/governance/DOCUMENT_ARCHITECTURE.md`.
-Fases 2 e 3 de migração **concluídas**; Fase 4 é a próxima etapa arquitetural.
-IDs oficiais atuais: `product-id` = `brand-id` = `missao-oab` (namespaces distintos).
+Fases 2 e 3 de migração documental **concluídas**.
+Fase 4, nesta decisão do fundador, é **estrutural (renomeação da raiz)** — distinta da antiga proposta de reorganizar produto/design sob `docs/products/missao-oab/` (ainda futura, se autorizada).
+Enquanto a pasta física não for `missao-mobs` e revalidada, a Fase 4 **não** está encerrada.
+IDs oficiais de **produto/marca** atuais: `product-id` = `brand-id` = `missao-oab` (namespaces distintos; preservados).
 Contratos permanecem em `docs/mobs/contracts/` (constituição e concretos no mesmo diretório; sem subpasta `constitution/`).
 
 ---

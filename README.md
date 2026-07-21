@@ -1,6 +1,6 @@
 # Missão MOBS
 
-Repositório da arquitetura **MOBS** (plataforma de engenharia do Ecossistema Missão) e do primeiro produto, a **Missão OAB**.
+Raiz-alvo do repositório: **`missao-mobs`** (arquitetura MOBS). Enquanto a pasta física ainda se chamar `missao-oab`, trate isso como transição da Fase 4 — não como nome do produto.
 
 ## Por onde começar
 
@@ -18,7 +18,9 @@ Mensagem recomendada ao iniciar uma conversa com um agente:
 
 | Nome | Significado |
 |---|---|
-| **MOBS** | Plataforma de engenharia / arquitetura deste repositório |
-| **Missão OAB** | Primeiro produto do Ecossistema Missão |
+| **missao-mobs** | Nome da raiz local / workspace da arquitetura MOBS |
+| **MOBS** | Plataforma de engenharia deste repositório |
+| **Missão OAB** / `missao-oab` | Produto e namespaces de produto/marca — **não** confundir com o nome da raiz |
 
 Não invente processos: use as autoridades do repositório.
+Não altere o nome do remoto GitHub só porque a pasta local mudou.

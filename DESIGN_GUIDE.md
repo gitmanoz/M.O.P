@@ -755,7 +755,7 @@ Não comentar o óbvio. Comentar decisões e agrupamentos.
 ### Organização de arquivos
 
 ```
-missao-oab/
+missao-mobs/
 ├── index.html
 ├── DESIGN_GUIDE.md          ← Este documento
 ├── README.md

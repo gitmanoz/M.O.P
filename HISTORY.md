@@ -1421,6 +1421,63 @@ Agentes podem descobrir Partnership, Ayla, Harvest e autoridade do fundador só 
 
 ---
 
+## 2026-07-21 — Fase 4 estrutural: preparação (renomeação física pendente)
+
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** MOBS 0.2 — Fase 4 (identidade da raiz) — **em andamento**  
+**Horário:** não registrado com precisão verificável neste marco
+
+### Contexto
+
+A pasta local ainda se chama `missao-oab`, misturando mentalmente a raiz da arquitetura MOBS com o produto Missão OAB. A Fase 4 antiga (consolidar docs de produto) foi redefinida pelo fundador como etapa estrutural simples de renomeação da raiz.
+
+### Objetivo
+
+Renomear a raiz local para `missao-mobs`; atualizar somente referências de raiz/workspace; preservar produto, `product-id` `missao-oab` e remoto GitHub.
+
+### Decisões
+
+- `missao-mobs` = raiz / workspace da arquitetura.
+- `missao-oab` / Missão OAB = produto e namespaces — preservados.
+- Remoto `origin` inalterado.
+- Consolidação `docs/products/missao-oab/` permanece tarefa futura distinta.
+- Próximo ciclo fundador: **Core** — somente após Fase 4 verificada.
+
+### O que foi entregue neste checkpoint
+
+- Referências versionadas de raiz/workspace atualizadas (`README`, árvore do `DESIGN_GUIDE`, roadmap e planos de migração).
+- Tentativa de `Rename-Item` da pasta Desktop **falhou**: pasta em uso pelo workspace aberto.
+
+### O que ainda falta para encerrar a Fase 4
+
+1. Fechar processos que bloqueiam a pasta (ou renomear fora do Cursor).
+2. Renomear `Desktop\missao-oab` → `Desktop\missao-mobs`.
+3. Reabrir o workspace na nova raiz.
+4. Confirmar Git, remoto e ausência de refs técnicas indevidas.
+5. Registrar o encerramento e só então iniciar o Core.
+
+### Impacto
+
+Preparação documental alinhada à decisão; **Fase 4 ainda não encerrada**.
+
+### Áreas e documentos envolvidos
+
+- `README.md`, `DESIGN_GUIDE.md`
+- `AUTOMATION_ROADMAP.md`, `DOCUMENT_ARCHITECTURE.md`, `DOCUMENT_STRUCTURE_PLAN.md`
+- `HISTORY.md`, `CHANGELOG.md`
+
+### Validações
+
+- Produto e IDs `missao-oab` preservados nas refs de produto.
+- Remoto não alterado.
+- Renomeação física **não** concluída neste ambiente.
+
+### Próximos passos
+
+Concluir renomeação física e verificação da raiz `missao-mobs`; depois iniciar o ciclo fundador do **Core**.
+
+---
+
 ## Controles
 
 | Campo | Valor |
