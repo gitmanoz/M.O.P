@@ -12,6 +12,8 @@ e o projeto utiliza versionamento semântico quando aplicável.
 - Sistema permanente de histórico institucional (`HISTORY.md`).
 - Seção de governança de histórico e changelog em `AI_CONTEXT.md`.
 - Estrutura definitiva de Brand Assets em `assets/brand/` (`source`, `exports`, `favicon`, `social`, `og`, `app`) e `assets/brand/README.md`.
+- Catálogo completo de SVGs mestres em `assets/brand/source/` (symbol, typography, logo horizontal/vertical, variantes black/white e `*_INK`).
+- PNGs históricos preservados em `assets/brand/reference/`.
 - Seção “Brand Assets Oficiais” em `AI_CONTEXT.md`.
 - Contrato operacional permanente do repositório (`PROJECT_RULES.md`).
 - Seção Governança em `AI_CONTEXT.md`, com `PROJECT_RULES.md` como leitura obrigatória.
@@ -28,7 +30,12 @@ e o projeto utiliza versionamento semântico quando aplicável.
 - `PROJECT_INDEX.md` evolui de índice mestre para orquestrador de contexto (onboarding seletivo por categoria de tarefa).
 - Leitura obrigatória em `PROJECT_RULES.md` e STOP em `AI_CONTEXT.md` alinhados ao boot via Decision Tree (sem carregar documentação completa por padrão).
 - Processo de trabalho em `PROJECT_RULES.md` alinhado à Boot Sequence.
+- Fase 6 de `HISTORY.md` atualizada com o fechamento da migração de Brand Assets (commit `0ca07fc`).
 - Fase 7 de `HISTORY.md` atualizada com o marco do `PROJECT_INDEX`.
+
+### Removed
+
+- Cópias legadas de marca na raiz do repositório (`Logo.png` e pasta “Missão OAB Design System”), após preservação em `assets/brand/reference/` e consolidação em `assets/brand/source/`.
 
 ## [0.1.0] - 2026-07-20
 

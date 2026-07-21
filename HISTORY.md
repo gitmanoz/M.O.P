@@ -192,6 +192,8 @@ Para tornar a identidade visual reutilizável e escalável além da landing — 
 - Criação de `assets/brand/README.md` (Source of Truth, nomenclatura e regras de uso).
 - Adoção do logo horizontal oficial (`master-logo-horizontal.svg`) no header e footer da landing.
 - Catálogo completo de mestres em `source/`: symbol, typography, logo-horizontal, logo-vertical e variantes black/white.
+- Fechamento da migração (commit `0ca07fc`, 2026-07-20): remoção das cópias legadas na raiz (`Logo.png`, pasta “Missão OAB Design System”), com preservação histórica em `assets/brand/reference/` e absorção dos SVGs legados nas variantes oficiais em `source/`.
+- Atualização da árvore de pastas em `DESIGN_GUIDE.md` apontando `assets/brand/` como identidade oficial.
 
 **Por que foi construído**
 
@@ -204,6 +206,7 @@ Para impedir redesenho improvisado da marca e garantir uma fonte oficial única 
 - SVGs sem sufixo `_INK` são finais; apenas `*_INK.svg` podem ser editados no Inkscape.
 - Landing e novos materiais devem consumir exclusivamente `assets/brand/source/`.
 - Pasta `reference/` preserva PNGs históricos e não é Source of Truth.
+- Cópias legadas fora de `assets/brand/` não devem ser reintroduzidas como Source of Truth.
 
 **Arquivos e sistemas nascidos nesta etapa**
 
@@ -259,6 +262,7 @@ Para preservar memória institucional, reduzir decisões inventadas por agentes,
 | Documentos em `docs/` e Design System com “Julho de 2026” / v1.0 | Fundação documental de produto, marca e design no ciclo de Julho/2026 |
 | Comentários de sprint em `index.html` e `css/style.css` | Evolução iterativa da landing e da base visual |
 | Assets em `assets/brand/` | Existência do símbolo mestre e referências de marca |
+| Commit Git `0ca07fc` (2026-07-20) | Fechamento da árvore Brand Assets, consumo na landing e remoção das cópias legadas na raiz |
 | Commit Git `ef37433` (2026-07-20) | Inicialização formal do repositório com o conjunto então versionado |
 | `AI_CONTEXT.md` | Metáfora mapa/caminho e regras de governança para IA |
 | `PROJECT_INDEX.md` (v1.0.0, 2026-07-20) | Bootloader oficial e orquestração de contexto por Decision Tree |
