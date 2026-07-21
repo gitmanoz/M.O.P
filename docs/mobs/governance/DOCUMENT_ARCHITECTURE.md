@@ -378,10 +378,10 @@ Define para onde o crescimento **deve** convergir.
 
 | Fase | Escopo | Risco se antecipar |
 |---|---|---|
-| **0** | Adotar e consolidar `DOCUMENT_ARCHITECTURE.md` como autoridade | Reorganizar sem arquitetura aprovada |
-| **1** | Novos documentos MOBS já nascem no path alvo | Executar antes da consolidação da Fase 0 |
-| **2** | Agrupar **Contratos concretos** e **Modelos** sob namespace dedicado | Quebra de links externos |
-| **3** | Consolidar **Governança** (protocolo, document architecture) | Confusão com `PROJECT_RULES` |
+| **0** | Adotar e consolidar `DOCUMENT_ARCHITECTURE.md` como autoridade | **Concluída** |
+| **1** | Novos documentos MOBS já nascem no path alvo | **Concluída** (institucionalizada) |
+| **2** | Agrupar fundação, domínio e contratos sob `docs/mobs/` | **Concluída** |
+| **3** | Consolidar governança em `docs/mobs/governance/` | **Concluída** |
 | **4** | Separar claramente **MOBS** vs **produto** em `docs/` | Mistura de escopos |
 | **5** | Migrar **assets** para modelo multi-marca (`assets/brands/`) | Já previsto em `BRAND_ENGINE` — tarefa própria |
 

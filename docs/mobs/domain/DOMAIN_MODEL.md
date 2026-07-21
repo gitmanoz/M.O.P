@@ -7,7 +7,7 @@ Este documento define a **gramática conceitual** da plataforma de engenharia do
 
 Ele **não** define campos de `project.json` ou `brand.json`.  
 Ele **não** escolhe JSON, YAML ou TOML.  
-Ele prepara o terreno sobre o qual os contratos concretos do **MOBS 0.2 — Configuration Contracts** serão derivados.
+Ele prepara o terreno sobre o qual os contratos concretos do **MOBS 0.2 — Configuration Contracts** foram derivados (`PROJECT_CONTRACT.md`, `BRAND_CONTRACT.md`).
 
 ---
 
@@ -17,7 +17,7 @@ Ele prepara o terreno sobre o qual os contratos concretos do **MOBS 0.2 — Conf
 |---|---|
 | **Arquitetura aprovada (presente)** | MOBS 0.1.1 documental: taxonomia Core / Engine / Generator / Validator; fluxo Core → Project Engine → Core → módulos; relação Projeto × Marca; princípios em [`WHY_MOBS.md`](../foundation/WHY_MOBS.md) |
 | **Formalizado aqui (modelo conceitual)** | Vocabulário normativo, relações oficiais vs. abertas, tese “contrato ≠ arquivo”, fronteiras de domínio |
-| **Em construção (MOBS 0.2)** | Contratos concretos, ownership formal, resolução detalhada, serialização — **ainda não escritos** |
+| **Contratos concretos (MOBS 0.2)** | [`PROJECT_CONTRACT.md`](../contracts/PROJECT_CONTRACT.md) e [`BRAND_CONTRACT.md`](../contracts/BRAND_CONTRACT.md) — aprovados; ownership formal estabelecido; schemas e serialização — **ainda não escritos** |
 | **Implementação futura** | Schemas, runtime, Validators executáveis, migrações — **não iniciada** |
 
 ### O que este documento não faz
@@ -590,8 +590,8 @@ Para o eixo **Configuration Contracts (MOBS 0.2)**, a sequência documental **pr
 
 1. **DOMAIN_MODEL.md** ← gramática conceitual
 2. **CONFIGURATION_CONTRACTS.md** ← constituição dos contratos
-3. PROJECT_CONTRACT.md
-4. BRAND_CONTRACT.md
+3. PROJECT_CONTRACT.md ← **aprovado**
+4. BRAND_CONTRACT.md ← **aprovado**
 5. CAPABILITY_MODEL.md (se necessário)
 6. RESOLUTION_MODEL.md
 7. schemas e exemplos

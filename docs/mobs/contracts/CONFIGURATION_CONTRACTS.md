@@ -40,7 +40,8 @@ Sem contratos, a plataforma improvisa. Com contratos, a plataforma **promete**.
 |---|---|
 | **Autoridade conceitual** | [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md) |
 | **Este documento** | Regras gerais de existência, ownership, validação, consumo e evolução de contratos |
-| **Ainda não criado** | `PROJECT_CONTRACT.md`, `BRAND_CONTRACT.md`, `CAPABILITY_MODEL.md`, schemas, serializações |
+| **Contratos concretos aprovados** | [`PROJECT_CONTRACT.md`](PROJECT_CONTRACT.md), [`BRAND_CONTRACT.md`](BRAND_CONTRACT.md) — irmãos; sem schemas ainda |
+| **Ainda não criado** | `CAPABILITY_MODEL.md`, schemas, serializações |
 | **Implementação** | Não iniciada |
 
 ### O que este documento não faz
@@ -385,7 +386,7 @@ Antes de aprovar qualquer contrato concreto:
 
 | Questão | Onde resolver |
 |---|---|
-| Conteúdo de Project / Brand / Capability contracts | Documentos concretos futuros |
+| Conteúdo de Capability contracts | Documento concreto futuro |
 | Tecnologia de schema | Após contratos concretos |
 | Formato de serialização e localização | Após schemas |
 | Numeração de versão e ferramenta de migração | Políticas por contrato + governança |
@@ -396,8 +397,8 @@ Antes de aprovar qualquer contrato concreto:
 
 ## 18. Próximos documentos
 
-1. `PROJECT_CONTRACT.md` — contrato concreto de Projeto
-2. `BRAND_CONTRACT.md` — contrato concreto de Marca
+1. ~~`PROJECT_CONTRACT.md`~~ — **aprovado** (`docs/mobs/contracts/PROJECT_CONTRACT.md`)
+2. ~~`BRAND_CONTRACT.md`~~ — **aprovado** (`docs/mobs/contracts/BRAND_CONTRACT.md`)
 3. `CAPABILITY_MODEL.md` — se o domínio de capabilities exigir formalização
 4. Schemas e exemplos
 5. Implementação e Validators

@@ -425,7 +425,7 @@ Critérios atendidos na aprovação arquitetural:
 
 | Questão | Onde resolver |
 |---|---|
-| Momento de criar `docs/mobs/` fisicamente | Primeiro nascimento pós-vigência ou início da Fase 2 |
+| ~~Momento de criar `docs/mobs/` fisicamente~~ | **Resolvido** — `docs/mobs/` criado na Fase 2 |
 | `README.md` na raiz do repositório | Fora do escopo MOBS; produto/ecossistema se criado |
 
 ---

@@ -13,7 +13,7 @@
 | Dimensão | Situação |
 |---|---|
 | **Hoje** | O MOBS existe como **arquitetura documental aprovada** (v0.1.1): visão, taxonomia, fluxo, princípios e governança |
-| **Em construção** | Contratos, módulos e automações serão implementados conforme o [roadmap](../../../project/automation/AUTOMATION_ROADMAP.md) e as [regras de automação](../../../project/automation/AUTOMATION_RULES.md) |
+| **Em construção** | Contratos concretos aprovados (Projeto, Marca); schemas, módulos e automações serão implementados conforme o [roadmap](../../../project/automation/AUTOMATION_ROADMAP.md) e as [regras de automação](../../../project/automation/AUTOMATION_RULES.md) |
 | **Visão** | Uma plataforma reutilizável na qual novos produtos nascem principalmente por **configuração + conteúdo**, não por nova infraestrutura |
 
 Este arquivo responde ao **porquê**, ao **para quem** e ao **valor**.  
