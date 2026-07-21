@@ -1122,6 +1122,74 @@ Versionar; em seguida Capability/Resolution ou schemas.
 
 ---
 
+## 2026-07-21 03:43 — ARCHITECTURE_TASK_PROTOCOL.md
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS 0.2 — governança de tarefas arquiteturais
+
+### Contexto
+
+Com os dois primeiros contratos concretos aprovados, o processo de planejamento, revisão, refinamento e validação precisava tornar-se documento oficial — sem criar regras de domínio.
+
+### Objetivo
+
+Criar `ARCHITECTURE_TASK_PROTOCOL.md` por extração do método utilizado em `PROJECT_CONTRACT` e `BRAND_CONTRACT`.
+
+### Decisões
+
+- Consolidar hierarquia de autoridade, fluxo de trabalho, regras universais, critérios de aceitação e política de commit.
+- Posicionar o protocolo como governança de processo — fora da cadeia de significado do domínio.
+- Não modificar contratos, domínio, constituição nem Engines.
+
+### Impacto
+
+Tarefas arquiteturais futuras passam a ter referência única de método; domínio e contratos permanecem intactos.
+
+### Áreas e documentos envolvidos
+
+- `ARCHITECTURE_TASK_PROTOCOL.md` (criado)
+- `PROJECT_INDEX.md`, `project/automation/MOBS.md`, `AI_CONTEXT.md`
+- `project/automation/AUTOMATION_ROADMAP.md`
+- `HISTORY.md`, `CHANGELOG.md`
+
+### Próximos passos
+
+Revisão humana e aprovação antes do commit.
+
+---
+
+## 2026-07-21 03:51 — Revisão final de ARCHITECTURE_TASK_PROTOCOL.md
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS 0.2 — governança de tarefas arquiteturais (referência oficial)
+
+### Contexto
+
+O protocolo estava aprovado arquiteturalmente; faltavam dois esclarecimentos editoriais antes do commit definitivo.
+
+### Objetivo
+
+Distinguir ordem de leitura de hierarquia de autoridade; proteger o protocolo contra absorção de responsabilidades de domínio, contratos ou regras operacionais.
+
+### Decisões
+
+- Apenas refinamentos editoriais; sem alteração arquitetural.
+
+### Impacto
+
+`ARCHITECTURE_TASK_PROTOCOL.md` torna-se referência oficial do método de tarefas arquiteturais.
+
+### Áreas e documentos envolvidos
+
+- `ARCHITECTURE_TASK_PROTOCOL.md`
+- `HISTORY.md`, `CHANGELOG.md`
+
+### Próximos passos
+
+Versionar; em seguida Capability/Resolution ou schemas.
+
+---
+
 ## Controles
 
 | Campo | Valor |
