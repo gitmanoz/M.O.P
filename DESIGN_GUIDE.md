@@ -768,13 +768,23 @@ missao-oab/
 ├── js/
 │   └── app.js
 ├── img/
-│   ├── logo/
+│   ├── logo/                ← placeholders legados (não Source of Truth)
 │   ├── hero/
 │   ├── icons/
 │   └── cards/
 ├── assets/
+│   └── brand/               ← identidade oficial (ver assets/brand/README.md)
+│       ├── source/
+│       ├── exports/
+│       ├── favicon/
+│       ├── social/
+│       ├── og/
+│       ├── app/
+│       └── reference/
 └── favicon/
 ```
+
+Logotipos oficiais da marca devem ser consumidos de `assets/brand/source/` (SVG mestre), conforme `AI_CONTEXT.md`.
 
 ### Ordem de importação CSS
 
