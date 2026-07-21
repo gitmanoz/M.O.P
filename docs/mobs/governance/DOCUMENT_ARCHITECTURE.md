@@ -14,7 +14,7 @@ Analogia institucional:
 
 | Camada | Autoridade sobre |
 |---|---|
-| [`DOMAIN_MODEL.md`](docs/mobs/domain/DOMAIN_MODEL.md) | Significado lógico do domínio |
+| [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md) | Significado lógico do domínio |
 | [`DOCUMENT_ARCHITECTURE.md`](DOCUMENT_ARCHITECTURE.md) | Organização física da documentação |
 
 ---
@@ -42,7 +42,7 @@ Princípios derivados da trilha MOBS 0.2 e da organização já existente:
 |---|---|
 | **Significado antes da localização** | O papel arquitetural de um documento precede sua pasta |
 | **Um grupo, uma responsabilidade** | Cada categoria documental possui fronteira clara |
-| **Descoberta por índice, não por memória** | Navegação oficial via [`PROJECT_INDEX.md`](PROJECT_INDEX.md) e mapas afins |
+| **Descoberta por índice, não por memória** | Navegação oficial via [`PROJECT_INDEX.md`](../../../PROJECT_INDEX.md) e mapas afins |
 | **Crescimento por classificação** | Novo documento = classificar → posicionar → integrar descoberta |
 | **Estabilidade preferida** | Reorganização física é evento raro e governado |
 | **Independência física** | Path não redefine papel; papel não exige path único para sempre |
@@ -94,10 +94,10 @@ Não há sobreposição de responsabilidade entre eles.
 
 | Documento | Dimensão que governa | O que responde |
 |---|---|---|
-| [`WHY_MOBS.md`](docs/mobs/foundation/WHY_MOBS.md) | **Propósito e direção** | Por que o MOBS existe; princípios estratégicos; bússola de decisão |
-| [`project/automation/MOBS.md`](project/automation/MOBS.md) | **Plataforma** | O que é a plataforma; escopo; organização documental de alto nível |
-| [`DOMAIN_MODEL.md`](docs/mobs/domain/DOMAIN_MODEL.md) | **Domínio lógico** | O que existe no universo MOBS; entidades, relações e fronteiras |
-| [`CONFIGURATION_CONTRACTS.md`](docs/mobs/contracts/CONFIGURATION_CONTRACTS.md) | **Constituição dos contratos** | Como contratos existem, evoluem e se relacionam com a plataforma |
+| [`WHY_MOBS.md`](../foundation/WHY_MOBS.md) | **Propósito e direção** | Por que o MOBS existe; princípios estratégicos; bússola de decisão |
+| [`project/automation/MOBS.md`](../../../project/automation/MOBS.md) | **Plataforma** | O que é a plataforma; escopo; organização documental de alto nível |
+| [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md) | **Domínio lógico** | O que existe no universo MOBS; entidades, relações e fronteiras |
+| [`CONFIGURATION_CONTRACTS.md`](../contracts/CONFIGURATION_CONTRACTS.md) | **Constituição dos contratos** | Como contratos existem, evoluem e se relacionam com a plataforma |
 | [`ARCHITECTURE_TASK_PROTOCOL.md`](ARCHITECTURE_TASK_PROTOCOL.md) | **Processo arquitetural** | Como tarefas arquiteturais são planejadas, revisadas e aprovadas |
 | [`DOCUMENT_ARCHITECTURE.md`](DOCUMENT_ARCHITECTURE.md) | **Organização física** | Onde documentos vivem; como o repositório escala e se descobre |
 
@@ -220,9 +220,9 @@ A documentação deve permanecer navegável com crescimento significativo.
 
 | Papel | Documento |
 |---|---|
-| Bootloader humano/IA | [`PROJECT_INDEX.md`](PROJECT_INDEX.md) |
-| Contexto para agentes | [`AI_CONTEXT.md`](AI_CONTEXT.md) |
-| Mapa da plataforma MOBS | [`project/automation/MOBS.md`](project/automation/MOBS.md) |
+| Bootloader humano/IA | [`PROJECT_INDEX.md`](../../../PROJECT_INDEX.md) |
+| Contexto para agentes | [`AI_CONTEXT.md`](../../../AI_CONTEXT.md) |
+| Mapa da plataforma MOBS | [`project/automation/MOBS.md`](../../../project/automation/MOBS.md) |
 
 ### Regras
 
@@ -418,11 +418,11 @@ Organizar não é burocracia.
 
 ## Referências
 
-- [`WHY_MOBS.md`](docs/mobs/foundation/WHY_MOBS.md)
-- [`DOMAIN_MODEL.md`](docs/mobs/domain/DOMAIN_MODEL.md)
-- [`CONFIGURATION_CONTRACTS.md`](docs/mobs/contracts/CONFIGURATION_CONTRACTS.md)
+- [`WHY_MOBS.md`](../foundation/WHY_MOBS.md)
+- [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md)
+- [`CONFIGURATION_CONTRACTS.md`](../contracts/CONFIGURATION_CONTRACTS.md)
 - [`ARCHITECTURE_TASK_PROTOCOL.md`](ARCHITECTURE_TASK_PROTOCOL.md)
-- [`PROJECT_INDEX.md`](PROJECT_INDEX.md)
-- [`project/automation/MOBS.md`](project/automation/MOBS.md)
-- [`project/automation/BUILD_SYSTEM.md`](project/automation/BUILD_SYSTEM.md)
-- [`project/automation/BRAND_ENGINE.md`](project/automation/BRAND_ENGINE.md)
+- [`PROJECT_INDEX.md`](../../../PROJECT_INDEX.md)
+- [`project/automation/MOBS.md`](../../../project/automation/MOBS.md)
+- [`project/automation/BUILD_SYSTEM.md`](../../../project/automation/BUILD_SYSTEM.md)
+- [`project/automation/BRAND_ENGINE.md`](../../../project/automation/BRAND_ENGINE.md)

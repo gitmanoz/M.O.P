@@ -176,9 +176,9 @@ Qual é a tarefa?
 │    → docs/mobs/contracts/CONFIGURATION_CONTRACTS.md     ← constituição dos contratos
 │    → docs/mobs/contracts/PROJECT_CONTRACT.md            ← contrato concreto (Projeto)
 │    → docs/mobs/contracts/BRAND_CONTRACT.md              ← contrato concreto (Marca)
-│    → ARCHITECTURE_TASK_PROTOCOL.md  ← governança de tarefas arquiteturais
-│    → DOCUMENT_ARCHITECTURE.md       ← arquitetura física da documentação
-│    → DOCUMENT_STRUCTURE_PLAN.md    ← estrutura alvo e política de nascimento (Fase 1)
+│    → docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md  ← governança de tarefas arquiteturais
+│    → docs/mobs/governance/DOCUMENT_ARCHITECTURE.md       ← arquitetura física da documentação
+│    → docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md    ← estrutura alvo e política de nascimento (Fase 1)
 │    → project/automation/BUILD_SYSTEM.md
 │    → project/automation/PROJECT_ENGINE.md
 │    → project/automation/BRAND_ENGINE.md
@@ -217,11 +217,11 @@ docs/mobs/contracts/PROJECT_CONTRACT.md  ← contrato concreto de Projeto
   ↓
 docs/mobs/contracts/BRAND_CONTRACT.md    ← contrato concreto de Marca
   ↓
-ARCHITECTURE_TASK_PROTOCOL.md  ← governança de tarefas arquiteturais
+docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md  ← governança de tarefas arquiteturais
   ↓
-DOCUMENT_ARCHITECTURE.md       ← arquitetura física da documentação
+docs/mobs/governance/DOCUMENT_ARCHITECTURE.md       ← arquitetura física da documentação
   ↓
-DOCUMENT_STRUCTURE_PLAN.md    ← estrutura alvo e política de nascimento (Fase 1)
+docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md    ← estrutura alvo e política de nascimento (Fase 1)
   ↓
 BUILD_SYSTEM.md      ← arquitetura e taxonomia
   ↓
@@ -246,9 +246,9 @@ docs/mobs/contracts/CONFIGURATION_CONTRACTS.md
   ├── docs/mobs/contracts/PROJECT_CONTRACT.md
   └── docs/mobs/contracts/BRAND_CONTRACT.md
   ↓
-ARCHITECTURE_TASK_PROTOCOL.md
-DOCUMENT_ARCHITECTURE.md
-DOCUMENT_STRUCTURE_PLAN.md
+docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md
+docs/mobs/governance/DOCUMENT_ARCHITECTURE.md
+docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md
   ↓
 schemas
   ↓
@@ -311,9 +311,9 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `docs/mobs/contracts/CONFIGURATION_CONTRACTS.md` | Constituição dos contratos de configuração |
 | `docs/mobs/contracts/PROJECT_CONTRACT.md` | Contrato concreto da entidade Projeto |
 | `docs/mobs/contracts/BRAND_CONTRACT.md` | Contrato concreto da entidade Marca |
-| `ARCHITECTURE_TASK_PROTOCOL.md` | Governança oficial de tarefas arquiteturais do MOBS |
-| `DOCUMENT_ARCHITECTURE.md` | Arquitetura física permanente da documentação MOBS |
-| `DOCUMENT_STRUCTURE_PLAN.md` | Estrutura física alvo e política de nascimento (MOBS 0.2 — Fase 1) |
+| `docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md` | Governança oficial de tarefas arquiteturais do MOBS |
+| `docs/mobs/governance/DOCUMENT_ARCHITECTURE.md` | Arquitetura física permanente da documentação MOBS |
+| `docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md` | Estrutura física alvo e política de nascimento (MOBS 0.2 — Fase 1) |
 | `AI_CONTEXT.md` | Contexto e regras para agentes de IA |
 | `PROJECT_RULES.md` | Contrato operacional de trabalho |
 | `docs/product/` | Produto, roadmap, jornada, negócio, gamificação |
@@ -339,9 +339,9 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `docs/mobs/contracts/CONFIGURATION_CONTRACTS.md` | Regras gerais para existência, ownership, validação e evolução de contratos |
 | `docs/mobs/contracts/PROJECT_CONTRACT.md` | Especialização do contrato de configuração para Projeto |
 | `docs/mobs/contracts/BRAND_CONTRACT.md` | Especialização do contrato de configuração para Marca |
-| `ARCHITECTURE_TASK_PROTOCOL.md` | Método oficial de planejamento, revisão e aprovação de documentos arquiteturais |
-| `DOCUMENT_ARCHITECTURE.md` | Organização física, grupos documentais e regras de crescimento da documentação |
-| `DOCUMENT_STRUCTURE_PLAN.md` | Paths alvo, matriz atual × alvo, convenção de IDs e política de nascimento de novos documentos |
+| `docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md` | Método oficial de planejamento, revisão e aprovação de documentos arquiteturais |
+| `docs/mobs/governance/DOCUMENT_ARCHITECTURE.md` | Organização física, grupos documentais e regras de crescimento da documentação |
+| `docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md` | Paths alvo, matriz atual × alvo, convenção de IDs e política de nascimento de novos documentos |
 | `AI_CONTEXT.md` | Contexto do projeto para IAs e regras de marca/consumo |
 | `PROJECT_RULES.md` | Regras permanentes de desenvolvimento e fluxo operacional |
 | `docs/product/PRD.md` | Produto e requisitos |

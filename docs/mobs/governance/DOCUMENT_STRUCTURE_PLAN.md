@@ -39,20 +39,12 @@ Este plano **não** altera domínio, contratos, governança operacional nem resp
 
 ## 2. Inventário da estrutura atual
 
-Inventário em **2026-07-21** — somente documentação e assets institucionais relevantes.
+Inventário em **2026-07-21** (atualizado pós-Fases 2 e 3) — somente documentação e assets institucionais relevantes.
 
 ### Raiz do repositório
 
 | Arquivo | Tipo |
 |---|---|
-| `WHY_MOBS.md` | MOBS — fundação |
-| `DOMAIN_MODEL.md` | MOBS — domínio |
-| `CONFIGURATION_CONTRACTS.md` | MOBS — constituição de contratos |
-| `PROJECT_CONTRACT.md` | MOBS — contrato concreto |
-| `BRAND_CONTRACT.md` | MOBS — contrato concreto |
-| `ARCHITECTURE_TASK_PROTOCOL.md` | MOBS — governança arquitetural |
-| `DOCUMENT_ARCHITECTURE.md` | MOBS — governança documental |
-| `DOCUMENT_STRUCTURE_PLAN.md` | MOBS — governança documental (este) |
 | `PROJECT_INDEX.md` | Descoberta |
 | `AI_CONTEXT.md` | Descoberta |
 | `PROJECT_RULES.md` | Governança operacional |
@@ -60,6 +52,19 @@ Inventário em **2026-07-21** — somente documentação e assets institucionais
 | `CHANGELOG.md` | Histórico |
 | `DESIGN_GUIDE.md` | Design System (produto Missão OAB) |
 | `UI_KIT.md` | Design System (produto Missão OAB) |
+
+### `docs/mobs/`
+
+| Arquivo | Tipo |
+|---|---|
+| `foundation/WHY_MOBS.md` | MOBS — fundação |
+| `domain/DOMAIN_MODEL.md` | MOBS — domínio |
+| `contracts/CONFIGURATION_CONTRACTS.md` | MOBS — constituição de contratos |
+| `contracts/PROJECT_CONTRACT.md` | MOBS — contrato concreto |
+| `contracts/BRAND_CONTRACT.md` | MOBS — contrato concreto |
+| `governance/ARCHITECTURE_TASK_PROTOCOL.md` | MOBS — governança arquitetural |
+| `governance/DOCUMENT_ARCHITECTURE.md` | MOBS — governança documental |
+| `governance/DOCUMENT_STRUCTURE_PLAN.md` | MOBS — governança documental (este) |
 
 ### `project/automation/`
 
@@ -120,16 +125,16 @@ Classificação segundo grupos oficiais de [`DOCUMENT_ARCHITECTURE.md`](DOCUMENT
 
 | Grupo | Documentos atuais | Observação |
 |---|---|---|
-| **Fundação** | `WHY_MOBS.md` | — |
+| **Fundação** | `docs/mobs/foundation/WHY_MOBS.md` | — |
 | **Plataforma** | `project/automation/MOBS.md` | — |
-| **Domínio** | `DOMAIN_MODEL.md` | — |
-| **Constituição de contratos** | `CONFIGURATION_CONTRACTS.md` | — |
-| **Contratos concretos** | `PROJECT_CONTRACT.md`, `BRAND_CONTRACT.md` | Irmãos; não hierárquicos entre si |
+| **Domínio** | `docs/mobs/domain/DOMAIN_MODEL.md` | — |
+| **Constituição de contratos** | `docs/mobs/contracts/CONFIGURATION_CONTRACTS.md` | — |
+| **Contratos concretos** | `docs/mobs/contracts/PROJECT_CONTRACT.md`, `docs/mobs/contracts/BRAND_CONTRACT.md` | Irmãos; não hierárquicos entre si |
 | **Modelos arquiteturais** | *(nenhum ainda)* | `RESOLUTION_MODEL`, `CAPABILITY_MODEL` — futuros |
 | **Schemas** | *(nenhum ainda)* | Futuro |
 | **Engines** | `BUILD_SYSTEM.md`, `PROJECT_ENGINE.md`, `BRAND_ENGINE.md` | Taxonomia + Engines de contexto |
-| **Governança arquitetural** | `ARCHITECTURE_TASK_PROTOCOL.md` | — |
-| **Governança documental** | `DOCUMENT_ARCHITECTURE.md`, `DOCUMENT_STRUCTURE_PLAN.md` | — |
+| **Governança arquitetural** | `docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md` | — |
+| **Governança documental** | `docs/mobs/governance/DOCUMENT_ARCHITECTURE.md`, `docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md` | — |
 | **Governança operacional** | `PROJECT_RULES.md` | Repositório inteiro, não só MOBS |
 | **Descoberta** | `PROJECT_INDEX.md`, `AI_CONTEXT.md` | Bootloader — **permanência definitiva na raiz** |
 | **Evolução e planejamento** | `AUTOMATION_ROADMAP.md`, `project/automation/future/` | — |
@@ -321,14 +326,14 @@ Até lá, novos documentos MOBS devem seguir o plano como **diretriz aprovada** 
 
 | Grupo / documento | Local atual | Path alvo | Risco | Dependências | Fase migração |
 |---|---|---|---|---|---|
-| `WHY_MOBS.md` | raiz | `docs/mobs/foundation/` | Baixo | Atualizar links em Index, MOBS, contratos | **2** |
-| `DOMAIN_MODEL.md` | raiz | `docs/mobs/domain/` | Médio | Muitas referências cruzadas | **2** |
-| `CONFIGURATION_CONTRACTS.md` | raiz | `docs/mobs/contracts/` | Médio | Contratos e protocolo referenciam | **2** |
-| `PROJECT_CONTRACT.md` | raiz | `docs/mobs/contracts/` | Médio | Index, MOBS, AI_CONTEXT | **2** |
-| `BRAND_CONTRACT.md` | raiz | `docs/mobs/contracts/` | Médio | Idem | **2** |
-| `ARCHITECTURE_TASK_PROTOCOL.md` | raiz | `docs/mobs/governance/` | Baixo | AI_CONTEXT, Index | **3** |
-| `DOCUMENT_ARCHITECTURE.md` | raiz | `docs/mobs/governance/` | Baixo | Este plano | **3** |
-| `DOCUMENT_STRUCTURE_PLAN.md` | raiz | `docs/mobs/governance/` | Baixo | Aprovação Fase 1 | **3** |
+| `WHY_MOBS.md` | `docs/mobs/foundation/` | **permanece** | — | — | **Concluída (2)** |
+| `DOMAIN_MODEL.md` | `docs/mobs/domain/` | **permanece** | — | — | **Concluída (2)** |
+| `CONFIGURATION_CONTRACTS.md` | `docs/mobs/contracts/` | **permanece** | — | — | **Concluída (2)** |
+| `PROJECT_CONTRACT.md` | `docs/mobs/contracts/` | **permanece** | — | — | **Concluída (2)** |
+| `BRAND_CONTRACT.md` | `docs/mobs/contracts/` | **permanece** | — | — | **Concluída (2)** |
+| `ARCHITECTURE_TASK_PROTOCOL.md` | `docs/mobs/governance/` | **permanece** | — | — | **Concluída (3)** |
+| `DOCUMENT_ARCHITECTURE.md` | `docs/mobs/governance/` | **permanece** | — | — | **Concluída (3)** |
+| `DOCUMENT_STRUCTURE_PLAN.md` | `docs/mobs/governance/` | **permanece** | — | — | **Concluída (3)** |
 | *Novos modelos* | — | `docs/mobs/models/` | — | — | **Nascimento** (Fase 1+) |
 | *Novos schemas* | — | `docs/mobs/schemas/` | — | Contratos | **Nascimento** (Fase 1+) |
 | `MOBS.md` | `project/automation/` | **permanece** | — | — | **N/A** |
@@ -354,9 +359,9 @@ Até lá, novos documentos MOBS devem seguir o plano como **diretriz aprovada** 
 | Fase | Escopo |
 |---|---|
 | **0** | Adotar `DOCUMENT_ARCHITECTURE` — **concluída** |
-| **1** | Estrutura alvo + política de nascimento — **aprovada** (institucionalização em curso) |
-| **2** | Migrar fundação, domínio, contratos |
-| **3** | Migrar governança documental/arquitetural MOBS |
+| **1** | Estrutura alvo + política de nascimento — **concluída** (institucionalizada) |
+| **2** | Migrar fundação, domínio, contratos — **concluída** |
+| **3** | Migrar governança documental/arquitetural MOBS — **concluída** |
 | **4** | Consolidar produto / marca institucional / design |
 | **5** | Migrar assets para `assets/brands/<id>/` |
 
@@ -388,12 +393,12 @@ Fase 5 → depende de clareza Brand Contract + BRAND_ENGINE; pode afetar landing
 
 ## 9. Fases futuras de migração
 
-Resumo operacional pós-Fase 1:
+Resumo operacional pós-Fases 1–3:
 
 | Fase | Ação | Entregável |
 |---|---|---|
-| **2** | Mover fundação, domínio, contratos para `docs/mobs/` | Links atualizados; HISTORY/CHANGELOG |
-| **3** | Mover governança MOBS para `docs/mobs/governance/` | Descoberta atualizada; **recomendado após Fase 2** |
+| **2** | Mover fundação, domínio, contratos para `docs/mobs/` | **Concluída** |
+| **3** | Mover governança MOBS para `docs/mobs/governance/` | **Concluída** |
 | **4** | Reorganizar `docs/product`, `docs/brand`, design na raiz | `docs/products/missao-oab/` |
 | **5** | Migrar `assets/brand/` → `assets/brands/missao-oab/` | Tarefa com BRAND_ENGINE |
 
@@ -429,6 +434,6 @@ Critérios atendidos na aprovação arquitetural:
 
 - [`DOCUMENT_ARCHITECTURE.md`](DOCUMENT_ARCHITECTURE.md)
 - [`ARCHITECTURE_TASK_PROTOCOL.md`](ARCHITECTURE_TASK_PROTOCOL.md)
-- [`project/automation/MOBS.md`](project/automation/MOBS.md)
-- [`project/automation/BRAND_ENGINE.md`](project/automation/BRAND_ENGINE.md)
-- [`PROJECT_INDEX.md`](PROJECT_INDEX.md)
+- [`project/automation/MOBS.md`](../../../project/automation/MOBS.md)
+- [`project/automation/BRAND_ENGINE.md`](../../../project/automation/BRAND_ENGINE.md)
+- [`PROJECT_INDEX.md`](../../../PROJECT_INDEX.md)

@@ -41,8 +41,8 @@ Com ele, a arquitetura **governa** como novos documentos nascem.
 - implementação de código, runtime ou automações executáveis;
 - definição de APIs, algoritmos ou fluxos detalhados de execução;
 - criação de schemas, serializações ou formatos de arquivo;
-- governança operacional geral do repositório (ver [`PROJECT_RULES.md`](PROJECT_RULES.md));
-- regras permanentes de automação (ver [`AUTOMATION_RULES.md`](project/automation/AUTOMATION_RULES.md));
+- governança operacional geral do repositório (ver [`PROJECT_RULES.md`](../../../PROJECT_RULES.md));
+- regras permanentes de automação (ver [`AUTOMATION_RULES.md`](../../../project/automation/AUTOMATION_RULES.md));
 - templates de prompt ou tutoriais de ferramentas.
 
 ---
@@ -106,10 +106,10 @@ Regras derivadas dessa hierarquia:
 
 Antes de qualquer tarefa arquitetural, ler **integralmente**, nesta ordem:
 
-1. [`WHY_MOBS.md`](docs/mobs/foundation/WHY_MOBS.md) — propósito, visão, princípios
-2. [`project/automation/MOBS.md`](project/automation/MOBS.md) — arquitetura e organização da plataforma
-3. [`DOMAIN_MODEL.md`](docs/mobs/domain/DOMAIN_MODEL.md) — entidades, relações, fronteiras
-4. [`CONFIGURATION_CONTRACTS.md`](docs/mobs/contracts/CONFIGURATION_CONTRACTS.md) — constituição dos contratos
+1. [`WHY_MOBS.md`](../foundation/WHY_MOBS.md) — propósito, visão, princípios
+2. [`project/automation/MOBS.md`](../../../project/automation/MOBS.md) — arquitetura e organização da plataforma
+3. [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md) — entidades, relações, fronteiras
+4. [`CONFIGURATION_CONTRACTS.md`](../contracts/CONFIGURATION_CONTRACTS.md) — constituição dos contratos
 5. Documentos diretamente relevantes à tarefa (contratos irmãos, Engines, modelos existentes)
 
 > A ordem de leitura existe para refletir a hierarquia de autoridade, e não para substituí-la.
@@ -333,7 +333,7 @@ Regras consolidadas do processo MOBS 0.2:
 2. **Nenhum push** antes da validação final e autorização.
 3. Stage **explícito** — apenas arquivos autorizados.
 4. Mensagem de commit descreve o **marco arquitetural**, não lista de arquivos.
-5. Após commit aprovado de marco documental: registrar em `HISTORY.md` e `CHANGELOG.md` conforme [`PROJECT_RULES.md`](PROJECT_RULES.md).
+5. Após commit aprovado de marco documental: registrar em `HISTORY.md` e `CHANGELOG.md` conforme [`PROJECT_RULES.md`](../../../PROJECT_RULES.md).
 6. Push para `origin/main` somente quando a tarefa autorizar — sem force push.
 
 Arquivos locais de exclusão (ex.: `.gitignore` não versionado) permanecem fora do commit salvo instrução contrária.
@@ -382,14 +382,14 @@ Este protocolo existe para que humanos e agentes de IA produzam o próximo docum
 
 ## Referências
 
-- [`WHY_MOBS.md`](docs/mobs/foundation/WHY_MOBS.md)
-- [`project/automation/MOBS.md`](project/automation/MOBS.md)
-- [`DOMAIN_MODEL.md`](docs/mobs/domain/DOMAIN_MODEL.md)
-- [`CONFIGURATION_CONTRACTS.md`](docs/mobs/contracts/CONFIGURATION_CONTRACTS.md)
-- [`PROJECT_CONTRACT.md`](docs/mobs/contracts/PROJECT_CONTRACT.md)
-- [`BRAND_CONTRACT.md`](docs/mobs/contracts/BRAND_CONTRACT.md)
-- [`PROJECT_INDEX.md`](PROJECT_INDEX.md)
-- [`PROJECT_RULES.md`](PROJECT_RULES.md)
-- [`project/automation/AUTOMATION_RULES.md`](project/automation/AUTOMATION_RULES.md)
-- [`project/automation/AUTOMATION_ROADMAP.md`](project/automation/AUTOMATION_ROADMAP.md)
-- [`AI_CONTEXT.md`](AI_CONTEXT.md)
+- [`WHY_MOBS.md`](../foundation/WHY_MOBS.md)
+- [`project/automation/MOBS.md`](../../../project/automation/MOBS.md)
+- [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md)
+- [`CONFIGURATION_CONTRACTS.md`](../contracts/CONFIGURATION_CONTRACTS.md)
+- [`PROJECT_CONTRACT.md`](../contracts/PROJECT_CONTRACT.md)
+- [`BRAND_CONTRACT.md`](../contracts/BRAND_CONTRACT.md)
+- [`PROJECT_INDEX.md`](../../../PROJECT_INDEX.md)
+- [`PROJECT_RULES.md`](../../../PROJECT_RULES.md)
+- [`project/automation/AUTOMATION_RULES.md`](../../../project/automation/AUTOMATION_RULES.md)
+- [`project/automation/AUTOMATION_ROADMAP.md`](../../../project/automation/AUTOMATION_ROADMAP.md)
+- [`AI_CONTEXT.md`](../../../AI_CONTEXT.md)

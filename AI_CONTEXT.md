@@ -61,11 +61,11 @@ Para o contrato concreto da entidade Projeto (sem schemas), consultar `docs/mobs
 
 Para o contrato concreto da entidade Marca (sem schemas), consultar `docs/mobs/contracts/BRAND_CONTRACT.md`.
 
-Para a governança oficial de tarefas arquiteturais do MOBS (planejamento, revisão, validação e aprovação), consultar `ARCHITECTURE_TASK_PROTOCOL.md`.
+Para a governança oficial de tarefas arquiteturais do MOBS (planejamento, revisão, validação e aprovação), consultar `docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md`.
 
-Para a arquitetura física permanente da documentação MOBS (grupos, descoberta, crescimento e migração), consultar `DOCUMENT_ARCHITECTURE.md`.
+Para a arquitetura física permanente da documentação MOBS (grupos, descoberta, crescimento e migração), consultar `docs/mobs/governance/DOCUMENT_ARCHITECTURE.md`.
 
-Para a estrutura física alvo, convenção de paths (`product-id`, `brand-id`, `contract-id`) e política de nascimento de novos documentos (MOBS 0.2 — Fase 1), consultar `DOCUMENT_STRUCTURE_PLAN.md`.
+Para a estrutura física alvo, convenção de paths (`product-id`, `brand-id`, `contract-id`) e política de nascimento de novos documentos (MOBS 0.2 — Fase 1), consultar `docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md`.
 
 ## Governança
 
@@ -106,9 +106,9 @@ Antes de realizar mudanças relevantes, consulte os arquivos adequados:
 - `docs/mobs/contracts/CONFIGURATION_CONTRACTS.md`
 - `docs/mobs/contracts/PROJECT_CONTRACT.md`
 - `docs/mobs/contracts/BRAND_CONTRACT.md`
-- `ARCHITECTURE_TASK_PROTOCOL.md`
-- `DOCUMENT_ARCHITECTURE.md`
-- `DOCUMENT_STRUCTURE_PLAN.md`
+- `docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md`
+- `docs/mobs/governance/DOCUMENT_ARCHITECTURE.md`
+- `docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md`
 - `project/automation/MOBS.md`
 - `project/automation/BUILD_SYSTEM.md`
 - `project/automation/PROJECT_ENGINE.md`

@@ -1332,6 +1332,47 @@ Fase 3: migrar governança MOBS para `docs/mobs/governance/` (recomendado após 
 
 ---
 
+## 2026-07-21 05:25 — Fase 3: migração física da governança MOBS
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS 0.2 — Fase 3 (governança arquitetural e documental)
+
+### Contexto
+
+Fases 0–2 concluídas; fundação, domínio e contratos já em `docs/mobs/`. Governança permanecia na raiz.
+
+### Objetivo
+
+Migrar `ARCHITECTURE_TASK_PROTOCOL`, `DOCUMENT_ARCHITECTURE` e `DOCUMENT_STRUCTURE_PLAN` para `docs/mobs/governance/` — exclusivamente migração física.
+
+### Decisões
+
+- Criar apenas `docs/mobs/governance/`.
+- Preservar propósito, autoridade, hierarquia e conteúdo normativo — somente paths e links.
+- Atualizar descoberta (Index, AI_CONTEXT, MOBS) e referências cruzadas.
+- Não iniciar Fase 4.
+
+### Impacto
+
+Fundação, Domínio, Contratos e Governança materializados nos paths oficiais. Raiz mais limpa; descoberta preservada.
+
+### Áreas e documentos envolvidos
+
+- `docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md`, `DOCUMENT_ARCHITECTURE.md`, `DOCUMENT_STRUCTURE_PLAN.md`
+- `PROJECT_INDEX.md`, `AI_CONTEXT.md`, `project/automation/MOBS.md`, `project/automation/AUTOMATION_ROADMAP.md`
+- `HISTORY.md`, `CHANGELOG.md`
+
+### Validações
+
+- Integridade arquitetural, descoberta e referências verificadas antes do commit.
+- `git diff --check` sem erros.
+
+### Próximos passos
+
+Fase 4: consolidar produto, marca institucional e design em `docs/products/missao-oab/`.
+
+---
+
 ## Controles
 
 | Campo | Valor |

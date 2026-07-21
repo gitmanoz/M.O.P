@@ -114,8 +114,10 @@ Documentação da plataforma de engenharia do **Ecossistema Missão** (config-dr
 
 ### Changed
 
+- Migração física MOBS 0.2 — Fase 3: `ARCHITECTURE_TASK_PROTOCOL.md`, `DOCUMENT_ARCHITECTURE.md` e `DOCUMENT_STRUCTURE_PLAN.md` para `docs/mobs/governance/`.
+- Atualização de descoberta e referências em `PROJECT_INDEX.md`, `AI_CONTEXT.md`, `MOBS.md`, `AUTOMATION_ROADMAP.md` e documentos migrados.
 - Migração física MOBS 0.2 — Fase 2: `WHY_MOBS.md`, `DOMAIN_MODEL.md`, `CONFIGURATION_CONTRACTS.md`, `PROJECT_CONTRACT.md` e `BRAND_CONTRACT.md` para `docs/mobs/foundation/`, `docs/mobs/domain/` e `docs/mobs/contracts/`.
-- Links relativos e descoberta atualizados em `PROJECT_INDEX.md`, `AI_CONTEXT.md`, `MOBS.md`, `ARCHITECTURE_TASK_PROTOCOL.md`, `DOCUMENT_ARCHITECTURE.md` e `AUTOMATION_ROADMAP.md`.
+- Links relativos e descoberta atualizados em `PROJECT_INDEX.md`, `AI_CONTEXT.md`, `MOBS.md`, `ARCHITECTURE_TASK_PROTOCOL.md`, `DOCUMENT_ARCHITECTURE.md` e `AUTOMATION_ROADMAP.md` (Fase 2).
 
 ### Removed
 

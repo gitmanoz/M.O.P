@@ -86,8 +86,11 @@ Uma versão só avança para implementação quando:
 | Item | Estado |
 |---|---|
 | Arquitetura documental MOBS | **Aprovada** v0.1.1 (2026-07-20) — apenas documentação |
-| **MOBS 0.2 — Configuration Contracts** | `docs/mobs/domain/DOMAIN_MODEL.md` + `docs/mobs/contracts/CONFIGURATION_CONTRACTS.md` + `docs/mobs/contracts/PROJECT_CONTRACT.md` + `docs/mobs/contracts/BRAND_CONTRACT.md` + `ARCHITECTURE_TASK_PROTOCOL.md` (contratos concretos irmãos; protocolo de tarefas; **sem** schemas ainda) |
-| **MOBS 0.2 — Fase 1 (estrutura documental)** | `DOCUMENT_ARCHITECTURE.md` + `DOCUMENT_STRUCTURE_PLAN.md` — **institucionalizada**; política de nascimento em vigor após commit/push; migração de legado nas Fases 2–5 |
+| **MOBS 0.2 — Configuration Contracts** | `docs/mobs/domain/DOMAIN_MODEL.md` + `docs/mobs/contracts/CONFIGURATION_CONTRACTS.md` + `docs/mobs/contracts/PROJECT_CONTRACT.md` + `docs/mobs/contracts/BRAND_CONTRACT.md` + `docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md` (contratos concretos irmãos; protocolo de tarefas; **sem** schemas ainda) |
+| **MOBS 0.2 — Fase 1 (estrutura documental)** | `docs/mobs/governance/DOCUMENT_ARCHITECTURE.md` + `docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md` — **institucionalizada** |
+| **MOBS 0.2 — Fase 2** | Fundação, domínio e contratos em `docs/mobs/` — **concluída** |
+| **MOBS 0.2 — Fase 3** | Governança em `docs/mobs/governance/` — **concluída** |
+| **MOBS 0.2 — Fase 4** | Produto, marca institucional e design — **próxima etapa arquitetural** |
 | v1–v10 implementação | Não iniciada |
 | Scripts oficiais | Nenhum |
 
@@ -98,8 +101,8 @@ Essa sequência **não substitui** a linha v1–v10 deste roadmap; **precede** s
 
 ### Nota sobre Fase 1 (estrutura documental)
 
-`DOCUMENT_STRUCTURE_PLAN.md` materializa paths alvo e política de nascimento sob `DOCUMENT_ARCHITECTURE.md`.
-Fases 2 e 3 de migração são conceitualmente independentes; recomenda-se execução sequencial (2 → 3) para reduzir conflitos de links e descoberta.
+`docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md` materializa paths alvo e política de nascimento sob `docs/mobs/governance/DOCUMENT_ARCHITECTURE.md`.
+Fases 2 e 3 de migração **concluídas**; Fase 4 é a próxima etapa arquitetural.
 IDs oficiais atuais: `product-id` = `brand-id` = `missao-oab` (namespaces distintos).
 Contratos permanecem em `docs/mobs/contracts/` (constituição e concretos no mesmo diretório; sem subpasta `constitution/`).
 
