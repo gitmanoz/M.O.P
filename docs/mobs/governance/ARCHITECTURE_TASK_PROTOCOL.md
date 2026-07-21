@@ -373,6 +373,29 @@ O **Core** é a segunda aplicação real prevista deste método (após o ciclo P
 
 ---
 
+## 13.2. Nascimento de modelos e novas autoridades
+
+Um pedido para criar um documento define a **intenção da tarefa** — não prova, por si só, a necessidade de uma **nova autoridade**.
+
+Antes de implementar qualquer modelo ou autoridade nova:
+
+1. executar **Evidence Harvest** e **Responsibility Harvest** (§13.1);
+2. só então decidir entre as alternativas abaixo.
+
+| Decisão | Quando |
+|---|---|
+| **Criar novo modelo** (`docs/mobs/models/<NOME>_MODEL.md`) | Responsabilidade **autônoma** (aspecto transversal), com **evidência**, **reutilização relevante** e **sem cobertura adequada** por autoridade existente |
+| **Especializar autoridade existente** | A lacuna cabe como seção ou extensão legítima de documento já oficial |
+| **Criar perfil derivado** | Papel/identidade sob um fundador (ex.: parceira arquitetural) — não um novo `*_MODEL` |
+| **Manter a questão aberta** | Evidência insuficiente ou o domínio/protocolo já admite lacuna explícita |
+
+A investigação pode **terminar sem alterações** no repositório.
+Encontrar um padrão **não autoriza** automaticamente criar modelo nem nova autoridade.
+
+Path físico de nascimento de modelos: [`DOCUMENT_STRUCTURE_PLAN.md`](DOCUMENT_STRUCTURE_PLAN.md). Significado do grupo: [`DOCUMENT_ARCHITECTURE.md`](DOCUMENT_ARCHITECTURE.md).
+
+---
+
 ## 14. Evolução do protocolo
 
 > Toda evolução deste protocolo deve preservar sua natureza de documento de governança, evitando absorver responsabilidades pertencentes ao domínio, aos contratos ou às regras operacionais.

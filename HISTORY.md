@@ -1478,6 +1478,34 @@ Concluir renomeação física e verificação da raiz `missao-mobs`; depois inic
 
 ---
 
+## 2026-07-21 — Refinamento: conservação antes de nova autoridade
+
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** MOBS — protocolo de tarefas (§13.2)  
+**Horário:** não registrado com precisão verificável neste marco
+
+### Contexto
+
+Um primeiro teste cego de entrada (pedido para criar documento de condução de modelos) revelou aplicação tardia do princípio de conservação: a solicitação foi tratada como autorização de nova autoridade sem Evidence/Responsibility prévios.
+
+### Decisões
+
+- Uma autoridade dedicada de “protocolo de modelos” foi considerada e **rejeitada** — nunca chegou a ser oficializada nem versionada.
+- Incorporar no `ARCHITECTURE_TASK_PROTOCOL` (§13.2) a regra: pedido ≠ necessidade; Evidence/Responsibility antes da implementação; comparar criar modelo / especializar / perfil derivado / manter aberto.
+- Distinção mínima modelo × contrato × perfil em `DOCUMENT_ARCHITECTURE`.
+
+### Impacto
+
+Uma autoridade de processo; menos superfície documental; princípio alinhado ao Harvest já institucionalizado.
+
+### Próximos passos
+
+1. Aprovar diff e oficializar (commit/push).
+2. Encerrar Fase 4 no registro (raiz `missao-mobs` já validada fisicamente).
+3. Iniciar Evidence Harvest do Core.
+
+---
+
 ## Controles
 
 | Campo | Valor |

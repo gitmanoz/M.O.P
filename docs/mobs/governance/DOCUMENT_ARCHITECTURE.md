@@ -207,6 +207,14 @@ Cada grupo possui **uma** responsabilidade arquitetural:
 | Design System | Documentar **sistema visual** de um produto |
 | Assets | **Materializar** mestres e derivados visuais |
 
+### Distinção mínima — modelo, contrato e perfil derivado
+
+| Tipo | Responsabilidade | Exemplo |
+|---|---|---|
+| **Contrato concreto** | Especializar **uma entidade** do domínio | `PROJECT_CONTRACT`, `BRAND_CONTRACT` |
+| **Modelo arquitetural** | Formalizar **um aspecto transversal** (não entidade) | `PARTNERSHIP_MODEL` |
+| **Perfil derivado** | Identidade/papel sob um fundador — **não** é `*_MODEL` nem contrato | `AYLA_ARCHITECTURAL_PARTNER` |
+
 Um documento **não** deve acumular responsabilidades de grupos distintos.
 Se acumular, a arquitetura física futura deve separá-lo — não o contrário.
 

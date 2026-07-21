@@ -61,7 +61,7 @@ Para o contrato concreto da entidade Projeto (sem schemas), consultar `docs/mobs
 
 Para o contrato concreto da entidade Marca (sem schemas), consultar `docs/mobs/contracts/BRAND_CONTRACT.md`.
 
-Para a governança oficial de tarefas arquiteturais do MOBS (planejamento, revisão, validação e aprovação), consultar `docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md`.
+Para a governança oficial de tarefas arquiteturais do MOBS (planejamento, revisão, validação, aprovação e nascimento de modelos), consultar `docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md`.
 
 Para a arquitetura física permanente da documentação MOBS (grupos, descoberta, crescimento e migração), consultar `docs/mobs/governance/DOCUMENT_ARCHITECTURE.md`.
 

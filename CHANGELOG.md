@@ -51,7 +51,9 @@ Categorias usadas apenas quando houver itens:
 
 ### Changed
 
-- `PROJECT_INDEX.md` e `AI_CONTEXT.md`: rotas para Partnership, Ayla e carregamento condicional do perfil.
+- `ARCHITECTURE_TASK_PROTOCOL.md`: §13.2 — nascimento de modelos/autoridades (pedido ≠ necessidade; Evidence/Responsibility antes da implementação; alternativas criar / especializar / perfil / aberto).
+- `DOCUMENT_ARCHITECTURE.md`: distinção mínima modelo × contrato × perfil derivado.
+- `PROJECT_INDEX.md` e `AI_CONTEXT.md`: rotas atualizadas para o protocolo de tarefas (§13.2) e distinção documental — sem autoridade separada de modelos.
 - `PARTNERSHIP_MODEL.md`: ponte mínima para perfis derivados (Ayla), sem absorver a identidade.
 - Inventários em `DOCUMENT_STRUCTURE_PLAN.md` e `DOCUMENT_ARCHITECTURE.md`: modelos/parceria e perfil Ayla.
 - Fase 4 estrutural: referências de raiz/workspace preparadas para `missao-mobs`; renomeação física da pasta **pendente** (workspace em uso).
