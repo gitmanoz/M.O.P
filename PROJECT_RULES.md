@@ -6,7 +6,7 @@ Este documento define as regras permanentes de desenvolvimento da Missão OAB.
 
 Ele é o contrato operacional do repositório: padroniza como IAs, desenvolvedores e colaboradores devem trabalhar neste projeto.
 
-Sempre que houver conflito entre decisões momentâneas e estas regras, **estas regras prevalecem** até que sejam oficialmente alteradas pelo responsável do projeto.
+Sempre que houver conflito entre decisões momentâneas e estas regras, **estas regras prevalecem** até que sejam oficialmente alteradas pelo **fundador** do projeto (decisão arquitetural final) ou, no escopo operacional delegado, pelo responsável autorizado.
 
 ---
 
@@ -125,11 +125,45 @@ Se uma mudança de produto, marca ou processo exigir ajuste documental, alinhar 
 History, Changelog e Git **não** são etapas universais de toda colaboração.
 Acionar esta seção **somente** quando houver **mudança estabilizada** que deva ser oficialmente registrada no repositório.
 
+### 6.0. Autoridade decisória
+
+| Tipo | Quem decide | Exemplos |
+|---|---|---|
+| **Decisão arquitetural final** | **Fundador** | Novos fundadores, fronteiras entre documentos, institucionalização de métodos, abertura/fechamento de ciclos |
+| **Aprovação operacional delegada** | Responsável do escopo autorizado | Commit/push de entrega já aprovada; ajustes editoriais no escopo da tarefa |
+
+Parceiros e agentes podem questionar, recomendar, investigar e executar.
+Eles **não** substituem a autoridade final do fundador.
+
+### 6.0.1. Checkpoints de entregas importantes
+
+Toda entrega importante deve produzir um **checkpoint verificável**, especialmente:
+
+- encerramento de ciclos;
+- conclusão de blocos significativos;
+- estabilização de fundadores;
+- mudanças estruturais;
+- institucionalização de métodos;
+- abertura formal de um novo ciclo;
+- entregas que precisem ser reconstruídas no futuro.
+
+Em cada checkpoint, avaliar **separadamente**:
+
+| Artefato | Responsabilidade |
+|---|---|
+| **`CHANGELOG.md`** | O que foi alterado e efetivamente entregue no repositório — não diário de conversa |
+| **`HISTORY.md`** | Marcos, transições e decisões que explicam a evolução — não repetir o diff do CHANGELOG |
+| **Git** | Após validação: atualizar CHANGELOG/HISTORY conforme acima → revisar diff → validações → **um** commit coeso → push → confirmar remoto e working tree limpo |
+
+Não acumular ciclos independentes em um único commit.
+Não commitar trabalho incompleto só porque houve muitas alterações.
+Não usar `--force`, não reescrever histórico e não incluir alterações fora do escopo.
+
 Nesse caso:
 
 1. Avaliar se `HISTORY.md` precisa ser atualizado.
 2. Avaliar se `CHANGELOG.md` precisa ser atualizado.
-3. Apresentar a proposta ao responsável.
+3. Apresentar a proposta ao fundador ou ao responsável operacional autorizado.
 4. Aguardar aprovação explícita.
 5. Somente depois atualizar os arquivos.
 

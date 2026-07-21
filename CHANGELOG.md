@@ -25,6 +25,11 @@ Categorias usadas apenas quando houver itens:
 
 ### Added
 
+- `docs/mobs/models/PARTNERSHIP_MODEL.md`: fundador da Arquitetura de Parceria (colaboração genérica entre parceiros).
+- `docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md`: identidade institucional e papel arquitetural da Ayla (derivado do Partnership).
+- Architectural Harvest no `ARCHITECTURE_TASK_PROTOCOL.md` (Evidence, Responsibility, Coverage + Autonomy Validation, Stabilization Gate, Officialization).
+- Checkpoints de entregas importantes e distinção fundador × aprovação operacional em `PROJECT_RULES.md`.
+- `README.md` como ponte de entrada para `PROJECT_INDEX.md`.
 - Sistema permanente de histórico institucional (`HISTORY.md`).
 - Governança de histórico e changelog em `AI_CONTEXT.md`.
 - Estrutura definitiva de Brand Assets em `assets/brand/` (`source`, `exports`, `favicon`, `social`, `og`, `app`) e `assets/brand/README.md`.
@@ -43,6 +48,12 @@ Categorias usadas apenas quando houver itens:
 - `ARCHITECTURE_TASK_PROTOCOL.md`: governança oficial de tarefas arquiteturais do MOBS (método consolidado dos contratos concretos).
 - `DOCUMENT_ARCHITECTURE.md`: arquitetura física permanente da documentação MOBS (grupos, descoberta, crescimento e migração).
 - `DOCUMENT_STRUCTURE_PLAN.md`: plano de estrutura física alvo, política de nascimento, convenção de paths e matriz atual × alvo (MOBS 0.2 — Fase 1).
+
+### Changed
+
+- `PROJECT_INDEX.md` e `AI_CONTEXT.md`: rotas para Partnership, Ayla e carregamento condicional do perfil.
+- `PARTNERSHIP_MODEL.md`: ponte mínima para perfis derivados (Ayla), sem absorver a identidade.
+- Inventários em `DOCUMENT_STRUCTURE_PLAN.md` e `DOCUMENT_ARCHITECTURE.md`: modelos/parceria e perfil Ayla.
 
 #### MOBS — arquitetura documental 0.1.1 (conceitual)
 

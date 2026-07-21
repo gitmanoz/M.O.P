@@ -153,7 +153,7 @@ Categorias permanentes **derivadas** da arquitetura existente — não arbitrár
 | **Domínio** | Gramática conceitual; entidades e relações | `DOMAIN_MODEL.md` |
 | **Constituição de contratos** | Regras gerais de todo contrato de configuração | `CONFIGURATION_CONTRACTS.md` |
 | **Contratos concretos** | Especialização por entidade do domínio | `PROJECT_CONTRACT.md`, `BRAND_CONTRACT.md` |
-| **Modelos arquiteturais** | Formalização de aspectos transversais (resolução, capabilities, etc.) | *futuros:* `RESOLUTION_MODEL`, `CAPABILITY_MODEL` |
+| **Modelos arquiteturais** | Formalização de aspectos transversais (parceria, resolução, capabilities, etc.) | `PARTNERSHIP_MODEL.md`; perfil derivado `AYLA_ARCHITECTURAL_PARTNER.md`; *futuros:* `RESOLUTION_MODEL`, `CAPABILITY_MODEL` |
 | **Schemas** | Recortes mecanicamente validáveis derivados de contratos | *futuro* |
 | **Engines** | Responsabilidade documental de cada Engine | `PROJECT_ENGINE.md`, `BRAND_ENGINE.md`, `BUILD_SYSTEM.md` |
 | **Governança arquitetural** | Como tarefas arquiteturais são executadas e aprovadas | `ARCHITECTURE_TASK_PROTOCOL.md` |

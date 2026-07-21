@@ -1373,6 +1373,54 @@ Fase 4: consolidar produto, marca institucional e design em `docs/products/missa
 
 ---
 
+## 2026-07-21 — Encerramento do ciclo Partnership e institucionalização pré-Core
+
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** MOBS — ciclo Partnership encerrado; método Harvest; perfil Ayla  
+**Horário:** não registrado com precisão verificável neste marco
+
+### Contexto
+
+O `PARTNERSHIP_MODEL` foi modelado, refinado e estabilizado. A prática Architectural Harvest I–III (coleta, mapa de responsabilidade, cobertura) validou o fundador na prática, mas o método e a identidade Ayla ainda não estavam no repositório. Checkpoints de marcos importantes estavam incompletos.
+
+### Objetivo
+
+Fechar documentalmente o ciclo Partnership; institucionalizar Ayla e o Architectural Harvest; tornar a entrada a frio capaz de reconstruir autoridades e papéis; registrar disciplina de checkpoints.
+
+### Decisões
+
+- Partnership permanece genérico; papéis específicos vivem em derivados.
+- Ayla institucionalizada em `docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md`.
+- Architectural Harvest incorporado ao `ARCHITECTURE_TASK_PROTOCOL` (Evidence → Responsibility → Coverage → Autonomy Validation → Stabilization Gate → Officialization).
+- Harvest I–III são ocorrências históricas que revelaram as três primeiras etapas — não rituais numerados obrigatórios.
+- Fundador possui decisão arquitetural final; aprovações operacionais podem ser delegadas.
+- Checkpoints (CHANGELOG × HISTORY × Git) registrados em `PROJECT_RULES`.
+- Próximo ciclo fundador: **Core** (após a Fase 4 estrutural da raiz, quando executada).
+
+### Impacto
+
+Agentes podem descobrir Partnership, Ayla, Harvest e autoridade do fundador só pelo repositório. O ciclo Partnership deixa de depender de memória conversacional.
+
+### Áreas e documentos envolvidos
+
+- `docs/mobs/models/PARTNERSHIP_MODEL.md`, `AYLA_ARCHITECTURAL_PARTNER.md`
+- `docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md`, `DOCUMENT_ARCHITECTURE.md`, `DOCUMENT_STRUCTURE_PLAN.md`
+- `PROJECT_INDEX.md`, `AI_CONTEXT.md`, `PROJECT_RULES.md`, `README.md`
+- `HISTORY.md`, `CHANGELOG.md`
+
+### Validações
+
+- Rotas de descoberta e carga condicional da Ayla.
+- Partnership sem absorver o perfil Ayla.
+- Inventários de modelos atualizados.
+
+### Próximos passos
+
+1. Fase 4 estrutural: renomear raiz local `missao-oab` → `missao-mobs` (sem renomear o produto Missão OAB).
+2. Iniciar o ciclo fundador do **Core** com Evidence Harvest (segunda aplicação do método).
+
+---
+
 ## Controles
 
 | Campo | Valor |

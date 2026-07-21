@@ -340,6 +340,39 @@ Arquivos locais de exclusão (ex.: `.gitignore` não versionado) permanecem fora
 
 ---
 
+## 13.1. Architectural Harvest — validação de fundadores
+
+Método oficial do MOBS para **validar suficiência e responsabilidade** de um fundador ou ciclo arquitetural — não para aumentar a arquitetura por entusiasmo.
+
+Institucionalizado neste protocolo (não em documento fundador separado).
+
+### Etapas do método
+
+| Etapa | Nome | Função |
+|---|---|---|
+| 1 | **Evidence Harvest** | Coletar comportamentos e evidências recorrentes — sem classificar como arquitetura nova |
+| 2 | **Responsibility Harvest** | Mapear cada item à camada/autoridade existente (ou registrar ausência explícita) |
+| 3 | **Coverage Harvest** | Validar cobertura do fundador sob exame (completo / parcial / não pertence) |
+| 4 | **Autonomy Validation** | Verificar se outro parceiro reconstrói o essencial só pelo repositório |
+| 5 | **Stabilization Gate** | Julgar se o conhecimento está estável o bastante para institucionalizar |
+| 6 | **Officialization** | Registro e versionamento conforme [`PROJECT_RULES.md`](../../../PROJECT_RULES.md) — só quando houver mudança estabilizada a oficializar |
+
+As três primeiras etapas foram reveladas historicamente como Harvest I, II e III durante a estabilização do `PARTNERSHIP_MODEL`.
+Essa numeração é **histórica** — não um ritual obrigatório de três passos com esses rótulos.
+
+### Regras do método
+
+1. Etapas são **orientadas por evidência**.
+2. Etapas **podem ser repetidas** quando necessário.
+3. Uma investigação pode **terminar sem alteração** no repositório.
+4. Encontrar um padrão **não autoriza** automaticamente criar uma nova autoridade.
+5. O objetivo é validar **suficiência e responsabilidade**, não expandir documentos.
+6. Tarefas só-evidência (coleta sem implementação) são entregas legítimas deste método.
+
+O **Core** é a segunda aplicação real prevista deste método (após o ciclo Partnership).
+
+---
+
 ## 14. Evolução do protocolo
 
 > Toda evolução deste protocolo deve preservar sua natureza de documento de governança, evitando absorver responsabilidades pertencentes ao domínio, aos contratos ou às regras operacionais.

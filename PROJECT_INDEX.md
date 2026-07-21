@@ -165,6 +165,8 @@ Qual é a tarefa?
 │    → docs/product/ROADMAP.md
 │    → DESIGN_GUIDE.md
 │    (+ project/automation/ se a arquitetura for de engenharia/MOBS)
+│    (+ docs/mobs/models/PARTNERSHIP_MODEL.md se a tarefa for colaboração / continuidade)
+│    (+ docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md se parceria arquitetural, estabilização ou institucionalização)
 │
 ├─ Engenharia
 │    → AI_CONTEXT.md
@@ -175,9 +177,11 @@ Qual é a tarefa?
 │    → docs/mobs/contracts/CONFIGURATION_CONTRACTS.md     ← constituição dos contratos
 │    → docs/mobs/contracts/PROJECT_CONTRACT.md            ← contrato concreto (Projeto)
 │    → docs/mobs/contracts/BRAND_CONTRACT.md              ← contrato concreto (Marca)
-│    → docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md  ← governança de tarefas arquiteturais
+│    → docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md  ← governança de tarefas arquiteturais (+ Architectural Harvest)
 │    → docs/mobs/governance/DOCUMENT_ARCHITECTURE.md       ← arquitetura física da documentação
 │    → docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md    ← estrutura alvo e política de nascimento (Fase 1)
+│    → docs/mobs/models/PARTNERSHIP_MODEL.md               ← colaboração genérica entre parceiros
+│    → docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md      ← carregar integralmente se Ayla / parceria arquitetural / estabilização / institucionalização
 │    → project/automation/BUILD_SYSTEM.md
 │    → project/automation/PROJECT_ENGINE.md
 │    → project/automation/BRAND_ENGINE.md
@@ -294,6 +298,7 @@ Governança operacional (PROJECT_RULES):
 ```
 
 Colaboração e preservação de fluxo: [`docs/mobs/models/PARTNERSHIP_MODEL.md`](docs/mobs/models/PARTNERSHIP_MODEL.md).
+Parceira arquitetural Ayla (descoberta universal; carga integral só quando o papel se aplicar): [`docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md`](docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md).
 Registro institucional e versionamento: [`PROJECT_RULES.md`](PROJECT_RULES.md).
 
 ---
@@ -313,6 +318,8 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md` | Governança oficial de tarefas arquiteturais do MOBS |
 | `docs/mobs/governance/DOCUMENT_ARCHITECTURE.md` | Arquitetura física permanente da documentação MOBS |
 | `docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md` | Estrutura física alvo e política de nascimento (MOBS 0.2 — Fase 1) |
+| `docs/mobs/models/PARTNERSHIP_MODEL.md` | Gramática genérica da colaboração entre parceiros |
+| `docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md` | Identidade e papel da parceira arquitetural Ayla |
 | `AI_CONTEXT.md` | Contexto e regras para agentes de IA |
 | `PROJECT_RULES.md` | Contrato operacional de trabalho |
 | `docs/product/` | Produto, roadmap, jornada, negócio, gamificação |
@@ -324,7 +331,7 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `index.html` | Landing page |
 | `css/` / `js/` / `img/` | Estilos, scripts e mídia da landing |
 | `favicon/` | Favicon da landing (quando existir) |
-| `README.md` | Visão geral do repositório (quando preenchido) |
+| `README.md` | Ponte de entrada do repositório → `PROJECT_INDEX.md` |
 
 ---
 
@@ -341,6 +348,8 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md` | Método oficial de planejamento, revisão e aprovação de documentos arquiteturais |
 | `docs/mobs/governance/DOCUMENT_ARCHITECTURE.md` | Organização física, grupos documentais e regras de crescimento da documentação |
 | `docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md` | Paths alvo, matriz atual × alvo, convenção de IDs e política de nascimento de novos documentos |
+| `docs/mobs/models/PARTNERSHIP_MODEL.md` | Colaboração genérica e preservação de fluxo entre parceiros |
+| `docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md` | Perfil derivado: identidade e papel arquitetural da Ayla |
 | `AI_CONTEXT.md` | Contexto do projeto para IAs e regras de marca/consumo |
 | `PROJECT_RULES.md` | Regras permanentes de desenvolvimento e fluxo operacional |
 | `docs/product/PRD.md` | Produto e requisitos |

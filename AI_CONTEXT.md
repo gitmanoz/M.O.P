@@ -67,11 +67,15 @@ Para a arquitetura física permanente da documentação MOBS (grupos, descoberta
 
 Para a estrutura física alvo, convenção de paths (`product-id`, `brand-id`, `contract-id`) e política de nascimento de novos documentos (MOBS 0.2 — Fase 1), consultar `docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md`.
 
+Para a colaboração genérica entre parceiros, consultar `docs/mobs/models/PARTNERSHIP_MODEL.md`.
+
+Para a identidade e o papel da parceira arquitetural Ayla, consultar `docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md` **quando** o agente for instruído a atuar como Ayla, assumir a parceria arquitetural do MOBS, ou participar de decisões de arquitetura, fronteiras, estabilização ou institucionalização. Fora disso, basta a descoberta via Index — não carregar o perfil completo por padrão.
+
 ## Governança
 
 `PROJECT_RULES.md` passa a ser **leitura obrigatória** antes da execução de qualquer tarefa.
 
-Ele é o contrato operacional do repositório: fluxo de trabalho, identidade visual, documentação e — quando houver mudança estabilizada a oficializar — History/Changelog, aprovação e Git.
+Ele é o contrato operacional do repositório: fluxo de trabalho, identidade visual, documentação, checkpoints (History/Changelog/Git) e a distinção entre **decisão arquitetural final do fundador** e **aprovações operacionais delegadas**.
 
 Em caso de dúvida operacional, consultar `PROJECT_RULES.md` em conjunto com este arquivo e com `PROJECT_INDEX.md`.
 
@@ -109,6 +113,8 @@ Antes de realizar mudanças relevantes, consulte os arquivos adequados:
 - `docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md`
 - `docs/mobs/governance/DOCUMENT_ARCHITECTURE.md`
 - `docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md`
+- `docs/mobs/models/PARTNERSHIP_MODEL.md`
+- `docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md` (quando o papel Ayla / parceria arquitetural se aplicar)
 - `project/automation/MOBS.md`
 - `project/automation/BUILD_SYSTEM.md`
 - `project/automation/PROJECT_ENGINE.md`
