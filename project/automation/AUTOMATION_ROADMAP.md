@@ -86,7 +86,8 @@ Uma versão só avança para implementação quando:
 | Item | Estado |
 |---|---|
 | Arquitetura documental MOBS | **Aprovada** v0.1.1 (2026-07-20) — apenas documentação |
-| **MOBS 0.2 — Configuration Contracts** | `DOMAIN_MODEL.md` + `CONFIGURATION_CONTRACTS.md` + `PROJECT_CONTRACT.md` + `BRAND_CONTRACT.md` (contratos concretos irmãos; **sem** schemas ainda) |
+| **MOBS 0.2 — Configuration Contracts** | `DOMAIN_MODEL.md` + `CONFIGURATION_CONTRACTS.md` + `PROJECT_CONTRACT.md` + `BRAND_CONTRACT.md` + `ARCHITECTURE_TASK_PROTOCOL.md` (contratos concretos irmãos; protocolo de tarefas; **sem** schemas ainda) |
+| **MOBS 0.2 — Fase 1 (estrutura documental)** | `DOCUMENT_ARCHITECTURE.md` + `DOCUMENT_STRUCTURE_PLAN.md` — **institucionalizada**; política de nascimento em vigor após commit/push; migração de legado nas Fases 2–5 |
 | v1–v10 implementação | Não iniciada |
 | Scripts oficiais | Nenhum |
 
@@ -94,6 +95,13 @@ Uma versão só avança para implementação quando:
 
 Antes de schemas e implementação de serializações de projeto/marca, a sequência documental está em `DOMAIN_MODEL.md` → `CONFIGURATION_CONTRACTS.md` → (`PROJECT_CONTRACT.md` ∥ `BRAND_CONTRACT.md`).
 Essa sequência **não substitui** a linha v1–v10 deste roadmap; **precede** schemas e serialização.
+
+### Nota sobre Fase 1 (estrutura documental)
+
+`DOCUMENT_STRUCTURE_PLAN.md` materializa paths alvo e política de nascimento sob `DOCUMENT_ARCHITECTURE.md`.
+Fases 2 e 3 de migração são conceitualmente independentes; recomenda-se execução sequencial (2 → 3) para reduzir conflitos de links e descoberta.
+IDs oficiais atuais: `product-id` = `brand-id` = `missao-oab` (namespaces distintos).
+Contratos permanecem em `docs/mobs/contracts/` (constituição e concretos no mesmo diretório; sem subpasta `constitution/`).
 
 ---
 

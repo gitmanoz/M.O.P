@@ -65,6 +65,8 @@ Para a governança oficial de tarefas arquiteturais do MOBS (planejamento, revis
 
 Para a arquitetura física permanente da documentação MOBS (grupos, descoberta, crescimento e migração), consultar `DOCUMENT_ARCHITECTURE.md`.
 
+Para a estrutura física alvo, convenção de paths (`product-id`, `brand-id`, `contract-id`) e política de nascimento de novos documentos (MOBS 0.2 — Fase 1), consultar `DOCUMENT_STRUCTURE_PLAN.md`.
+
 ## Governança
 
 `PROJECT_RULES.md` passa a ser **leitura obrigatória** antes da execução de qualquer tarefa.
@@ -106,6 +108,7 @@ Antes de realizar mudanças relevantes, consulte os arquivos adequados:
 - `BRAND_CONTRACT.md`
 - `ARCHITECTURE_TASK_PROTOCOL.md`
 - `DOCUMENT_ARCHITECTURE.md`
+- `DOCUMENT_STRUCTURE_PLAN.md`
 - `project/automation/MOBS.md`
 - `project/automation/BUILD_SYSTEM.md`
 - `project/automation/PROJECT_ENGINE.md`

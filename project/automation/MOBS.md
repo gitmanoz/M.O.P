@@ -31,6 +31,8 @@ Para a **governança de tarefas arquiteturais** (planejamento, revisão, valida�
 
 Para a **arquitetura física da documentação** (grupos, descoberta, crescimento e migração), ler [`DOCUMENT_ARCHITECTURE.md`](../../DOCUMENT_ARCHITECTURE.md).
 
+Para o **plano de estrutura física alvo** (paths, política de nascimento, convenção de IDs — MOBS 0.2 Fase 1), ler [`DOCUMENT_STRUCTURE_PLAN.md`](../../DOCUMENT_STRUCTURE_PLAN.md).
+
 ---
 
 ## Missão
@@ -155,6 +157,7 @@ Com o MOBS, um novo produto deve precisar **apenas de configuração** para herd
 | [`BRAND_CONTRACT.md`](../../BRAND_CONTRACT.md) | Contrato concreto da entidade Marca |
 | [`ARCHITECTURE_TASK_PROTOCOL.md`](../../ARCHITECTURE_TASK_PROTOCOL.md) | Governança de tarefas arquiteturais |
 | [`DOCUMENT_ARCHITECTURE.md`](../../DOCUMENT_ARCHITECTURE.md) | Arquitetura física da documentação |
+| [`DOCUMENT_STRUCTURE_PLAN.md`](../../DOCUMENT_STRUCTURE_PLAN.md) | Estrutura alvo, política de nascimento e convenção de paths (Fase 1) |
 | `MOBS.md` | Visão da plataforma e escopo |
 | `BUILD_SYSTEM.md` | Taxonomia (Core/Engine/Generator/Validator), fluxo e fronteiras do Core |
 | `PROJECT_ENGINE.md` | Modelo multi-projeto, contexto inicial e relação projeto↔marca |
@@ -169,6 +172,7 @@ Com o MOBS, um novo produto deve precisar **apenas de configuração** para herd
 
 Nesta fase existe **somente arquitetura documental**.
 
+- **MOBS 0.2 — Fase 1** (`DOCUMENT_STRUCTURE_PLAN.md`): aprovada e institucionalizada — novos documentos MOBS nascem no path alvo após vigência (commit + push em `main`).
 - Não há scripts oficiais do MOBS.
 - Não há implementação de Core, Engines, Generators ou Validators.
 - Não há movimentação de assets obrigatória nesta etapa.

@@ -42,6 +42,7 @@ Categorias usadas apenas quando houver itens:
 - `BRAND_CONTRACT.md`: segundo contrato concreto do MOBS (entidade Marca; irmão de PROJECT_CONTRACT; sem schemas).
 - `ARCHITECTURE_TASK_PROTOCOL.md`: governança oficial de tarefas arquiteturais do MOBS (método consolidado dos contratos concretos).
 - `DOCUMENT_ARCHITECTURE.md`: arquitetura física permanente da documentação MOBS (grupos, descoberta, crescimento e migração).
+- `DOCUMENT_STRUCTURE_PLAN.md`: plano de estrutura física alvo, política de nascimento, convenção de paths e matriz atual × alvo (MOBS 0.2 — Fase 1).
 
 #### MOBS — arquitetura documental 0.1.1 (conceitual)
 
@@ -109,6 +110,7 @@ Documentação da plataforma de engenharia do **Ecossistema Missão** (config-dr
 - Revisão final de `BRAND_CONTRACT.md`: coexistência de Marcas no ecossistema, linguagem da Brand Engine, invariantes, Source of Truth; referência temporal atualizada em `PROJECT_CONTRACT.md`.
 - Revisão final de `ARCHITECTURE_TASK_PROTOCOL.md`: ordem de leitura vs hierarquia; princípio de evolução como documento de governança.
 - Integração de `DOCUMENT_ARCHITECTURE.md` na trilha MOBS 0.2; consolidação como autoridade de organização física.
+- Integração de `DOCUMENT_STRUCTURE_PLAN.md` (Fase 1 MOBS 0.2): descoberta, política de nascimento, IDs `missao-oab`, decisões de permanência na raiz e contratos em `docs/mobs/contracts/`.
 
 ### Removed
 

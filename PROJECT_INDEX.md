@@ -4,7 +4,7 @@
 |---|---|
 | **Projeto** | Missão OAB (primeiro produto do Ecossistema Missão) |
 | **Versão** | 1.1.0 |
-| **Última atualização** | 2026-07-20 |
+| **Última atualização** | 2026-07-21 |
 | **Responsável** | Equipe Missão OAB |
 | **Status** | Oficial |
 
@@ -178,6 +178,7 @@ Qual é a tarefa?
 │    → BRAND_CONTRACT.md              ← contrato concreto (Marca)
 │    → ARCHITECTURE_TASK_PROTOCOL.md  ← governança de tarefas arquiteturais
 │    → DOCUMENT_ARCHITECTURE.md       ← arquitetura física da documentação
+│    → DOCUMENT_STRUCTURE_PLAN.md    ← estrutura alvo e política de nascimento (Fase 1)
 │    → project/automation/BUILD_SYSTEM.md
 │    → project/automation/PROJECT_ENGINE.md
 │    → project/automation/BRAND_ENGINE.md
@@ -220,6 +221,8 @@ ARCHITECTURE_TASK_PROTOCOL.md  ← governança de tarefas arquiteturais
   ↓
 DOCUMENT_ARCHITECTURE.md       ← arquitetura física da documentação
   ↓
+DOCUMENT_STRUCTURE_PLAN.md    ← estrutura alvo e política de nascimento (Fase 1)
+  ↓
 BUILD_SYSTEM.md      ← arquitetura e taxonomia
   ↓
 PROJECT_ENGINE.md
@@ -245,6 +248,7 @@ CONFIGURATION_CONTRACTS.md
   ↓
 ARCHITECTURE_TASK_PROTOCOL.md
 DOCUMENT_ARCHITECTURE.md
+DOCUMENT_STRUCTURE_PLAN.md
   ↓
 schemas
   ↓
@@ -309,6 +313,7 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `BRAND_CONTRACT.md` | Contrato concreto da entidade Marca |
 | `ARCHITECTURE_TASK_PROTOCOL.md` | Governança oficial de tarefas arquiteturais do MOBS |
 | `DOCUMENT_ARCHITECTURE.md` | Arquitetura física permanente da documentação MOBS |
+| `DOCUMENT_STRUCTURE_PLAN.md` | Estrutura física alvo e política de nascimento (MOBS 0.2 — Fase 1) |
 | `AI_CONTEXT.md` | Contexto e regras para agentes de IA |
 | `PROJECT_RULES.md` | Contrato operacional de trabalho |
 | `docs/product/` | Produto, roadmap, jornada, negócio, gamificação |
@@ -336,6 +341,7 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `BRAND_CONTRACT.md` | Especialização do contrato de configuração para Marca |
 | `ARCHITECTURE_TASK_PROTOCOL.md` | Método oficial de planejamento, revisão e aprovação de documentos arquiteturais |
 | `DOCUMENT_ARCHITECTURE.md` | Organização física, grupos documentais e regras de crescimento da documentação |
+| `DOCUMENT_STRUCTURE_PLAN.md` | Paths alvo, matriz atual × alvo, convenção de IDs e política de nascimento de novos documentos |
 | `AI_CONTEXT.md` | Contexto do projeto para IAs e regras de marca/consumo |
 | `PROJECT_RULES.md` | Regras permanentes de desenvolvimento e fluxo operacional |
 | `docs/product/PRD.md` | Produto e requisitos |

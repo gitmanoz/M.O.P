@@ -1258,6 +1258,44 @@ Fase 1: novos documentos MOBS nascem no path alvo — tarefa dedicada.
 
 ---
 
+## 2026-07-21 04:56 — DOCUMENT_STRUCTURE_PLAN.md (Fase 1 institucionalizada)
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS 0.2 — Fase 1 (estrutura alvo + política de nascimento)
+
+### Contexto
+
+`DOCUMENT_ARCHITECTURE.md` estava consolidado como autoridade física; faltava materializar paths concretos, matriz atual × alvo e política de nascimento sem mover legado.
+
+### Objetivo
+
+Aprovar e institucionalizar `DOCUMENT_STRUCTURE_PLAN.md` — refinamentos arquiteturais, integração de descoberta e registro histórico.
+
+### Decisões
+
+- Contratos (`CONFIGURATION_CONTRACTS` + concretos) permanecem em `docs/mobs/contracts/` — **sem** subpasta `constitution/`.
+- Permanência **definitiva** na raiz: `PROJECT_INDEX`, `AI_CONTEXT`, `PROJECT_RULES`, `HISTORY`, `CHANGELOG`.
+- Convenção de paths: kebab-case, minúsculas; `product-id` e `brand-id` como namespaces distintos; IDs oficiais `missao-oab`; `contract-id` em schemas.
+- Vigência da política de nascimento após aprovação humana → integração → commit → push em `main`.
+- Fases 2 e 3 conceitualmente independentes; execução sequencial recomendada (2 → 3).
+- Nenhum arquivo movido; nenhuma pasta alvo vazia criada nesta tarefa.
+
+### Impacto
+
+Fase 1 MOBS 0.2 institucionalizada; novos documentos MOBS devem nascer nos paths alvo; migração de legado habilitada para Fases 2–5.
+
+### Áreas e documentos envolvidos
+
+- `DOCUMENT_STRUCTURE_PLAN.md` (criado)
+- `PROJECT_INDEX.md`, `AI_CONTEXT.md`, `project/automation/MOBS.md`, `project/automation/AUTOMATION_ROADMAP.md`
+- `HISTORY.md`, `CHANGELOG.md`
+
+### Próximos passos
+
+Fase 2: migrar fundação, domínio e contratos para `docs/mobs/` (tarefa arquitetural dedicada).
+
+---
+
 ## Controles
 
 | Campo | Valor |
