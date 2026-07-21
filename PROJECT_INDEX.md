@@ -44,7 +44,7 @@ Transformar um estudante perdido em um aprovado na OAB através de uma plataform
 
 # Boot Sequence
 
-Como uma IA deve iniciar e conduzir uma conversa:
+Como uma IA deve iniciar e conduzir o **boot e a execução** de uma conversa:
 
 1. Ler `PROJECT_INDEX.md`.
 2. Identificar a categoria da tarefa (Decision Tree).
@@ -52,12 +52,11 @@ Como uma IA deve iniciar e conduzir uma conversa:
 4. Planejar.
 5. Executar.
 6. Validar.
-7. Propor atualização de documentação (`HISTORY` / `CHANGELOG` quando aplicável).
-8. Sugerir Commit.
-9. Aguardar aprovação.
-10. Executar Commit.
 
-Detalhes operacionais de aprovação e Conventional Commits: `PROJECT_RULES.md`.
+Esta sequência governa **entrada, roteamento e execução com contexto mínimo**.
+Não inclui Git, stage, commit, push, `HISTORY.md` nem `CHANGELOG.md` como etapas universais da colaboração.
+
+Quando existir **mudança estabilizada** que deva ser oficialmente registrada, acionar a **governança operacional** em [`PROJECT_RULES.md`](PROJECT_RULES.md) (History/Changelog, aprovação e Git) — não como continuação automática do boot.
 
 ---
 
@@ -103,7 +102,7 @@ Sempre carregar apenas o **menor conjunto possível** de documentos capaz de exe
 
 - Base mínima quase sempre: `AI_CONTEXT.md` + `PROJECT_RULES.md`.
 - Demais documentos: só se a Decision Tree (ou a área afetada) exigir.
-- `HISTORY.md` e `CHANGELOG.md`: carregar quando a tarefa for documentação, fechamento de entrega, ou quando for necessário registrar/propor mudanças.
+- `HISTORY.md` e `CHANGELOG.md`: carregar quando a tarefa for **registro institucional** (propostas de History/Changelog) ou consulta a marcos — não como etapa automática de toda colaboração.
 - Em dúvida entre dois conjuntos: preferir o menor; expandir só se a execução ficar bloqueada por falta de fonte oficial.
 
 ---
@@ -288,14 +287,14 @@ Executar
     ↓
 Validar
     ↓
-Revisar / propor documentação
+[somente se houver mudança estabilizada a registrar oficialmente]
     ↓
-Sugerir Commit
-    ↓
-Aguardar aprovação
-    ↓
-Executar Commit
+Governança operacional (PROJECT_RULES):
+  History / Changelog / aprovação / Git
 ```
+
+Colaboração e preservação de fluxo: [`docs/mobs/models/PARTNERSHIP_MODEL.md`](docs/mobs/models/PARTNERSHIP_MODEL.md).
+Registro institucional e versionamento: [`PROJECT_RULES.md`](PROJECT_RULES.md).
 
 ---
 
@@ -388,4 +387,5 @@ A IA deve:
 1. Ler este bootloader.
 2. Classificar a tarefa na Decision Tree.
 3. Carregar só o conjunto necessário.
-4. Seguir a Boot Sequence até a aprovação do commit (quando houver entrega relevante).
+4. Seguir a Boot Sequence (planejar → executar → validar).
+5. Se houver mudança estabilizada a registrar oficialmente, seguir `PROJECT_RULES.md`.

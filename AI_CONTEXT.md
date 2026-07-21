@@ -71,7 +71,7 @@ Para a estrutura física alvo, convenção de paths (`product-id`, `brand-id`, `
 
 `PROJECT_RULES.md` passa a ser **leitura obrigatória** antes da execução de qualquer tarefa.
 
-Ele é o contrato operacional do repositório e define o fluxo de trabalho, regras de identidade visual, documentação, changelog/history e commits.
+Ele é o contrato operacional do repositório: fluxo de trabalho, identidade visual, documentação e — quando houver mudança estabilizada a oficializar — History/Changelog, aprovação e Git.
 
 Em caso de dúvida operacional, consultar `PROJECT_RULES.md` em conjunto com este arquivo e com `PROJECT_INDEX.md`.
 
@@ -237,44 +237,15 @@ Exemplo recomendado:
 
 ```
 
-## Governança de histórico e changelog
+## Registro institucional (History, Changelog e Git)
 
-O projeto mantém dois documentos complementares:
+`HISTORY.md` e `CHANGELOG.md` existem como registros institucionais do repositório.
+Git, stage, commit, push, aprovação e o detalhe das regras de History/Changelog **não** são etapas universais da colaboração nem do boot.
 
-- `CHANGELOG.md` — mudanças técnicas e de entrega relevantes, no padrão Keep a Changelog.
-- `HISTORY.md` — marcos, fases e decisões institucionais do projeto.
+Autoridade operacional: [`PROJECT_RULES.md`](PROJECT_RULES.md).
 
-### Regras obrigatórias
+Acionar essa governança **somente** quando houver **mudança estabilizada** que deva ser oficialmente registrada.
+Até lá, preservar o fluxo colaborativo conforme [`docs/mobs/models/PARTNERSHIP_MODEL.md`](docs/mobs/models/PARTNERSHIP_MODEL.md) — sem misturar housekeeping de versionamento ao trabalho em curso.
 
-1. Sempre que uma tarefa produzir uma mudança relevante e concluída no projeto, o agente deve preparar uma proposta de atualização para `CHANGELOG.md`.
-
-2. O agente não deve alterar `CHANGELOG.md` automaticamente sem aprovação explícita do responsável pelo projeto.
-
-3. Antes de editar o `CHANGELOG.md`, o agente deve apresentar no chat:
-   - a versão ou seção que será atualizada;
-   - a categoria utilizada: Added, Changed, Fixed, Removed, Deprecated ou Security;
-   - o texto exato proposto;
-   - uma pergunta objetiva solicitando aprovação.
-
-4. Somente após uma resposta explícita de aprovação o agente poderá escrever a alteração no `CHANGELOG.md`.
-
-5. Alterações pequenas, temporárias, experimentais ou ainda não concluídas não devem ser registradas.
-
-6. Toda mudança relevante aprovada para o `CHANGELOG.md` também deve ser considerada para o `HISTORY.md`.
-
-7. O `HISTORY.md` deve registrar marcos, fases e decisões relevantes do projeto, não cada alteração técnica pequena.
-
-8. Antes de modificar o `HISTORY.md`, o agente também deve apresentar a entrada proposta e pedir aprovação explícita.
-
-9. Quando uma nova entrega representar apenas evolução técnica dentro de uma fase já existente, o agente deve atualizar a fase correspondente, evitando criar seções redundantes.
-
-10. Nunca inventar datas, versões, decisões ou acontecimentos.
-
-11. Utilizar o Git, os arquivos atuais e a documentação como fontes de verdade.
-
-12. Ao final de cada tarefa relevante, o agente deve informar:
-    - se recomenda atualização do `CHANGELOG.md`;
-    - se recomenda atualização do `HISTORY.md`;
-    - quais entradas propõe;
-    - e aguardar aprovação antes de gravá-las.
+Este arquivo **não** duplica o procedimento de commit nem as regras detalhadas de History/Changelog.
 

@@ -122,7 +122,10 @@ Se uma mudança de produto, marca ou processo exigir ajuste documental, alinhar 
 
 ## 6. Mudanças relevantes
 
-Ao finalizar uma tarefa relevante:
+History, Changelog e Git **não** são etapas universais de toda colaboração.
+Acionar esta seção **somente** quando houver **mudança estabilizada** que deva ser oficialmente registrada no repositório.
+
+Nesse caso:
 
 1. Avaliar se `HISTORY.md` precisa ser atualizado.
 2. Avaliar se `CHANGELOG.md` precisa ser atualizado.
@@ -130,7 +133,7 @@ Ao finalizar uma tarefa relevante:
 4. Aguardar aprovação explícita.
 5. Somente depois atualizar os arquivos.
 
-Alterações pequenas, temporárias, experimentais ou incompletas não devem ser registradas.
+Alterações pequenas, temporárias, experimentais, incompletas ou ainda em fluxo de trabalho colaborativo não devem ser registradas.
 
 Nunca inventar datas, versões, decisões, horários ou acontecimentos.
 
@@ -164,7 +167,10 @@ Utilizar Git, arquivos atuais e documentação como fontes de verdade.
 
 ## 7. Git
 
-Ao finalizar qualquer tarefa relevante:
+Acionar esta seção **somente** quando houver mudança estabilizada a versionar oficialmente (em geral após a avaliação da seção 6).
+Não iniciar stage, commit ou push durante o fluxo cognitivo principal da colaboração.
+
+Nesse caso:
 
 1. Validar a integridade do projeto.
    - verificar referências quebradas;
@@ -213,16 +219,19 @@ Executar
     ↓
 Validar
     ↓
-Propor atualização de documentação
+[se houver mudança estabilizada a registrar oficialmente]
     ↓
-Propor commit
+Propor History / Changelog (seção 6)
+    ↓
+Propor commit (seção 7)
     ↓
 Aguardar aprovação
     ↓
 Executar commit
 ```
 
-Não pular etapas de leitura seletiva, validação ou aprovação.
+Não pular etapas de leitura seletiva ou validação.
+Não tratar History/Changelog/Git como continuação obrigatória de toda tarefa.
 
 ---
 
