@@ -37,6 +37,7 @@ Categorias usadas apenas quando houver itens:
 - Manifesto estratégico `WHY_MOBS.md`: proposta de valor, princípios, bússola de decisão e posicionamento do MOBS como plataforma de engenharia do Ecossistema Missão.
 - Esclarecimento institucional do nome MOBS (marca própria; *Mission Build Operating System* não é acrônimo literal perfeito).
 - `DOMAIN_MODEL.md`: modelo de domínio do MOBS (início formal do MOBS 0.2 — Configuration Contracts; sem schemas).
+- `CONFIGURATION_CONTRACTS.md`: constituição dos contratos de configuração (regras gerais; sem contratos concretos).
 
 #### MOBS — arquitetura documental 0.1.1 (conceitual)
 
@@ -96,6 +97,8 @@ Documentação da plataforma de engenharia do **Ecossistema Missão** (config-dr
 - Ordem documental MOBS uniformizada: MOBS → BUILD_SYSTEM → PROJECT_ENGINE → BRAND_ENGINE → ROADMAP → RULES.
 - Integração de `WHY_MOBS.md` como primeira leitura conceitual da trilha MOBS no `PROJECT_INDEX`, com referências em `MOBS.md` e `AI_CONTEXT.md`.
 - Integração de `DOMAIN_MODEL.md` na trilha MOBS 0.2 (antes de contratos/schemas); nota no `AUTOMATION_ROADMAP.md`.
+- Integração de `CONFIGURATION_CONTRACTS.md` na trilha MOBS 0.2 (após o domínio; antes de contratos concretos).
+- Refinamento de `CONFIGURATION_CONTRACTS.md`: filosofia dos contratos, promessas, Owner vs Authority, independência de implementação/tecnologia.
 
 ### Removed
 

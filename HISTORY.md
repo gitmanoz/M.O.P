@@ -908,6 +908,78 @@ Após aprovação: versionar; em seguida, documentos de contratos conceituais (`
 
 ---
 
+## 2026-07-21 01:19 — CONFIGURATION_CONTRACTS.md (constituição dos contratos)
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS 0.2 — Configuration Contracts (marco documental 2)
+
+### Contexto
+
+Com o modelo de domínio aprovado, faltava a constituição que define como um conceito se torna um contrato formal — sem ainda especificar Project/Brand contracts nem schemas.
+
+### Objetivo
+
+Criar `CONFIGURATION_CONTRACTS.md` como regras gerais de existência, ownership, validação, consumo, evolução, depreciação e extensões de contratos de configuração.
+
+### Decisões
+
+- Subordinar todo contrato futuro a este documento e ao `DOMAIN_MODEL.md`.
+- Preservar hierarquia Domínio → Contratos → Schemas → Serializações → Contextos → Execução.
+- Não definir campos, serialização, paths nem contratos concretos.
+- Integrar na trilha MOBS 0.2 imediatamente após o domínio.
+
+### Impacto
+
+Próximos documentos (`PROJECT_CONTRACT`, `BRAND_CONTRACT`) nascem sob constituição comum, reduzindo risco de contratos ad hoc.
+
+### Áreas e documentos envolvidos
+
+- `CONFIGURATION_CONTRACTS.md` (criado)
+- `DOMAIN_MODEL.md` (links atualizados)
+- `PROJECT_INDEX.md`, `project/automation/MOBS.md`, `AI_CONTEXT.md`
+- `project/automation/AUTOMATION_ROADMAP.md`
+- `HISTORY.md`, `CHANGELOG.md`
+
+### Próximos passos
+
+Aprovar e versionar; em seguida, contratos concretos de Projeto e Marca — ainda sem schemas, salvo aprovação explícita em etapa própria.
+
+---
+
+## 2026-07-21 01:29 — Refinamento arquitetural de CONFIGURATION_CONTRACTS.md
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS 0.2 — constituição dos contratos (revisão permanente)
+
+### Contexto
+
+A primeira redação de `CONFIGURATION_CONTRACTS.md` estava alinhada ao domínio; faltava fortalecer filosofia, promessa, distinção Owner/Authority e independência de tecnologia para torná-la referência atemporal.
+
+### Objetivo
+
+Consolidar o documento como constituição permanente dos contratos, sem alterar escopo nem introduzir contratos concretos ou schemas.
+
+### Decisões
+
+- Adicionar Filosofia dos Contratos; princípio “contratos são promessas”; distinção Owner vs Authority; princípio “contrato não descreve implementação”.
+- Preservar todas as decisões já aprovadas do domínio e da hierarquia Domínio → Contratos → Schemas → Serializações → Contextos → Execução.
+- Não alterar `PROJECT_RULES.md`.
+
+### Impacto
+
+Leitura única e coerente: WHY_MOBS → MOBS → DOMAIN_MODEL → CONFIGURATION_CONTRACTS.
+
+### Áreas e documentos envolvidos
+
+- `CONFIGURATION_CONTRACTS.md`
+- Integrações já preparadas em Index, MOBS, AI_CONTEXT, ROADMAP, HISTORY, CHANGELOG, DOMAIN_MODEL
+
+### Próximos passos
+
+Versionar o segundo marco 0.2; em seguida `PROJECT_CONTRACT.md` e `BRAND_CONTRACT.md`.
+
+---
+
 ## Controles
 
 | Campo | Valor |

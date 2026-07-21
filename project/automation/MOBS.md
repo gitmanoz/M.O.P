@@ -21,7 +21,9 @@ A **Missão OAB** é o primeiro produto. Não é o limite do MOBS.
 
 Para o **porquê**, a proposta de valor, os princípios permanentes e a bússola de decisão, ler primeiro [`WHY_MOBS.md`](../../WHY_MOBS.md) (raiz do repositório).
 
-Para a **gramática conceitual** (conceitos, relações e fronteiras antes de qualquer schema), ler [`DOMAIN_MODEL.md`](../../DOMAIN_MODEL.md) — início formal do **MOBS 0.2 — Configuration Contracts**.
+Para a **gramática conceitual** (conceitos, relações e fronteiras antes de qualquer schema), ler [`DOMAIN_MODEL.md`](../../DOMAIN_MODEL.md).
+
+Para as **regras gerais dos contratos de configuração** (constituição; sem contratos concretos), ler [`CONFIGURATION_CONTRACTS.md`](../../CONFIGURATION_CONTRACTS.md).
 
 ---
 
@@ -141,7 +143,8 @@ Com o MOBS, um novo produto deve precisar **apenas de configuração** para herd
 | Documento | Responsabilidade |
 |---|---|
 | [`WHY_MOBS.md`](../../WHY_MOBS.md) | Propósito, visão, valor, princípios e bússola de decisão |
-| [`DOMAIN_MODEL.md`](../../DOMAIN_MODEL.md) | Modelo de domínio (MOBS 0.2) — antes de contratos e schemas |
+| [`DOMAIN_MODEL.md`](../../DOMAIN_MODEL.md) | Modelo de domínio (MOBS 0.2) — antes de contratos concretos e schemas |
+| [`CONFIGURATION_CONTRACTS.md`](../../CONFIGURATION_CONTRACTS.md) | Constituição dos contratos de configuração |
 | `MOBS.md` | Visão da plataforma e escopo |
 | `BUILD_SYSTEM.md` | Taxonomia (Core/Engine/Generator/Validator), fluxo e fronteiras do Core |
 | `PROJECT_ENGINE.md` | Modelo multi-projeto, contexto inicial e relação projeto↔marca |

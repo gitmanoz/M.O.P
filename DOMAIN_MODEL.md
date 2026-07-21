@@ -83,8 +83,8 @@ Execução
 
 ### Fronteira com Configuration Contracts
 
-Este documento define **conceitos e relações**.  
-[`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md) (ainda não criado) aprofundará ciclo de vida, versionamento, compatibilidade, ownership e governança dos contratos.  
+Este documento define **conceitos e relações**.
+[`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md) define **como conceitos se tornam contratos governados** (ownership, validação, evolução, depreciação).
 Contratos concretos, schemas e serializações vêm depois.
 
 ### Independência da representação física
@@ -360,7 +360,7 @@ Dimensões a modelar **no futuro** (sem formato agora):
 > Um contrato não é um arquivo.  
 > É o acordo formal entre partes do sistema sobre o que deve existir, o que deve ser verdade e quem responde por isso.
 
-Este documento fixa o **conceito**. Políticas detalhadas de ciclo de vida, versionamento, compatibilidade e ownership pertencem a `CONFIGURATION_CONTRACTS.md` (futuro).
+Este documento fixa o **conceito**. Políticas de ciclo de vida, versionamento, compatibilidade e ownership: [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md).
 
 ### Distinções essenciais
 
@@ -426,7 +426,7 @@ Configuração é a **linguagem declarativa das diferenças legítimas**.
 
 Alinhado a [`WHY_MOBS.md`](WHY_MOBS.md): configuração acima de duplicação — sem transformar config em caos.
 
-Detalhes de governança de configuração (defaults, extensões, políticas) serão tratados em `CONFIGURATION_CONTRACTS.md`.
+Detalhes de governança de configuração (defaults, extensões, políticas): [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md).
 
 ---
 
@@ -513,8 +513,7 @@ Essa seção protege o Core contra crescimento monolítico — alinhada a [`BUIL
 > Contratos sem proprietário tornam-se dependências implícitas.
 
 Todo contrato futuro **deve** ter responsável conceitual claro (quem define, valida, resolve, consome e evolui).  
-Atribuições concretas e políticas de governança serão detalhadas em `CONFIGURATION_CONTRACTS.md`.  
-Quando a arquitetura já indica responsável (ex.: contexto de projeto → Project Engine), isso deve ser respeitado.
+Atribuições concretas e políticas de governança: [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md).
 
 ---
 
@@ -523,7 +522,7 @@ Quando a arquitetura já indica responsável (ex.: contexto de projeto → Proje
 O domínio exige que contratos futuros evoluam com **versionamento explícito** e preservação semântica — sem alterar significado em silêncio.
 
 Políticas concretas (números de versão, backward compatibility, migração, defaults, campos desconhecidos) **não** são escolhidas aqui.  
-Serão definidas em `CONFIGURATION_CONTRACTS.md` e nos contratos concretos.
+Serão definidas em [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md) e nos contratos concretos.
 
 ---
 
@@ -571,7 +570,7 @@ Anti-padrões:
 
 ## 19. Bússola para criação dos contratos concretos
 
-Checklist arquitetural mínimo (detalhamento normativo em `CONFIGURATION_CONTRACTS.md`):
+Checklist arquitetural mínimo (normativo em [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md)):
 
 1. Qual **conceito** este contrato representa?
 2. Quem é o **proprietário**?
@@ -589,16 +588,16 @@ O roadmap oficial de módulos permanece em [`AUTOMATION_ROADMAP.md`](project/aut
 
 Para o eixo **Configuration Contracts (MOBS 0.2)**, a sequência documental **proposta** é:
 
-1. **DOMAIN_MODEL.md** ← este documento  
-2. CONFIGURATION_CONTRACTS.md  
-3. PROJECT_CONTRACT.md  
-4. BRAND_CONTRACT.md  
-5. CAPABILITY_MODEL.md (se necessário)  
-6. RESOLUTION_MODEL.md  
-7. schemas e exemplos  
-8. implementação  
-9. Validators  
-10. testes e migrações  
+1. **DOMAIN_MODEL.md** ← gramática conceitual
+2. **CONFIGURATION_CONTRACTS.md** ← constituição dos contratos
+3. PROJECT_CONTRACT.md
+4. BRAND_CONTRACT.md
+5. CAPABILITY_MODEL.md (se necessário)
+6. RESOLUTION_MODEL.md
+7. schemas e exemplos
+8. implementação
+9. Validators
+10. testes e migrações
 
 Essa lista **não substitui** o roadmap de Engines/Generators; **precede** schemas e implementação de contratos, em coerência com “documentação antes da implementação”.
 
