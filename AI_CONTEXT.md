@@ -63,6 +63,8 @@ Para o contrato concreto da entidade Marca (sem schemas), consultar `BRAND_CONTR
 
 Para a governança oficial de tarefas arquiteturais do MOBS (planejamento, revisão, validação e aprovação), consultar `ARCHITECTURE_TASK_PROTOCOL.md`.
 
+Para a arquitetura física permanente da documentação MOBS (grupos, descoberta, crescimento e migração), consultar `DOCUMENT_ARCHITECTURE.md`.
+
 ## Governança
 
 `PROJECT_RULES.md` passa a ser **leitura obrigatória** antes da execução de qualquer tarefa.
@@ -103,6 +105,7 @@ Antes de realizar mudanças relevantes, consulte os arquivos adequados:
 - `PROJECT_CONTRACT.md`
 - `BRAND_CONTRACT.md`
 - `ARCHITECTURE_TASK_PROTOCOL.md`
+- `DOCUMENT_ARCHITECTURE.md`
 - `project/automation/MOBS.md`
 - `project/automation/BUILD_SYSTEM.md`
 - `project/automation/PROJECT_ENGINE.md`

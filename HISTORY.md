@@ -1190,6 +1190,74 @@ Versionar; em seguida Capability/Resolution ou schemas.
 
 ---
 
+## 2026-07-21 04:07 — DOCUMENT_ARCHITECTURE.md (primeira versão)
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS 0.2 — arquitetura física da documentação (proposta)
+
+### Contexto
+
+A trilha MOBS 0.2 atingiu maturidade; faltava autoridade sobre organização física antes de qualquer reorganização do repositório.
+
+### Objetivo
+
+Criar `DOCUMENT_ARCHITECTURE.md` como analogia física ao `DOMAIN_MODEL` lógico — sem mover arquivos.
+
+### Decisões
+
+- Definir grupos documentais derivados do estado atual; regras de descoberta, crescimento, estabilidade e migração incremental.
+- Não executar migração nesta etapa.
+
+### Impacto
+
+Base para futuras reorganizações físicas governadas.
+
+### Áreas e documentos envolvidos
+
+- `DOCUMENT_ARCHITECTURE.md` (criado)
+
+### Próximos passos
+
+Consolidação e integração oficial.
+
+---
+
+## 2026-07-21 04:25 — Consolidação de DOCUMENT_ARCHITECTURE.md
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS 0.2 — arquitetura física da documentação (autoridade oficial)
+
+### Contexto
+
+A primeira versão de `DOCUMENT_ARCHITECTURE.md` estava aprovada; faltava consolidá-la como parte oficial da arquitetura MOBS antes da Fase 1 de migração.
+
+### Objetivo
+
+Refinamentos editoriais; seções sobre relação entre documentos arquiteturais e princípios de evolução; integração em Index, MOBS e AI_CONTEXT.
+
+### Decisões
+
+- Formalizar dimensões independentes de WHY_MOBS, MOBS, DOMAIN_MODEL, CONFIGURATION_CONTRACTS, ARCHITECTURE_TASK_PROTOCOL e DOCUMENT_ARCHITECTURE.
+- Ordem obrigatória de evolução: domínio → arquitetura documental → migração → descoberta → histórico.
+- Fase 0 de migração considerada concluída; Fase 1 habilitada.
+- Integrações pendentes de `ARCHITECTURE_TASK_PROTOCOL` no Index e MOBS incluídas neste commit.
+
+### Impacto
+
+`DOCUMENT_ARCHITECTURE.md` torna-se autoridade oficial de organização física; repositório preparado para Fase 1.
+
+### Áreas e documentos envolvidos
+
+- `DOCUMENT_ARCHITECTURE.md`
+- `PROJECT_INDEX.md`, `AI_CONTEXT.md`, `project/automation/MOBS.md`
+- `HISTORY.md`, `CHANGELOG.md`
+
+### Próximos passos
+
+Fase 1: novos documentos MOBS nascem no path alvo — tarefa dedicada.
+
+---
+
 ## Controles
 
 | Campo | Valor |

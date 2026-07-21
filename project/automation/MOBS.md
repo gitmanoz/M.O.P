@@ -27,6 +27,10 @@ Para as **regras gerais dos contratos de configuração** (constituição), ler 
 Para o **contrato concreto de Projeto**, ler [`PROJECT_CONTRACT.md`](../../PROJECT_CONTRACT.md).
 Para o **contrato concreto de Marca**, ler [`BRAND_CONTRACT.md`](../../BRAND_CONTRACT.md).
 
+Para a **governança de tarefas arquiteturais** (planejamento, revisão, validação e aprovação), ler [`ARCHITECTURE_TASK_PROTOCOL.md`](../../ARCHITECTURE_TASK_PROTOCOL.md).
+
+Para a **arquitetura física da documentação** (grupos, descoberta, crescimento e migração), ler [`DOCUMENT_ARCHITECTURE.md`](../../DOCUMENT_ARCHITECTURE.md).
+
 ---
 
 ## Missão
@@ -149,6 +153,8 @@ Com o MOBS, um novo produto deve precisar **apenas de configuração** para herd
 | [`CONFIGURATION_CONTRACTS.md`](../../CONFIGURATION_CONTRACTS.md) | Constituição dos contratos de configuração |
 | [`PROJECT_CONTRACT.md`](../../PROJECT_CONTRACT.md) | Contrato concreto da entidade Projeto |
 | [`BRAND_CONTRACT.md`](../../BRAND_CONTRACT.md) | Contrato concreto da entidade Marca |
+| [`ARCHITECTURE_TASK_PROTOCOL.md`](../../ARCHITECTURE_TASK_PROTOCOL.md) | Governança de tarefas arquiteturais |
+| [`DOCUMENT_ARCHITECTURE.md`](../../DOCUMENT_ARCHITECTURE.md) | Arquitetura física da documentação |
 | `MOBS.md` | Visão da plataforma e escopo |
 | `BUILD_SYSTEM.md` | Taxonomia (Core/Engine/Generator/Validator), fluxo e fronteiras do Core |
 | `PROJECT_ENGINE.md` | Modelo multi-projeto, contexto inicial e relação projeto↔marca |

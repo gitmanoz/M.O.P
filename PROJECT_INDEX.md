@@ -176,6 +176,8 @@ Qual é a tarefa?
 │    → CONFIGURATION_CONTRACTS.md     ← constituição dos contratos
 │    → PROJECT_CONTRACT.md            ← contrato concreto (Projeto)
 │    → BRAND_CONTRACT.md              ← contrato concreto (Marca)
+│    → ARCHITECTURE_TASK_PROTOCOL.md  ← governança de tarefas arquiteturais
+│    → DOCUMENT_ARCHITECTURE.md       ← arquitetura física da documentação
 │    → project/automation/BUILD_SYSTEM.md
 │    → project/automation/PROJECT_ENGINE.md
 │    → project/automation/BRAND_ENGINE.md
@@ -214,6 +216,10 @@ PROJECT_CONTRACT.md  ← contrato concreto de Projeto
   ↓
 BRAND_CONTRACT.md    ← contrato concreto de Marca
   ↓
+ARCHITECTURE_TASK_PROTOCOL.md  ← governança de tarefas arquiteturais
+  ↓
+DOCUMENT_ARCHITECTURE.md       ← arquitetura física da documentação
+  ↓
 BUILD_SYSTEM.md      ← arquitetura e taxonomia
   ↓
 PROJECT_ENGINE.md
@@ -236,6 +242,9 @@ DOMAIN_MODEL.md
 CONFIGURATION_CONTRACTS.md
   ├── PROJECT_CONTRACT.md
   └── BRAND_CONTRACT.md
+  ↓
+ARCHITECTURE_TASK_PROTOCOL.md
+DOCUMENT_ARCHITECTURE.md
   ↓
 schemas
   ↓
@@ -298,6 +307,8 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `CONFIGURATION_CONTRACTS.md` | Constituição dos contratos de configuração |
 | `PROJECT_CONTRACT.md` | Contrato concreto da entidade Projeto |
 | `BRAND_CONTRACT.md` | Contrato concreto da entidade Marca |
+| `ARCHITECTURE_TASK_PROTOCOL.md` | Governança oficial de tarefas arquiteturais do MOBS |
+| `DOCUMENT_ARCHITECTURE.md` | Arquitetura física permanente da documentação MOBS |
 | `AI_CONTEXT.md` | Contexto e regras para agentes de IA |
 | `PROJECT_RULES.md` | Contrato operacional de trabalho |
 | `docs/product/` | Produto, roadmap, jornada, negócio, gamificação |
@@ -323,6 +334,8 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `CONFIGURATION_CONTRACTS.md` | Regras gerais para existência, ownership, validação e evolução de contratos |
 | `PROJECT_CONTRACT.md` | Especialização do contrato de configuração para Projeto |
 | `BRAND_CONTRACT.md` | Especialização do contrato de configuração para Marca |
+| `ARCHITECTURE_TASK_PROTOCOL.md` | Método oficial de planejamento, revisão e aprovação de documentos arquiteturais |
+| `DOCUMENT_ARCHITECTURE.md` | Organização física, grupos documentais e regras de crescimento da documentação |
 | `AI_CONTEXT.md` | Contexto do projeto para IAs e regras de marca/consumo |
 | `PROJECT_RULES.md` | Regras permanentes de desenvolvimento e fluxo operacional |
 | `docs/product/PRD.md` | Produto e requisitos |
