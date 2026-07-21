@@ -51,6 +51,8 @@ Nunca implementar automações sem arquitetura documentada e aprovada.
 
 O MOBS é a plataforma de engenharia do **Ecossistema Missão** (não apenas da Missão OAB). Automações devem ser genéricas e configuráveis por marca/projeto.
 
+Para decisões estruturais, posicionamento, novos módulos ou arquitetura MOBS relevante, consultar também `WHY_MOBS.md` (propósito, valor e bússola de decisão).
+
 ## Governança
 
 `PROJECT_RULES.md` passa a ser **leitura obrigatória** antes da execução de qualquer tarefa.
@@ -85,6 +87,7 @@ Antes de realizar mudanças relevantes, consulte os arquivos adequados:
 
 ### Engenharia (Ecossistema / MOBS)
 
+- `WHY_MOBS.md`
 - `project/automation/MOBS.md`
 - `project/automation/BUILD_SYSTEM.md`
 - `project/automation/PROJECT_ENGINE.md`

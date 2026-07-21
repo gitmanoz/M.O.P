@@ -34,6 +34,8 @@ Categorias usadas apenas quando houver itens:
 - Contrato operacional `PROJECT_RULES.md` e seção Governança em `AI_CONTEXT.md`.
 - Bootloader `PROJECT_INDEX.md` (Decision Tree, Boot Sequence, carregamento seletivo).
 - Seções de carregamento seletivo / gerenciamento de contexto em `AI_CONTEXT.md` e `PROJECT_RULES.md`.
+- Manifesto estratégico `WHY_MOBS.md`: proposta de valor, princípios, bússola de decisão e posicionamento do MOBS como plataforma de engenharia do Ecossistema Missão.
+- Esclarecimento institucional do nome MOBS (marca própria; *Mission Build Operating System* não é acrônimo literal perfeito).
 
 #### MOBS — arquitetura documental 0.1.1 (conceitual)
 
@@ -91,6 +93,7 @@ Documentação da plataforma de engenharia do **Ecossistema Missão** (config-dr
 - Project Engine documentado como primeira Engine **acionada pelo Core** (não fora dele).
 - Descrição do `HISTORY.md` no `PROJECT_INDEX` alinhada ao diário cronológico.
 - Ordem documental MOBS uniformizada: MOBS → BUILD_SYSTEM → PROJECT_ENGINE → BRAND_ENGINE → ROADMAP → RULES.
+- Integração de `WHY_MOBS.md` como primeira leitura conceitual da trilha MOBS no `PROJECT_INDEX`, com referências em `MOBS.md` e `AI_CONTEXT.md`.
 
 ### Removed
 

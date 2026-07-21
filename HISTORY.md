@@ -826,6 +826,47 @@ Manter a documentação alinhada em qualquer evolução futura do roadmap MOBS; 
 
 ---
 
+## 2026-07-21 00:22 — Criação do WHY_MOBS.md (visão estratégica do MOBS)
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** asset institucional · arquitetura MOBS 0.1.1 (documental)
+
+### Contexto
+
+A arquitetura técnica do MOBS estava documentada, mas faltava um manifesto claro do **porquê**: valor empresarial, princípios não negociáveis, bússola de decisão e posicionamento institucional/comercial.
+
+### Objetivo
+
+Criar `WHY_MOBS.md` na raiz como asset estratégico de longo prazo — visão de produto, manifesto de engenharia e material compreensível por colaboradores, clientes, parceiros e investidores — sem apresentar implementação inexistente.
+
+### Decisões
+
+- Posicionar o MOBS como **plataforma de engenharia do Ecossistema Missão**.
+- Tratar **MOBS como marca própria**; *Mission Build Operating System* como origem conceitual, **não** como acrônimo literal perfeito (MBOS ≠ MOBS).
+- **Não** renomear o produto nem criar nova expansão oficial da “sigla” neste momento.
+- Separar com precisão o que é documental **hoje**, o que está **em construção** e o que é **visão**.
+- Integrar `WHY_MOBS.md` como primeira leitura conceitual da trilha MOBS no `PROJECT_INDEX`, com referências em `MOBS.md` e `AI_CONTEXT.md`.
+- Não afirmar que o MOBS é produto comercial pronto ou runtime completo.
+
+### Impacto
+
+Onboarding, decisões arquiteturais, posicionamento e conversas externas passam a ter um documento único de propósito; a documentação técnica permanece responsável pelo *como*.
+
+### Áreas e documentos envolvidos
+
+- `WHY_MOBS.md` (criado)
+- `PROJECT_INDEX.md`
+- `project/automation/MOBS.md`
+- `AI_CONTEXT.md`
+- `HISTORY.md`
+- `CHANGELOG.md`
+
+### Próximos passos
+
+Aprovar e versionar; manter o manifesto alinhado à evolução do roadmap sem misturar visão com implementação.
+
+---
+
 ## Controles
 
 | Campo | Valor |

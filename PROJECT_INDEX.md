@@ -170,6 +170,7 @@ Qual é a tarefa?
 ├─ Engenharia
 │    → AI_CONTEXT.md
 │    → PROJECT_RULES.md
+│    → WHY_MOBS.md                    ← propósito e valor (leitura conceitual primeiro)
 │    → project/automation/MOBS.md
 │    → project/automation/BUILD_SYSTEM.md
 │    → project/automation/PROJECT_ENGINE.md
@@ -179,28 +180,36 @@ Qual é a tarefa?
 │    (carregar Engines adicionais só se a tarefa citar)
 │
 ├─ Automação / Build / Deploy / Geração automática
-│    → mesmo conjunto de Engenharia (mínimo: MOBS + AUTOMATION_RULES + Engine afetada)
+│    → mesmo conjunto de Engenharia (mínimo: WHY_MOBS opcional se só execução; MOBS + AUTOMATION_RULES + Engine afetada)
+│
+├─ Posicionamento / visão estratégica MOBS
+│    → WHY_MOBS.md
+│    → project/automation/MOBS.md
+│    → AI_CONTEXT.md
+│    → PROJECT_RULES.md
 │
 └─ Nova funcionalidade
      → Carregar conforme as áreas afetadas
        (combinar ramos da árvore; manter o menor conjunto)
 ```
 
-Ordem sugerida no ramo **Engenharia**:
+Ordem sugerida no ramo **Engenharia** (trilha MOBS):
 
 ```
 Engenharia
   ↓
-MOBS
+WHY_MOBS.md          ← propósito, visão e proposta de valor
   ↓
-BUILD_SYSTEM
+MOBS.md              ← visão da plataforma e escopo
   ↓
-PROJECT_ENGINE      ← contexto primeiro
+BUILD_SYSTEM.md      ← arquitetura e taxonomia
   ↓
-BRAND_ENGINE
+PROJECT_ENGINE.md
   ↓
-AUTOMATION_ROADMAP
-  (+ AUTOMATION_RULES sempre que for criar/alterar automação)
+BRAND_ENGINE.md
+  ↓
+AUTOMATION_ROADMAP.md
+  (+ AUTOMATION_RULES.md sempre que for criar/alterar automação)
 ```
 
 Fluxo conceitual do MOBS:
@@ -254,6 +263,7 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | Local | O que encontrar |
 |---|---|
 | `PROJECT_INDEX.md` | Bootloader / orquestrador de contexto |
+| `WHY_MOBS.md` | Propósito, visão e proposta de valor do MOBS |
 | `AI_CONTEXT.md` | Contexto e regras para agentes de IA |
 | `PROJECT_RULES.md` | Contrato operacional de trabalho |
 | `docs/product/` | Produto, roadmap, jornada, negócio, gamificação |
@@ -274,6 +284,7 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | Documento | Responsabilidade |
 |---|---|
 | `PROJECT_INDEX.md` | Bootloader e orquestração de contexto |
+| `WHY_MOBS.md` | Manifesto estratégico: porquê, valor, princípios e bússola do MOBS |
 | `AI_CONTEXT.md` | Contexto do projeto para IAs e regras de marca/consumo |
 | `PROJECT_RULES.md` | Regras permanentes de desenvolvimento e fluxo operacional |
 | `docs/product/PRD.md` | Produto e requisitos |

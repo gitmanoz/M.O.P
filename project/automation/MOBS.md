@@ -19,6 +19,8 @@ Ele não é um script isolado, nem um build system limitado a um produto.
 
 A **Missão OAB** é o primeiro produto. Não é o limite do MOBS.
 
+Para o **porquê**, a proposta de valor, os princípios permanentes e a bússola de decisão, ler primeiro [`WHY_MOBS.md`](../../WHY_MOBS.md) (raiz do repositório).
+
 ---
 
 ## Missão
@@ -136,7 +138,8 @@ Com o MOBS, um novo produto deve precisar **apenas de configuração** para herd
 
 | Documento | Responsabilidade |
 |---|---|
-| `MOBS.md` | Visão, missão, filosofia e papel no ecossistema |
+| [`WHY_MOBS.md`](../../WHY_MOBS.md) | Propósito, visão, valor, princípios e bússola de decisão |
+| `MOBS.md` | Visão da plataforma e escopo |
 | `BUILD_SYSTEM.md` | Taxonomia (Core/Engine/Generator/Validator), fluxo e fronteiras do Core |
 | `PROJECT_ENGINE.md` | Modelo multi-projeto, contexto inicial e relação projeto↔marca |
 | `BRAND_ENGINE.md` | Modelo multi-marca (config-driven) |
