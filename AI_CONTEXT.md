@@ -57,6 +57,8 @@ Para modelagem de conceitos, relações e fronteiras **antes** de contratos conc
 
 Para as regras gerais de ownership, validação, evolução e depreciação de contratos, consultar `CONFIGURATION_CONTRACTS.md`.
 
+Para o contrato concreto da entidade Projeto (sem schemas), consultar `PROJECT_CONTRACT.md`.
+
 ## Governança
 
 `PROJECT_RULES.md` passa a ser **leitura obrigatória** antes da execução de qualquer tarefa.
@@ -94,6 +96,7 @@ Antes de realizar mudanças relevantes, consulte os arquivos adequados:
 - `WHY_MOBS.md`
 - `DOMAIN_MODEL.md`
 - `CONFIGURATION_CONTRACTS.md`
+- `PROJECT_CONTRACT.md`
 - `project/automation/MOBS.md`
 - `project/automation/BUILD_SYSTEM.md`
 - `project/automation/PROJECT_ENGINE.md`

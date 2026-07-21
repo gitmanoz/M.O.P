@@ -980,6 +980,78 @@ Versionar o segundo marco 0.2; em seguida `PROJECT_CONTRACT.md` e `BRAND_CONTRAC
 
 ---
 
+## 2026-07-21 02:59 — PROJECT_CONTRACT.md (primeiro contrato concreto)
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS 0.2 — Configuration Contracts (contrato concreto de Projeto)
+
+### Contexto
+
+Com a constituição dos contratos aprovada, faltava especializar as regras gerais para a entidade Projeto — sem schemas, serializações ou alteração dos documentos de autoridade.
+
+### Objetivo
+
+Criar `PROJECT_CONTRACT.md` como primeiro Contrato Concreto do MOBS, derivado de `DOMAIN_MODEL.md` e `CONFIGURATION_CONTRACTS.md`.
+
+### Decisões
+
+- Tratar Projeto exclusivamente como entidade do domínio (não repositório, diretório, Engine, runtime ou serialização).
+- Especializar Owner, Authority, produtores, validadores, resolvedor (Project Engine) e consumidores sem duplicar a constituição.
+- Preservar independência Projeto ⊥ Marca e associação declarativa opcional.
+- Não modificar `DOMAIN_MODEL.md`, `CONFIGURATION_CONTRACTS.md`, `WHY_MOBS.md`, `PROJECT_RULES.md` nem Engines.
+
+### Impacto
+
+A trilha MOBS 0.2 passa a ter o primeiro cidadão concreto da constituição; Brand Contract e schemas permanecem etapas seguintes.
+
+### Áreas e documentos envolvidos
+
+- `PROJECT_CONTRACT.md` (criado)
+- `PROJECT_INDEX.md`, `project/automation/MOBS.md`, `AI_CONTEXT.md`
+- `project/automation/AUTOMATION_ROADMAP.md`
+- `HISTORY.md`, `CHANGELOG.md`
+
+### Próximos passos
+
+Revisão manual e aprovação antes do commit; em seguida `BRAND_CONTRACT.md` — ainda sem schemas.
+
+---
+
+## 2026-07-21 03:07 — Revisão final de PROJECT_CONTRACT.md
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS 0.2 — contrato concreto de Projeto (referência oficial)
+
+### Contexto
+
+A primeira redação de `PROJECT_CONTRACT.md` estava sólida; faltava elevá-la ao padrão editorial dos documentos constitucionais antes da aprovação definitiva.
+
+### Objetivo
+
+Revisão arquitetural final mínima: princípios, garantias, independência da serialização, linguagem da Project Engine e encerramento — sem alterar decisões aprovadas.
+
+### Decisões
+
+- Inserir Princípios derivados de WHY_MOBS; reorganizar Garantias em estruturais e operacionais.
+- Explicitar que o contrato não depende de detalhes de serialização futura.
+- Precisar a linguagem: resolução atribuída à Project Engine; Projeto permanece entidade do domínio.
+- Não criar conceitos novos nem mover responsabilidades entre documentos.
+
+### Impacto
+
+`PROJECT_CONTRACT.md` passa a ser a referência oficial do Contrato de Projeto no MOBS 0.2.
+
+### Áreas e documentos envolvidos
+
+- `PROJECT_CONTRACT.md`
+- `HISTORY.md`, `CHANGELOG.md` (registro desta revisão)
+
+### Próximos passos
+
+Versionar; em seguida `BRAND_CONTRACT.md`.
+
+---
+
 ## Controles
 
 | Campo | Valor |

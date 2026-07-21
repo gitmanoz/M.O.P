@@ -86,14 +86,14 @@ Uma versão só avança para implementação quando:
 | Item | Estado |
 |---|---|
 | Arquitetura documental MOBS | **Aprovada** v0.1.1 (2026-07-20) — apenas documentação |
-| **MOBS 0.2 — Configuration Contracts** | `DOMAIN_MODEL.md` + `CONFIGURATION_CONTRACTS.md` (constituição; **sem** contratos concretos/schemas ainda) |
+| **MOBS 0.2 — Configuration Contracts** | `DOMAIN_MODEL.md` + `CONFIGURATION_CONTRACTS.md` + `PROJECT_CONTRACT.md` (primeiro contrato concreto; **sem** schemas ainda) |
 | v1–v10 implementação | Não iniciada |
 | Scripts oficiais | Nenhum |
 
 ### Nota sobre Configuration Contracts
 
-Antes de schemas e implementação de serializações de projeto/marca, a sequência documental está em `DOMAIN_MODEL.md` e `CONFIGURATION_CONTRACTS.md`.
-Essa sequência **não substitui** a linha v1–v10 deste roadmap; **precede** contratos concretos e serialização.
+Antes de schemas e implementação de serializações de projeto/marca, a sequência documental está em `DOMAIN_MODEL.md` → `CONFIGURATION_CONTRACTS.md` → `PROJECT_CONTRACT.md` (próximo: `BRAND_CONTRACT.md`).
+Essa sequência **não substitui** a linha v1–v10 deste roadmap; **precede** schemas e serialização.
 
 ---
 

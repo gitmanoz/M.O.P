@@ -174,6 +174,7 @@ Qual é a tarefa?
 │    → project/automation/MOBS.md
 │    → DOMAIN_MODEL.md                ← modelo de domínio (MOBS 0.2)
 │    → CONFIGURATION_CONTRACTS.md     ← constituição dos contratos
+│    → PROJECT_CONTRACT.md            ← primeiro contrato concreto (Projeto)
 │    → project/automation/BUILD_SYSTEM.md
 │    → project/automation/PROJECT_ENGINE.md
 │    → project/automation/BRAND_ENGINE.md
@@ -206,7 +207,9 @@ MOBS.md              ← visão da plataforma e escopo
   ↓
 DOMAIN_MODEL.md      ← gramática conceitual (MOBS 0.2)
   ↓
-CONFIGURATION_CONTRACTS.md ← constituição dos contratos (sem contratos concretos)
+CONFIGURATION_CONTRACTS.md ← constituição dos contratos
+  ↓
+PROJECT_CONTRACT.md  ← contrato concreto de Projeto
   ↓
 BUILD_SYSTEM.md      ← arquitetura e taxonomia
   ↓
@@ -229,7 +232,9 @@ DOMAIN_MODEL.md
   ↓
 CONFIGURATION_CONTRACTS.md
   ↓
-contratos concretos (ainda não criados)
+PROJECT_CONTRACT.md
+  ↓
+BRAND_CONTRACT.md (ainda não criado)
   ↓
 schemas
   ↓
@@ -290,6 +295,7 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `WHY_MOBS.md` | Propósito, visão e proposta de valor do MOBS |
 | `DOMAIN_MODEL.md` | Modelo de domínio / gramática conceitual (MOBS 0.2) |
 | `CONFIGURATION_CONTRACTS.md` | Constituição dos contratos de configuração |
+| `PROJECT_CONTRACT.md` | Contrato concreto da entidade Projeto |
 | `AI_CONTEXT.md` | Contexto e regras para agentes de IA |
 | `PROJECT_RULES.md` | Contrato operacional de trabalho |
 | `docs/product/` | Produto, roadmap, jornada, negócio, gamificação |
@@ -313,6 +319,7 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `WHY_MOBS.md` | Manifesto estratégico: porquê, valor, princípios e bússola do MOBS |
 | `DOMAIN_MODEL.md` | Gramática conceitual: conceitos, relações e fronteiras antes dos contratos |
 | `CONFIGURATION_CONTRACTS.md` | Regras gerais para existência, ownership, validação e evolução de contratos |
+| `PROJECT_CONTRACT.md` | Especialização do contrato de configuração para Projeto |
 | `AI_CONTEXT.md` | Contexto do projeto para IAs e regras de marca/consumo |
 | `PROJECT_RULES.md` | Regras permanentes de desenvolvimento e fluxo operacional |
 | `docs/product/PRD.md` | Produto e requisitos |

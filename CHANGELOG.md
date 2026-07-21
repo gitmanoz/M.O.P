@@ -38,6 +38,7 @@ Categorias usadas apenas quando houver itens:
 - Esclarecimento institucional do nome MOBS (marca própria; *Mission Build Operating System* não é acrônimo literal perfeito).
 - `DOMAIN_MODEL.md`: modelo de domínio do MOBS (início formal do MOBS 0.2 — Configuration Contracts; sem schemas).
 - `CONFIGURATION_CONTRACTS.md`: constituição dos contratos de configuração (regras gerais; sem contratos concretos).
+- `PROJECT_CONTRACT.md`: primeiro contrato concreto do MOBS (entidade Projeto; sem schemas).
 
 #### MOBS — arquitetura documental 0.1.1 (conceitual)
 
@@ -99,6 +100,8 @@ Documentação da plataforma de engenharia do **Ecossistema Missão** (config-dr
 - Integração de `DOMAIN_MODEL.md` na trilha MOBS 0.2 (antes de contratos/schemas); nota no `AUTOMATION_ROADMAP.md`.
 - Integração de `CONFIGURATION_CONTRACTS.md` na trilha MOBS 0.2 (após o domínio; antes de contratos concretos).
 - Refinamento de `CONFIGURATION_CONTRACTS.md`: filosofia dos contratos, promessas, Owner vs Authority, independência de implementação/tecnologia.
+- Integração de `PROJECT_CONTRACT.md` na trilha MOBS 0.2 (após a constituição; antes de Brand Contract e schemas).
+- Revisão final de `PROJECT_CONTRACT.md`: princípios (WHY_MOBS), garantias estruturais/operacionais, independência da serialização, linguagem da Project Engine.
 
 ### Removed
 
