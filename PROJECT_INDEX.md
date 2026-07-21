@@ -172,6 +172,7 @@ Qual é a tarefa?
 │    → PROJECT_RULES.md
 │    → WHY_MOBS.md                    ← propósito e valor (leitura conceitual primeiro)
 │    → project/automation/MOBS.md
+│    → DOMAIN_MODEL.md                ← modelo de domínio (MOBS 0.2; antes de contratos)
 │    → project/automation/BUILD_SYSTEM.md
 │    → project/automation/PROJECT_ENGINE.md
 │    → project/automation/BRAND_ENGINE.md
@@ -202,6 +203,8 @@ WHY_MOBS.md          ← propósito, visão e proposta de valor
   ↓
 MOBS.md              ← visão da plataforma e escopo
   ↓
+DOMAIN_MODEL.md      ← gramática conceitual (MOBS 0.2 — antes de contratos/schemas)
+  ↓
 BUILD_SYSTEM.md      ← arquitetura e taxonomia
   ↓
 PROJECT_ENGINE.md
@@ -210,6 +213,22 @@ BRAND_ENGINE.md
   ↓
 AUTOMATION_ROADMAP.md
   (+ AUTOMATION_RULES.md sempre que for criar/alterar automação)
+```
+
+Trilha conceitual do **MOBS 0.2 (Configuration Contracts)**:
+
+```
+WHY_MOBS.md
+  ↓
+MOBS.md
+  ↓
+DOMAIN_MODEL.md
+  ↓
+futuros contratos (ainda não criados)
+  ↓
+schemas
+  ↓
+implementação
 ```
 
 Fluxo conceitual do MOBS:
@@ -264,6 +283,7 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 |---|---|
 | `PROJECT_INDEX.md` | Bootloader / orquestrador de contexto |
 | `WHY_MOBS.md` | Propósito, visão e proposta de valor do MOBS |
+| `DOMAIN_MODEL.md` | Modelo de domínio / gramática conceitual (MOBS 0.2) |
 | `AI_CONTEXT.md` | Contexto e regras para agentes de IA |
 | `PROJECT_RULES.md` | Contrato operacional de trabalho |
 | `docs/product/` | Produto, roadmap, jornada, negócio, gamificação |
@@ -285,6 +305,7 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 |---|---|
 | `PROJECT_INDEX.md` | Bootloader e orquestração de contexto |
 | `WHY_MOBS.md` | Manifesto estratégico: porquê, valor, princípios e bússola do MOBS |
+| `DOMAIN_MODEL.md` | Gramática conceitual: conceitos, relações e fronteiras antes dos contratos |
 | `AI_CONTEXT.md` | Contexto do projeto para IAs e regras de marca/consumo |
 | `PROJECT_RULES.md` | Regras permanentes de desenvolvimento e fluxo operacional |
 | `docs/product/PRD.md` | Produto e requisitos |

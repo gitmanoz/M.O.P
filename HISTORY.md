@@ -867,6 +867,47 @@ Aprovar e versionar; manter o manifesto alinhado à evolução do roadmap sem mi
 
 ---
 
+## 2026-07-21 00:50 — Início do MOBS 0.2: DOMAIN_MODEL.md
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS 0.2 — Configuration Contracts (fase documental / modelo de domínio)
+
+### Contexto
+
+Com a arquitetura 0.1.1 e o WHY_MOBS aprovados, a próxima necessidade era formalizar a **linguagem conceitual** da plataforma antes de qualquer contrato serializado ou schema.
+
+### Objetivo
+
+Criar `DOMAIN_MODEL.md` como gramática do domínio MOBS: conceitos, relações oficiais, fronteiras do Core, tese “contrato ≠ arquivo”, e registro honesto de questões em aberto — sem implementar contratos, JSON/YAML ou runtime.
+
+### Decisões
+
+- Inaugurar formalmente o **MOBS 0.2 — Configuration Contracts** pelo modelo de domínio, não por schemas.
+- Preservar taxonomia, fluxo Core → Project Engine → Core e relação Projeto × Marca já aprovadas.
+- Tratar Capability, Organização e herança/override como conceitos ou hipóteses controladas, não como decisões fechadas.
+- Integrar `DOMAIN_MODEL.md` na trilha após WHY_MOBS/MOBS e antes de futuros contratos.
+- Não alterar `PROJECT_RULES.md`.
+
+### Impacto
+
+Contratos futuros passam a ter fonte conceitual normativa; reduz risco de schemas orientados a campos sem dono nem significado.
+
+### Áreas e documentos envolvidos
+
+- `DOMAIN_MODEL.md` (criado)
+- `PROJECT_INDEX.md`
+- `project/automation/MOBS.md`
+- `project/automation/AUTOMATION_ROADMAP.md`
+- `AI_CONTEXT.md`
+- `HISTORY.md`
+- `CHANGELOG.md`
+
+### Próximos passos
+
+Após aprovação: versionar; em seguida, documentos de contratos conceituais (`CONFIGURATION_CONTRACTS.md` etc.), ainda sem schemas, conforme a bússola do domínio.
+
+---
+
 ## Controles
 
 | Campo | Valor |

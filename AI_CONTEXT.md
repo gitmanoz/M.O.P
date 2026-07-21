@@ -53,6 +53,8 @@ O MOBS é a plataforma de engenharia do **Ecossistema Missão** (não apenas da 
 
 Para decisões estruturais, posicionamento, novos módulos ou arquitetura MOBS relevante, consultar também `WHY_MOBS.md` (propósito, valor e bússola de decisão).
 
+Para modelagem de conceitos, relações e fronteiras **antes** de contratos ou schemas (MOBS 0.2), consultar `DOMAIN_MODEL.md`.
+
 ## Governança
 
 `PROJECT_RULES.md` passa a ser **leitura obrigatória** antes da execução de qualquer tarefa.
@@ -88,6 +90,7 @@ Antes de realizar mudanças relevantes, consulte os arquivos adequados:
 ### Engenharia (Ecossistema / MOBS)
 
 - `WHY_MOBS.md`
+- `DOMAIN_MODEL.md`
 - `project/automation/MOBS.md`
 - `project/automation/BUILD_SYSTEM.md`
 - `project/automation/PROJECT_ENGINE.md`

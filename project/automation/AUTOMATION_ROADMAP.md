@@ -86,8 +86,14 @@ Uma versão só avança para implementação quando:
 | Item | Estado |
 |---|---|
 | Arquitetura documental MOBS | **Aprovada** v0.1.1 (2026-07-20) — apenas documentação |
+| **MOBS 0.2 — Configuration Contracts** | Iniciado com [`DOMAIN_MODEL.md`](../../DOMAIN_MODEL.md) (modelo conceitual; **sem** schemas/contratos concretos ainda) |
 | v1–v10 implementação | Não iniciada |
 | Scripts oficiais | Nenhum |
+
+### Nota sobre Configuration Contracts
+
+Antes de schemas e implementação de `project.json` / `brand.json`, a sequência documental proposta está em `DOMAIN_MODEL.md` (seção “Próximos documentos”).
+Essa sequência **não substitui** a linha v1–v10 deste roadmap; **precede** contratos e serialização.
 
 ---
 
