@@ -1052,6 +1052,76 @@ Versionar; em seguida `BRAND_CONTRACT.md`.
 
 ---
 
+## 2026-07-21 03:19 — BRAND_CONTRACT.md (segundo contrato concreto)
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS 0.2 — Configuration Contracts (contrato concreto de Marca)
+
+### Contexto
+
+Com `PROJECT_CONTRACT.md` aprovado, faltava formalizar a promessa sobre Marca como contrato concreto irmão — sem schemas e sem subordinar Marca a Projeto.
+
+### Objetivo
+
+Criar `BRAND_CONTRACT.md` derivado de `DOMAIN_MODEL.md` e `CONFIGURATION_CONTRACTS.md`, usando `PROJECT_CONTRACT.md` apenas como referência editorial.
+
+### Decisões
+
+- Tratar Marca exclusivamente como identidade oficial (recursos e regras) do domínio — não pasta, tema, Engine ou pacote de assets.
+- Preservar Projeto ⊥ Marca; associação declarativa e opcional; Brand Engine como Resolvedor, não Authority.
+- Manter herança, variantes, múltiplas marcas por projeto e override como questões abertas do domínio.
+- Não modificar documentos protegidos (domínio, constituição, PROJECT_CONTRACT, Engines, RULES).
+
+### Impacto
+
+Os dois primeiros contratos concretos do MOBS 0.2 existem como irmãos sob a mesma constituição; schemas permanecem etapa seguinte.
+
+### Áreas e documentos envolvidos
+
+- `BRAND_CONTRACT.md` (criado)
+- `PROJECT_INDEX.md`, `project/automation/MOBS.md`, `AI_CONTEXT.md`
+- `project/automation/AUTOMATION_ROADMAP.md`
+- `HISTORY.md`, `CHANGELOG.md`
+
+### Próximos passos
+
+Revisão manual e aprovação antes do commit; em seguida Capability/Resolution ou schemas, conforme trilha aprovada.
+
+---
+
+## 2026-07-21 03:32 — Revisão final de BRAND_CONTRACT.md
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS 0.2 — contrato concreto de Marca (referência oficial)
+
+### Contexto
+
+`BRAND_CONTRACT.md` estava aprovado arquiteturalmente; faltavam refinamentos editoriais de precisão antes do commit definitivo.
+
+### Objetivo
+
+Ajustes mínimos: coexistência de Marcas no ecossistema; linguagem da Brand Engine; violação de invariantes; Source of Truth vs entidade; sincronizar referência temporal em `PROJECT_CONTRACT.md`.
+
+### Decisões
+
+- Sem alteração arquitetural; sem novos conceitos.
+- Atualizar apenas a referência temporal a `BRAND_CONTRACT` em `PROJECT_CONTRACT.md`.
+
+### Impacto
+
+`BRAND_CONTRACT.md` torna-se referência oficial do Contrato de Marca no MOBS 0.2.
+
+### Áreas e documentos envolvidos
+
+- `BRAND_CONTRACT.md`, `PROJECT_CONTRACT.md`
+- Integrações já existentes; `HISTORY.md`, `CHANGELOG.md`
+
+### Próximos passos
+
+Versionar; em seguida Capability/Resolution ou schemas.
+
+---
+
 ## Controles
 
 | Campo | Valor |

@@ -39,6 +39,7 @@ Categorias usadas apenas quando houver itens:
 - `DOMAIN_MODEL.md`: modelo de domínio do MOBS (início formal do MOBS 0.2 — Configuration Contracts; sem schemas).
 - `CONFIGURATION_CONTRACTS.md`: constituição dos contratos de configuração (regras gerais; sem contratos concretos).
 - `PROJECT_CONTRACT.md`: primeiro contrato concreto do MOBS (entidade Projeto; sem schemas).
+- `BRAND_CONTRACT.md`: segundo contrato concreto do MOBS (entidade Marca; irmão de PROJECT_CONTRACT; sem schemas).
 
 #### MOBS — arquitetura documental 0.1.1 (conceitual)
 
@@ -102,6 +103,8 @@ Documentação da plataforma de engenharia do **Ecossistema Missão** (config-dr
 - Refinamento de `CONFIGURATION_CONTRACTS.md`: filosofia dos contratos, promessas, Owner vs Authority, independência de implementação/tecnologia.
 - Integração de `PROJECT_CONTRACT.md` na trilha MOBS 0.2 (após a constituição; antes de Brand Contract e schemas).
 - Revisão final de `PROJECT_CONTRACT.md`: princípios (WHY_MOBS), garantias estruturais/operacionais, independência da serialização, linguagem da Project Engine.
+- Integração de `BRAND_CONTRACT.md` na trilha MOBS 0.2 (contrato irmão de Projeto; após a constituição; antes de schemas).
+- Revisão final de `BRAND_CONTRACT.md`: coexistência de Marcas no ecossistema, linguagem da Brand Engine, invariantes, Source of Truth; referência temporal atualizada em `PROJECT_CONTRACT.md`.
 
 ### Removed
 

@@ -20,8 +20,10 @@ Não a substitui. Não a reescreve. Não move responsabilidades entre elas.
 Trilha:
 
 ```text
-WHY_MOBS → MOBS → DOMAIN_MODEL → CONFIGURATION_CONTRACTS → PROJECT_CONTRACT
-  → BRAND_CONTRACT (futuro) → … → schemas → implementação
+WHY_MOBS → MOBS → DOMAIN_MODEL → CONFIGURATION_CONTRACTS
+                                      ├── PROJECT_CONTRACT
+                                      └── BRAND_CONTRACT
+  → … → schemas → implementação
 ```
 
 ---
@@ -200,7 +202,7 @@ Cobre o acordo formal sobre a entidade **Projeto**: expectativas, papéis, invar
 
 ### Limites deliberados
 
-- **Marca** — contrato próprio futuro (`BRAND_CONTRACT.md`).
+- **Marca** — contrato próprio (`BRAND_CONTRACT.md`).
 - **Capability** — modelo/contrato futuros; aqui só a relação conceitual.
 - **Resolução** — detalhe de algoritmo e erros em `RESOLUTION_MODEL` / Engines (futuro).
 - **Serialização e schema** — etapas posteriores.
@@ -482,11 +484,10 @@ Demais termos oficiais: [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md) e [`CONFIGURATION_C
 
 ## 28. Próximos documentos
 
-1. `BRAND_CONTRACT.md` — contrato concreto de Marca
-2. `CAPABILITY_MODEL.md` — se necessário
-3. `RESOLUTION_MODEL.md`
-4. Schemas e exemplos
-5. Implementação e Validators
+1. `CAPABILITY_MODEL.md` — se necessário
+2. `RESOLUTION_MODEL.md`
+3. Schemas e exemplos
+4. Implementação e Validators
 
 O roadmap de módulos permanece em [`AUTOMATION_ROADMAP.md`](project/automation/AUTOMATION_ROADMAP.md).
 

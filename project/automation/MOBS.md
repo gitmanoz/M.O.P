@@ -25,6 +25,7 @@ Para a **gramática conceitual** (conceitos, relações e fronteiras antes de qu
 
 Para as **regras gerais dos contratos de configuração** (constituição), ler [`CONFIGURATION_CONTRACTS.md`](../../CONFIGURATION_CONTRACTS.md).
 Para o **contrato concreto de Projeto**, ler [`PROJECT_CONTRACT.md`](../../PROJECT_CONTRACT.md).
+Para o **contrato concreto de Marca**, ler [`BRAND_CONTRACT.md`](../../BRAND_CONTRACT.md).
 
 ---
 
@@ -147,6 +148,7 @@ Com o MOBS, um novo produto deve precisar **apenas de configuração** para herd
 | [`DOMAIN_MODEL.md`](../../DOMAIN_MODEL.md) | Modelo de domínio (MOBS 0.2) — antes de contratos concretos e schemas |
 | [`CONFIGURATION_CONTRACTS.md`](../../CONFIGURATION_CONTRACTS.md) | Constituição dos contratos de configuração |
 | [`PROJECT_CONTRACT.md`](../../PROJECT_CONTRACT.md) | Contrato concreto da entidade Projeto |
+| [`BRAND_CONTRACT.md`](../../BRAND_CONTRACT.md) | Contrato concreto da entidade Marca |
 | `MOBS.md` | Visão da plataforma e escopo |
 | `BUILD_SYSTEM.md` | Taxonomia (Core/Engine/Generator/Validator), fluxo e fronteiras do Core |
 | `PROJECT_ENGINE.md` | Modelo multi-projeto, contexto inicial e relação projeto↔marca |
