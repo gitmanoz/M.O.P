@@ -1,84 +1,116 @@
-# História da Missão OAB
+# HISTORY — Diário do Ecossistema Missão
 
-Documento institucional de evolução do projeto.  
-Registra marcos, fases e decisões comprováveis por documentação, estrutura de arquivos e histórico Git.  
-Não substitui o Changelog técnico.
+## Finalidade
 
-**Fontes de verdade utilizadas:** `AI_CONTEXT.md`, `docs/brand/`, `docs/product/`, `DESIGN_GUIDE.md`, `UI_KIT.md`, `README.md`, `index.html`, CSS do projeto, assets em `assets/brand/` e `img/`, e o histórico Git disponível.
+Este documento é o **diário cronológico** de produto e engenharia da Missão OAB e do Ecossistema Missão.
 
-**Nota metodológica:** quando a data exata de uma etapa não pôde ser comprovada além do mês/versão documental ou do timestamp de arquivo, a narrativa foi organizada por fase e sequência lógica — sem datas fictícias.
+Ele registra **por que** as mudanças aconteceram, **o que foi decidido**, **qual foi o impacto** e **quais foram os próximos passos**.
 
----
+Não substitui o `CHANGELOG.md` (registro técnico e versionável das alterações no repositório).
 
-## Visão geral
-
-A Missão OAB é uma EdTech voltada à preparação para o Exame da OAB. A marca representa direção, evolução e aprovação.
-
-A metáfora central do produto, registrada em `AI_CONTEXT.md`, é:
-
-> Missão OAB é o mapa.  
-> Método CAPA é o caminho percorrido sobre esse mapa.
-
-O projeto evoluiu da definição estratégica (produto e marca) para a construção da landing page, do Design System e dos assets oficiais, até a formalização de governança para agentes de IA e versionamento Git.
-
-No estado atual documentado:
-
-- o bootloader oficial da documentação é `PROJECT_INDEX.md` (orquestrador de contexto);
-- a documentação de produto e marca encontra-se em `docs/`;
-- a landing page vive em `index.html` com base CSS em `css/`;
-- o Design System está descrito em `DESIGN_GUIDE.md` e `UI_KIT.md`;
-- o símbolo oficial disponível está em `assets/brand/source/master-symbol.svg`;
-- o repositório Git foi inicializado com o commit `ef37433` em **2026-07-20**.
+Não substitui documentos de origem (`PRD`, Brand Book, MOBS, Design Guide, etc.).
 
 ---
 
-## Fases do projeto
+## Padrão de entrada
 
-### Fase 1 — Fundação da ideia
+Cada marco relevante usa:
 
-**O que foi construído**
+```
+## YYYY-MM-DD HH:mm — Título do marco
 
-- Definição da Missão OAB como parceiro de estudo e sistema de preparação para o Exame de Ordem.
-- Formulação do problema central: preparação sem método claro, feedback e apoio consistente.
-- Registro da visão de transformar esforço disperso em progresso organizado.
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** quando aplicável
 
-**Por que foi construído**
+### Contexto
+### Objetivo
+### Decisões
+### Impacto
+### Áreas e documentos envolvidos
+### Próximos passos
+```
 
-Para estabelecer a razão de existir do produto antes de features, campanhas ou escala tecnológica — princípio reiterado no Brand Book e no PRD.
+### Regras
 
-**Decisões importantes**
+- Ordem **cronológica crescente** (mais antigo → mais recente).
+- Fuso oficial: **America/Sao_Paulo**.
+- **Não inventar horários.** Se a hora não for comprovável: indicar `Horário: não registrado` ou manter só a data/mês conhecido.
+- Fontes de verdade: Git, arquivos versionados e documentação oficial.
+
+---
+
+## Visão geral (estado atual)
+
+A Missão OAB é uma EdTech para o Exame da OAB. Metáfora central:
+
+> Missão OAB é o mapa. Método CAPA é o caminho percorrido sobre esse mapa.
+
+Pilares atuais: `PROJECT_INDEX` (bootloader), `AI_CONTEXT` / `PROJECT_RULES` (governança), docs de produto/marca, landing, Design System, Brand Assets em `assets/brand/`, arquitetura documental **MOBS 0.1.1** em `project/automation/`.
+
+---
+
+## Diário cronológico
+
+## 2026-07 — Fundação da ideia
+
+**Horário:** não registrado  
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** Fase 1 · docs v1.0 (Julho/2026)
+
+### Contexto
+
+O projeto precisava de uma razão de existir clara antes de features, campanhas ou escala tecnológica.
+
+### Objetivo
+
+Definir a Missão OAB como parceiro de estudo e sistema de preparação para o Exame de Ordem; formular o problema da preparação sem método, feedback e apoio consistentes.
+
+### Decisões
 
 - Preferir caminho a atalho; confiança antes de escala.
 - Não prometer aprovação; oferecer preparação organizada.
 - Tratar o aluno como adulto e a jornada como processo sério.
 
-**Arquivos e sistemas nascidos nesta etapa**
+### Impacto
 
-- Conceitos fundacionais consolidados em `docs/brand/BRAND_BOOK.md` (versão 1.0, Julho/2026).
-- Missão, problema e visão detalhados em `docs/product/PRD.md` (versão 1.0, Julho/2026).
+Base ética e de produto consolidada no Brand Book e no PRD.
+
+### Áreas e documentos envolvidos
+
+- `docs/brand/BRAND_BOOK.md`
+- `docs/product/PRD.md`
+
+### Próximos passos
+
+Documentar estratégia de produto (roadmap, jornada, negócio, gamificação).
 
 ---
 
-### Fase 2 — Estratégia de produto
+## 2026-07 — Estratégia de produto
 
-**O que foi construído**
+**Horário:** não registrado  
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** Fase 2 · docs product v1.0 (Julho/2026)
 
-- Documentação completa de requisitos e visão de produto.
-- Roadmap por versões (V1 Landing + WhatsApp → evolução futura da plataforma).
-- Mapeamento da jornada do aluno.
-- Modelo de negócio e princípios de gamificação.
+### Contexto
 
-**Por que foi construído**
+Com a fundação definida, faltava alinhar aquisição, retenção, monetização ética e evolução técnica.
 
-Para alinhar aquisição, retenção, ética de monetização e evolução técnica sob critérios mensuráveis e priorização clara.
+### Objetivo
 
-**Decisões importantes**
+Completar a documentação de requisitos, roadmap, jornada do aluno, modelo de negócio e princípios de gamificação.
 
-- MVP (V1) centrado em landing de conversão + comunidade (WhatsApp), sem plataforma logada.
+### Decisões
+
+- MVP (V1): landing de conversão + comunidade WhatsApp, sem plataforma logada.
 - Filtro de produto: captar, estudar melhor ou reter — fora disso, não entra no roadmap.
 - Gamificação futura orientada a disciplina, não a ansiedade.
 
-**Arquivos e sistemas nascidos nesta etapa**
+### Impacto
+
+Priorização mensurável e critérios claros para o que entra ou não no produto.
+
+### Áreas e documentos envolvidos
 
 - `docs/product/PRD.md`
 - `docs/product/ROADMAP.md`
@@ -86,186 +118,668 @@ Para alinhar aquisição, retenção, ética de monetização e evolução técn
 - `docs/product/BUSINESS_MODEL.md`
 - `docs/product/GAMIFICATION.md`
 
-Todos documentados como versão 1.0, com atualização registrada em Julho de 2026.
+### Próximos passos
+
+Formalizar identidade, voz e arquitetura de marca.
 
 ---
 
-### Fase 3 — Identidade e posicionamento
+## 2026-07 — Identidade e posicionamento
 
-**O que foi construído**
+**Horário:** não registrado  
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** Fase 3 · Brand docs v1.0 (Julho/2026)
 
-- Brand Book institucional (constituição da marca).
-- Brand Voice e guia de copywriting.
-- Método CAPA como metodologia oficial: Capacitação, Aprendizado, Prática e Aprovação.
-- Slogan oficial: “Estude com direção. Evolua com propósito.”
-- Arquitetura de marca: Missão OAB → Método CAPA → IA CAPA → Community → Academy → Aplicativo.
-- Conceito do logo: letra M formando caminho para cima.
-- Conceito do símbolo CAPA: livro aberto com caminho central.
+### Contexto
 
-**Por que foi construído**
+Produto e comunicação precisavam de coerência verbal/visual e princípios éticos congelados.
 
-Para garantir coerência verbal e visual entre produto, comunicação, design e futuras expansões — e para congelar princípios éticos de comunicação (sem medo, sem garantia de aprovação, sem hype).
+### Objetivo
 
-**Decisões importantes**
+Publicar Brand Book, Brand Voice, Copywriting; formalizar Método CAPA e o slogan oficial.
+
+### Decisões
 
 - Tom semi-formal, confiança calma, linguagem adulta.
-- CAPA como linguagem pedagógica do produto, não como decoração.
-- Metáfora mapa/caminho formalizada para orientar produto e agentes de IA.
+- CAPA como linguagem pedagógica (não decoração).
+- Slogan: “Estude com direção. Evolua com propósito.”
+- Metáfora mapa/caminho para produto e agentes de IA.
+- Arquitetura de marca: Missão OAB → Método CAPA → IA CAPA → Community → Academy → Aplicativo.
 
-**Arquivos e sistemas nascidos nesta etapa**
+### Impacto
+
+Constituição de marca utilizável por design, copy, landing e futuras expansões.
+
+### Áreas e documentos envolvidos
 
 - `docs/brand/BRAND_BOOK.md`
 - `docs/brand/BRAND_VOICE.md`
 - `docs/brand/COPYWRITING.md`
-- Metáfora central registrada em `AI_CONTEXT.md`
+- Metáfora em `AI_CONTEXT.md`
+
+### Próximos passos
+
+Construir a landing pública alinhada à marca.
 
 ---
 
-### Fase 4 — Landing page
+## 2026-07 — Landing page
 
-**O que foi construído**
+**Horário:** não registrado  
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** Fase 4 · sprints HTML/CSS documentados no código
 
-- Estrutura HTML semântica da landing (`index.html`).
-- Arquitetura CSS: `reset.css`, `variables.css`, `style.css`, `responsive.css`, `animations.css`.
-- Seções evidenciadas no HTML atual: Header, Hero, Nosso Compromisso, Barra de Compromisso, Benefícios, Método CAPA, Como Funciona, Nossa Visão, FAQ, CTA Final e Footer.
-- Refinamentos documentados em comentários HTML (ex.: Sprint 5.1.1) e no CSS de identidade visual inicial (ex.: Sprint 5.2A em `style.css`).
-- Copy da landing alinhada a materiais de apoio especializados, Método CAPA e slogan oficial no footer.
+### Contexto
 
-**Por que foi construído**
+Era necessário validar aquisição (landing → comunidade) e expor o posicionamento.
 
-Para validar aquisição (funil landing → comunidade), comunicar posicionamento e preparar a base visual do Design System na interface pública.
+### Objetivo
 
-**Decisões importantes**
+Entregar HTML semântico, arquitetura CSS e seções da landing com copy alinhada à marca.
 
-- HTML semântico, acessibilidade e SEO como prioridades estruturais.
-- CTA preparado para link oficial de WhatsApp (placeholder documentado até URL definitiva).
-- Links legais do footer preservados, porém comentados até existência das páginas.
-- Remoção de referências a “cronogramas” na copy da landing, substituídas por “materiais de apoio especializados” (estado atual do `index.html`).
+### Decisões
 
-**Arquivos e sistemas nascidos nesta etapa**
+- Priorizar acessibilidade e SEO estrutural.
+- CTA WhatsApp com placeholder até URL oficial.
+- Links legais do footer comentados até existirem páginas.
+- Substituir “cronogramas” por “materiais de apoio especializados” na copy.
+
+### Impacto
+
+Superfície pública do MVP V1 e base visual para o Design System.
+
+### Áreas e documentos envolvidos
 
 - `index.html`
-- `css/reset.css`, `css/variables.css`, `css/style.css`, `css/responsive.css`, `css/animations.css`
-- `js/app.js` (arquivo presente; conteúdo vazio no estado atual)
-- Placeholders de mídia: `img/hero/hero-placeholder.svg`, `img/logo/logo-missao-oab.svg`
+- `css/reset.css`, `variables.css`, `style.css`, `responsive.css`, `animations.css`
+- `js/app.js`
+- `img/hero/`, `img/logo/`
+
+### Próximos passos
+
+Formalizar Design System documental e tokens.
 
 ---
 
-### Fase 5 — Design System
+## 2026-07 — Design System
 
-**O que foi construído**
+**Horário:** não registrado  
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** Fase 5 · DESIGN_GUIDE / UI_KIT v1.0 (Julho/2026)
 
-- Design Guide oficial (tokens, tipografia, grid, botões, acessibilidade, performance, padrão BEM).
-- UI Kit oficial (especificações de componentes, estados, checklist de validação).
-- Tokens CSS em `css/variables.css` alinhados à paleta e à escala documentadas.
+### Contexto
 
-**Por que foi construído**
+A identidade na landing precisava ser reutilizável e escalável além de uma única página.
 
-Para tornar a identidade visual reutilizável e escalável além da landing — base para a plataforma futura.
+### Objetivo
 
-**Decisões importantes**
+Publicar Design Guide e UI Kit; alinhar tokens CSS à paleta e tipografia oficiais.
 
-- Paleta oficial centrada em azul `#0F2D52` e dourado `#D4AF37`.
+### Decisões
+
+- Paleta centrada em azul `#0F2D52` e dourado `#D4AF37`.
 - Tipografia Poppins.
-- Iconografia Lucide; emojis proibidos como componentes de interface.
-- Filosofia visual: organização, calma, confiança, clareza, elegância e profissionalismo.
+- Iconografia Lucide; emojis proibidos como componentes de UI.
+- Filosofia: organização, calma, confiança, clareza, elegância, profissionalismo.
 
-**Arquivos e sistemas nascidos nesta etapa**
+### Impacto
 
-- `DESIGN_GUIDE.md` (versão 1.0, Julho/2026)
-- `UI_KIT.md` (versão 1.0, Julho/2026; complemento do Design Guide)
-- `css/variables.css` (tokens de design)
+Base de interface para a landing e para a plataforma futura.
+
+### Áreas e documentos envolvidos
+
+- `DESIGN_GUIDE.md`
+- `UI_KIT.md`
+- `css/variables.css`
+
+### Próximos passos
+
+Organizar Brand Assets oficiais como Source of Truth.
 
 ---
 
-### Fase 6 — Brand Assets
+## 2026-07 — Brand Assets e Source of Truth
 
-**O que foi construído**
+**Horário:** não registrado  
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** Fase 6 (evolução até consolidação no Git em 2026-07-20)
 
-- Vetor mestre do símbolo oficial disponível em `assets/brand/source/master-symbol.svg`.
-- Organização da pasta `assets/brand/source/` como local oficial de source da marca, conforme `AI_CONTEXT.md`.
-- Referências raster em `assets/brand/reference/` (arquivos PNG de apoio à identidade).
-- Conceito visual do símbolo (M em caminho ascendente) documentado no Brand Book.
-- No commit inicial do Git também constam artefatos de marca sob pasta “Missão OAB Design System” e `Logo.png` (estado histórico do repositório).
-- Consolidação da estrutura oficial `assets/brand/` com pastas `source/`, `exports/`, `favicon/`, `social/`, `og/`, `app/` e `reference/`.
-- Distinção formal entre SVGs mestres finais e arquivos editáveis `*_INK.svg`.
-- Criação de `assets/brand/README.md` (Source of Truth, nomenclatura e regras de uso).
-- Adoção do logo horizontal oficial (`master-logo-horizontal.svg`) no header e footer da landing.
-- Catálogo completo de mestres em `source/`: symbol, typography, logo-horizontal, logo-vertical e variantes black/white.
-- Fechamento da migração (commit `0ca07fc`, 2026-07-20): remoção das cópias legadas na raiz (`Logo.png`, pasta “Missão OAB Design System”), com preservação histórica em `assets/brand/reference/` e absorção dos SVGs legados nas variantes oficiais em `source/`.
-- Atualização da árvore de pastas em `DESIGN_GUIDE.md` apontando `assets/brand/` como identidade oficial.
+### Contexto
 
-**Por que foi construído**
+Havia risco de redesenho improvisado e de uso de PNGs/legados como se fossem oficiais.
 
-Para impedir redesenho improvisado da marca e garantir uma fonte oficial única para implementação na landing e em canais futuros.
+### Objetivo
 
-**Decisões importantes**
+Estabelecer `assets/brand/` com mestres SVG, variantes, `*_INK`, `reference/` e README operacional.
 
-- Nunca redesenhar símbolo/logo; nunca alterar proporções; nunca recriar marca em HTML/CSS.
-- Preferir SVG oficial a PNG/screenshot quando o SVG existir.
-- SVGs sem sufixo `_INK` são finais; apenas `*_INK.svg` podem ser editados no Inkscape.
-- Landing e novos materiais devem consumir exclusivamente `assets/brand/source/`.
-- Pasta `reference/` preserva PNGs históricos e não é Source of Truth.
-- Cópias legadas fora de `assets/brand/` não devem ser reintroduzidas como Source of Truth.
+### Decisões
 
-**Arquivos e sistemas nascidos nesta etapa**
+- Nunca redesenhar; nunca alterar proporções; nunca recriar marca em HTML/CSS.
+- Preferir SVG oficial a PNG.
+- Só `*_INK.svg` editáveis no Inkscape; demais mestres finais.
+- `reference/` não é Source of Truth.
+- Landing deve consumir `assets/brand/source/`.
 
-- `assets/brand/source/` (mestres finais e `*_INK`)
-- `assets/brand/exports/`, `favicon/`, `social/`, `og/`, `app/`
-- `assets/brand/reference/` (referências PNG)
+### Impacto
+
+Fonte única de identidade para implementação e canais futuros.
+
+### Áreas e documentos envolvidos
+
+- `assets/brand/source/`, `exports/`, `favicon/`, `social/`, `og/`, `app/`, `reference/`
 - `assets/brand/README.md`
-- Regras de uso da marca em `AI_CONTEXT.md` (incluindo seção Brand Assets Oficiais) e no Brand Book
+- Regras em `AI_CONTEXT.md` e Brand Book
+
+### Próximos passos
+
+Fechar migração das cópias legadas na raiz e consumir o logo oficial na landing (concluído em commit posterior no mesmo dia).
 
 ---
 
-### Fase 7 — Governança, IA e versionamento
+## 2026-07-20 18:56 — Inicialização do repositório Git
 
-**O que foi construído**
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** `[0.1.0]` · commit `ef37433`
 
-- `AI_CONTEXT.md` como documento prioritário para agentes de IA (visão, docs obrigatórios, regras de marca e uso na landing).
-- Inicialização do repositório Git (`ef37433`, 2026-07-20, mensagem: `chore: initialize Missao OAB project`).
-- `CHANGELOG.md` inicial (versão v0.1.0) registrando estrutura inicial, AI Context, Master Symbol e documentação.
-- Sistema permanente de histórico institucional (`HISTORY.md`) e governança de changelog.
-- `PROJECT_RULES.md` como contrato operacional permanente do repositório (fluxo de trabalho, identidade visual, documentação, changelog/history e commits).
-- Inclusão de `PROJECT_RULES.md` como leitura obrigatória na seção Governança do `AI_CONTEXT.md`.
-- `PROJECT_INDEX.md` como índice mestre e, em seguida, como **bootloader / orquestrador de contexto** oficial (Decision Tree, Boot Sequence e carregamento inteligente).
-- Alinhamento de `AI_CONTEXT.md` e `PROJECT_RULES.md` à regra permanente: iniciar pelo Index, classificar a tarefa e carregar apenas o subconjunto necessário de documentos.
+### Contexto
 
-**Por que foi construído**
+O trabalho já existia em arquivos; faltava versionamento formal.
 
-Para preservar memória institucional, reduzir decisões inventadas por agentes, exigir aprovação humana antes de registrar mudanças relevantes e padronizar o onboarding de qualquer IA com menor consumo de contexto/tokens.
+### Objetivo
 
-**Decisões importantes**
+Inicializar o repositório Git na branch `main` com o conjunto então versionado.
 
-- Documentação de marca/produto deve ser consultada antes de mudanças relevantes — conforme o ramo da Decision Tree, não por leitura integral padrão.
-- Identidade visual oficial deve ser consumida dos SVGs em `assets/brand/source/`.
-- Changelog e History só podem ser gravados após aprovação explícita do responsável (regra formalizada no AI Context).
-- `PROJECT_RULES.md` prevalece sobre decisões momentâneas até alteração oficial.
-- Commits só ocorrem após validação, proposta de Conventional Commit e aprovação explícita.
-- `PROJECT_INDEX.md` é a porta de entrada oficial; nunca deve duplicar conhecimento — apenas roteia.
+### Decisões
 
-**Arquivos e sistemas nascidos nesta etapa**
+- Commit inicial: `chore: initialize Missao OAB project`.
+- Incluir landing, docs, Design System, AI Context e estado inicial de brand assets (incluindo artefatos legados então presentes).
+
+### Impacto
+
+Linha de base comprovável para evolução e changelog.
+
+### Áreas e documentos envolvidos
+
+- Repositório completo no estado `ef37433`
+- `CHANGELOG` inicial (v0.1.0), depois reorganizado
+
+### Próximos passos
+
+Formalizar governança operacional, histórico institucional e bootloader de contexto.
+
+---
+
+## 2026-07-20 — Governança operacional e bootloader de contexto
+
+**Horário:** não registrado (antes dos commits noturnos de docs/assets)  
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** Fase 7 · `PROJECT_INDEX` / `PROJECT_RULES` / `HISTORY` / `CHANGELOG`
+
+### Contexto
+
+Agentes de IA e colaboradores precisavam de contrato operacional e porta de entrada única, sem carregar toda a documentação por padrão.
+
+### Objetivo
+
+Estabelecer `AI_CONTEXT`, `PROJECT_RULES`, `HISTORY`, `CHANGELOG` (Keep a Changelog) e evoluir `PROJECT_INDEX` a bootloader com Decision Tree e carregamento seletivo.
+
+### Decisões
+
+- Consultar docs oficiais antes de mudanças relevantes (por ramo, não leitura integral).
+- HISTORY/CHANGELOG só após aprovação explícita.
+- Commits só após proposta Conventional Commit e aprovação.
+- `PROJECT_INDEX` não duplica conhecimento — apenas roteia.
+
+### Impacto
+
+Onboarding previsível, menor consumo de tokens e memória institucional rastreável.
+
+### Áreas e documentos envolvidos
 
 - `AI_CONTEXT.md`
-- Repositório Git (branch `main`)
-- `CHANGELOG.md`
-- `HISTORY.md`
 - `PROJECT_RULES.md`
 - `PROJECT_INDEX.md`
+- `HISTORY.md`
+- `CHANGELOG.md`
+
+### Próximos passos
+
+Commit do bootloader (`cc3301d`) e fechamento da árvore de Brand Assets.
 
 ---
 
-## Linha do tempo comprovável (resumo)
+## 2026-07-20 22:29 — Commit do PROJECT_INDEX como bootloader
 
-| Evidência | O que comprova |
-|---|---|
-| Documentos em `docs/` e Design System com “Julho de 2026” / v1.0 | Fundação documental de produto, marca e design no ciclo de Julho/2026 |
-| Comentários de sprint em `index.html` e `css/style.css` | Evolução iterativa da landing e da base visual |
-| Assets em `assets/brand/` | Existência do símbolo mestre e referências de marca |
-| Commit Git `0ca07fc` (2026-07-20) | Fechamento da árvore Brand Assets, consumo na landing e remoção das cópias legadas na raiz |
-| Commit Git `ef37433` (2026-07-20) | Inicialização formal do repositório com o conjunto então versionado |
-| `AI_CONTEXT.md` | Metáfora mapa/caminho e regras de governança para IA |
-| `PROJECT_INDEX.md` (v1.0.0, 2026-07-20) | Bootloader oficial e orquestração de contexto por Decision Tree |
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** commit `cc3301d`
+
+### Contexto
+
+A documentação de governança do Index/Rules/HISTORY/CHANGELOG estava pronta para versionar.
+
+### Objetivo
+
+Registrar oficialmente o bootloader e as regras de carregamento seletivo.
+
+### Decisões
+
+- Mensagem: `docs: add PROJECT_INDEX as context bootloader`.
+
+### Impacto
+
+Governança de contexto versionada na `main`.
+
+### Áreas e documentos envolvidos
+
+- `PROJECT_INDEX.md`, `AI_CONTEXT.md`, `PROJECT_RULES.md`, `HISTORY.md`, `CHANGELOG.md`
+
+### Próximos passos
+
+Completar Brand Assets e wiring da landing.
+
+---
+
+## 2026-07-20 22:32 — Fechamento da árvore Brand Assets e consumo na landing
+
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** commit `0ca07fc`
+
+### Contexto
+
+Cópias legadas na raiz coexistiam com a estrutura oficial em `assets/brand/`.
+
+### Objetivo
+
+Completar mestres em `source/`, preservar históricos em `reference/`, remover legados da raiz e apontar header/footer para `master-logo-horizontal.svg`.
+
+### Decisões
+
+- Não sobrescrever mestres oficiais com arquivos antigos.
+- Preservar `Logo.png` como `assets/brand/reference/1Logo.png`.
+- Absorver SVGs da pasta Design System nas variantes oficiais.
+
+### Impacto
+
+Source of Truth única; landing alinhada aos assets oficiais.
+
+### Áreas e documentos envolvidos
+
+- `assets/brand/**`
+- `index.html`
+- `DESIGN_GUIDE.md`
+
+### Próximos passos
+
+Registrar a migração em HISTORY/CHANGELOG (`7890ca4`).
+
+---
+
+## 2026-07-20 22:34 — Registro documental da migração de Brand Assets
+
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** commit `7890ca4`
+
+### Contexto
+
+A migração física/visual já estava commitada; faltava o registro institucional/técnico.
+
+### Objetivo
+
+Atualizar HISTORY (Fase 6) e CHANGELOG `[Unreleased]` com a migração.
+
+### Decisões
+
+- Mensagem: `docs: record brand assets migration in HISTORY and CHANGELOG`.
+
+### Impacto
+
+Rastreabilidade da consolidação de marca no diário e no changelog.
+
+### Áreas e documentos envolvidos
+
+- `HISTORY.md`, `CHANGELOG.md`
+
+### Próximos passos
+
+Arquitetar automações do Ecossistema Missão (MOBS) — apenas documentação.
+
+---
+
+## 2026-07-20 — Necessidade de um sistema de automações do ecossistema
+
+**Horário:** não registrado  
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** origem da fase MOBS
+
+### Contexto
+
+Processos repetitivos (assets, docs, validação, release) tenderiam a ser reinventados por produto se cada marca tivesse scripts próprios.
+
+### Objetivo
+
+Reprojetar a arquitetura de automações pensando no **Ecossistema Missão**, não só na Missão OAB.
+
+### Decisões
+
+- Documentação antes de implementação.
+- Configuração acima de código; zero duplicação; modularidade.
+
+### Impacto
+
+Início da trilha MOBS como engenharia de plataforma.
+
+### Áreas e documentos envolvidos
+
+- Governança existente (`PROJECT_INDEX`, `AI_CONTEXT`, `PROJECT_RULES`)
+- Futuro `project/automation/`
+
+### Próximos passos
+
+Nomear e definir a plataforma de engenharia.
+
+---
+
+## 2026-07-20 — Criação e definição do nome MOBS
+
+**Horário:** não registrado  
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** MOBS (Missão Build Operating System)
+
+### Contexto
+
+Era preciso um nome e um papel claros para a plataforma de engenharia.
+
+### Objetivo
+
+Definir o MOBS como Plataforma Oficial de Engenharia do Ecossistema Missão.
+
+### Decisões
+
+- MOBS não é script isolado nem build de um único produto.
+- Missão OAB é o primeiro produto, não o limite.
+
+### Impacto
+
+Vocabulário institucional único para engenharia do ecossistema.
+
+### Áreas e documentos envolvidos
+
+- `project/automation/MOBS.md` (criado na sequência)
+
+### Próximos passos
+
+Expandir a visão além de “Build System”.
+
+---
+
+## 2026-07-20 — Do Build System à plataforma do Ecossistema Missão
+
+**Horário:** não registrado  
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** MOBS / `BUILD_SYSTEM.md`
+
+### Contexto
+
+“Build System” sozinho não cobria multi-produto, multi-marca e orquestração.
+
+### Objetivo
+
+Posicionar o MOBS como plataforma; `BUILD_SYSTEM.md` como mapa de módulos do ecossistema — não build exclusivo da Missão OAB.
+
+### Decisões
+
+- Um motor para muitos projetos.
+- Engines/módulos genéricos, nunca “módulo da Missão OAB”.
+
+### Impacto
+
+Arquitetura preparada para CAPA, MOBS, MOAI, ENEM, Medicina, Concursos e futuros.
+
+### Áreas e documentos envolvidos
+
+- `MOBS.md`, `BUILD_SYSTEM.md`
+
+### Próximos passos
+
+Modelar projetos e marcas.
+
+---
+
+## 2026-07-20 — Arquitetura multi-projeto e multi-marca
+
+**Horário:** não registrado  
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** `PROJECT_ENGINE.md` · `BRAND_ENGINE.md`
+
+### Contexto
+
+O motor não deve hardcodar “Missão OAB”; deve conhecer **projetos** e **marcas**.
+
+### Objetivo
+
+Definir modelos conceituais `projects/` e `assets/brands/` e a relação Projeto × Marca.
+
+### Decisões
+
+Suportar: marca independente; projeto independente; projeto associado a marca; N projetos / 1 marca; projeto com marca própria.  
+Schemas oficiais **não** nesta fase.
+
+### Impacto
+
+Contrato conceitual para herança de infraestrutura via config.
+
+### Áreas e documentos envolvidos
+
+- `PROJECT_ENGINE.md`, `BRAND_ENGINE.md`
+
+### Próximos passos
+
+Materializar a documentação em `project/automation/` e integrar à governança.
+
+---
+
+## 2026-07-20 — Criação da documentação em project/automation/
+
+**Horário:** não registrado  
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** pacote documental MOBS inicial
+
+### Contexto
+
+A arquitetura precisava de fonte oficial versionável, sem código.
+
+### Objetivo
+
+Criar `MOBS`, `BUILD_SYSTEM`, `BRAND_ENGINE`, `PROJECT_ENGINE`, `AUTOMATION_ROADMAP`, `AUTOMATION_RULES` e `future/`.
+
+### Decisões
+
+- Apenas arquitetura; sem scripts.
+- Integrar ramos Engenharia em `PROJECT_INDEX`, regra MOBS em `AI_CONTEXT`, § Engenharia do Ecossistema em `PROJECT_RULES`.
+
+### Impacto
+
+Pilar de engenharia documental ao lado de Index/Rules/Context.
+
+### Áreas e documentos envolvidos
+
+- `project/automation/**`
+- `PROJECT_INDEX.md`, `AI_CONTEXT.md`, `PROJECT_RULES.md`
+
+### Próximos passos
+
+Refinar taxonomia e fronteiras do Core.
+
+---
+
+## 2026-07-20 — Taxonomia Core, Engine, Generator e Validator
+
+**Horário:** não registrado  
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** MOBS arquitetura 0.1.1 (ajuste)
+
+### Contexto
+
+Nomes genéricos de “Engine” misturavam orquestração, geração e validação.
+
+### Objetivo
+
+Diferenciar formalmente Core/Orchestrator, Engine, Generator e Validator.
+
+### Decisões
+
+- Core orquestra; não gera assets nem altera docs; sem regras de marca/projeto.
+- Generators produzem derivados; Validators só verificam; Engines resolvem contexto/domínio.
+
+### Impacto
+
+Vocabulário estável para o roadmap e para implementação futura.
+
+### Áreas e documentos envolvidos
+
+- `BUILD_SYSTEM.md`, `MOBS.md`, `AUTOMATION_ROADMAP.md`, `AUTOMATION_RULES.md`
+
+### Próximos passos
+
+Fixar o Project Engine como contexto primeiro.
+
+---
+
+## 2026-07-20 — Project Engine como resolvedor de contexto
+
+**Horário:** não registrado  
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** MOBS arquitetura 0.1.1 (ajuste)
+
+### Contexto
+
+Módulos de ação não devem descobrir o projeto por hardcode.
+
+### Objetivo
+
+Posicionar o Project Engine como camada de contexto anterior aos demais módulos.
+
+### Decisões
+
+Fluxo: `project.json` → Project Engine → Brand / Docs / Asset Generator / Validation / Release.  
+MOBS Core seleciona, ordena e consolida logs.
+
+### Impacto
+
+Orquestração previsível e genérica.
+
+### Áreas e documentos envolvidos
+
+- `PROJECT_ENGINE.md`, `BUILD_SYSTEM.md`, `BRAND_ENGINE.md`, `PROJECT_INDEX.md`
+
+### Próximos passos
+
+Aprovação oficial da arquitetura 0.1.1 e fechamento documental.
+
+---
+
+## 2026-07-20 — Aprovação oficial da arquitetura documental MOBS 0.1.1
+
+**Horário:** não registrado  
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** MOBS **0.1.1** (aprovada)
+
+### Contexto
+
+Ajustes de taxonomia, Core, Project Engine e Projeto × Marca estavam concluídos na documentação.
+
+### Objetivo
+
+Congelar a arquitetura documental aprovada.
+
+### Decisões
+
+- Aprovar 0.1.1 como oficial.
+- Manter explícito: sem scripts, schemas, código, migração de assets ou módulos executáveis.
+
+### Impacto
+
+Baseline arquitetural para qualquer implementação futura (roadmap v1+).
+
+### Áreas e documentos envolvidos
+
+- Pacote `project/automation/` v0.1.1
+- Integrações de governança
+
+### Próximos passos
+
+Fechamento em HISTORY/CHANGELOG e, em seguida, evolução do padrão do próprio HISTORY.
+
+---
+
+## 2026-07-20 — Fechamento documental da fase MOBS 0.1.1
+
+**Horário:** não registrado  
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** MOBS 0.1.1 · registro em HISTORY/CHANGELOG (pré-padrão cronológico)
+
+### Contexto
+
+A arquitetura aprovada precisava constar no diário institucional e no changelog técnico.
+
+### Objetivo
+
+Registrar a Fase 8 / seção MOBS 0.1.1 e validar consistência documental.
+
+### Decisões
+
+- Não commitar ainda até evolução do padrão HISTORY/CHANGELOG.
+- Não criar tag/release global nova só por causa do MOBS documental.
+
+### Impacto
+
+Rastreabilidade da aprovação 0.1.1 nos dois instrumentos (ainda sob formato antigo do HISTORY, depois reorganizado).
+
+### Áreas e documentos envolvidos
+
+- `HISTORY.md`, `CHANGELOG.md`
+- Ajustes menores de status em `MOBS.md`, roadmap e `future/README.md`
+
+### Próximos passos
+
+Adotar HISTORY cronológico e reforçar a distinção HISTORY × CHANGELOG.
+
+---
+
+## 2026-07-20 23:16 — Adoção do padrão cronológico de HISTORY e separação HISTORY × CHANGELOG
+
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** governança documental
+
+### Contexto
+
+O HISTORY em “fases” condensava vários acontecimentos; o CHANGELOG e o HISTORY corriam risco de narrar a mesma história duas vezes.
+
+### Objetivo
+
+Tornar o HISTORY um diário cronológico com data/hora/fuso; manter o CHANGELOG técnico e versionável; formalizar a diferença na governança.
+
+### Decisões
+
+- Separação formal: HISTORY = diário (contexto, decisões, impacto); CHANGELOG = alterações técnicas categorizadas.
+- Fuso oficial America/Sao_Paulo.
+- Proibição de inventar horários históricos.
+- MOBS 0.1.1 permanece em `[Unreleased]` até release global justificada.
+- Entradas MOBS separadas na sequência real do mesmo dia, com horário não registrado quando não comprovável.
+
+### Impacto
+
+Maior rastreabilidade das decisões; menos duplicação narrativa; padrão sustentável para o ecossistema.
+
+### Áreas e documentos envolvidos
+
+- `HISTORY.md`
+- `CHANGELOG.md`
+- `PROJECT_RULES.md` (seção History e Changelog)
+
+### Próximos passos
+
+Aprovar o pacote completo (MOBS 0.1.1 + governança + este padrão) e, somente então, realizar o commit único acordado — sem incluir `menções_honrosas/`.
 
 ---
 
@@ -274,6 +788,7 @@ Para preservar memória institucional, reduzir decisões inventadas por agentes,
 | Campo | Valor |
 |---|---|
 | Documento | HISTORY.md |
-| Escopo | Marcos e fases do projeto Missão OAB |
-| Critério de inclusão | Apenas fatos verificáveis em arquivos ou Git |
-| Relação com Changelog | History = marcos; Changelog = mudanças técnicas relevantes versionadas |
+| Tipo | Diário cronológico de produto e engenharia |
+| Fuso | America/Sao_Paulo |
+| Relação com Changelog | HISTORY = narrativa e decisões; CHANGELOG = alterações técnicas versionáveis |
+| Critério | Fatos verificáveis; sem horários inventados |

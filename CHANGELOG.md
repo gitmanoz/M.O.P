@@ -1,46 +1,102 @@
 # Changelog
 
-Todas as mudanças relevantes deste projeto serão documentadas neste arquivo.
+Registro **técnico**, objetivo e versionável das alterações relevantes deste repositório.
 
-O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/),
-e o projeto utiliza versionamento semântico quando aplicável.
+O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).  
+Versionamento semântico é usado quando aplicável a **releases do projeto** — não inventar versões globais sem release justificada.
+
+## Diferença em relação ao HISTORY.md
+
+| Documento | Função |
+|---|---|
+| **HISTORY.md** | Diário cronológico: contexto, decisões, impacto, próximos passos |
+| **CHANGELOG.md** | O que foi Added / Changed / Fixed / Removed / Deprecated / Security |
+
+Não duplicar a narrativa completa das decisões aqui.  
+Arquitetura **conceitual** não deve ser apresentada como funcionalidade executável.
+
+Categorias usadas apenas quando houver itens:
+
+- Added · Changed · Fixed · Removed · Deprecated · Security
+
+---
 
 ## [Unreleased]
 
 ### Added
 
 - Sistema permanente de histórico institucional (`HISTORY.md`).
-- Seção de governança de histórico e changelog em `AI_CONTEXT.md`.
+- Governança de histórico e changelog em `AI_CONTEXT.md`.
 - Estrutura definitiva de Brand Assets em `assets/brand/` (`source`, `exports`, `favicon`, `social`, `og`, `app`) e `assets/brand/README.md`.
-- Catálogo completo de SVGs mestres em `assets/brand/source/` (symbol, typography, logo horizontal/vertical, variantes black/white e `*_INK`).
-- PNGs históricos preservados em `assets/brand/reference/`.
+- Catálogo completo de SVGs mestres em `assets/brand/source/` (symbol, typography, logos horizontal/vertical, variantes black/white e `*_INK`).
+- PNGs históricos em `assets/brand/reference/`.
 - Seção “Brand Assets Oficiais” em `AI_CONTEXT.md`.
-- Contrato operacional permanente do repositório (`PROJECT_RULES.md`).
-- Seção Governança em `AI_CONTEXT.md`, com `PROJECT_RULES.md` como leitura obrigatória.
-- Bootloader oficial da documentação (`PROJECT_INDEX.md` v1.0.0): Decision Tree, Boot Sequence e carregamento inteligente de contexto.
-- Seção “Inicialização do Projeto” e regra permanente de carregamento seletivo em `AI_CONTEXT.md`.
-- Seção “Gerenciamento de Contexto” em `PROJECT_RULES.md`.
+- Contrato operacional `PROJECT_RULES.md` e seção Governança em `AI_CONTEXT.md`.
+- Bootloader `PROJECT_INDEX.md` (Decision Tree, Boot Sequence, carregamento seletivo).
+- Seções de carregamento seletivo / gerenciamento de contexto em `AI_CONTEXT.md` e `PROJECT_RULES.md`.
+
+#### MOBS — arquitetura documental 0.1.1 (conceitual)
+
+Documentação da plataforma de engenharia do **Ecossistema Missão** (config-driven, multi-projeto, multi-marca).
+
+**Documentação criada**
+
+- `project/automation/MOBS.md`
+- `project/automation/BUILD_SYSTEM.md`
+- `project/automation/BRAND_ENGINE.md`
+- `project/automation/PROJECT_ENGINE.md`
+- `project/automation/AUTOMATION_ROADMAP.md`
+- `project/automation/AUTOMATION_RULES.md`
+- `project/automation/future/README.md`
+
+**Documentação atualizada (governança)**
+
+- `PROJECT_INDEX.md` — ramos Engenharia / Automação
+- `AI_CONTEXT.md` — consulta obrigatória ao MOBS antes de automações/build/deploy
+- `PROJECT_RULES.md` — Engenharia do Ecossistema
+
+**Arquitetura conceitual aprovada (não executável)**
+
+- Taxonomia: Core / Orchestrator, Engine, Generator, Validator
+- Project Engine como resolução de contexto
+- MOBS Core como orquestrador sem regras de domínio
+- Modelo Projeto × Marca
+- Roadmap v1–v10 (planejamento)
+
+**Ainda não implementado nesta fase**
+
+- Scripts
+- Schemas oficiais (`project.json` / `brand.json`)
+- Código de automação
+- Migração de assets (`assets/brand/` → `assets/brands/…`)
+- Engines executáveis
+- Generators executáveis
+- Validators executáveis
+- MOBS Core executável
+- Processos de build ou deploy automatizados
 
 ### Changed
 
-- Reestruturação do `CHANGELOG.md` para o padrão Keep a Changelog.
+- `CHANGELOG.md` no padrão Keep a Changelog.
 - Nomenclatura dos SVGs Inkscape (`*_INK.svg`) sem prefixos numéricos.
-- Landing passa a consumir `assets/brand/source/master-logo-horizontal.svg` no header e footer.
-- Árvore de organização de arquivos atualizada em `DESIGN_GUIDE.md`.
-- `PROJECT_INDEX.md` evolui de índice mestre para orquestrador de contexto (onboarding seletivo por categoria de tarefa).
-- Leitura obrigatória em `PROJECT_RULES.md` e STOP em `AI_CONTEXT.md` alinhados ao boot via Decision Tree (sem carregar documentação completa por padrão).
-- Processo de trabalho em `PROJECT_RULES.md` alinhado à Boot Sequence.
-- Fase 6 de `HISTORY.md` atualizada com o fechamento da migração de Brand Assets (commit `0ca07fc`).
-- Fase 7 de `HISTORY.md` atualizada com o marco do `PROJECT_INDEX`.
+- Landing consome `assets/brand/source/master-logo-horizontal.svg` no header e footer.
+- Árvore de pastas em `DESIGN_GUIDE.md` atualizada para `assets/brand/`.
+- `PROJECT_INDEX.md` como orquestrador de contexto (onboarding seletivo).
+- Leitura obrigatória e processo de trabalho alinhados ao boot seletivo / Boot Sequence.
+- `BUILD_SYSTEM.md` como arquitetura MOBS do **ecossistema** (não build exclusivo da Missão OAB).
+- `HISTORY.md` reorganizado como diário cronológico (data/hora/fuso America/Sao_Paulo; sem horários inventados).
+- `CHANGELOG.md` padronizado com propósito explícito e distinção formal em relação ao HISTORY.
+- `PROJECT_RULES.md` atualizado com a seção **History e Changelog**.
 
 ### Removed
 
-- Cópias legadas de marca na raiz do repositório (`Logo.png` e pasta “Missão OAB Design System”), após preservação em `assets/brand/reference/` e consolidação em `assets/brand/source/`.
+- Cópias legadas de marca na raiz (`Logo.png`, pasta “Missão OAB Design System”), após preservação em `assets/brand/reference/` e consolidação em `assets/brand/source/`.
+
+---
 
 ## [0.1.0] - 2026-07-20
 
-Primeiro marco versionado do repositório, correspondente ao commit Git `ef37433`
-(`chore: initialize Missao OAB project`).
+Primeiro marco versionado do repositório — commit `ef37433` (`chore: initialize Missao OAB project`).
 
 ### Added
 
@@ -51,8 +107,8 @@ Primeiro marco versionado do repositório, correspondente ao commit Git `ef37433
 - Design System documental: `DESIGN_GUIDE.md` e `UI_KIT.md`.
 - Tokens e arquitetura visual inicial em `css/variables.css` e demais folhas de estilo.
 - Identidade visual source: `assets/brand/source/master-symbol.svg`.
-- Artefatos de marca adicionais versionados no commit inicial (incluindo pasta “Missão OAB Design System” e `Logo.png`).
+- Artefatos de marca adicionais no commit inicial (incluindo pasta “Missão OAB Design System” e `Logo.png`).
 - Placeholders de mídia em `img/logo/` e `img/hero/`.
 - `AI_CONTEXT.md` para orientação de agentes de IA, metáfora mapa/caminho e regras de uso da marca.
 - `README.md` (arquivo criado; conteúdo vazio no estado versionado).
-- Registro inicial de changelog (versão v0.1.0), posteriormente reorganizado neste formato.
+- Registro inicial de changelog (v0.1.0), posteriormente reorganizado neste formato.

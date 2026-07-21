@@ -2,8 +2,8 @@
 
 | Campo | Valor |
 |---|---|
-| **Projeto** | Missão OAB |
-| **Versão** | 1.0.0 |
+| **Projeto** | Missão OAB (primeiro produto do Ecossistema Missão) |
+| **Versão** | 1.1.0 |
 | **Última atualização** | 2026-07-20 |
 | **Responsável** | Equipe Missão OAB |
 | **Status** | Oficial |
@@ -165,10 +165,48 @@ Qual é a tarefa?
 │    → docs/product/PRD.md
 │    → docs/product/ROADMAP.md
 │    → DESIGN_GUIDE.md
+│    (+ project/automation/ se a arquitetura for de engenharia/MOBS)
+│
+├─ Engenharia
+│    → AI_CONTEXT.md
+│    → PROJECT_RULES.md
+│    → project/automation/MOBS.md
+│    → project/automation/BUILD_SYSTEM.md
+│    → project/automation/PROJECT_ENGINE.md
+│    → project/automation/BRAND_ENGINE.md
+│    → project/automation/AUTOMATION_ROADMAP.md
+│    → project/automation/AUTOMATION_RULES.md
+│    (carregar Engines adicionais só se a tarefa citar)
+│
+├─ Automação / Build / Deploy / Geração automática
+│    → mesmo conjunto de Engenharia (mínimo: MOBS + AUTOMATION_RULES + Engine afetada)
 │
 └─ Nova funcionalidade
      → Carregar conforme as áreas afetadas
        (combinar ramos da árvore; manter o menor conjunto)
+```
+
+Ordem sugerida no ramo **Engenharia**:
+
+```
+Engenharia
+  ↓
+MOBS
+  ↓
+BUILD_SYSTEM
+  ↓
+PROJECT_ENGINE      ← contexto primeiro
+  ↓
+BRAND_ENGINE
+  ↓
+AUTOMATION_ROADMAP
+  (+ AUTOMATION_RULES sempre que for criar/alterar automação)
+```
+
+Fluxo conceitual do MOBS:
+
+```
+project.json → Project Engine → Brand / Docs / Asset Generator / Validation / Release
 ```
 
 Esta árvore deve permanecer clara, visual e facilmente expandida no futuro.
@@ -214,7 +252,8 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `docs/brand/` | Brand Book, voz e copywriting |
 | `DESIGN_GUIDE.md` / `UI_KIT.md` | Design System e componentes |
 | `HISTORY.md` / `CHANGELOG.md` | História institucional e mudanças versionadas |
-| `assets/brand/` | Identidade visual oficial (SVGs em `source/`) |
+| `project/automation/` | MOBS — plataforma de engenharia do Ecossistema Missão |
+| `assets/brand/` | Identidade visual oficial do produto atual (SVGs em `source/`) |
 | `index.html` | Landing page |
 | `css/` / `js/` / `img/` | Estilos, scripts e mídia da landing |
 | `favicon/` | Favicon da landing (quando existir) |
@@ -242,6 +281,12 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `UI_KIT.md` | Componentes e especificação de UI |
 | `HISTORY.md` | Histórico institucional (fases e marcos) |
 | `CHANGELOG.md` | Mudanças técnicas relevantes (Keep a Changelog) |
+| `project/automation/MOBS.md` | Visão e missão da plataforma de engenharia do ecossistema |
+| `project/automation/BUILD_SYSTEM.md` | Taxonomia Core/Engine/Generator/Validator e fronteiras do Core |
+| `project/automation/BRAND_ENGINE.md` | Modelo multi-marca (config-driven) |
+| `project/automation/PROJECT_ENGINE.md` | Contexto de projeto e relação projeto↔marca |
+| `project/automation/AUTOMATION_ROADMAP.md` | Evolução versionada das Engines |
+| `project/automation/AUTOMATION_RULES.md` | Regras permanentes de automações |
 
 ---
 

@@ -34,6 +34,23 @@ Nunca carregar a documentação completa sem necessidade.
 
 O `PROJECT_INDEX` organiza a ordem de leitura e o subconjunto de contexto. Não substitui os demais documentos — apenas roteia para eles.
 
+## MOBS — Engenharia do Ecossistema
+
+Sempre que uma tarefa envolver:
+
+- automações;
+- scripts;
+- assets (geração, exportação, pipelines);
+- build;
+- deploy;
+- geração automática;
+
+consultar **primeiro** a documentação do MOBS em `project/automation/`, começando por `MOBS.md` e `AUTOMATION_RULES.md`, e em seguida a Engine afetada.
+
+Nunca implementar automações sem arquitetura documentada e aprovada.
+
+O MOBS é a plataforma de engenharia do **Ecossistema Missão** (não apenas da Missão OAB). Automações devem ser genéricas e configuráveis por marca/projeto.
+
 ## Governança
 
 `PROJECT_RULES.md` passa a ser **leitura obrigatória** antes da execução de qualquer tarefa.
@@ -65,6 +82,15 @@ Antes de realizar mudanças relevantes, consulte os arquivos adequados:
 - `PROJECT_INDEX.md`
 - `PROJECT_RULES.md`
 - `AI_CONTEXT.md`
+
+### Engenharia (Ecossistema / MOBS)
+
+- `project/automation/MOBS.md`
+- `project/automation/BUILD_SYSTEM.md`
+- `project/automation/BRAND_ENGINE.md`
+- `project/automation/PROJECT_ENGINE.md`
+- `project/automation/AUTOMATION_ROADMAP.md`
+- `project/automation/AUTOMATION_RULES.md`
 
 ### Marca
 

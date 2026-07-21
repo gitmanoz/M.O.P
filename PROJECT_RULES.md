@@ -45,6 +45,28 @@ Objetivos: menos tokens, mais velocidade e maior precisão — sem sacrificar a 
 
 ---
 
+## 2.2. Engenharia do Ecossistema
+
+Toda automação deve ser **genérica**.
+
+Nunca desenvolver soluções específicas para apenas um projeto quando uma solução reutilizável for possível.
+
+Sempre pensar primeiro no **Ecossistema Missão**.  
+Depois no **Projeto**.
+
+A plataforma oficial de engenharia é o **MOBS** (`project/automation/`).
+
+Antes de implementar automações, scripts, build, deploy ou geração automática:
+
+1. Consultar `project/automation/MOBS.md`.
+2. Consultar `project/automation/AUTOMATION_RULES.md`.
+3. Consultar a Engine e o roadmap afetados.
+4. Documentar e obter aprovação antes de código.
+
+Configuração acima de código. Um motor para muitos projetos e marcas.
+
+---
+
 ## 3. Identidade Visual
 
 - Nunca redesenhar logotipos.
@@ -89,6 +111,8 @@ Sempre manter coerência entre:
 - UI_KIT
 - HISTORY
 - CHANGELOG
+- PROJECT_INDEX
+- MOBS / documentação em `project/automation/`
 
 Nunca criar documentação conflitante.
 
@@ -108,9 +132,33 @@ Ao finalizar uma tarefa relevante:
 
 Alterações pequenas, temporárias, experimentais ou incompletas não devem ser registradas.
 
-Nunca inventar datas, versões, decisões ou acontecimentos.
+Nunca inventar datas, versões, decisões, horários ou acontecimentos.
 
 Utilizar Git, arquivos atuais e documentação como fontes de verdade.
+
+---
+
+## 6.1. History e Changelog
+
+`HISTORY.md` e `CHANGELOG.md` possuem responsabilidades diferentes e **não** devem duplicar integralmente o mesmo conteúdo.
+
+### HISTORY.md
+
+- É **cronológico** (mais antigo → mais recente).
+- Registra **data** e **hora** quando comprováveis.
+- Usa o fuso **America/Sao_Paulo**.
+- Explica contexto, objetivo, decisões, impacto, áreas envolvidas e próximos passos.
+- **Não aceita horários inventados** — se a hora não for comprovável, registrar apenas a data (ou o mês conhecido) e indicar horário não registrado.
+- Funciona como **diário** de produto e engenharia.
+- Não substitui documentação técnica permanente de origem.
+
+### CHANGELOG.md
+
+- É **técnico** e orientado a **alterações** e **versões**.
+- Usa categorias Keep a Changelog: Added, Changed, Fixed, Removed, Deprecated, Security (somente as necessárias).
+- Diferencia documentação criada, documentação atualizada, arquitetura conceitual e funcionalidades implementadas.
+- **Não** apresenta arquitetura conceitual como implementação executável.
+- **Não** substitui o `HISTORY.md`.
 
 ---
 
