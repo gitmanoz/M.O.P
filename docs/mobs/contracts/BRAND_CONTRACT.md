@@ -9,9 +9,9 @@ Ele **formaliza** o que o domínio já define e o que a constituição dos contr
 
 Autoridade, nesta ordem:
 
-1. [`WHY_MOBS.md`](WHY_MOBS.md) — propósito e princípios
-2. [`project/automation/MOBS.md`](project/automation/MOBS.md) — arquitetura da plataforma
-3. [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md) — significado de Marca e relações
+1. [`WHY_MOBS.md`](../foundation/WHY_MOBS.md) — propósito e princípios
+2. [`project/automation/MOBS.md`](../../../project/automation/MOBS.md) — arquitetura da plataforma
+3. [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md) — significado de Marca e relações
 4. [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md) — regras gerais de todo contrato
 
 Este documento **obedece** a essa cadeia.
@@ -36,7 +36,7 @@ WHY_MOBS → MOBS → DOMAIN_MODEL → CONFIGURATION_CONTRACTS
 | Dimensão | Situação |
 |---|---|
 | **Tipo** | Contrato concreto de configuração |
-| **Conceito de domínio** | Marca ([`DOMAIN_MODEL.md`](DOMAIN_MODEL.md)) |
+| **Conceito de domínio** | Marca ([`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md)) |
 | **Constituição aplicável** | [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md) |
 | **Contrato irmão** | [`PROJECT_CONTRACT.md`](PROJECT_CONTRACT.md) (sem autoridade sobre Marca) |
 | **Schemas / serializações** | Não definidos aqui |
@@ -50,7 +50,7 @@ WHY_MOBS → MOBS → DOMAIN_MODEL → CONFIGURATION_CONTRACTS
 - Não transforma Marca em extensão ou propriedade interna de Projeto.
 - Não altera a taxonomia Core / Engine / Generator / Validator.
 - Não descreve algoritmos, APIs, layouts físicos ou runtime.
-- Não substitui [`BRAND_ENGINE.md`](project/automation/BRAND_ENGINE.md) (papel da Engine).
+- Não substitui [`BRAND_ENGINE.md`](../../../project/automation/BRAND_ENGINE.md) (papel da Engine).
 - Não cataloga assets, tokens, temas ou variantes.
 
 ---
@@ -65,13 +65,13 @@ Formalizar o **acordo** entre quem declara uma Marca e quem a resolve ou consome
 - a plataforma possa orquestrar identidade a partir de um contexto resolvido — sem embutir regras de marca no Core;
 - a reutilização de identidade entre soluções ocorra sem duplicação nem hardcode.
 
-Alinhado a [`WHY_MOBS.md`](WHY_MOBS.md): configuração acima de duplicação; documentação antes da implementação; Core genérico.
+Alinhado a [`WHY_MOBS.md`](../foundation/WHY_MOBS.md): configuração acima de duplicação; documentação antes da implementação; Core genérico.
 
 ---
 
 ## 3. Princípios
 
-Este contrato **deriva** dos princípios de [`WHY_MOBS.md`](WHY_MOBS.md). Não os repete — aplica-os à entidade Marca:
+Este contrato **deriva** dos princípios de [`WHY_MOBS.md`](../foundation/WHY_MOBS.md). Não os repete — aplica-os à entidade Marca:
 
 | Princípio | Como se manifesta aqui |
 |---|---|
@@ -138,7 +138,7 @@ Com Marca formal, a plataforma **promete** identidade compartilhada e governáve
 
 ## 6. O que é uma Marca
 
-Conforme [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md):
+Conforme [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md):
 
 > Uma **Marca** é a identidade oficial (recursos e regras) que a plataforma resolve para qualquer consumidor que precise de Source of Truth visual/institucional.
 
@@ -292,7 +292,7 @@ Definições gerais: [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md) 
 
 | Papel | Atribuição neste contrato |
 |---|---|
-| **Authority** | [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md) — define oficialmente o significado de Marca |
+| **Authority** | [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md) — define oficialmente o significado de Marca |
 | **Owner** | Governança documental do MOBS (arquitetura do Ecossistema Missão) — responde pela evolução e manutenção **deste** contrato |
 
 Owner e Authority **não** são o mesmo tipo de responsabilidade.
@@ -300,7 +300,7 @@ Podem alinhar-se na prática; o modelo **não** pressupõe identidade.
 
 A Brand Engine **não** é Authority.
 Alterar o significado de Marca no domínio exige a Authority (domínio).
-Alterar as expectativas formais deste acordo exige o Owner, em harmonia com a Authority e com [`PROJECT_RULES.md`](PROJECT_RULES.md) / [`AUTOMATION_RULES.md`](project/automation/AUTOMATION_RULES.md).
+Alterar as expectativas formais deste acordo exige o Owner, em harmonia com a Authority e com [`PROJECT_RULES.md`](../../../PROJECT_RULES.md) / [`AUTOMATION_RULES.md`](../../../project/automation/AUTOMATION_RULES.md).
 
 ---
 
@@ -404,9 +404,9 @@ Dependência: Marca → Core **não** é de interpretação de domínio; é de *
 
 Este contrato estabelece que a resolução do contexto de Marca é responsabilidade da Brand Engine.
 A Engine interpreta instâncias válidas em conformidade com este contrato.
-O significado de Marca permanece sob Authority do [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md).
+O significado de Marca permanece sob Authority do [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md).
 
-Detalhe de responsabilidades de Engine: [`BRAND_ENGINE.md`](project/automation/BRAND_ENGINE.md) — não redefinidas aqui.
+Detalhe de responsabilidades de Engine: [`BRAND_ENGINE.md`](../../../project/automation/BRAND_ENGINE.md) — não redefinidas aqui.
 
 ---
 
@@ -567,7 +567,7 @@ Mecanismo físico de extensões: **não** definido nesta etapa.
 | **Authority** | Quem define o significado de Marca (domínio) |
 | **Associação declarativa** | Vínculo opcional Projeto↔Marca sem hardcode |
 
-Demais termos oficiais: [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md) e [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md).
+Demais termos oficiais: [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md) e [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md).
 
 ---
 
@@ -598,7 +598,7 @@ Nenhuma dessas é decisão oficial até contrato/aprovação explícita — alin
 3. Schemas e exemplos (Projeto e Marca)
 4. Implementação e Validators
 
-O roadmap de módulos permanece em [`AUTOMATION_ROADMAP.md`](project/automation/AUTOMATION_ROADMAP.md).
+O roadmap de módulos permanece em [`AUTOMATION_ROADMAP.md`](../../../project/automation/AUTOMATION_ROADMAP.md).
 
 ---
 
@@ -628,16 +628,16 @@ O domínio guarda o significado.
 
 ## Referências
 
-- [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md)
+- [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md)
 - [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md)
 - [`PROJECT_CONTRACT.md`](PROJECT_CONTRACT.md)
-- [`WHY_MOBS.md`](WHY_MOBS.md)
-- [`project/automation/MOBS.md`](project/automation/MOBS.md)
-- [`project/automation/BRAND_ENGINE.md`](project/automation/BRAND_ENGINE.md)
-- [`project/automation/PROJECT_ENGINE.md`](project/automation/PROJECT_ENGINE.md)
-- [`project/automation/BUILD_SYSTEM.md`](project/automation/BUILD_SYSTEM.md)
-- [`project/automation/AUTOMATION_RULES.md`](project/automation/AUTOMATION_RULES.md)
-- [`project/automation/AUTOMATION_ROADMAP.md`](project/automation/AUTOMATION_ROADMAP.md)
-- [`PROJECT_INDEX.md`](PROJECT_INDEX.md)
-- [`PROJECT_RULES.md`](PROJECT_RULES.md)
-- [`AI_CONTEXT.md`](AI_CONTEXT.md)
+- [`WHY_MOBS.md`](../foundation/WHY_MOBS.md)
+- [`project/automation/MOBS.md`](../../../project/automation/MOBS.md)
+- [`project/automation/BRAND_ENGINE.md`](../../../project/automation/BRAND_ENGINE.md)
+- [`project/automation/PROJECT_ENGINE.md`](../../../project/automation/PROJECT_ENGINE.md)
+- [`project/automation/BUILD_SYSTEM.md`](../../../project/automation/BUILD_SYSTEM.md)
+- [`project/automation/AUTOMATION_RULES.md`](../../../project/automation/AUTOMATION_RULES.md)
+- [`project/automation/AUTOMATION_ROADMAP.md`](../../../project/automation/AUTOMATION_ROADMAP.md)
+- [`PROJECT_INDEX.md`](../../../PROJECT_INDEX.md)
+- [`PROJECT_RULES.md`](../../../PROJECT_RULES.md)
+- [`AI_CONTEXT.md`](../../../AI_CONTEXT.md)

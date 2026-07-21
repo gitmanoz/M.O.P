@@ -14,7 +14,7 @@ Analogia institucional:
 
 | Camada | Autoridade sobre |
 |---|---|
-| [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md) | Significado lógico do domínio |
+| [`DOMAIN_MODEL.md`](docs/mobs/domain/DOMAIN_MODEL.md) | Significado lógico do domínio |
 | [`DOCUMENT_ARCHITECTURE.md`](DOCUMENT_ARCHITECTURE.md) | Organização física da documentação |
 
 ---
@@ -94,10 +94,10 @@ Não há sobreposição de responsabilidade entre eles.
 
 | Documento | Dimensão que governa | O que responde |
 |---|---|---|
-| [`WHY_MOBS.md`](WHY_MOBS.md) | **Propósito e direção** | Por que o MOBS existe; princípios estratégicos; bússola de decisão |
+| [`WHY_MOBS.md`](docs/mobs/foundation/WHY_MOBS.md) | **Propósito e direção** | Por que o MOBS existe; princípios estratégicos; bússola de decisão |
 | [`project/automation/MOBS.md`](project/automation/MOBS.md) | **Plataforma** | O que é a plataforma; escopo; organização documental de alto nível |
-| [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md) | **Domínio lógico** | O que existe no universo MOBS; entidades, relações e fronteiras |
-| [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md) | **Constituição dos contratos** | Como contratos existem, evoluem e se relacionam com a plataforma |
+| [`DOMAIN_MODEL.md`](docs/mobs/domain/DOMAIN_MODEL.md) | **Domínio lógico** | O que existe no universo MOBS; entidades, relações e fronteiras |
+| [`CONFIGURATION_CONTRACTS.md`](docs/mobs/contracts/CONFIGURATION_CONTRACTS.md) | **Constituição dos contratos** | Como contratos existem, evoluem e se relacionam com a plataforma |
 | [`ARCHITECTURE_TASK_PROTOCOL.md`](ARCHITECTURE_TASK_PROTOCOL.md) | **Processo arquitetural** | Como tarefas arquiteturais são planejadas, revisadas e aprovadas |
 | [`DOCUMENT_ARCHITECTURE.md`](DOCUMENT_ARCHITECTURE.md) | **Organização física** | Onde documentos vivem; como o repositório escala e se descobre |
 
@@ -418,9 +418,9 @@ Organizar não é burocracia.
 
 ## Referências
 
-- [`WHY_MOBS.md`](WHY_MOBS.md)
-- [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md)
-- [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md)
+- [`WHY_MOBS.md`](docs/mobs/foundation/WHY_MOBS.md)
+- [`DOMAIN_MODEL.md`](docs/mobs/domain/DOMAIN_MODEL.md)
+- [`CONFIGURATION_CONTRACTS.md`](docs/mobs/contracts/CONFIGURATION_CONTRACTS.md)
 - [`ARCHITECTURE_TASK_PROTOCOL.md`](ARCHITECTURE_TASK_PROTOCOL.md)
 - [`PROJECT_INDEX.md`](PROJECT_INDEX.md)
 - [`project/automation/MOBS.md`](project/automation/MOBS.md)

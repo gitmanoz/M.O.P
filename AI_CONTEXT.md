@@ -51,15 +51,15 @@ Nunca implementar automações sem arquitetura documentada e aprovada.
 
 O MOBS é a plataforma de engenharia do **Ecossistema Missão** (não apenas da Missão OAB). Automações devem ser genéricas e configuráveis por marca/projeto.
 
-Para decisões estruturais, posicionamento, novos módulos ou arquitetura MOBS relevante, consultar também `WHY_MOBS.md` (propósito, valor e bússola de decisão).
+Para decisões estruturais, posicionamento, novos módulos ou arquitetura MOBS relevante, consultar também `docs/mobs/foundation/WHY_MOBS.md` (propósito, valor e bússola de decisão).
 
-Para modelagem de conceitos, relações e fronteiras **antes** de contratos concretos ou schemas (MOBS 0.2), consultar `DOMAIN_MODEL.md`.
+Para modelagem de conceitos, relações e fronteiras **antes** de contratos concretos ou schemas (MOBS 0.2), consultar `docs/mobs/domain/DOMAIN_MODEL.md`.
 
-Para as regras gerais de ownership, validação, evolução e depreciação de contratos, consultar `CONFIGURATION_CONTRACTS.md`.
+Para as regras gerais de ownership, validação, evolução e depreciação de contratos, consultar `docs/mobs/contracts/CONFIGURATION_CONTRACTS.md`.
 
-Para o contrato concreto da entidade Projeto (sem schemas), consultar `PROJECT_CONTRACT.md`.
+Para o contrato concreto da entidade Projeto (sem schemas), consultar `docs/mobs/contracts/PROJECT_CONTRACT.md`.
 
-Para o contrato concreto da entidade Marca (sem schemas), consultar `BRAND_CONTRACT.md`.
+Para o contrato concreto da entidade Marca (sem schemas), consultar `docs/mobs/contracts/BRAND_CONTRACT.md`.
 
 Para a governança oficial de tarefas arquiteturais do MOBS (planejamento, revisão, validação e aprovação), consultar `ARCHITECTURE_TASK_PROTOCOL.md`.
 
@@ -101,11 +101,11 @@ Antes de realizar mudanças relevantes, consulte os arquivos adequados:
 
 ### Engenharia (Ecossistema / MOBS)
 
-- `WHY_MOBS.md`
-- `DOMAIN_MODEL.md`
-- `CONFIGURATION_CONTRACTS.md`
-- `PROJECT_CONTRACT.md`
-- `BRAND_CONTRACT.md`
+- `docs/mobs/foundation/WHY_MOBS.md`
+- `docs/mobs/domain/DOMAIN_MODEL.md`
+- `docs/mobs/contracts/CONFIGURATION_CONTRACTS.md`
+- `docs/mobs/contracts/PROJECT_CONTRACT.md`
+- `docs/mobs/contracts/BRAND_CONTRACT.md`
 - `ARCHITECTURE_TASK_PROTOCOL.md`
 - `DOCUMENT_ARCHITECTURE.md`
 - `DOCUMENT_STRUCTURE_PLAN.md`

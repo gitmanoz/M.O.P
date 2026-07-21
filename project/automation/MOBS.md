@@ -19,13 +19,13 @@ Ele não é um script isolado, nem um build system limitado a um produto.
 
 A **Missão OAB** é o primeiro produto. Não é o limite do MOBS.
 
-Para o **porquê**, a proposta de valor, os princípios permanentes e a bússola de decisão, ler primeiro [`WHY_MOBS.md`](../../WHY_MOBS.md) (raiz do repositório).
+Para o **porquê**, a proposta de valor, os princípios permanentes e a bússola de decisão, ler primeiro [`WHY_MOBS.md`](../../docs/mobs/foundation/WHY_MOBS.md).
 
-Para a **gramática conceitual** (conceitos, relações e fronteiras antes de qualquer schema), ler [`DOMAIN_MODEL.md`](../../DOMAIN_MODEL.md).
+Para a **gramática conceitual** (conceitos, relações e fronteiras antes de qualquer schema), ler [`DOMAIN_MODEL.md`](../../docs/mobs/domain/DOMAIN_MODEL.md).
 
-Para as **regras gerais dos contratos de configuração** (constituição), ler [`CONFIGURATION_CONTRACTS.md`](../../CONFIGURATION_CONTRACTS.md).
-Para o **contrato concreto de Projeto**, ler [`PROJECT_CONTRACT.md`](../../PROJECT_CONTRACT.md).
-Para o **contrato concreto de Marca**, ler [`BRAND_CONTRACT.md`](../../BRAND_CONTRACT.md).
+Para as **regras gerais dos contratos de configuração** (constituição), ler [`CONFIGURATION_CONTRACTS.md`](../../docs/mobs/contracts/CONFIGURATION_CONTRACTS.md).
+Para o **contrato concreto de Projeto**, ler [`PROJECT_CONTRACT.md`](../../docs/mobs/contracts/PROJECT_CONTRACT.md).
+Para o **contrato concreto de Marca**, ler [`BRAND_CONTRACT.md`](../../docs/mobs/contracts/BRAND_CONTRACT.md).
 
 Para a **governança de tarefas arquiteturais** (planejamento, revisão, validação e aprovação), ler [`ARCHITECTURE_TASK_PROTOCOL.md`](../../ARCHITECTURE_TASK_PROTOCOL.md).
 
@@ -150,11 +150,11 @@ Com o MOBS, um novo produto deve precisar **apenas de configuração** para herd
 
 | Documento | Responsabilidade |
 |---|---|
-| [`WHY_MOBS.md`](../../WHY_MOBS.md) | Propósito, visão, valor, princípios e bússola de decisão |
-| [`DOMAIN_MODEL.md`](../../DOMAIN_MODEL.md) | Modelo de domínio (MOBS 0.2) — antes de contratos concretos e schemas |
-| [`CONFIGURATION_CONTRACTS.md`](../../CONFIGURATION_CONTRACTS.md) | Constituição dos contratos de configuração |
-| [`PROJECT_CONTRACT.md`](../../PROJECT_CONTRACT.md) | Contrato concreto da entidade Projeto |
-| [`BRAND_CONTRACT.md`](../../BRAND_CONTRACT.md) | Contrato concreto da entidade Marca |
+| [`WHY_MOBS.md`](../../docs/mobs/foundation/WHY_MOBS.md) | Propósito, visão, valor, princípios e bússola de decisão |
+| [`DOMAIN_MODEL.md`](../../docs/mobs/domain/DOMAIN_MODEL.md) | Modelo de domínio (MOBS 0.2) — antes de contratos concretos e schemas |
+| [`CONFIGURATION_CONTRACTS.md`](../../docs/mobs/contracts/CONFIGURATION_CONTRACTS.md) | Constituição dos contratos de configuração |
+| [`PROJECT_CONTRACT.md`](../../docs/mobs/contracts/PROJECT_CONTRACT.md) | Contrato concreto da entidade Projeto |
+| [`BRAND_CONTRACT.md`](../../docs/mobs/contracts/BRAND_CONTRACT.md) | Contrato concreto da entidade Marca |
 | [`ARCHITECTURE_TASK_PROTOCOL.md`](../../ARCHITECTURE_TASK_PROTOCOL.md) | Governança de tarefas arquiteturais |
 | [`DOCUMENT_ARCHITECTURE.md`](../../DOCUMENT_ARCHITECTURE.md) | Arquitetura física da documentação |
 | [`DOCUMENT_STRUCTURE_PLAN.md`](../../DOCUMENT_STRUCTURE_PLAN.md) | Estrutura alvo, política de nascimento e convenção de paths (Fase 1) |

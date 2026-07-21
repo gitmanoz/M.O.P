@@ -1296,6 +1296,42 @@ Fase 2: migrar fundação, domínio e contratos para `docs/mobs/` (tarefa arquit
 
 ---
 
+## 2026-07-21 05:11 — Fase 2: migração física (fundação, domínio, contratos)
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS 0.2 — Fase 2 (primeira migração física)
+
+### Contexto
+
+A Fase 1 institucionalizou paths alvo e política de nascimento; os documentos de fundação, domínio e contratos permaneciam na raiz.
+
+### Objetivo
+
+Migrar `WHY_MOBS`, `DOMAIN_MODEL`, `CONFIGURATION_CONTRACTS`, `PROJECT_CONTRACT` e `BRAND_CONTRACT` para `docs/mobs/` — sem alterar conteúdo arquitetural.
+
+### Decisões
+
+- Criar `docs/mobs/foundation/`, `docs/mobs/domain/`, `docs/mobs/contracts/`.
+- Atualizar links relativos e descoberta (Index, AI_CONTEXT, MOBS, protocolo, document architecture).
+- Não migrar governança, models, schemas nem documentos permanentes na raiz.
+
+### Impacto
+
+Arquitetura física parcialmente materializada: Fundação, Domínio e Contratos nos paths oficiais.
+
+### Áreas e documentos envolvidos
+
+- `docs/mobs/foundation/WHY_MOBS.md`, `docs/mobs/domain/DOMAIN_MODEL.md`, `docs/mobs/contracts/*`
+- `PROJECT_INDEX.md`, `AI_CONTEXT.md`, `project/automation/MOBS.md`
+- `ARCHITECTURE_TASK_PROTOCOL.md`, `DOCUMENT_ARCHITECTURE.md`, `project/automation/AUTOMATION_ROADMAP.md`
+- `HISTORY.md`, `CHANGELOG.md`
+
+### Próximos passos
+
+Fase 3: migrar governança MOBS para `docs/mobs/governance/` (recomendado após validação desta fase).
+
+---
+
 ## Controles
 
 | Campo | Valor |

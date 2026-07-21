@@ -170,12 +170,12 @@ Qual é a tarefa?
 ├─ Engenharia
 │    → AI_CONTEXT.md
 │    → PROJECT_RULES.md
-│    → WHY_MOBS.md                    ← propósito e valor (leitura conceitual primeiro)
+│    → docs/mobs/foundation/WHY_MOBS.md                    ← propósito e valor (leitura conceitual primeiro)
 │    → project/automation/MOBS.md
-│    → DOMAIN_MODEL.md                ← modelo de domínio (MOBS 0.2)
-│    → CONFIGURATION_CONTRACTS.md     ← constituição dos contratos
-│    → PROJECT_CONTRACT.md            ← contrato concreto (Projeto)
-│    → BRAND_CONTRACT.md              ← contrato concreto (Marca)
+│    → docs/mobs/domain/DOMAIN_MODEL.md                ← modelo de domínio (MOBS 0.2)
+│    → docs/mobs/contracts/CONFIGURATION_CONTRACTS.md     ← constituição dos contratos
+│    → docs/mobs/contracts/PROJECT_CONTRACT.md            ← contrato concreto (Projeto)
+│    → docs/mobs/contracts/BRAND_CONTRACT.md              ← contrato concreto (Marca)
 │    → ARCHITECTURE_TASK_PROTOCOL.md  ← governança de tarefas arquiteturais
 │    → DOCUMENT_ARCHITECTURE.md       ← arquitetura física da documentação
 │    → DOCUMENT_STRUCTURE_PLAN.md    ← estrutura alvo e política de nascimento (Fase 1)
@@ -187,10 +187,10 @@ Qual é a tarefa?
 │    (carregar Engines adicionais só se a tarefa citar)
 │
 ├─ Automação / Build / Deploy / Geração automática
-│    → mesmo conjunto de Engenharia (mínimo: WHY_MOBS opcional se só execução; MOBS + AUTOMATION_RULES + Engine afetada)
+│    → mesmo conjunto de Engenharia (mínimo: docs/mobs/foundation/WHY_MOBS.md opcional se só execução; MOBS + AUTOMATION_RULES + Engine afetada)
 │
 ├─ Posicionamento / visão estratégica MOBS
-│    → WHY_MOBS.md
+│    → docs/mobs/foundation/WHY_MOBS.md
 │    → project/automation/MOBS.md
 │    → AI_CONTEXT.md
 │    → PROJECT_RULES.md
@@ -205,17 +205,17 @@ Ordem sugerida no ramo **Engenharia** (trilha MOBS):
 ```
 Engenharia
   ↓
-WHY_MOBS.md          ← propósito, visão e proposta de valor
+docs/mobs/foundation/WHY_MOBS.md          ← propósito, visão e proposta de valor
   ↓
 MOBS.md              ← visão da plataforma e escopo
   ↓
-DOMAIN_MODEL.md      ← gramática conceitual (MOBS 0.2)
+docs/mobs/domain/DOMAIN_MODEL.md      ← gramática conceitual (MOBS 0.2)
   ↓
-CONFIGURATION_CONTRACTS.md ← constituição dos contratos
+docs/mobs/contracts/CONFIGURATION_CONTRACTS.md ← constituição dos contratos
   ↓
-PROJECT_CONTRACT.md  ← contrato concreto de Projeto
+docs/mobs/contracts/PROJECT_CONTRACT.md  ← contrato concreto de Projeto
   ↓
-BRAND_CONTRACT.md    ← contrato concreto de Marca
+docs/mobs/contracts/BRAND_CONTRACT.md    ← contrato concreto de Marca
   ↓
 ARCHITECTURE_TASK_PROTOCOL.md  ← governança de tarefas arquiteturais
   ↓
@@ -236,15 +236,15 @@ AUTOMATION_ROADMAP.md
 Trilha conceitual do **MOBS 0.2 (Configuration Contracts)**:
 
 ```
-WHY_MOBS.md
+docs/mobs/foundation/WHY_MOBS.md
   ↓
 MOBS.md
   ↓
-DOMAIN_MODEL.md
+docs/mobs/domain/DOMAIN_MODEL.md
   ↓
-CONFIGURATION_CONTRACTS.md
-  ├── PROJECT_CONTRACT.md
-  └── BRAND_CONTRACT.md
+docs/mobs/contracts/CONFIGURATION_CONTRACTS.md
+  ├── docs/mobs/contracts/PROJECT_CONTRACT.md
+  └── docs/mobs/contracts/BRAND_CONTRACT.md
   ↓
 ARCHITECTURE_TASK_PROTOCOL.md
 DOCUMENT_ARCHITECTURE.md
@@ -306,11 +306,11 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | Local | O que encontrar |
 |---|---|
 | `PROJECT_INDEX.md` | Bootloader / orquestrador de contexto |
-| `WHY_MOBS.md` | Propósito, visão e proposta de valor do MOBS |
-| `DOMAIN_MODEL.md` | Modelo de domínio / gramática conceitual (MOBS 0.2) |
-| `CONFIGURATION_CONTRACTS.md` | Constituição dos contratos de configuração |
-| `PROJECT_CONTRACT.md` | Contrato concreto da entidade Projeto |
-| `BRAND_CONTRACT.md` | Contrato concreto da entidade Marca |
+| `docs/mobs/foundation/WHY_MOBS.md` | Propósito, visão e proposta de valor do MOBS |
+| `docs/mobs/domain/DOMAIN_MODEL.md` | Modelo de domínio / gramática conceitual (MOBS 0.2) |
+| `docs/mobs/contracts/CONFIGURATION_CONTRACTS.md` | Constituição dos contratos de configuração |
+| `docs/mobs/contracts/PROJECT_CONTRACT.md` | Contrato concreto da entidade Projeto |
+| `docs/mobs/contracts/BRAND_CONTRACT.md` | Contrato concreto da entidade Marca |
 | `ARCHITECTURE_TASK_PROTOCOL.md` | Governança oficial de tarefas arquiteturais do MOBS |
 | `DOCUMENT_ARCHITECTURE.md` | Arquitetura física permanente da documentação MOBS |
 | `DOCUMENT_STRUCTURE_PLAN.md` | Estrutura física alvo e política de nascimento (MOBS 0.2 — Fase 1) |
@@ -334,11 +334,11 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | Documento | Responsabilidade |
 |---|---|
 | `PROJECT_INDEX.md` | Bootloader e orquestração de contexto |
-| `WHY_MOBS.md` | Manifesto estratégico: porquê, valor, princípios e bússola do MOBS |
-| `DOMAIN_MODEL.md` | Gramática conceitual: conceitos, relações e fronteiras antes dos contratos |
-| `CONFIGURATION_CONTRACTS.md` | Regras gerais para existência, ownership, validação e evolução de contratos |
-| `PROJECT_CONTRACT.md` | Especialização do contrato de configuração para Projeto |
-| `BRAND_CONTRACT.md` | Especialização do contrato de configuração para Marca |
+| `docs/mobs/foundation/WHY_MOBS.md` | Manifesto estratégico: porquê, valor, princípios e bússola do MOBS |
+| `docs/mobs/domain/DOMAIN_MODEL.md` | Gramática conceitual: conceitos, relações e fronteiras antes dos contratos |
+| `docs/mobs/contracts/CONFIGURATION_CONTRACTS.md` | Regras gerais para existência, ownership, validação e evolução de contratos |
+| `docs/mobs/contracts/PROJECT_CONTRACT.md` | Especialização do contrato de configuração para Projeto |
+| `docs/mobs/contracts/BRAND_CONTRACT.md` | Especialização do contrato de configuração para Marca |
 | `ARCHITECTURE_TASK_PROTOCOL.md` | Método oficial de planejamento, revisão e aprovação de documentos arquiteturais |
 | `DOCUMENT_ARCHITECTURE.md` | Organização física, grupos documentais e regras de crescimento da documentação |
 | `DOCUMENT_STRUCTURE_PLAN.md` | Paths alvo, matriz atual × alvo, convenção de IDs e política de nascimento de novos documentos |

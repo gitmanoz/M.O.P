@@ -9,9 +9,9 @@ Ele **formaliza** o que o domínio já define e o que a constituição dos contr
 
 Autoridade, nesta ordem:
 
-1. [`WHY_MOBS.md`](WHY_MOBS.md) — propósito e princípios
-2. [`project/automation/MOBS.md`](project/automation/MOBS.md) — arquitetura da plataforma
-3. [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md) — significado de Projeto e relações
+1. [`WHY_MOBS.md`](../foundation/WHY_MOBS.md) — propósito e princípios
+2. [`project/automation/MOBS.md`](../../../project/automation/MOBS.md) — arquitetura da plataforma
+3. [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md) — significado de Projeto e relações
 4. [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md) — regras gerais de todo contrato
 
 Este documento **obedece** a essa cadeia.
@@ -33,7 +33,7 @@ WHY_MOBS → MOBS → DOMAIN_MODEL → CONFIGURATION_CONTRACTS
 | Dimensão | Situação |
 |---|---|
 | **Tipo** | Contrato concreto de configuração |
-| **Conceito de domínio** | Projeto ([`DOMAIN_MODEL.md`](DOMAIN_MODEL.md)) |
+| **Conceito de domínio** | Projeto ([`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md)) |
 | **Constituição aplicável** | [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md) |
 | **Schemas / serializações** | Não definidos aqui |
 | **Implementação** | Não iniciada |
@@ -45,7 +45,7 @@ WHY_MOBS → MOBS → DOMAIN_MODEL → CONFIGURATION_CONTRACTS
 - Não redefine o significado de Projeto no domínio.
 - Não altera a taxonomia Core / Engine / Generator / Validator.
 - Não descreve algoritmos, APIs, layouts físicos ou runtime.
-- Não substitui [`PROJECT_ENGINE.md`](project/automation/PROJECT_ENGINE.md) (papel da Engine).
+- Não substitui [`PROJECT_ENGINE.md`](../../../project/automation/PROJECT_ENGINE.md) (papel da Engine).
 
 ---
 
@@ -58,13 +58,13 @@ Formalizar o **acordo** entre quem declara um Projeto e quem o resolve ou consom
 - evolução e depreciação sejam governáveis;
 - a plataforma possa orquestrar a partir de um contexto resolvido — sem embutir regras de projeto no Core.
 
-Alinhado a [`WHY_MOBS.md`](WHY_MOBS.md): configuração acima de duplicação; documentação antes da implementação; Core genérico.
+Alinhado a [`WHY_MOBS.md`](../foundation/WHY_MOBS.md): configuração acima de duplicação; documentação antes da implementação; Core genérico.
 
 ---
 
 ## 3. Princípios
 
-Este contrato **deriva** dos princípios de [`WHY_MOBS.md`](WHY_MOBS.md). Não os repete — aplica-os à entidade Projeto:
+Este contrato **deriva** dos princípios de [`WHY_MOBS.md`](../foundation/WHY_MOBS.md). Não os repete — aplica-os à entidade Projeto:
 
 | Princípio | Como se manifesta aqui |
 |---|---|
@@ -119,7 +119,7 @@ Com Projeto formal, a plataforma **promete** um contexto de engenharia compartil
 
 ## 6. O que é um Projeto
 
-Conforme [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md):
+Conforme [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md):
 
 > Um **Projeto** é a unidade de engenharia cujo contexto a plataforma resolve para orquestrar execução.
 
@@ -261,14 +261,14 @@ Definições gerais: [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md) 
 
 | Papel | Atribuição neste contrato |
 |---|---|
-| **Authority** | [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md) — define oficialmente o significado de Projeto |
+| **Authority** | [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md) — define oficialmente o significado de Projeto |
 | **Owner** | Governança documental do MOBS (arquitetura do Ecossistema Missão) — responde pela evolução e manutenção **deste** contrato |
 
 Owner e Authority **não** são o mesmo tipo de responsabilidade.
 Podem alinhar-se na prática; o modelo **não** pressupõe identidade.
 
 Alterar o significado de Projeto no domínio exige a Authority (domínio).
-Alterar as expectativas formais deste acordo exige o Owner, em harmonia com a Authority e com [`PROJECT_RULES.md`](PROJECT_RULES.md) / [`AUTOMATION_RULES.md`](project/automation/AUTOMATION_RULES.md).
+Alterar as expectativas formais deste acordo exige o Owner, em harmonia com a Authority e com [`PROJECT_RULES.md`](../../../PROJECT_RULES.md) / [`AUTOMATION_RULES.md`](../../../project/automation/AUTOMATION_RULES.md).
 
 ---
 
@@ -338,7 +338,7 @@ Dependência: Projeto → Core **não** é de interpretação de domínio; é de
 
 Este contrato estabelece que a resolução do contexto de Projeto é responsabilidade da Project Engine.
 A Engine **não** gera assets e **não** orquestra a fila global
-([`PROJECT_ENGINE.md`](project/automation/PROJECT_ENGINE.md) — responsabilidade de Engine, não redefinida aqui).
+([`PROJECT_ENGINE.md`](../../../project/automation/PROJECT_ENGINE.md) — responsabilidade de Engine, não redefinida aqui).
 
 ---
 
@@ -464,7 +464,7 @@ Extensão sem registro no acordo-base é dívida estrutural
 | **Authority** | Quem define o significado de Projeto (domínio) |
 | **Associação declarativa** | Vínculo opcional Projeto↔Marca sem hardcode |
 
-Demais termos oficiais: [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md) e [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md).
+Demais termos oficiais: [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md) e [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md).
 
 ---
 
@@ -489,7 +489,7 @@ Demais termos oficiais: [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md) e [`CONFIGURATION_C
 3. Schemas e exemplos
 4. Implementação e Validators
 
-O roadmap de módulos permanece em [`AUTOMATION_ROADMAP.md`](project/automation/AUTOMATION_ROADMAP.md).
+O roadmap de módulos permanece em [`AUTOMATION_ROADMAP.md`](../../../project/automation/AUTOMATION_ROADMAP.md).
 
 ---
 
@@ -514,15 +514,15 @@ A representação física existe porque o domínio já reconhece um Projeto.
 
 ## Referências
 
-- [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md)
+- [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md)
 - [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md)
-- [`WHY_MOBS.md`](WHY_MOBS.md)
-- [`project/automation/MOBS.md`](project/automation/MOBS.md)
-- [`project/automation/PROJECT_ENGINE.md`](project/automation/PROJECT_ENGINE.md)
-- [`project/automation/BUILD_SYSTEM.md`](project/automation/BUILD_SYSTEM.md)
-- [`project/automation/BRAND_ENGINE.md`](project/automation/BRAND_ENGINE.md)
-- [`project/automation/AUTOMATION_RULES.md`](project/automation/AUTOMATION_RULES.md)
-- [`project/automation/AUTOMATION_ROADMAP.md`](project/automation/AUTOMATION_ROADMAP.md)
-- [`PROJECT_INDEX.md`](PROJECT_INDEX.md)
-- [`PROJECT_RULES.md`](PROJECT_RULES.md)
-- [`AI_CONTEXT.md`](AI_CONTEXT.md)
+- [`WHY_MOBS.md`](../foundation/WHY_MOBS.md)
+- [`project/automation/MOBS.md`](../../../project/automation/MOBS.md)
+- [`project/automation/PROJECT_ENGINE.md`](../../../project/automation/PROJECT_ENGINE.md)
+- [`project/automation/BUILD_SYSTEM.md`](../../../project/automation/BUILD_SYSTEM.md)
+- [`project/automation/BRAND_ENGINE.md`](../../../project/automation/BRAND_ENGINE.md)
+- [`project/automation/AUTOMATION_RULES.md`](../../../project/automation/AUTOMATION_RULES.md)
+- [`project/automation/AUTOMATION_ROADMAP.md`](../../../project/automation/AUTOMATION_ROADMAP.md)
+- [`PROJECT_INDEX.md`](../../../PROJECT_INDEX.md)
+- [`PROJECT_RULES.md`](../../../PROJECT_RULES.md)
+- [`AI_CONTEXT.md`](../../../AI_CONTEXT.md)

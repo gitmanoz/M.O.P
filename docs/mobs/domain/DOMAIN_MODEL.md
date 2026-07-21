@@ -15,7 +15,7 @@ Ele prepara o terreno sobre o qual os contratos concretos do **MOBS 0.2 — Conf
 
 | Dimensão | Situação |
 |---|---|
-| **Arquitetura aprovada (presente)** | MOBS 0.1.1 documental: taxonomia Core / Engine / Generator / Validator; fluxo Core → Project Engine → Core → módulos; relação Projeto × Marca; princípios em [`WHY_MOBS.md`](WHY_MOBS.md) |
+| **Arquitetura aprovada (presente)** | MOBS 0.1.1 documental: taxonomia Core / Engine / Generator / Validator; fluxo Core → Project Engine → Core → módulos; relação Projeto × Marca; princípios em [`WHY_MOBS.md`](../foundation/WHY_MOBS.md) |
 | **Formalizado aqui (modelo conceitual)** | Vocabulário normativo, relações oficiais vs. abertas, tese “contrato ≠ arquivo”, fronteiras de domínio |
 | **Em construção (MOBS 0.2)** | Contratos concretos, ownership formal, resolução detalhada, serialização — **ainda não escritos** |
 | **Implementação futura** | Schemas, runtime, Validators executáveis, migrações — **não iniciada** |
@@ -27,9 +27,9 @@ Ele prepara o terreno sobre o qual os contratos concretos do **MOBS 0.2 — Conf
 - Não altera a taxonomia nem as fronteiras do Core já aprovadas.
 - Não transforma hipóteses em decisões oficiais.
 
-Leitura estratégica: [`WHY_MOBS.md`](WHY_MOBS.md).  
-Visão técnica: [`project/automation/MOBS.md`](project/automation/MOBS.md).  
-Arquitetura: [`project/automation/BUILD_SYSTEM.md`](project/automation/BUILD_SYSTEM.md).
+Leitura estratégica: [`WHY_MOBS.md`](../foundation/WHY_MOBS.md).  
+Visão técnica: [`project/automation/MOBS.md`](../../../project/automation/MOBS.md).  
+Arquitetura: [`project/automation/BUILD_SYSTEM.md`](../../../project/automation/BUILD_SYSTEM.md).
 
 ---
 
@@ -84,7 +84,7 @@ Execução
 ### Fronteira com Configuration Contracts
 
 Este documento define **conceitos e relações**.
-[`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md) define **como conceitos se tornam contratos governados** (ownership, validação, evolução, depreciação).
+[`CONFIGURATION_CONTRACTS.md`](../contracts/CONFIGURATION_CONTRACTS.md) define **como conceitos se tornam contratos governados** (ownership, validação, evolução, depreciação).
 Contratos concretos, schemas e serializações vêm depois.
 
 ### Independência da representação física
@@ -118,9 +118,9 @@ O modelo pretende representar o suficiente para que a plataforma compreenda **o 
 |---|---|---|
 | **Ecossistema Missão** | contexto institucional | Fundamental (nomeado na documentação) |
 | **Organização** | possibilidade futura | Hipótese controlada — **fora** do modelo mínimo atual |
-| **Projeto** | conceito fundamental | Oficial ([`PROJECT_ENGINE.md`](project/automation/PROJECT_ENGINE.md)) |
+| **Projeto** | conceito fundamental | Oficial ([`PROJECT_ENGINE.md`](../../../project/automation/PROJECT_ENGINE.md)) |
 | **Produto** | noção de negócio | Relacionado, distinto de Projeto — fronteira ainda a refinar |
-| **Marca** | conceito fundamental | Oficial ([`BRAND_ENGINE.md`](project/automation/BRAND_ENGINE.md)) |
+| **Marca** | conceito fundamental | Oficial ([`BRAND_ENGINE.md`](../../../project/automation/BRAND_ENGINE.md)) |
 | **Capability** | capacidade | Conceito introduzido aqui; modelo detalhado ainda em aberto |
 | **Contrato** | artefato conceitual | Formalizado aqui (independente de arquivo) |
 | **Configuração** | declaração | Formalizada aqui (sem schema) |
@@ -153,7 +153,7 @@ Unidade de engenharia que o MOBS compreende para orquestrar superfícies, módul
 **Não é** necessariamente sinônimo de repositório, pasta, produto comercial ou marca.  
 **Produzido/resolvido por:** Project Engine (contexto).  
 **Consumido por:** Core (orquestração) e módulos subsequentes.  
-Detalhe: seção 6 e [`PROJECT_ENGINE.md`](project/automation/PROJECT_ENGINE.md).
+Detalhe: seção 6 e [`PROJECT_ENGINE.md`](../../../project/automation/PROJECT_ENGINE.md).
 
 ### Marca
 
@@ -161,7 +161,7 @@ Identidade oficial (recursos, regras e metadados) que responde “quais tokens e
 **Não é** o projeto, nem um tema CSS improvisado, nem um PNG isolado.  
 **Produzido/resolvido por:** Brand Engine.  
 **Consumido por:** Generators e módulos que dependem de identidade.  
-Detalhe: seção 7 e [`BRAND_ENGINE.md`](project/automation/BRAND_ENGINE.md).
+Detalhe: seção 7 e [`BRAND_ENGINE.md`](../../../project/automation/BRAND_ENGINE.md).
 
 ### Capability
 
@@ -190,7 +190,7 @@ Interpretação validada e normalizada, pronta para consumo pelos módulos — r
 
 Orquestrador: carrega configuração inicial, aciona Engines, seleciona, ordena, consolida.  
 **Não deve** conter regras de projeto, marca ou produto.  
-Detalhe: seção 12 e [`BUILD_SYSTEM.md`](project/automation/BUILD_SYSTEM.md).
+Detalhe: seção 12 e [`BUILD_SYSTEM.md`](../../../project/automation/BUILD_SYSTEM.md).
 
 ### Engine
 
@@ -360,7 +360,7 @@ Dimensões a modelar **no futuro** (sem formato agora):
 > Um contrato não é um arquivo.  
 > É o acordo formal entre partes do sistema sobre o que deve existir, o que deve ser verdade e quem responde por isso.
 
-Este documento fixa o **conceito**. Políticas de ciclo de vida, versionamento, compatibilidade e ownership: [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md).
+Este documento fixa o **conceito**. Políticas de ciclo de vida, versionamento, compatibilidade e ownership: [`CONFIGURATION_CONTRACTS.md`](../contracts/CONFIGURATION_CONTRACTS.md).
 
 ### Distinções essenciais
 
@@ -424,9 +424,9 @@ Configuração é a **linguagem declarativa das diferenças legítimas**.
 | Pode ser **validada**? | |
 | Mantém o motor **genérico**? | |
 
-Alinhado a [`WHY_MOBS.md`](WHY_MOBS.md): configuração acima de duplicação — sem transformar config em caos.
+Alinhado a [`WHY_MOBS.md`](../foundation/WHY_MOBS.md): configuração acima de duplicação — sem transformar config em caos.
 
-Detalhes de governança de configuração (defaults, extensões, políticas): [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md).
+Detalhes de governança de configuração (defaults, extensões, políticas): [`CONFIGURATION_CONTRACTS.md`](../contracts/CONFIGURATION_CONTRACTS.md).
 
 ---
 
@@ -488,7 +488,7 @@ Engines e consumidores **não** devem depender desnecessariamente da estrutura f
 - validação específica que caiba a Validators;
 - políticas cuja propriedade seja de uma Engine.
 
-Essa seção protege o Core contra crescimento monolítico — alinhada a [`BUILD_SYSTEM.md`](project/automation/BUILD_SYSTEM.md) e [`WHY_MOBS.md`](WHY_MOBS.md).
+Essa seção protege o Core contra crescimento monolítico — alinhada a [`BUILD_SYSTEM.md`](../../../project/automation/BUILD_SYSTEM.md) e [`WHY_MOBS.md`](../foundation/WHY_MOBS.md).
 
 ---
 
@@ -513,7 +513,7 @@ Essa seção protege o Core contra crescimento monolítico — alinhada a [`BUIL
 > Contratos sem proprietário tornam-se dependências implícitas.
 
 Todo contrato futuro **deve** ter responsável conceitual claro (quem define, valida, resolve, consome e evolui).  
-Atribuições concretas e políticas de governança: [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md).
+Atribuições concretas e políticas de governança: [`CONFIGURATION_CONTRACTS.md`](../contracts/CONFIGURATION_CONTRACTS.md).
 
 ---
 
@@ -522,7 +522,7 @@ Atribuições concretas e políticas de governança: [`CONFIGURATION_CONTRACTS.m
 O domínio exige que contratos futuros evoluam com **versionamento explícito** e preservação semântica — sem alterar significado em silêncio.
 
 Políticas concretas (números de versão, backward compatibility, migração, defaults, campos desconhecidos) **não** são escolhidas aqui.  
-Serão definidas em [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md) e nos contratos concretos.
+Serão definidas em [`CONFIGURATION_CONTRACTS.md`](../contracts/CONFIGURATION_CONTRACTS.md) e nos contratos concretos.
 
 ---
 
@@ -570,7 +570,7 @@ Anti-padrões:
 
 ## 19. Bússola para criação dos contratos concretos
 
-Checklist arquitetural mínimo (normativo em [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md)):
+Checklist arquitetural mínimo (normativo em [`CONFIGURATION_CONTRACTS.md`](../contracts/CONFIGURATION_CONTRACTS.md)):
 
 1. Qual **conceito** este contrato representa?
 2. Quem é o **proprietário**?
@@ -584,7 +584,7 @@ Checklist arquitetural mínimo (normativo em [`CONFIGURATION_CONTRACTS.md`](CONF
 
 ## 20. Próximos documentos (proposta subordinada ao roadmap)
 
-O roadmap oficial de módulos permanece em [`AUTOMATION_ROADMAP.md`](project/automation/AUTOMATION_ROADMAP.md) (v1–v10).
+O roadmap oficial de módulos permanece em [`AUTOMATION_ROADMAP.md`](../../../project/automation/AUTOMATION_ROADMAP.md) (v1–v10).
 
 Para o eixo **Configuration Contracts (MOBS 0.2)**, a sequência documental **proposta** é:
 
@@ -620,13 +620,13 @@ O Core permanece genérico porque o domínio nomeia o mundo com fronteiras.
 
 ## Referências
 
-- [`WHY_MOBS.md`](WHY_MOBS.md)
-- [`project/automation/MOBS.md`](project/automation/MOBS.md)
-- [`project/automation/BUILD_SYSTEM.md`](project/automation/BUILD_SYSTEM.md)
-- [`project/automation/PROJECT_ENGINE.md`](project/automation/PROJECT_ENGINE.md)
-- [`project/automation/BRAND_ENGINE.md`](project/automation/BRAND_ENGINE.md)
-- [`project/automation/AUTOMATION_RULES.md`](project/automation/AUTOMATION_RULES.md)
-- [`project/automation/AUTOMATION_ROADMAP.md`](project/automation/AUTOMATION_ROADMAP.md)
-- [`PROJECT_INDEX.md`](PROJECT_INDEX.md)
-- [`PROJECT_RULES.md`](PROJECT_RULES.md)
-- [`AI_CONTEXT.md`](AI_CONTEXT.md)
+- [`WHY_MOBS.md`](../foundation/WHY_MOBS.md)
+- [`project/automation/MOBS.md`](../../../project/automation/MOBS.md)
+- [`project/automation/BUILD_SYSTEM.md`](../../../project/automation/BUILD_SYSTEM.md)
+- [`project/automation/PROJECT_ENGINE.md`](../../../project/automation/PROJECT_ENGINE.md)
+- [`project/automation/BRAND_ENGINE.md`](../../../project/automation/BRAND_ENGINE.md)
+- [`project/automation/AUTOMATION_RULES.md`](../../../project/automation/AUTOMATION_RULES.md)
+- [`project/automation/AUTOMATION_ROADMAP.md`](../../../project/automation/AUTOMATION_ROADMAP.md)
+- [`PROJECT_INDEX.md`](../../../PROJECT_INDEX.md)
+- [`PROJECT_RULES.md`](../../../PROJECT_RULES.md)
+- [`AI_CONTEXT.md`](../../../AI_CONTEXT.md)

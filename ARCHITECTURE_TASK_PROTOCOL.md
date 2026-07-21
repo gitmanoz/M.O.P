@@ -106,10 +106,10 @@ Regras derivadas dessa hierarquia:
 
 Antes de qualquer tarefa arquitetural, ler **integralmente**, nesta ordem:
 
-1. [`WHY_MOBS.md`](WHY_MOBS.md) — propósito, visão, princípios
+1. [`WHY_MOBS.md`](docs/mobs/foundation/WHY_MOBS.md) — propósito, visão, princípios
 2. [`project/automation/MOBS.md`](project/automation/MOBS.md) — arquitetura e organização da plataforma
-3. [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md) — entidades, relações, fronteiras
-4. [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md) — constituição dos contratos
+3. [`DOMAIN_MODEL.md`](docs/mobs/domain/DOMAIN_MODEL.md) — entidades, relações, fronteiras
+4. [`CONFIGURATION_CONTRACTS.md`](docs/mobs/contracts/CONFIGURATION_CONTRACTS.md) — constituição dos contratos
 5. Documentos diretamente relevantes à tarefa (contratos irmãos, Engines, modelos existentes)
 
 > A ordem de leitura existe para refletir a hierarquia de autoridade, e não para substituí-la.
@@ -382,12 +382,12 @@ Este protocolo existe para que humanos e agentes de IA produzam o próximo docum
 
 ## Referências
 
-- [`WHY_MOBS.md`](WHY_MOBS.md)
+- [`WHY_MOBS.md`](docs/mobs/foundation/WHY_MOBS.md)
 - [`project/automation/MOBS.md`](project/automation/MOBS.md)
-- [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md)
-- [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md)
-- [`PROJECT_CONTRACT.md`](PROJECT_CONTRACT.md)
-- [`BRAND_CONTRACT.md`](BRAND_CONTRACT.md)
+- [`DOMAIN_MODEL.md`](docs/mobs/domain/DOMAIN_MODEL.md)
+- [`CONFIGURATION_CONTRACTS.md`](docs/mobs/contracts/CONFIGURATION_CONTRACTS.md)
+- [`PROJECT_CONTRACT.md`](docs/mobs/contracts/PROJECT_CONTRACT.md)
+- [`BRAND_CONTRACT.md`](docs/mobs/contracts/BRAND_CONTRACT.md)
 - [`PROJECT_INDEX.md`](PROJECT_INDEX.md)
 - [`PROJECT_RULES.md`](PROJECT_RULES.md)
 - [`project/automation/AUTOMATION_RULES.md`](project/automation/AUTOMATION_RULES.md)

@@ -13,11 +13,11 @@
 | Dimensão | Situação |
 |---|---|
 | **Hoje** | O MOBS existe como **arquitetura documental aprovada** (v0.1.1): visão, taxonomia, fluxo, princípios e governança |
-| **Em construção** | Contratos, módulos e automações serão implementados conforme o [roadmap](project/automation/AUTOMATION_ROADMAP.md) e as [regras de automação](project/automation/AUTOMATION_RULES.md) |
+| **Em construção** | Contratos, módulos e automações serão implementados conforme o [roadmap](../../../project/automation/AUTOMATION_ROADMAP.md) e as [regras de automação](../../../project/automation/AUTOMATION_RULES.md) |
 | **Visão** | Uma plataforma reutilizável na qual novos produtos nascem principalmente por **configuração + conteúdo**, não por nova infraestrutura |
 
 Este arquivo responde ao **porquê**, ao **para quem** e ao **valor**.  
-O **quê** e o **como** técnicos continuam em [`MOBS.md`](project/automation/MOBS.md) e nos demais documentos de `project/automation/`.
+O **quê** e o **como** técnicos continuam em [`MOBS.md`](../../../project/automation/MOBS.md) e nos demais documentos de `project/automation/`.
 
 ---
 
@@ -150,7 +150,7 @@ Reforço:
 - **configurações** declaram diferenças entre projetos e marcas;
 - regras específicas **não** devem ser embutidas no Core.
 
-Detalhes técnicos: [`BUILD_SYSTEM.md`](project/automation/BUILD_SYSTEM.md), [`PROJECT_ENGINE.md`](project/automation/PROJECT_ENGINE.md), [`BRAND_ENGINE.md`](project/automation/BRAND_ENGINE.md).
+Detalhes técnicos: [`BUILD_SYSTEM.md`](../../../project/automation/BUILD_SYSTEM.md), [`PROJECT_ENGINE.md`](../../../project/automation/PROJECT_ENGINE.md), [`BRAND_ENGINE.md`](../../../project/automation/BRAND_ENGINE.md).
 
 ---
 
@@ -218,7 +218,7 @@ A Missão OAB é apenas o primeiro caso real do Ecossistema Missão.
 
 ## Princípios fundamentais
 
-Alinhados a [`MOBS.md`](project/automation/MOBS.md), [`AUTOMATION_RULES.md`](project/automation/AUTOMATION_RULES.md) e [`PROJECT_RULES.md`](PROJECT_RULES.md):
+Alinhados a [`MOBS.md`](../../../project/automation/MOBS.md), [`AUTOMATION_RULES.md`](../../../project/automation/AUTOMATION_RULES.md) e [`PROJECT_RULES.md`](../../../PROJECT_RULES.md):
 
 1. **Plataforma antes de soluções isoladas** — preferir capacidade compartilhada a atalho local.
 2. **Configuração acima de duplicação** — declarar diferença; não copiar o sistema.
@@ -324,7 +324,7 @@ A visão futura **pode** incluir (sem afirmar existência atual):
 O valor não está em “ter tudo”.  
 Está em permitir que cada capacidade nova opere sob a **mesma arquitetura coerente**.
 
-Roadmap: [`AUTOMATION_ROADMAP.md`](project/automation/AUTOMATION_ROADMAP.md).
+Roadmap: [`AUTOMATION_ROADMAP.md`](../../../project/automation/AUTOMATION_ROADMAP.md).
 
 ---
 
@@ -349,12 +349,12 @@ O **propósito** deve permanecer: transformar conhecimento repetível em capacid
 
 | Documento | Responde |
 |---|---|
-| [`project/automation/MOBS.md`](project/automation/MOBS.md) | Visão da plataforma e escopo |
-| [`project/automation/BUILD_SYSTEM.md`](project/automation/BUILD_SYSTEM.md) | Arquitetura e taxonomia |
-| [`project/automation/PROJECT_ENGINE.md`](project/automation/PROJECT_ENGINE.md) | Contexto de projeto |
-| [`project/automation/BRAND_ENGINE.md`](project/automation/BRAND_ENGINE.md) | Contexto de marca |
-| [`project/automation/AUTOMATION_ROADMAP.md`](project/automation/AUTOMATION_ROADMAP.md) | Evolução planejada |
-| [`project/automation/AUTOMATION_RULES.md`](project/automation/AUTOMATION_RULES.md) | Regras de toda automação |
-| [`PROJECT_INDEX.md`](PROJECT_INDEX.md) | Porta de entrada e Decision Tree |
-| [`PROJECT_RULES.md`](PROJECT_RULES.md) | Contrato operacional |
-| [`AI_CONTEXT.md`](AI_CONTEXT.md) | Orientação para agentes de IA |
+| [`project/automation/MOBS.md`](../../../project/automation/MOBS.md) | Visão da plataforma e escopo |
+| [`project/automation/BUILD_SYSTEM.md`](../../../project/automation/BUILD_SYSTEM.md) | Arquitetura e taxonomia |
+| [`project/automation/PROJECT_ENGINE.md`](../../../project/automation/PROJECT_ENGINE.md) | Contexto de projeto |
+| [`project/automation/BRAND_ENGINE.md`](../../../project/automation/BRAND_ENGINE.md) | Contexto de marca |
+| [`project/automation/AUTOMATION_ROADMAP.md`](../../../project/automation/AUTOMATION_ROADMAP.md) | Evolução planejada |
+| [`project/automation/AUTOMATION_RULES.md`](../../../project/automation/AUTOMATION_RULES.md) | Regras de toda automação |
+| [`PROJECT_INDEX.md`](../../../PROJECT_INDEX.md) | Porta de entrada e Decision Tree |
+| [`PROJECT_RULES.md`](../../../PROJECT_RULES.md) | Contrato operacional |
+| [`AI_CONTEXT.md`](../../../AI_CONTEXT.md) | Orientação para agentes de IA |

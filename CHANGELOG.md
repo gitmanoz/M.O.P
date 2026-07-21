@@ -112,6 +112,11 @@ Documentação da plataforma de engenharia do **Ecossistema Missão** (config-dr
 - Integração de `DOCUMENT_ARCHITECTURE.md` na trilha MOBS 0.2; consolidação como autoridade de organização física.
 - Integração de `DOCUMENT_STRUCTURE_PLAN.md` (Fase 1 MOBS 0.2): descoberta, política de nascimento, IDs `missao-oab`, decisões de permanência na raiz e contratos em `docs/mobs/contracts/`.
 
+### Changed
+
+- Migração física MOBS 0.2 — Fase 2: `WHY_MOBS.md`, `DOMAIN_MODEL.md`, `CONFIGURATION_CONTRACTS.md`, `PROJECT_CONTRACT.md` e `BRAND_CONTRACT.md` para `docs/mobs/foundation/`, `docs/mobs/domain/` e `docs/mobs/contracts/`.
+- Links relativos e descoberta atualizados em `PROJECT_INDEX.md`, `AI_CONTEXT.md`, `MOBS.md`, `ARCHITECTURE_TASK_PROTOCOL.md`, `DOCUMENT_ARCHITECTURE.md` e `AUTOMATION_ROADMAP.md`.
+
 ### Removed
 
 - Cópias legadas de marca na raiz (`Logo.png`, pasta “Missão OAB Design System”), após preservação em `assets/brand/reference/` e consolidação em `assets/brand/source/`.

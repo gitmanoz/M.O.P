@@ -5,7 +5,7 @@
 Este documento é a **constituição dos contratos de configuração** do MOBS.
 Todo contrato futuro (Projeto, Marca, Capability ou outros) **deve** obedecer às regras aqui definidas.
 
-Ele **deriva** de [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md), que permanece a **fonte da verdade conceitual**.
+Ele **deriva** de [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md), que permanece a **fonte da verdade conceitual**.
 Ele **não** define contratos concretos, schemas nem serializações.
 
 Trilha permanente:
@@ -38,7 +38,7 @@ Sem contratos, a plataforma improvisa. Com contratos, a plataforma **promete**.
 
 | Dimensão | Situação |
 |---|---|
-| **Autoridade conceitual** | [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md) |
+| **Autoridade conceitual** | [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md) |
 | **Este documento** | Regras gerais de existência, ownership, validação, consumo e evolução de contratos |
 | **Ainda não criado** | `PROJECT_CONTRACT.md`, `BRAND_CONTRACT.md`, `CAPABILITY_MODEL.md`, schemas, serializações |
 | **Implementação** | Não iniciada |
@@ -130,7 +130,7 @@ Sem contratos, conceitos ficam implícitos, módulos inventam expectativas locai
 
 Com contratos, o domínio ganha fronteiras operacionais: Engines e Validators compartilham o mesmo acordo; evolução e compatibilidade têm linguagem comum; humanos e IAs leem as mesmas regras no repositório.
 
-Alinhado a [`WHY_MOBS.md`](WHY_MOBS.md): configuração acima de duplicação; documentação antes da implementação; Core genérico.
+Alinhado a [`WHY_MOBS.md`](../foundation/WHY_MOBS.md): configuração acima de duplicação; documentação antes da implementação; Core genérico.
 
 ---
 
@@ -140,7 +140,7 @@ Todo Contrato de Configuração do MOBS **deve** declarar, de forma explícita (
 
 | Elemento | Função |
 |---|---|
-| **Conceito de domínio** | Qual entidade ou relação do [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md) representa |
+| **Conceito de domínio** | Qual entidade ou relação do [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md) representa |
 | **Identidade do contrato** | Nome estável e propósito em uma frase |
 | **Escopo** | O que cobre e o que deliberadamente não cobre |
 | **Invariantes** | O que deve permanecer verdadeiro |
@@ -206,7 +206,7 @@ Atribuições a Project/Brand Contract serão feitas nos documentos futuros, res
 
 ### Quem pode evoluir
 
-Somente o **Owner** (ou processo de aprovação do ecossistema alinhado a [`PROJECT_RULES.md`](PROJECT_RULES.md) e [`AUTOMATION_RULES.md`](project/automation/AUTOMATION_RULES.md)), em harmonia com a **Authority** quando distinta, pode alterar o significado de um contrato.
+Somente o **Owner** (ou processo de aprovação do ecossistema alinhado a [`PROJECT_RULES.md`](../../../PROJECT_RULES.md) e [`AUTOMATION_RULES.md`](../../../project/automation/AUTOMATION_RULES.md)), em harmonia com a **Authority** quando distinta, pode alterar o significado de um contrato.
 Consumidores **não** redefinem o contrato ad hoc.
 
 ---
@@ -350,15 +350,15 @@ Extensão sem contrato (ou sem registro no contrato-base) é dívida estrutural.
 
 Antes de implementar qualquer contrato específico, a sequência **deve** ser:
 
-1. Conceito existente (ou formalmente adicionado) em [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md).
+1. Conceito existente (ou formalmente adicionado) em [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md).
 2. Conformidade com **este** documento.
 3. Documento do contrato concreto (ex.: `PROJECT_CONTRACT.md`) — ainda sem schema obrigatório na primeira redação, se assim for aprovado.
 4. Schema(s) futuros derivados do contrato.
 5. Serialização e exemplos.
 6. Validators / resolução / implementação.
-7. Registro em HISTORY/CHANGELOG conforme [`PROJECT_RULES.md`](PROJECT_RULES.md).
+7. Registro em HISTORY/CHANGELOG conforme [`PROJECT_RULES.md`](../../../PROJECT_RULES.md).
 
-Alinhado a [`AUTOMATION_RULES.md`](project/automation/AUTOMATION_RULES.md): documentação e aprovação antes do código.
+Alinhado a [`AUTOMATION_RULES.md`](../../../project/automation/AUTOMATION_RULES.md): documentação e aprovação antes do código.
 
 ---
 
@@ -421,14 +421,14 @@ As leis deste documento — expectativas claras, Owner e Authority nomeados, evo
 
 ## Referências
 
-- [`DOMAIN_MODEL.md`](DOMAIN_MODEL.md)
-- [`WHY_MOBS.md`](WHY_MOBS.md)
-- [`project/automation/MOBS.md`](project/automation/MOBS.md)
-- [`project/automation/BUILD_SYSTEM.md`](project/automation/BUILD_SYSTEM.md)
-- [`project/automation/PROJECT_ENGINE.md`](project/automation/PROJECT_ENGINE.md)
-- [`project/automation/BRAND_ENGINE.md`](project/automation/BRAND_ENGINE.md)
-- [`project/automation/AUTOMATION_RULES.md`](project/automation/AUTOMATION_RULES.md)
-- [`project/automation/AUTOMATION_ROADMAP.md`](project/automation/AUTOMATION_ROADMAP.md)
-- [`PROJECT_INDEX.md`](PROJECT_INDEX.md)
-- [`PROJECT_RULES.md`](PROJECT_RULES.md)
-- [`AI_CONTEXT.md`](AI_CONTEXT.md)
+- [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md)
+- [`WHY_MOBS.md`](../foundation/WHY_MOBS.md)
+- [`project/automation/MOBS.md`](../../../project/automation/MOBS.md)
+- [`project/automation/BUILD_SYSTEM.md`](../../../project/automation/BUILD_SYSTEM.md)
+- [`project/automation/PROJECT_ENGINE.md`](../../../project/automation/PROJECT_ENGINE.md)
+- [`project/automation/BRAND_ENGINE.md`](../../../project/automation/BRAND_ENGINE.md)
+- [`project/automation/AUTOMATION_RULES.md`](../../../project/automation/AUTOMATION_RULES.md)
+- [`project/automation/AUTOMATION_ROADMAP.md`](../../../project/automation/AUTOMATION_ROADMAP.md)
+- [`PROJECT_INDEX.md`](../../../PROJECT_INDEX.md)
+- [`PROJECT_RULES.md`](../../../PROJECT_RULES.md)
+- [`AI_CONTEXT.md`](../../../AI_CONTEXT.md)
