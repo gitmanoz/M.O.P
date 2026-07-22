@@ -90,8 +90,8 @@ Uma versão só avança para implementação quando:
 | **MOBS 0.2 — Fase 1 (estrutura documental)** | `docs/mobs/governance/DOCUMENT_ARCHITECTURE.md` + `docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md` — **institucionalizada** |
 | **MOBS 0.2 — Fase 2** | Fundação, domínio e contratos em `docs/mobs/` — **concluída** |
 | **MOBS 0.2 — Fase 3** | Governança em `docs/mobs/governance/` — **concluída** |
-| **MOBS 0.2 — Fase 4** | Etapa **estrutural**: raiz local `missao-oab` → `missao-mobs`. Referências versionadas preparadas; **renomeação física da pasta pendente** (workspace em uso). **Não** é migração de `docs/product` nem renomeação do produto Missão OAB. |
-| **Próximo ciclo fundador** | **Core** — somente após encerramento verificado da Fase 4 |
+| **MOBS 0.2 — Fase 4** | Etapa **estrutural concluída**: raiz local `missao-oab` → `missao-mobs` (validada). **Não** é migração de `docs/product` nem renomeação do produto Missão OAB. |
+| **Próximo ciclo fundador** | **Core** |
 | v1–v10 implementação | Não iniciada |
 | Scripts oficiais | Nenhum |
 
@@ -105,8 +105,7 @@ Este roadmap **não** governa ciclos fundadores paralelos (Partnership, Core); a
 
 `docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md` materializa paths alvo e política de nascimento sob `docs/mobs/governance/DOCUMENT_ARCHITECTURE.md`.
 Fases 2 e 3 de migração documental **concluídas**.
-Fase 4, nesta decisão do fundador, é **estrutural (renomeação da raiz)** — distinta da antiga proposta de reorganizar produto/design sob `docs/products/missao-oab/` (ainda futura, se autorizada).
-Enquanto a pasta física não for `missao-mobs` e revalidada, a Fase 4 **não** está encerrada.
+Fase 4 (identidade da raiz `missao-mobs`) **concluída** — distinta da consolidação produto/design sob `docs/products/missao-oab/` (ainda futura, se autorizada).
 IDs oficiais de **produto/marca** atuais: `product-id` = `brand-id` = `missao-oab` (namespaces distintos; preservados).
 Contratos permanecem em `docs/mobs/contracts/` (constituição e concretos no mesmo diretório; sem subpasta `constitution/`).
 

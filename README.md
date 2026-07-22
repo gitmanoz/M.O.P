@@ -1,6 +1,7 @@
 # Missão MOBS
 
-Raiz-alvo do repositório: **`missao-mobs`** (arquitetura MOBS). Enquanto a pasta física ainda se chamar `missao-oab`, trate isso como transição da Fase 4 — não como nome do produto.
+Raiz local do repositório: **`missao-mobs`** (arquitetura MOBS).
+O produto **Missão OAB** / `missao-oab` permanece o primeiro produto e seus namespaces — não confundir com o nome da raiz.
 
 ## Por onde começar
 

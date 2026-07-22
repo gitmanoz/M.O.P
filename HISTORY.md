@@ -1506,6 +1506,37 @@ Uma autoridade de processo; menos superfície documental; princípio alinhado ao
 
 ---
 
+## 2026-07-21 — Fase 4 concluída: identidade da raiz `missao-mobs`
+
+**Fuso horário:** America/Sao_Paulo  
+**Versão ou marco:** MOBS 0.2 — Fase 4 (identidade da raiz) — **concluída**  
+**Horário:** não registrado com precisão verificável neste marco
+
+### Contexto
+
+A preparação documental da Fase 4 já existia; a renomeação física da pasta estava bloqueada pelo workspace aberto. Em seguida a raiz local foi renomeada de `missao-oab` para `missao-mobs`, o Git foi revalidado e o remoto permaneceu inalterado.
+
+### Objetivo
+
+Encerrar documentalmente a Fase 4 após validação da raiz física.
+
+### Decisões / validações
+
+- Raiz física confirmada: `…/missao-mobs`.
+- Remoto `origin` preservado (`M.O.P.git`); IDs de produto/marca `missao-oab` preservados.
+- Declarações operacionais de “renomeação pendente” removidas de README, roadmap e plano de estrutura.
+- Consolidação `docs/products/missao-oab/` permanece **fora** desta fase (futura).
+
+### Impacto
+
+Fase 4 encerrada. Próximo ciclo fundador elegível: **Core** (tarefa própria — não iniciada neste marco).
+
+### Próximos passos
+
+Evidence Harvest do Core (quando autorizado).
+
+---
+
 ## Controles
 
 | Campo | Valor |

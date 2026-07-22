@@ -364,7 +364,7 @@ Até lá, novos documentos MOBS devem seguir o plano como **diretriz aprovada** 
 | **1** | Estrutura alvo + política de nascimento — **concluída** (institucionalizada) |
 | **2** | Migrar fundação, domínio, contratos — **concluída** |
 | **3** | Migrar governança documental/arquitetural MOBS — **concluída** |
-| **4** | Identidade da raiz: `missao-oab` → `missao-mobs` (estrutural) — **referências documentais preparadas; renomeação física da pasta pendente de verificação**; consolidação produto/design sob `docs/products/` permanece **futura** |
+| **4** | Identidade da raiz: `missao-oab` → `missao-mobs` (estrutural) — **concluída**; consolidação produto/design sob `docs/products/` permanece **futura** |
 | **5** | Migrar assets para `assets/brands/<id>/` |
 
 ---
@@ -396,11 +396,11 @@ Fase 5 → depende de clareza Brand Contract + BRAND_ENGINE; pode afetar landing
 
 ## 9. Fases futuras de migração
 
-Resumo operacional pós-Fases 1–3:
+Resumo operacional pós-Fases 1–4:
 
 | Fase | Ação | Entregável |
 |---|---|---|
-| **4** | Renomear raiz local `missao-oab` → `missao-mobs`; atualizar só refs de raiz/workspace | Raiz `missao-mobs`; produto `missao-oab` preservado |
+| **4** | Renomear raiz local `missao-oab` → `missao-mobs`; atualizar só refs de raiz/workspace | **Concluída** — raiz `missao-mobs`; produto `missao-oab` preservado |
 | **5** | Migrar `assets/brand/` → `assets/brands/missao-oab/` | Tarefa com BRAND_ENGINE |
 | *Futura* | Reorganizar `docs/product`, `docs/brand`, design | `docs/products/missao-oab/` (se autorizada) |
 
