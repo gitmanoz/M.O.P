@@ -224,6 +224,8 @@ Princípios:
 - Validators verificam; **não** substituem o contrato nem o domínio;
 - validação apenas sintática de arquivo é **insuficiente**.
 
+Distinções que este documento preserva: (1) **presença ou disponibilidade** da entrada declarativa é pré-condição de **carga**, não um papel arquitetural novo; (2) o **Core** preserva **integridade orquestracional** (incluindo dependências entre módulos/configs) — isso **não** é conformidade profunda de domínio; (3) a **Engine** resolvedora preserva a **validade necessária ao ato de resolver**; (4) o **Validator** avalia **conformidade** como finalidade institucional própria (pass/fail e diagnósticos). Conformidade profunda de contrato de domínio **não** é atribuída ao Core.
+
 Detalhe de formatos de erro e implementação: decisão futura (`RESOLUTION_MODEL` / Validators no roadmap).
 
 ---
@@ -271,7 +273,9 @@ Core orquestra módulos
 Generators / Engines / Validators conforme papéis
 ```
 
-Project Engine permanece a **primeira** Engine de contexto acionada pelo Core.
+O passo “Validação (conforme contrato)” denota a **necessidade** de conformidade com o acordo (§8). Este diagrama **não** atribui dono nem momento canônico definitivo a esse passo, e **não** o atribui ao Core como interpretação profunda de domínio. O Core carrega e orquestra; Validators verificam conformidade; Engines resolvem contexto.
+
+No fluxo centrado em Projeto, a Project Engine permanece a primeira Engine de contexto de projeto acionada pelo Core. O fluxo em que somente a Marca está em jogo é autorizado pelo domínio e pelo contrato de Marca — sem redefinir aqui o mecanismo de seleção do primeiro resolvedor.
 
 ---
 

@@ -40,15 +40,22 @@ O MOBS diferencia formalmente quatro categorias:
 
 ## Fluxo conceitual oficial
 
-O **MOBS Core** é o orquestrador.  
-O **Project Engine** é a **primeira Engine** de contexto — acionada **pelo Core**, não fora dele.
+O **MOBS Core** é o orquestrador. Engines de contexto são acionadas **pelo Core**, não fora dele.
+
+No **fluxo centrado em Projeto**, a **Project Engine** é a primeira Engine de contexto de projeto.
+
+Quando **somente a Marca** estiver em jogo, a **Brand Engine** pode ser acionada pelo Core **independentemente da Project Engine** — conforme o domínio e o contrato de Marca. Este documento **não** define o mecanismo de escolha do primeiro resolvedor nesse fluxo.
+
+O diagrama abaixo ilustra o fluxo centrado em Projeto.
+
+Ilustração do **fluxo centrado em Projeto** — não ordem operacional canônica de todos os fluxos.
 
 ```
 Interface / CLI / CI / IA
     ↓
 MOBS Core carrega project.json
     ↓
-MOBS Core aciona Project Engine (primeira Engine)
+MOBS Core aciona Project Engine (primeira Engine de contexto de projeto)
     ↓
 Project Engine resolve o contexto do projeto
     ↓
@@ -69,10 +76,10 @@ Logs e resultados consolidados
 Princípios:
 
 - O Core não contém regras específicas de projeto ou marca.
-- O Core carrega o identificador/configuração inicial e **delega** ao Project Engine a resolução do contexto.
+- No fluxo centrado em Projeto, o Core carrega a configuração inicial e **delega** à Project Engine a resolução do contexto de projeto.
 - Após receber o contexto resolvido, o Core **continua** a orquestração.
 
-Ordem típica de execução (quando habilitados):
+Ordem típica de execução no **fluxo centrado em Projeto** (quando habilitados) — ilustrativa; **não** ordem operacional canônica de todos os fluxos; o momento de cada módulo habilitado, inclusive do Validator, permanece conforme dependências declaradas.
 
 ```
 MOBS Core
@@ -84,7 +91,7 @@ MOBS Core
   → Core consolida logs e resultados
 ```
 
-A ordem exata dos módulos após o Project Engine é definida pelo Core conforme dependências declaradas — não por hardcode de produto.
+A ordem exata dos módulos habilitados é definida pelo Core conforme dependências declaradas — não por hardcode de produto.
 
 ---
 
@@ -93,8 +100,9 @@ A ordem exata dos módulos após o Project Engine é definida pelo Core conforme
 ### O Core deverá
 
 - carregar o identificador/configuração inicial (`project.json`);
-- acionar o Project Engine como primeira Engine e receber o contexto resolvido;
-- validar dependências entre módulos e configs;
+- no fluxo centrado em Projeto, acionar a Project Engine como primeira Engine de contexto de projeto e receber o contexto resolvido;
+- acionar a Brand Engine quando o fluxo autorizado o exigir (após vínculo de projeto, ou **independentemente da Project Engine** quando só a Marca estiver em jogo), sem interpretar a Marca;
+- preservar a **integridade orquestracional**, inclusive validando dependências entre módulos e configs (isto **não** substitui Validators nem conformidade profunda de domínio);
 - selecionar módulos habilitados;
 - ordenar a execução dos demais módulos;
 - consolidar logs e resultados.
@@ -125,11 +133,15 @@ Conteúdo de marca e de projeto vive nas configs e nas Engines de contexto.
 | **Release Engine** | Engine | Checklists, empacote conceitual, propostas de release |
 | **Future modules** | conforme tipo | SEO, PWA, Deploy, AI Helpers — ver roadmap |
 
+**Contextualização** (conforme o fluxo autorizado): no fluxo centrado em Projeto, a **Project Engine**; quando a Marca estiver em jogo, a **Brand Engine** (após vínculo de projeto, ou acionada pelo Core independentemente da Project Engine).
+
+Os demais módulos do mapa (incluindo Validation Engine, Documentation Engine, Asset Generator, Release Engine e futuros) **não** são pré-requisitos universais do Core mínimo: participam quando **habilitados**, conforme **dependências declaradas**. A forma física dessas declarações permanece em aberto. O **momento** de participação de cada módulo na fila — inclusive do Validator — **não** fica fixado aqui.
+
 ---
 
 ## Detalhamento conceitual
 
-### Project Engine (primeira Engine de contexto)
+### Project Engine (primeira Engine de contexto **de projeto**)
 
 Acionada pelo MOBS Core.  
 Entrada: `projectId` / `project.json` (via Core).  
@@ -139,7 +151,7 @@ Saída: contexto do projeto (paths, módulos habilitados, vínculo com marca), d
 
 ### Brand Engine
 
-Entrada: `brandId` (geralmente vindo do contexto do projeto).  
+Entrada: identificador/configuração de marca (via contexto de projeto quando houver vínculo, ou por entrada do fluxo somente Marca).
 Saída: metadados e caminhos da marca.  
 Nunca redesenha. Nunca edita SVG mestre sem autorização explícita.
 
@@ -184,14 +196,18 @@ Reservados em `future/` e no roadmap.
 │  carregar project.json · acionar Engines ·       │
 │  selecionar · ordenar · consolidar logs          │
 │                                                   │
-│   1) Project Engine  ← primeira Engine (contexto) │
-│   2) Brand / Docs / Validate / Asset / Release    │
+│   1) Project Engine  ← primeira Engine de         │
+│      contexto de projeto                          │
+│   2) Demais módulos habilitados conforme          │
+│      dependências declaradas (ex.: Brand, Docs,   │
+│      Validate, Asset, Release) — não              │
+│      pré-requisitos universais do Core mínimo     │
 ├─────────────────────────────────────────────────┤
 │      Project configs     │    Brand configs       │
 └─────────────────────────────────────────────────┘
 ```
 
-O Project Engine **não** opera fora do Core: é o primeiro módulo que o Core aciona.
+No fluxo centrado em Projeto, a Project Engine é a primeira Engine de contexto acionada pelo Core — e **não** opera fora do Core. Toda Engine continua sendo acionada pelo Core.
 
 ---
 
