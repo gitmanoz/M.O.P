@@ -68,6 +68,7 @@ Inventário em **2026-07-21** (atualizado pós-Fases 2 e 3) — somente document
 | `models/PARTNERSHIP_MODEL.md` | MOBS — modelo de parceria (fundador) |
 | `models/AYLA_ARCHITECTURAL_PARTNER.md` | MOBS — perfil derivado (parceira arquitetural Ayla) |
 | `models/PROGRAMMER_PARTNER.md` | MOBS — perfil derivado (parceiro programador / materialização) |
+| `models/TEST_EXECUTION_MODEL.md` | MOBS — modelo de execução de testes institucionais / probes |
 
 ### `project/automation/`
 
@@ -133,7 +134,7 @@ Classificação segundo grupos oficiais de [`DOCUMENT_ARCHITECTURE.md`](DOCUMENT
 | **Domínio** | `docs/mobs/domain/DOMAIN_MODEL.md` | — |
 | **Constituição de contratos** | `docs/mobs/contracts/CONFIGURATION_CONTRACTS.md` | — |
 | **Contratos concretos** | `docs/mobs/contracts/PROJECT_CONTRACT.md`, `docs/mobs/contracts/BRAND_CONTRACT.md` | Irmãos; não hierárquicos entre si |
-| **Modelos arquiteturais** | `docs/mobs/models/PARTNERSHIP_MODEL.md`; perfis derivados `AYLA_ARCHITECTURAL_PARTNER.md`, `PROGRAMMER_PARTNER.md` | `RESOLUTION_MODEL`, `CAPABILITY_MODEL` — futuros |
+| **Modelos arquiteturais** | `docs/mobs/models/PARTNERSHIP_MODEL.md`, `TEST_EXECUTION_MODEL.md`; perfis derivados `AYLA_ARCHITECTURAL_PARTNER.md`, `PROGRAMMER_PARTNER.md` | `RESOLUTION_MODEL`, `CAPABILITY_MODEL` — futuros |
 | **Schemas** | *(nenhum ainda)* | Futuro |
 | **Engines** | `BUILD_SYSTEM.md`, `PROJECT_ENGINE.md`, `BRAND_ENGINE.md` | Taxonomia + Engines de contexto |
 | **Governança arquitetural** | `docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md` | — |

@@ -73,6 +73,8 @@ Para a identidade e o papel da parceira arquitetural Ayla, consultar `docs/mobs/
 
 Para o papel de Parceiro Programador (materialização técnica P1–P3), consultar `docs/mobs/models/PROGRAMMER_PARTNER.md` **quando** o agente for instruído nesse papel ou a tarefa for materializar código/documentação sob mandato já estabilizado e autorizado. Não confundir com Ayla. Fora disso, basta a descoberta via Index.
 
+Para o método de testes institucionais, probes e diagnósticos de execução, consultar `docs/mobs/models/TEST_EXECUTION_MODEL.md` **quando** a tarefa for conduzir, observar ou registrar tal teste sob o método oficial. Fora disso, basta a descoberta via Index.
+
 ## Governança
 
 `PROJECT_RULES.md` passa a ser **leitura obrigatória** antes da execução de qualquer tarefa.
@@ -118,6 +120,7 @@ Antes de realizar mudanças relevantes, consulte os arquivos adequados:
 - `docs/mobs/models/PARTNERSHIP_MODEL.md`
 - `docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md` (quando o papel Ayla / parceria arquitetural se aplicar)
 - `docs/mobs/models/PROGRAMMER_PARTNER.md` (quando o papel de materialização técnica se aplicar)
+- `docs/mobs/models/TEST_EXECUTION_MODEL.md` (quando o método de teste institucional / probe / diagnóstico se aplicar)
 - `project/automation/MOBS.md`
 - `project/automation/BUILD_SYSTEM.md`
 - `project/automation/PROJECT_ENGINE.md`

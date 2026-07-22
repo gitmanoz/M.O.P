@@ -1568,6 +1568,39 @@ Aprovar diff → commit/push. Core permanece tarefa própria.
 
 ---
 
+## 2026-07-22 — Officialization: TEST_EXECUTION_MODEL (Harvest factual)
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS — modelo `TEST_EXECUTION_MODEL`
+**Horário:** não registrado com precisão verificável neste marco
+
+### Contexto
+
+Ciclo de materialização e refinamento do método de testes institucionais, com o perfil `PROGRAMMER_PARTNER` em uso sob mandato do fundador.
+
+### Objetivo
+
+Tornar `docs/mobs/models/TEST_EXECUTION_MODEL.md` alcançável pelo fluxo documental e registrar o Harvest factual do ciclo — sem expandir o conteúdo já aprovado do modelo.
+
+### Decisões / fatos colhidos
+
+- Integração mínima: Index, AI_CONTEXT e inventários de estrutura/arquitetura documental; CHANGELOG técnico.
+- O `PROGRAMMER_PARTNER` foi **descoberto e utilizado corretamente** neste ciclo.
+- **Não houve regressão** de comportamento observada no cenário executado.
+- A **indispensabilidade** do `PROGRAMMER_PARTNER` **não foi demonstrada** pelo cenário executado.
+- O teste produziu conhecimento que **originou e refinou** o `TEST_EXECUTION_MODEL`.
+- Este marco **não** declara o `PROGRAMMER_PARTNER` definitivamente validado, indispensável ou rejeitado.
+
+### Impacto
+
+O método de execução de testes institucionais deixa de ser órfão: descoberta e carga condicional passam a existir nas autoridades de roteamento.
+
+### Próximos passos
+
+Aprovar diff → commit/push quando autorizado. Core permanece tarefa própria.
+
+---
+
 ## Controles
 
 | Campo | Valor |
