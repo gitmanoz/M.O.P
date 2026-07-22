@@ -149,6 +149,7 @@ Qual é a tarefa?
 ├─ Código
 │    → AI_CONTEXT.md
 │    → PROJECT_RULES.md
+│    → docs/mobs/models/PROGRAMMER_PARTNER.md              ← materialização técnica sob mandato (quando o papel se aplicar)
 │    (+ arquivos de código/escopo da tarefa)
 │
 ├─ Documentação
@@ -167,6 +168,7 @@ Qual é a tarefa?
 │    (+ project/automation/ se a arquitetura for de engenharia/MOBS)
 │    (+ docs/mobs/models/PARTNERSHIP_MODEL.md se a tarefa for colaboração / continuidade)
 │    (+ docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md se parceria arquitetural, estabilização ou institucionalização)
+│    (+ docs/mobs/models/PROGRAMMER_PARTNER.md se materialização técnica sob mandato autorizado)
 │
 ├─ Engenharia
 │    → AI_CONTEXT.md
@@ -182,6 +184,7 @@ Qual é a tarefa?
 │    → docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md    ← estrutura alvo e política de nascimento (Fase 1)
 │    → docs/mobs/models/PARTNERSHIP_MODEL.md               ← colaboração genérica entre parceiros
 │    → docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md      ← carregar integralmente se Ayla / parceria arquitetural / estabilização / institucionalização
+│    → docs/mobs/models/PROGRAMMER_PARTNER.md              ← carregar integralmente se Parceiro Programador / materialização técnica autorizada
 │    → project/automation/BUILD_SYSTEM.md
 │    → project/automation/PROJECT_ENGINE.md
 │    → project/automation/BRAND_ENGINE.md
@@ -299,6 +302,7 @@ Governança operacional (PROJECT_RULES):
 
 Colaboração e preservação de fluxo: [`docs/mobs/models/PARTNERSHIP_MODEL.md`](docs/mobs/models/PARTNERSHIP_MODEL.md).
 Parceira arquitetural Ayla (descoberta universal; carga integral só quando o papel se aplicar): [`docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md`](docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md).
+Parceiro Programador (descoberta universal; carga integral só na materialização técnica autorizada): [`docs/mobs/models/PROGRAMMER_PARTNER.md`](docs/mobs/models/PROGRAMMER_PARTNER.md).
 Registro institucional e versionamento: [`PROJECT_RULES.md`](PROJECT_RULES.md).
 
 ---
@@ -320,6 +324,7 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md` | Estrutura física alvo e política de nascimento (MOBS 0.2 — Fase 1) |
 | `docs/mobs/models/PARTNERSHIP_MODEL.md` | Gramática genérica da colaboração entre parceiros |
 | `docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md` | Identidade e papel da parceira arquitetural Ayla |
+| `docs/mobs/models/PROGRAMMER_PARTNER.md` | Papel de materialização técnica (Parceiro Programador) |
 | `AI_CONTEXT.md` | Contexto e regras para agentes de IA |
 | `PROJECT_RULES.md` | Contrato operacional de trabalho |
 | `docs/product/` | Produto, roadmap, jornada, negócio, gamificação |
@@ -350,6 +355,7 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md` | Paths alvo, matriz atual × alvo, convenção de IDs e política de nascimento de novos documentos |
 | `docs/mobs/models/PARTNERSHIP_MODEL.md` | Colaboração genérica e preservação de fluxo entre parceiros |
 | `docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md` | Perfil derivado: identidade e papel arquitetural da Ayla |
+| `docs/mobs/models/PROGRAMMER_PARTNER.md` | Perfil derivado: materialização técnica sob mandato (P1–P3) |
 | `AI_CONTEXT.md` | Contexto do projeto para IAs e regras de marca/consumo |
 | `PROJECT_RULES.md` | Regras permanentes de desenvolvimento e fluxo operacional |
 | `docs/product/PRD.md` | Produto e requisitos |

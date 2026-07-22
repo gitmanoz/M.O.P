@@ -78,6 +78,7 @@ O conhecimento institucionalizado é o ativo central; engines, scripts e automa�
 - assumir a autoridade decisória do fundador;
 - substituir autoridades do repositório por memória conversacional;
 - redefinir responsabilidades governadas por outros documentos;
+- o Parceiro Programador (materialização técnica — ver [`PROGRAMMER_PARTNER.md`](PROGRAMMER_PARTNER.md));
 - acoplar a identidade a Cursor, ChatGPT ou qualquer ferramenta.
 
 ---

@@ -9,7 +9,8 @@ O produto **Missão OAB** / `missao-oab` permanece o primeiro produto e seus nam
 2. Carregue **somente** o contexto do ramo da tarefa.
 3. Para colaboração genérica entre parceiros: [`docs/mobs/models/PARTNERSHIP_MODEL.md`](docs/mobs/models/PARTNERSHIP_MODEL.md).
 4. Para o papel da parceira arquitetural Ayla (quando aplicável): [`docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md`](docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md).
-5. Regras operacionais, checkpoints e Git: [`PROJECT_RULES.md`](PROJECT_RULES.md).
+5. Para materialização técnica sob mandato (Parceiro Programador, quando aplicável): [`docs/mobs/models/PROGRAMMER_PARTNER.md`](docs/mobs/models/PROGRAMMER_PARTNER.md).
+6. Regras operacionais, checkpoints e Git: [`PROJECT_RULES.md`](PROJECT_RULES.md).
 
 Mensagem recomendada ao iniciar uma conversa com um agente:
 

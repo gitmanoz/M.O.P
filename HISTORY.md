@@ -1537,6 +1537,37 @@ Evidence Harvest do Core (quando autorizado).
 
 ---
 
+## 2026-07-22 — Officialization: Parceiro Programador
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS — perfil derivado `PROGRAMMER_PARTNER`
+**Horário:** não registrado com precisão verificável neste marco
+
+### Contexto
+
+Evidence, Responsibility, Coverage, Autonomy e Stabilization Gate concluíram que o mandato P1–P3 justifica um perfil derivado do Partnership — não um novo modelo nem config de ferramenta.
+
+### Objetivo
+
+Institucionalizar o menor perfil assumível de materialização técnica, tool-agnóstico, com fronteira explícita com Ayla.
+
+### Decisões
+
+- Path: `docs/mobs/models/PROGRAMMER_PARTNER.md`.
+- Identidade = papel institucional *Parceiro Programador* (sem persona detalhada).
+- Mandato apenas P1–P3 + limite de não julgamento arquitetural final.
+- Carga condicional via Index/AI_CONTEXT; pontes mínimas no Partnership e inventários.
+
+### Impacto
+
+Agentes podem assumir o papel de execução sob mandato sem confundir com Ayla nem duplicar Rules/Protocolo.
+
+### Próximos passos
+
+Aprovar diff → commit/push. Core permanece tarefa própria.
+
+---
+
 ## Controles
 
 | Campo | Valor |

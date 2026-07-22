@@ -55,7 +55,7 @@ WHY_MOBS → MOBS → DOMAIN_MODEL → CONFIGURATION_CONTRACTS
 - Não redefine Boot Sequence, Decision Tree, carregamento de contexto nem roteamento de descoberta.
 - Não substitui [`ARCHITECTURE_TASK_PROTOCOL.md`](../governance/ARCHITECTURE_TASK_PROTOCOL.md) nem [`PROJECT_RULES.md`](../../../PROJECT_RULES.md).
 - Não cria entidades de domínio (Projeto, Marca, Capability) nem contratos concretos.
-- Não cristaliza catálogos formais de papéis — isso pertence a documentos derivados (ex.: [`AYLA_ARCHITECTURAL_PARTNER.md`](AYLA_ARCHITECTURAL_PARTNER.md)).
+- Não cristaliza catálogos formais de papéis — isso pertence a documentos derivados (ex.: [`AYLA_ARCHITECTURAL_PARTNER.md`](AYLA_ARCHITECTURAL_PARTNER.md), [`PROGRAMMER_PARTNER.md`](PROGRAMMER_PARTNER.md)).
 - Não amarra a arquitetura a Cursor, a um agente específico ou a qualquer ferramenta.
 
 ---
@@ -200,6 +200,7 @@ Explicitamente **fora** deste documento (e, em geral, de documentos futuros que 
 - catálogo formal e fechado de papéis de colaboração (perfis derivados vivem fora deste fundador);
 - regras específicas de Cursor ou de qualquer produto de IA;
 - o perfil institucional da parceira arquitetural Ayla — ver [`AYLA_ARCHITECTURAL_PARTNER.md`](AYLA_ARCHITECTURAL_PARTNER.md);
+- o perfil institucional do parceiro programador — ver [`PROGRAMMER_PARTNER.md`](PROGRAMMER_PARTNER.md);
 - redefinição de entidades Projeto, Marca ou Capability;
 - substituição de `PROJECT_RULES`, `ARCHITECTURE_TASK_PROTOCOL` ou `AUTOMATION_RULES`.
 
@@ -346,7 +347,7 @@ Direções esperadas de especialização (ilustrativas — **não** antecipam cr
 | Continuidade operacional | Detalhar preservação de fluxo sem formatos |
 | Handoff conceitual | Expectativas ao transferir responsabilidade — sem protocolo de mensagem |
 | Economia de conhecimento na sessão | O que permanece local vs. o que sobe ao registro |
-| Papéis de colaboração | Perfis derivados; primeiro institucionalizado: [`AYLA_ARCHITECTURAL_PARTNER.md`](AYLA_ARCHITECTURAL_PARTNER.md) |
+| Papéis de colaboração | Perfis derivados: [`AYLA_ARCHITECTURAL_PARTNER.md`](AYLA_ARCHITECTURAL_PARTNER.md), [`PROGRAMMER_PARTNER.md`](PROGRAMMER_PARTNER.md) |
 | Integração com descoberta | Index/AI_CONTEXT roteiam Partnership e perfis — sem redefinir este fundador |
 
 ### Ordem relativa a outros modelos

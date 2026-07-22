@@ -71,6 +71,8 @@ Para a colaboração genérica entre parceiros, consultar `docs/mobs/models/PART
 
 Para a identidade e o papel da parceira arquitetural Ayla, consultar `docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md` **quando** o agente for instruído a atuar como Ayla, assumir a parceria arquitetural do MOBS, ou participar de decisões de arquitetura, fronteiras, estabilização ou institucionalização. Fora disso, basta a descoberta via Index — não carregar o perfil completo por padrão.
 
+Para o papel de Parceiro Programador (materialização técnica P1–P3), consultar `docs/mobs/models/PROGRAMMER_PARTNER.md` **quando** o agente for instruído nesse papel ou a tarefa for materializar código/documentação sob mandato já estabilizado e autorizado. Não confundir com Ayla. Fora disso, basta a descoberta via Index.
+
 ## Governança
 
 `PROJECT_RULES.md` passa a ser **leitura obrigatória** antes da execução de qualquer tarefa.
@@ -115,6 +117,7 @@ Antes de realizar mudanças relevantes, consulte os arquivos adequados:
 - `docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md`
 - `docs/mobs/models/PARTNERSHIP_MODEL.md`
 - `docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md` (quando o papel Ayla / parceria arquitetural se aplicar)
+- `docs/mobs/models/PROGRAMMER_PARTNER.md` (quando o papel de materialização técnica se aplicar)
 - `project/automation/MOBS.md`
 - `project/automation/BUILD_SYSTEM.md`
 - `project/automation/PROJECT_ENGINE.md`

@@ -27,6 +27,7 @@ Categorias usadas apenas quando houver itens:
 
 - `docs/mobs/models/PARTNERSHIP_MODEL.md`: fundador da Arquitetura de Parceria (colaboração genérica entre parceiros).
 - `docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md`: identidade institucional e papel arquitetural da Ayla (derivado do Partnership).
+- `docs/mobs/models/PROGRAMMER_PARTNER.md`: perfil derivado — materialização técnica sob mandato (P1–P3); fronteira com Ayla.
 - Architectural Harvest no `ARCHITECTURE_TASK_PROTOCOL.md` (Evidence, Responsibility, Coverage + Autonomy Validation, Stabilization Gate, Officialization).
 - Checkpoints de entregas importantes e distinção fundador × aprovação operacional em `PROJECT_RULES.md`.
 - `README.md` como ponte de entrada para `PROJECT_INDEX.md`.
@@ -53,9 +54,9 @@ Categorias usadas apenas quando houver itens:
 
 - `ARCHITECTURE_TASK_PROTOCOL.md`: §13.2 — nascimento de modelos/autoridades (pedido ≠ necessidade; Evidence/Responsibility antes da implementação; alternativas criar / especializar / perfil / aberto).
 - `DOCUMENT_ARCHITECTURE.md`: distinção mínima modelo × contrato × perfil derivado.
-- `PROJECT_INDEX.md` e `AI_CONTEXT.md`: rotas atualizadas para o protocolo de tarefas (§13.2) e distinção documental — sem autoridade separada de modelos.
-- `PARTNERSHIP_MODEL.md`: ponte mínima para perfis derivados (Ayla), sem absorver a identidade.
-- Inventários em `DOCUMENT_STRUCTURE_PLAN.md` e `DOCUMENT_ARCHITECTURE.md`: modelos/parceria e perfil Ayla.
+- `PROJECT_INDEX.md` e `AI_CONTEXT.md`: rotas atualizadas para o protocolo de tarefas (§13.2), Ayla e Parceiro Programador (carga condicional).
+- `PARTNERSHIP_MODEL.md`: ponte mínima para perfis derivados (Ayla, Parceiro Programador), sem absorver as identidades.
+- Inventários em `DOCUMENT_STRUCTURE_PLAN.md` e `DOCUMENT_ARCHITECTURE.md`: modelos/parceria e perfis Ayla / Parceiro Programador.
 - Fase 4 estrutural (identidade da raiz): `missao-oab` → `missao-mobs` **concluída** e validada; produto/`product-id` `missao-oab` preservados.
 - Consolidação de produto sob `docs/products/` marcada como **futura** (não mais escopo da Fase 4).
 
