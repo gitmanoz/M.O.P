@@ -12,14 +12,16 @@
 
 ## Objetivo
 
-Definir como o MOBS trata **projetos** de forma genérica e posicionar o Project Engine como a **primeira Engine de contexto**, acionada pelo **MOBS Core**.
+Definir como o MOBS trata **projetos** de forma genérica e posicionar o Project Engine como a **primeira Engine de contexto de projeto** no **fluxo centrado em Projeto**, acionada pelo **MOBS Core**.
 
 O Project Engine não gera assets nem docs em massa.  
-Ele **resolve o projeto** e **devolve o contexto ao Core**, que então orquestra Brand Engine, Documentation Engine, Asset Generator, Validation Engine e Release Engine.
+Ele **resolve o projeto** e **devolve o contexto ao Core**. No fluxo centrado em Projeto, o Core orquestra os demais módulos habilitados conforme o fluxo autorizado (incluindo a Brand Engine quando esse fluxo o exigir).
 
 ---
 
 ## Posição no fluxo
+
+Ilustração do fluxo centrado em Projeto — não ordem operacional canônica de todos os fluxos.
 
 ```
 Interface / CLI / CI / IA
@@ -115,7 +117,7 @@ Não implementar schemas nesta etapa; apenas registrar o modelo.
 - Expor contexto (paths, flags de módulos, vínculo de marca se houver).
 - Inventário conceitual de projetos do ecossistema.
 - Validação mínima estrutural da config de projeto (conceito; detalhe futuro).
-- Ser a **primeira** Engine de contexto acionada pelo MOBS Core.
+- No fluxo centrado em Projeto, ser a **primeira** Engine de contexto de projeto acionada pelo MOBS Core.
 
 ---
 

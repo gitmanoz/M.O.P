@@ -15,7 +15,7 @@ Ele prepara o terreno sobre o qual os contratos concretos do **MOBS 0.2 — Conf
 
 | Dimensão | Situação |
 |---|---|
-| **Arquitetura aprovada (presente)** | MOBS 0.1.1 documental: taxonomia Core / Engine / Generator / Validator; fluxo Core → Project Engine → Core → módulos; relação Projeto × Marca; princípios em [`WHY_MOBS.md`](../foundation/WHY_MOBS.md) |
+| **Arquitetura aprovada (presente)** | MOBS 0.1.1 documental: taxonomia Core / Engine / Generator / Validator; no fluxo centrado em Projeto, Core → Project Engine (primeira Engine de contexto de projeto) → Core → módulos habilitados (ilustrativo; não ordem canônica de todos os fluxos — ver [`BUILD_SYSTEM.md`](../../../project/automation/BUILD_SYSTEM.md)); relação Projeto × Marca; princípios em [`WHY_MOBS.md`](../foundation/WHY_MOBS.md) |
 | **Formalizado aqui (modelo conceitual)** | Vocabulário normativo, relações oficiais vs. abertas, tese “contrato ≠ arquivo”, fronteiras de domínio |
 | **Contratos concretos (MOBS 0.2)** | [`PROJECT_CONTRACT.md`](../contracts/PROJECT_CONTRACT.md) e [`BRAND_CONTRACT.md`](../contracts/BRAND_CONTRACT.md) — aprovados; ownership formal estabelecido; schemas e serialização — **ainda não escritos** |
 | **Implementação futura** | Schemas, runtime, Validators executáveis, migrações — **não iniciada** |
@@ -254,7 +254,7 @@ Ecossistema Missão
 | Projeto **pode** existir sem marca | Oficial |
 | **N projetos** podem compartilhar **uma** marca | Oficial |
 | Projeto e marca **1:1** (marca própria) | Oficial (ainda entidades separadas) |
-| Core **aciona** Project Engine como **primeira** Engine | Oficial |
+| No fluxo centrado em Projeto, Core aciona Project Engine como primeira Engine de contexto de projeto | Oficial |
 | Core **não** embute regras de marca/projeto | Oficial |
 | Associação projeto↔marca é **declarativa**, nunca hardcoded no Core | Oficial |
 
@@ -288,12 +288,12 @@ Ecossistema Missão
 
 ### Papel do Project Engine
 
-Fluxo oficial preservado:
+Fluxo centrado em Projeto (preservado):
 
 1. Core carrega a configuração inicial;
-2. Core aciona o **Project Engine** como primeira Engine;
+2. Core aciona o **Project Engine** como primeira Engine de contexto de projeto;
 3. Project Engine resolve o contexto do projeto;
-4. Core retoma a orquestração dos demais módulos.
+4. Core retoma a orquestração dos módulos habilitados conforme o fluxo autorizado — sem afirmar ordem universal de todos os fluxos.
 
 O Project Engine **não** orquestra a fila global e **não** gera assets.
 

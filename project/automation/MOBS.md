@@ -50,7 +50,7 @@ Padronizar e automatizar todos os processos repetitivos de engenharia do Ecossis
 5. **Escalabilidade** — novos produtos herdam a infraestrutura sem refatoração estrutural.
 6. **Documentação antes da implementação** — nenhuma automação nasce sem arquitetura aprovada.
 7. **Automações independentes** — módulos desacoplados; falha ou evolução de um não quebra os demais.
-8. **Contexto antes da ação** — o Core aciona o Project Engine como primeira Engine; só então orquestra Generators/Validators e demais módulos.
+8. **Contexto antes da ação** — no fluxo centrado em Projeto, o Core aciona o Project Engine como primeira Engine de contexto de projeto; a orquestração dos demais módulos habilitados segue o fluxo autorizado (detalhe: BUILD_SYSTEM.md).
 
 ---
 
@@ -76,20 +76,20 @@ O MOBS deve nascer preparado para todos eles.
 | Peça | Função |
 |---|---|
 | **MOBS Core** | Orquestrador: carrega config inicial, aciona Engines, seleciona, ordena, consolida logs |
-| **Project Engine** | Primeira Engine: resolve o contexto do projeto e devolve ao Core |
-| **Brand Engine** | Contexto da marca (acionada pelo Core após o Project Engine) |
+| **Project Engine** | No fluxo centrado em Projeto, primeira Engine de contexto de projeto: resolve o contexto do projeto e devolve ao Core |
+| **Brand Engine** | Contexto da marca (acionada pelo Core no fluxo autorizado — após vínculo de projeto, ou independentemente da Project Engine quando só a Marca estiver em jogo) |
 | **Generators** | Produzem artefatos derivados (ex.: Asset Generator) |
 | **Validators** | Verificam integridade (ex.: Validation Engine) |
 | **Demais Engines** | Domínios sem geração em massa (Docs, Release, etc.) |
 
 - O **Core orquestra**.
-- O **Project Engine** resolve o contexto como **primeira Engine** (dentro do fluxo do Core).
-- Os **demais módulos** são acionados pelo Core **depois** da resolução do contexto.
+- No fluxo centrado em Projeto, o **Project Engine** resolve o contexto de projeto como **primeira Engine de contexto de projeto** (acionada pelo Core).
+- Os **demais módulos** habilitados são acionados pelo Core conforme o fluxo autorizado — não como sequência universalmente posterior à resolução de Projeto.
 
 Taxonomia e fronteiras do Core: `BUILD_SYSTEM.md`.  
 Relação projeto↔marca: `PROJECT_ENGINE.md`.
 
-Fluxo conceitual oficial:
+Ilustração do fluxo centrado em Projeto — não ordem operacional canônica de todos os fluxos.
 
 ```
 Interface / CLI / CI / IA

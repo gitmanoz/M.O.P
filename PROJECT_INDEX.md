@@ -263,7 +263,7 @@ schemas
 implementação
 ```
 
-Fluxo conceitual do MOBS:
+Ilustração do fluxo centrado em Projeto — não ordem operacional canônica de todos os fluxos.
 
 ```
 project.json
