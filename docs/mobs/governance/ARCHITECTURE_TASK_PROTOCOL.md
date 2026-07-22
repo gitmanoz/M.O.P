@@ -369,6 +369,8 @@ Essa numeração é **histórica** — não um ritual obrigatório de três pass
 5. O objetivo é validar **suficiência e responsabilidade**, não expandir documentos.
 6. Tarefas só-evidência (coleta sem implementação) são entregas legítimas deste método.
 
+Quando a coleta ou validação sob este Harvest exigir teste institucional, probe ou diagnóstico de execução, o método oficial é [`TEST_EXECUTION_MODEL.md`](../models/TEST_EXECUTION_MODEL.md). Este protocolo é o **destino** do aprendizado arquitetural — **não** o método de execução do teste.
+
 O **Core** é a segunda aplicação real prevista deste método (após o ciclo Partnership).
 
 ---
