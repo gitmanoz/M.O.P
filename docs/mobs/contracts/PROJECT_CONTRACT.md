@@ -227,7 +227,7 @@ Estabilidade conceitual do acordo:
 
 Comportamento esperado da plataforma sob este acordo:
 
-1. **Resolução** — este contrato estabelece que a resolução do contexto de Projeto é responsabilidade da **Project Engine**, acionada pelo Core como primeira Engine de contexto.
+1. **Resolução** — este contrato estabelece que a resolução do contexto de Projeto é responsabilidade da **Project Engine**, acionada pelo Core como primeira Engine de contexto de projeto.
 2. **Core genérico** — o Core permanece responsável apenas pela orquestração; não embute regras profundas de projeto.
 3. **Consumo** — consumidores trabalham preferencialmente sobre o **contexto resolvido**, não sobre a representação física da instância.
 4. **Falha explícita** — violações devem ser detectáveis e comunicáveis; não silenciosas.

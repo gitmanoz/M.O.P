@@ -122,7 +122,7 @@ O diferencial está no sistema compartilhado de **contratos, contexto, orquestra
 
 ## Como o MOBS funciona conceitualmente
 
-Linguagem acessível do **fluxo oficial atual** (arquitetura documental):
+Linguagem acessível — ilustração do fluxo centrado em Projeto (arquitetura documental); não ordem operacional canônica de todos os fluxos:
 
 ```text
 Interface / CLI / CI / IA
@@ -143,7 +143,7 @@ Logs e resultados são consolidados
 Reforço:
 
 - o **Core** orquestra;
-- o **Project Engine** é a primeira Engine de contexto;
+- no fluxo centrado em Projeto, o **Project Engine** é a primeira Engine de contexto de projeto;
 - **Engines** interpretam domínios;
 - **Generators** produzem resultados;
 - **Validators** verificam conformidade;
@@ -224,7 +224,7 @@ Alinhados a [`MOBS.md`](../../../project/automation/MOBS.md), [`AUTOMATION_RULES
 2. **Configuração acima de duplicação** — declarar diferença; não copiar o sistema.
 3. **Documentação antes da implementação** — nenhuma automação nasce sem arquitetura aprovada.
 4. **Arquitetura antes da automação** — automatizar o compreendido, não o caos.
-5. **Contexto antes da ação** — Project Engine via Core antes de Generators/Validators.
+5. **Contexto antes da ação** — no fluxo centrado em Projeto, o Core aciona o Project Engine como primeira Engine de contexto de projeto; a orquestração dos demais módulos habilitados segue o fluxo autorizado (detalhe: BUILD_SYSTEM.md).
 6. **Governança antes da velocidade irresponsável** — aprovação, HISTORY e CHANGELOG importam.
 7. **Reutilização acima de cópia** — um módulo, muitos projetos.
 8. **Contratos claros acima de conhecimento implícito** — o repositório deve explicar a decisão.
