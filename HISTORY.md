@@ -1601,6 +1601,52 @@ Aprovar diff → commit/push quando autorizado. Core permanece tarefa própria.
 
 ---
 
+## 2026-07-23 — Institucionalização: mandato mínimo suficiente
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS — Arquitetura de Parceria
+**Horário:** não registrado com precisão verificável neste marco
+
+### Contexto
+
+A continuidade entre parceiros precisava distinguir o conteúdo próprio de um mandato do conhecimento já alcançável pelas autoridades documentais, preservando economia de contexto sem perder informações determinantes para a execução.
+
+### Objetivo
+
+Institucionalizar no fundador da Arquitetura de Parceria a regra de mandato mínimo suficiente, sem criar nova autoridade nem duplicar regras de Entrada, papéis ou fluxos existentes.
+
+### Decisão
+
+- A regra foi incorporada em `docs/mobs/models/PARTNERSHIP_MODEL.md`, §11 **Fluxo de conhecimento (conceitual)** → **Regras do fluxo**, item 2.
+- O mandato contém somente tarefa ou resultado esperado; ponto de entrada para descoberta, quando necessário; informações novas ainda não institucionalizadas; e exceções, limites ou critérios específicos da execução.
+- Regras, fluxos, papéis e conhecimentos alcançáveis pela arquitetura documental não são repetidos no mandato.
+- Informação nova deve ser autônoma e compreensível sem a conversa de origem.
+- A concisão não pode eliminar conteúdo que altere sentido, escopo ou resultado esperado.
+- A neutralidade do mandato em testes de autonomia permanece conhecimento candidato e não foi institucionalizada.
+
+### Impacto
+
+Mandatos podem permanecer concisos e autônomos sem carregar novamente a arquitetura já descoberta pelo repositório nem omitir informações que mudem a execução.
+
+### Áreas e documentos envolvidos
+
+- `docs/mobs/models/PARTNERSHIP_MODEL.md`
+- `HISTORY.md`
+- `CHANGELOG.md`
+
+### Validações
+
+- Responsabilidade do `PARTNERSHIP_MODEL.md` preservada: colaboração e continuidade entre parceiros.
+- Regra integrada compactamente às regras do fluxo, sem redefinir Boot ou descoberta.
+- Nenhuma duplicação em outra autoridade documental.
+- Neutralidade em testes de autonomia mantida fora da arquitetura oficial.
+
+### Estado do checkpoint
+
+Alteração e registros preparados; commit e push ainda não executados e dependentes de aprovação explícita.
+
+---
+
 ## Controles
 
 | Campo | Valor |

@@ -291,12 +291,13 @@ Conhecimento estabilizado (decisões e artefatos alinhados às fontes oficiais)
 ### Regras do fluxo
 
 1. **Entrada primeiro** — sem contexto mínimo governado, a parceria improvisa.
-2. **Trabalho não é registro** — conhecimento de trabalho não implica HISTORY, CHANGELOG, stage, commit ou push.
-3. **Estabilizado ≠ versionado** — conhecimento estabilizado pode existir sem registro institucional imediato; o registro é ato de governança operacional, não de parceria.
-4. **Preferência pelo estabilizado** — conhecimento estabilizado deve **sempre** ser preferido ao conhecimento reconstruído; retomar a partir do que já foi estabelecido, não reabrir a intenção do zero sem necessidade.
-5. **Continuidade** — ao retomar uma tarefa, preferir conhecimento estabilizado (e registro institucional **se** já existir) à reconstrução improvisada.
-6. **Economia** — promover para a sessão seguinte apenas o necessário à continuidade; o restante permanece nas fontes.
-7. **Fonte oficial vence** — se o conhecimento de trabalho contradisser o domínio, o contrato ou a constituição, o trabalho está errado.
+2. **Mandato mínimo suficiente** — o mandato contém somente a tarefa ou o resultado esperado; o ponto de entrada para descoberta, quando necessário; informações novas ainda não institucionalizadas; e exceções, limites ou critérios específicos da execução. Não repete regras, fluxos, papéis ou conhecimentos já alcançáveis pela arquitetura documental. Toda informação nova deve ser autônoma e compreensível sem acesso à conversa que a originou; a concisão não pode eliminar conteúdo que altere o sentido, o escopo ou o resultado esperado.
+3. **Trabalho não é registro** — conhecimento de trabalho não implica HISTORY, CHANGELOG, stage, commit ou push.
+4. **Estabilizado ≠ versionado** — conhecimento estabilizado pode existir sem registro institucional imediato; o registro é ato de governança operacional, não de parceria.
+5. **Preferência pelo estabilizado** — conhecimento estabilizado deve **sempre** ser preferido ao conhecimento reconstruído; retomar a partir do que já foi estabelecido, não reabrir a intenção do zero sem necessidade.
+6. **Continuidade** — ao retomar uma tarefa, preferir conhecimento estabilizado (e registro institucional **se** já existir) à reconstrução improvisada.
+7. **Economia** — promover para a sessão seguinte apenas o necessário à continuidade; o restante permanece nas fontes.
+8. **Fonte oficial vence** — se o conhecimento de trabalho contradisser o domínio, o contrato ou a constituição, o trabalho está errado.
 
 Detalhes de handoff, envelopes e estados operacionais: **documentos derivados** deste ciclo — que especializam este modelo, sem redefini-lo.
 

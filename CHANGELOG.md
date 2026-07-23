@@ -53,6 +53,7 @@ Categorias usadas apenas quando houver itens:
 
 ### Changed
 
+- `PARTNERSHIP_MODEL.md`, §11: institucionalizada a regra de mandato mínimo suficiente — apenas tarefa/resultado, ponto de entrada necessário, informação nova e critérios específicos; sem repetir arquitetura alcançável, com autonomia da informação nova e preservação de sentido, escopo e resultado. A neutralidade do mandato em testes de autonomia permanece conhecimento candidato e não foi institucionalizada.
 - `ARCHITECTURE_TASK_PROTOCOL.md`: §13.2 — nascimento de modelos/autoridades (pedido ≠ necessidade; Evidence/Responsibility antes da implementação; alternativas criar / especializar / perfil / aberto).
 - `DOCUMENT_ARCHITECTURE.md`: distinção mínima modelo × contrato × perfil derivado.
 - `PROJECT_INDEX.md` e `AI_CONTEXT.md`: rotas atualizadas para o protocolo de tarefas (§13.2), Ayla, Parceiro Programador e `TEST_EXECUTION_MODEL` (carga condicional).
