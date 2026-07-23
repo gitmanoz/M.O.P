@@ -1647,6 +1647,66 @@ Alteração e registros preparados; commit e push ainda não executados e depend
 
 ---
 
+## 2026-07-23 — Encerramento institucional: primeira validação documental formal do MOBS Core
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS — validação fundadora do Core
+**Baseline validado:** `8c2e4c5f9eb78cd9b4a37ec2b741b1031d6986d8`
+**Horário:** não registrado com precisão verificável neste marco
+
+### Contexto
+
+O fundador oficial do MOBS Core foi submetido à primeira validação documental formal sob o método de testes institucionais e o Architectural Harvest.
+
+### Objetivo
+
+Encerrar institucionalmente Coverage Harvest, Autonomy Validation e Stabilization Gate do Core no primeiro cenário documental formal.
+
+### Resultados
+
+- Coverage Harvest: **Pass**.
+- Autonomy Validation: **Pass**.
+- Veredito institucional: **Pass**.
+- Stabilization Gate: **Pass**.
+- Nenhuma correção de `project/automation/MOBS_CORE.md` foi demonstrada como necessária.
+- Nenhuma decisão arquitetural ainda aberta no fundador foi fechada.
+- A neutralidade do mandato em testes de autonomia permanece conhecimento candidato.
+
+### Alcance
+
+O resultado valida somente o walkthrough documental da landing, centrado no Projeto Missão OAB, com contexto de Marca explicitamente requerido. Não constitui validação universal do Core nem demonstra comportamento executável.
+
+### Capacidades ainda não validadas
+
+- runtime e implementação executável do Core, Engines e demais módulos;
+- representações físicas de entrada, configurações, schemas e serializações;
+- seleção, ordenação, despacho, encaminhamento e consolidação em execução real;
+- logs, erros, persistência, recuperação e idempotência;
+- Validators, Generators e demais Engines em runtime;
+- fluxo somente Marca e demais variações de Projeto↔Marca;
+- outros projetos, marcas e produtos do Ecossistema Missão;
+- dependências físicas, transporte e topologia.
+
+### Estado do roadmap
+
+`project/automation/AUTOMATION_ROADMAP.md` deixa de indicar Core como próximo ciclo fundador e passa a registrar sua validação fundadora como concluída, sem antecipar novo fundador.
+
+### Impacto
+
+O fundador do Core permanece suficiente e autônomo no cenário validado. O resultado encerra sua validação documental formal sem ampliar responsabilidades, alterar o fundador ou antecipar implementação.
+
+### Áreas e documentos envolvidos
+
+- `project/automation/AUTOMATION_ROADMAP.md`
+- `HISTORY.md`
+- `CHANGELOG.md`
+
+### Estado do checkpoint
+
+Encerramento e registros preparados; commit e push ainda não executados e dependentes de aprovação explícita.
+
+---
+
 ## Controles
 
 | Campo | Valor |

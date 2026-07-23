@@ -91,7 +91,7 @@ Uma versão só avança para implementação quando:
 | **MOBS 0.2 — Fase 2** | Fundação, domínio e contratos em `docs/mobs/` — **concluída** |
 | **MOBS 0.2 — Fase 3** | Governança em `docs/mobs/governance/` — **concluída** |
 | **MOBS 0.2 — Fase 4** | Etapa **estrutural concluída**: raiz local `missao-oab` → `missao-mobs` (validada). **Não** é migração de `docs/product` nem renomeação do produto Missão OAB. |
-| **Próximo ciclo fundador** | **Core** |
+| **Ciclo fundador do Core** | **Validação fundadora concluída** — Coverage Harvest, Autonomy Validation, veredito institucional e Stabilization Gate: **Pass** no baseline `8c2e4c5f9eb78cd9b4a37ec2b741b1031d6986d8`; alcance restrito ao walkthrough documental da landing, centrado no Projeto Missão OAB, com Marca explicitamente requerida |
 | v1–v10 implementação | Não iniciada |
 | Scripts oficiais | Nenhum |
 
