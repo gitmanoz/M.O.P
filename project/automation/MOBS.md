@@ -160,6 +160,7 @@ Com o MOBS, um novo produto deve precisar **apenas de configuração** para herd
 | [`DOCUMENT_STRUCTURE_PLAN.md`](../../docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md) | Estrutura alvo, política de nascimento e convenção de paths (Fase 1) |
 | `MOBS.md` | Visão da plataforma e escopo |
 | `BUILD_SYSTEM.md` | Taxonomia (Core/Engine/Generator/Validator), fluxo e fronteiras do Core |
+| [`MOBS_CORE.md`](MOBS_CORE.md) | Identidade, responsabilidades, relações condicionais e fronteiras do MOBS Core |
 | `PROJECT_ENGINE.md` | Modelo multi-projeto, contexto inicial e relação projeto↔marca |
 | `BRAND_ENGINE.md` | Modelo multi-marca (config-driven) |
 | `AUTOMATION_ROADMAP.md` | Evolução versionada dos módulos |

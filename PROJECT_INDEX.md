@@ -188,6 +188,7 @@ Qual é a tarefa?
 │    → docs/mobs/models/PROGRAMMER_PARTNER.md              ← carregar integralmente se Parceiro Programador / materialização técnica autorizada
 │    → docs/mobs/models/TEST_EXECUTION_MODEL.md            ← carregar integralmente se teste institucional / probe / diagnóstico de execução
 │    → project/automation/BUILD_SYSTEM.md
+│    → project/automation/MOBS_CORE.md                      ← identidade, responsabilidades e fronteiras do orquestrador
 │    → project/automation/PROJECT_ENGINE.md
 │    → project/automation/BRAND_ENGINE.md
 │    → project/automation/AUTOMATION_ROADMAP.md
@@ -232,6 +233,8 @@ docs/mobs/governance/DOCUMENT_ARCHITECTURE.md       ← arquitetura física da d
 docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md    ← estrutura alvo e política de nascimento (Fase 1)
   ↓
 BUILD_SYSTEM.md      ← arquitetura e taxonomia
+  ↓
+MOBS_CORE.md         ← identidade, responsabilidades e fronteiras do orquestrador
   ↓
 PROJECT_ENGINE.md
   ↓
@@ -336,6 +339,7 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `DESIGN_GUIDE.md` / `UI_KIT.md` | Design System e componentes |
 | `HISTORY.md` / `CHANGELOG.md` | Diário cronológico (HISTORY) e registro técnico versionável (CHANGELOG) |
 | `project/automation/` | MOBS — plataforma de engenharia do Ecossistema Missão |
+| `project/automation/MOBS_CORE.md` | Documento fundador do orquestrador MOBS Core |
 | `assets/brand/` | Identidade visual oficial do produto atual (SVGs em `source/`) |
 | `index.html` | Landing page |
 | `css/` / `js/` / `img/` | Estilos, scripts e mídia da landing |
@@ -378,6 +382,7 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `CHANGELOG.md` | Mudanças técnicas relevantes (Keep a Changelog) |
 | `project/automation/MOBS.md` | Visão e missão da plataforma de engenharia do ecossistema |
 | `project/automation/BUILD_SYSTEM.md` | Taxonomia Core/Engine/Generator/Validator e fronteiras do Core |
+| `project/automation/MOBS_CORE.md` | Identidade, responsabilidades, relações condicionais e fronteiras do MOBS Core |
 | `project/automation/PROJECT_ENGINE.md` | Contexto de projeto e relação projeto↔marca |
 | `project/automation/BRAND_ENGINE.md` | Modelo multi-marca (config-driven) |
 | `project/automation/AUTOMATION_ROADMAP.md` | Evolução versionada dos módulos |

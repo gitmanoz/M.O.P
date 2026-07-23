@@ -123,6 +123,7 @@ Antes de realizar mudanças relevantes, consulte os arquivos adequados:
 - `docs/mobs/models/TEST_EXECUTION_MODEL.md` (quando o método de teste institucional / probe / diagnóstico se aplicar)
 - `project/automation/MOBS.md`
 - `project/automation/BUILD_SYSTEM.md`
+- `project/automation/MOBS_CORE.md`
 - `project/automation/PROJECT_ENGINE.md`
 - `project/automation/BRAND_ENGINE.md`
 - `project/automation/AUTOMATION_ROADMAP.md`
