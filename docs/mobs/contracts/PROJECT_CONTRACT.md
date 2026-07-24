@@ -36,7 +36,7 @@ WHY_MOBS → MOBS → DOMAIN_MODEL → CONFIGURATION_CONTRACTS
 | **Conceito de domínio** | Projeto ([`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md)) |
 | **Constituição aplicável** | [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md) |
 | **Schemas / serializações** | Não definidos aqui |
-| **Implementação** | Não iniciada |
+| **Implementação** | Runtime da fatia v1 (Projeto → Marca associado) existe fora deste documento; este contrato não descreve runtime |
 
 ### O que este documento não faz
 
@@ -87,7 +87,7 @@ CONFIGURATION_CONTRACTS    →  como todo contrato deve existir
     ↓
 PROJECT_CONTRACT           →  especialização para Projeto (este documento)
     ↓
-Schemas / serializações    →  futuros; materializam instâncias
+Schemas / serializações    →  materializam instâncias (fora deste documento; perfil mínimo da v1 em `docs/mobs/schemas/`)
     ↓
 Contexto resolvido         →  resultado da resolução atribuída à Project Engine
     ↓
@@ -148,7 +148,7 @@ Um Projeto representa, no domínio:
 - a **base** sobre a qual a plataforma habilita módulos e associações;
 - a **entrada** cuja resolução de contexto este contrato atribui à Project Engine.
 
-Detalhe de quais atributos concretos existirão: etapa futura de schema — **não** este documento.
+Detalhe de quais atributos concretos existirão: schemas derivados **fora** deste documento — o perfil mínimo da fatia v1 não esgota a entidade.
 
 ---
 
@@ -205,7 +205,7 @@ Cobre o acordo formal sobre a entidade **Projeto**: expectativas, papéis, invar
 - **Marca** — contrato próprio (`BRAND_CONTRACT.md`).
 - **Capability** — modelo/contrato futuros; aqui só a relação conceitual.
 - **Resolução** — detalhe de algoritmo e erros em `RESOLUTION_MODEL` / Engines (futuro).
-- **Serialização e schema** — etapas posteriores.
+- **Serialização e schema** — fora deste documento; perfil mínimo da fatia v1 materializado em `docs/mobs/schemas/`; demais perfis e serialização universal permanecem abertos.
 - **Produto / Organização** — hipóteses ou fronteiras do domínio; não fechadas aqui.
 
 ---
@@ -472,8 +472,8 @@ Demais termos oficiais: [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md) e [`CONFI
 
 | Questão | Onde resolver |
 |---|---|
-| Campos e schema de instância | Schema futuro derivado deste contrato |
-| Formato e localização da serialização | Após schema |
+| Campos e schema de instância | Schema mínimo do perfil Projeto → Marca em `docs/mobs/schemas/`; perfis adicionais e schema universal permanecem abertos |
+| Formato e localização da serialização | Após schema / políticas de serialização |
 | Formato da referência a Marca | `BRAND_CONTRACT` / schema |
 | Catálogo e declaração de Capabilities | `CAPABILITY_MODEL` |
 | Cardinalidade Produto↔Projeto | Domínio + glossário de produto |
@@ -486,10 +486,10 @@ Demais termos oficiais: [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md) e [`CONFI
 
 1. `CAPABILITY_MODEL.md` — se necessário
 2. `RESOLUTION_MODEL.md`
-3. Schemas e exemplos
-4. Implementação e Validators
+3. Perfis/schemas adicionais e exemplos (além do mínimo da v1)
+4. Validators institucionais e demais módulos do roadmap
 
-O roadmap de módulos permanece em [`AUTOMATION_ROADMAP.md`](../../../project/automation/AUTOMATION_ROADMAP.md).
+O roadmap de módulos permanece em [`AUTOMATION_ROADMAP.md`](../../../project/automation/AUTOMATION_ROADMAP.md). A v1 está concluída no alcance Projeto → Marca associado.
 
 ---
 

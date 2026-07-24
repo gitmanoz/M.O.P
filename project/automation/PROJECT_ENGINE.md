@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | PROJECT_ENGINE.md |
 | **Versão** | 0.1.1 (Arquitetura) |
-| **Status** | Oficial — apenas documentação |
+| **Status** | Oficial — arquitetura; fatia v1 executável materializada (Projeto → Marca associado) |
 | **Categoria** | Engine (camada de contexto) |
 | **Depende de** | `MOBS.md`, `BUILD_SYSTEM.md` |
 
@@ -75,7 +75,7 @@ O repositório atual da Missão OAB é o **primeiro projeto real**. Migração p
 
 ## project.json (contrato conceitual)
 
-Apenas modelo ilustrativo — **schemas oficiais ainda não implementados**:
+Modelo ilustrativo da entidade Projeto. O **perfil mínimo** da fatia v1 (Projeto → Marca associado) está materializado em `docs/mobs/schemas/project/project.schema.json` e **não** esgota todos os casos conceituais abaixo:
 
 - identidade do projeto (`id`, `displayName`, `version`);
 - associação opcional a marca (`brandId` presente, ausente ou compartilhado);
@@ -83,13 +83,13 @@ Apenas modelo ilustrativo — **schemas oficiais ainda não implementados**:
 - flags de módulos habilitados;
 - ponteiros de release (changelog/history) quando aplicável.
 
-Detalhe de campos será versionado na fase de implementação.
+Campos além do perfil mínimo da v1 permanecem abertos para evolução aprovada do schema.
 
 ---
 
 ## Relação Projeto × Marca (modelo conceitual)
 
-Marca e projeto são entidades **independentes**. A arquitetura deve suportar todos os casos abaixo **sem hardcode** e **sem schemas nesta etapa** — apenas o modelo:
+Marca e projeto são entidades **independentes**. A arquitetura deve suportar todos os casos abaixo **sem hardcode** — o modelo conceitual permanece; a fatia v1 executável comprovou somente o caso **Projeto associado a uma marca**:
 
 | Caso | Descrição | Implicação para o MOBS |
 |---|---|---|
@@ -107,7 +107,7 @@ Marca e projeto são entidades **independentes**. A arquitetura deve suportar to
 4. Compartilhar marca entre projetos é o caminho preferido para consistência visual.
 5. Projeto sem marca e marca sem projeto são válidos — módulos inaplicáveis simplesmente não rodam.
 
-Não implementar schemas nesta etapa; apenas registrar o modelo.
+Brand-only, Projeto sem Marca e demais variações continuam conceitualmente autorizados; seus mecanismos executáveis permanecem abertos e não bloqueiam a conclusão da v1.
 
 ---
 

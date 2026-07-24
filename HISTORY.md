@@ -1809,6 +1809,49 @@ Evoluir a v1 por checkpoints próprios, mantendo assets, Generators, Validators 
 
 ---
 
+## 2026-07-24 02:43 — Encerramento documental do MOBS v1
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS v1 — implementação concluída no alcance oficial
+**Baseline:** `2ba5e8e2c3b6d2b85ca01c0db7f230da6ef19f78`
+**Fatia executável consolidada:** `2b0d8cfbf84256a846841c165b8272b3d376f71b`
+
+### Contexto
+
+O Evidence Harvest de conclusão confrontou a promessa oficial da v1 com as autoridades vigentes, os schemas materializados, a implementação executável e os 20 testes aprovados.
+
+### Objetivo
+
+Formalizar o encerramento da v1 no alcance comprovado, sem nova fatia executável e sem transformar a fatia implementada em solução universal de todas as relações Projeto↔Marca.
+
+### Decisões
+
+- A implementação da v1 está **concluída** em seu alcance oficial.
+- O alcance executável comprovado é o fluxo **Projeto → Marca associado**.
+- Core, Project Engine e Brand Engine resolvem contextos sem hardcode de produto.
+- Schemas mínimos, diagnóstico factual, somente leitura, portabilidade e idempotência estão comprovados.
+- Nenhuma nova fatia executável foi necessária para o encerramento.
+- Brand-only, Projeto sem Marca e outras variações continuam conceitualmente autorizados; seus mecanismos executáveis permanecem abertos e **não** bloqueiam a conclusão da v1.
+- Assets, Generators, Validators institucionais e Release permanecem fora da v1.
+- O mecanismo do fluxo somente Marca permanece decisão aberta do `MOBS_CORE`.
+
+### Impacto
+
+A v1 deixa de constar como “iniciada / não concluída integralmente” e passa a constar como concluída no alcance Projeto → Marca associado. O roadmap fica livre para priorizar v2+ sem exigir Brand-only como pré-requisito da v1.
+
+### Áreas e documentos envolvidos
+
+- `HISTORY.md`, `CHANGELOG.md`
+- `project/automation/AUTOMATION_ROADMAP.md`
+- `project/automation/PROJECT_ENGINE.md`, `project/automation/BRAND_ENGINE.md`
+- `docs/mobs/contracts/PROJECT_CONTRACT.md`, `docs/mobs/contracts/BRAND_CONTRACT.md`
+
+### Próximos passos
+
+Avançar somente versões posteriores do roadmap (`v2+`) quando autorizadas; manter Brand-only e demais variações como capacidades abertas, sem fechá-las neste marco.
+
+---
+
 ## Controles
 
 | Campo | Valor |

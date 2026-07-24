@@ -4,7 +4,7 @@
 |---|---|
 | **Documento** | BRAND_ENGINE.md |
 | **Versão** | 0.1.1 (Arquitetura) |
-| **Status** | Oficial — apenas documentação |
+| **Status** | Oficial — arquitetura; fatia v1 executável materializada (Projeto → Marca associado) |
 | **Categoria** | Engine (camada de contexto de marca) |
 | **Depende de** | `MOBS.md`, `BUILD_SYSTEM.md` |
 
@@ -65,7 +65,7 @@ Estado atual do repositório Missão OAB (`assets/brand/`) é o **primeiro caso 
 
 ## brand.json (contrato conceitual)
 
-Campos ilustrativos (**schema oficial ainda não implementado** — apenas modelo conceitual):
+Campos ilustrativos do modelo de Marca. O **perfil mínimo** da fatia v1 (`id` + `paths.source`) está materializado em `docs/mobs/schemas/brand/brand.schema.json` e **não** esgota o modelo ilustrativo abaixo:
 
 ```json
 {
@@ -95,8 +95,9 @@ Campos ilustrativos (**schema oficial ainda não implementado** — apenas model
 }
 ```
 
-O Brand Engine valida e expõe esses dados.  
+O Brand Engine valida e expõe o contexto de Marca a partir da declaração.
 Outras Engines **nunca** hardcodam nomes de arquivo de uma marca.
+Campos além do perfil mínimo da v1 (mestres, tokens, rules, exports) permanecem abertos para evolução aprovada do schema.
 
 ---
 
@@ -155,4 +156,4 @@ Resumo:
 - Um projeto pode existir **sem** marca (módulos de identidade não aplicam).
 - O Brand Engine não orquestra o projeto; apenas resolve a marca.
 
-Não implementar schemas nesta etapa.
+A fatia v1 comprovou o fluxo Projeto → Marca associado. Brand-only e Projeto sem Marca continuam conceitualmente autorizados; seus mecanismos executáveis permanecem abertos e não bloqueiam a conclusão da v1. O mecanismo do fluxo somente Marca permanece decisão aberta do `MOBS_CORE`.

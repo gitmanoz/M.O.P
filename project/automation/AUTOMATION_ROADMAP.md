@@ -12,7 +12,7 @@
 ## Objetivo
 
 Planejar a evolução do MOBS em versões.  
-A v1 possui uma primeira fatia executável; sua implementação integral e as versões seguintes permanecem em evolução planejada.
+A v1 está **concluída** no alcance oficial Projeto → Marca associado; as versões `v2`–`v10` permanecem em evolução planejada.
 
 ---
 
@@ -93,9 +93,9 @@ Uma versão só avança para implementação quando:
 | **MOBS 0.2 — Fase 4** | Etapa **estrutural concluída**: raiz local `missao-oab` → `missao-mobs` (validada). **Não** é migração de `docs/product` nem renomeação do produto Missão OAB. |
 | **Ciclo fundador do Core** | **Validação fundadora concluída** — Coverage Harvest, Autonomy Validation, veredito institucional e Stabilization Gate: **Pass** no baseline `8c2e4c5f9eb78cd9b4a37ec2b741b1031d6986d8`; alcance restrito ao walkthrough documental da landing, centrado no Projeto Missão OAB, com Marca explicitamente requerida |
 | **Resolução de contextos v1 — Harvest** | Evidence Harvest + Responsibility Harvest **concluídos** no baseline `7a40a93f5279e9138e67805470fc2d5b93097590`; questão mantida aberta, sem nascimento de `RESOLUTION_MODEL.md`, sem expansão de `CONFIGURATION_CONTRACTS.md` e sem necessidade demonstrada de `CAPABILITY_MODEL.md` |
-| **v1 — implementação** | **Iniciada** — primeira fatia executável consolidada em `2b0d8cfbf84256a846841c165b8272b3d376f71b`: schemas mínimos, Project Engine, Core, Brand Engine e diagnóstico factual; v1 ainda não concluída integralmente |
+| **v1 — implementação** | **Concluída** no alcance oficial Projeto → Marca associado — fatia `2b0d8cfbf84256a846841c165b8272b3d376f71b`; baseline documental `2ba5e8e2c3b6d2b85ca01c0db7f230da6ef19f78`; Core, Project Engine e Brand Engine sem hardcode de produto; schemas mínimos, diagnóstico factual, somente leitura, portabilidade e idempotência comprovados por 20 testes; nenhuma nova fatia executável necessária |
 | **v2–v10 — implementação** | Não iniciada |
-| **CLI executável** | Primeira interface somente leitura, reproduzível e idempotente; build, typecheck e 20 testes aprovados |
+| **CLI executável** | Interface somente leitura, reproduzível e idempotente do fluxo Projeto → Marca associado; build, typecheck e 20 testes aprovados |
 
 ### Nota sobre Configuration Contracts
 
@@ -107,7 +107,7 @@ Este roadmap **não** governa ciclos fundadores paralelos (Partnership, Core); a
 
 O Harvest concluiu que as autoridades vigentes cobrem suficientemente as responsabilidades de Core, Project Engine, Brand Engine e Validators no nível conceitual. `RESOLUTION_MODEL.md` permanece candidato futuro, não autorizado neste estado.
 
-Possíveis desalinhamentos editoriais em `PROJECT_ENGINE.md` e `BRAND_ENGINE.md` não alteram responsabilidades nem abrem tarefa automática de harmonização. O checkpoint `2b0d8cfbf84256a846841c165b8272b3d376f71b` materializou decisões físicas mínimas para a primeira fatia Projeto → Marca — schemas, contextos, runtime e diagnósticos — sem fechá-las universalmente; transporte, timing de Validators e mecanismo do fluxo somente Marca permanecem abertos.
+O checkpoint `2b0d8cfbf84256a846841c165b8272b3d376f71b` materializou a fatia Projeto → Marca associado suficiente para encerrar a v1. Brand-only, Projeto sem Marca e outras variações continuam conceitualmente autorizados; seus mecanismos executáveis permanecem abertos e não bloqueiam a conclusão. Transporte, timing de Validators institucionais e o mecanismo do fluxo somente Marca (`MOBS_CORE`) permanecem abertos. Assets, Generators, Validators institucionais e Release permanecem fora da v1.
 
 ### Nota sobre Fase 1 (estrutura documental)
 

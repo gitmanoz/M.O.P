@@ -40,7 +40,7 @@ WHY_MOBS → MOBS → DOMAIN_MODEL → CONFIGURATION_CONTRACTS
 | **Constituição aplicável** | [`CONFIGURATION_CONTRACTS.md`](CONFIGURATION_CONTRACTS.md) |
 | **Contrato irmão** | [`PROJECT_CONTRACT.md`](PROJECT_CONTRACT.md) (sem autoridade sobre Marca) |
 | **Schemas / serializações** | Não definidos aqui |
-| **Implementação** | Não iniciada |
+| **Implementação** | Runtime da fatia v1 (Projeto → Marca associado) existe fora deste documento; este contrato não descreve runtime |
 
 ### O que este documento não faz
 
@@ -97,7 +97,7 @@ CONFIGURATION_CONTRACTS    →  como todo contrato deve existir
     ↓
 BRAND_CONTRACT             →  especialização para Marca (este documento)
     ↓
-Schemas / serializações    →  futuros; materializam instâncias
+Schemas / serializações    →  materializam instâncias (fora deste documento; perfil mínimo da v1 em `docs/mobs/schemas/`)
     ↓
 Contexto resolvido         →  resultado da resolução atribuída à Brand Engine
     ↓
@@ -167,7 +167,7 @@ Uma Marca representa, no domínio:
 - a **base** sobre a qual Generators e módulos consomem identidade de forma autorizada;
 - a **entrada** cuja resolução de contexto este contrato atribui à Brand Engine.
 
-Detalhe de quais atributos concretos existirão: etapa futura de schema — **não** este documento.
+Detalhe de quais atributos concretos existirão: schemas derivados **fora** deste documento — o perfil mínimo da fatia v1 não esgota a entidade.
 
 ---
 
@@ -230,7 +230,7 @@ Cobre o acordo formal sobre a entidade **Marca**: expectativas, papéis, invaria
 - **Projeto** — contrato irmão (`PROJECT_CONTRACT.md`); aqui só a relação.
 - **Capability** — modelo/contrato futuros; aqui só a relação conceitual admitida.
 - **Resolução** — detalhe de algoritmo e erros em `RESOLUTION_MODEL` / Engines (futuro).
-- **Serialização, schema, paths, catálogo de assets/tokens** — etapas posteriores.
+- **Serialização, schema, paths, catálogo de assets/tokens** — fora deste documento; perfil mínimo da fatia v1 materializado em `docs/mobs/schemas/`; catálogo de assets/tokens e demais perfis permanecem abertos.
 - **Herança, variantes, temas, override por projeto, múltiplas marcas por projeto** — abertos no domínio; não fechados aqui.
 - **Produto / Organização** — fronteiras do domínio; não fechadas aqui.
 
@@ -575,8 +575,8 @@ Demais termos oficiais: [`DOMAIN_MODEL.md`](../domain/DOMAIN_MODEL.md) e [`CONFI
 
 | Questão | Onde resolver |
 |---|---|
-| Atributos concretos de uma instância de Marca | Schema futuro derivado deste contrato |
-| Formato e localização da serialização | Após schema |
+| Atributos concretos de uma instância de Marca | Schema mínimo do perfil v1 em `docs/mobs/schemas/`; perfis adicionais e schema universal permanecem abertos |
+| Formato e localização da serialização | Após schema / políticas de serialização |
 | Formato da referência Projeto↔Marca | Políticas / schemas futuros |
 | Representação e catálogo de assets / tokens | Após contrato + schema; não aqui |
 | Múltiplas marcas por projeto além da primária | Domínio / aprovação explícita |
@@ -595,10 +595,10 @@ Nenhuma dessas é decisão oficial até contrato/aprovação explícita — alin
 
 1. `CAPABILITY_MODEL.md` — se necessário
 2. `RESOLUTION_MODEL.md`
-3. Schemas e exemplos (Projeto e Marca)
-4. Implementação e Validators
+3. Perfis/schemas adicionais e exemplos (além do mínimo da v1)
+4. Validators institucionais e demais módulos do roadmap
 
-O roadmap de módulos permanece em [`AUTOMATION_ROADMAP.md`](../../../project/automation/AUTOMATION_ROADMAP.md).
+O roadmap de módulos permanece em [`AUTOMATION_ROADMAP.md`](../../../project/automation/AUTOMATION_ROADMAP.md). A v1 está concluída no alcance Projeto → Marca associado.
 
 ---
 
