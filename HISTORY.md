@@ -1852,6 +1852,42 @@ Avançar somente versões posteriores do roadmap (`v2+`) quando autorizadas; man
 
 ---
 
+## 2026-07-24 15:51 — Fechamento da primeira fatia do Asset Generator
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS v2 — primeira fatia do Asset Generator
+**Commit consolidado:** `0b17bccd0d429bd4585e89c33d74d47a32669608`
+
+### Contexto
+
+A primeira fatia do Asset Generator havia sido especificada documentalmente. Faltava registrar a passagem dessa especificação para capacidade operacional validada, sem abrir o restante do roadmap de Generators nem antecipar integração com o Core.
+
+### Objetivo
+
+Fechar o marco da fatia aprovada: um master SVG final declarado → PNG sob `exports/`, com prova reproduzível e limites preservados.
+
+### Decisões
+
+- A primeira fatia do Asset Generator está **operacional e publicada** no commit consolidado acima.
+- O runtime permanece **isolado** do MOBS Core e da CLI nesta fatia.
+- O alcance permanece o aprovado: derivação de PNG a partir de master final declarado; sem orquestração global, sem novos canais ou formatos e sem Validators institucionais.
+- A validação limpa com dependências fixadas no `package-lock.json` resultou em **36/36** testes aprovados.
+
+### Impacto
+
+O Asset Generator deixa de existir apenas como especificação documental e passa a ser capacidade operacional verificável. O marco não amplia a fatia nem autoriza, por si só, a integração com Core/CLI ou a expansão do Generator.
+
+### Áreas e documentos envolvidos
+
+- Runtime do Generator em `project/automation/`
+- `HISTORY.md`, `CHANGELOG.md`
+
+### Próximos passos
+
+Evoluir Generators somente por fatias autorizadas; manter Core e CLI desacoplados até integração explícita.
+
+---
+
 ## Controles
 
 | Campo | Valor |

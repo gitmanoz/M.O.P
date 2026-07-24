@@ -25,6 +25,7 @@ Categorias usadas apenas quando houver itens:
 
 ### Added
 
+- Primeira fatia do Asset Generator (`0b17bccd0d429bd4585e89c33d74d47a32669608`): capacidade operacional de derivar PNG a partir de master SVG final declarado, isolada do MOBS Core e da CLI; validação limpa com dependências fixadas no `package-lock.json` e 36/36 testes aprovados.
 - Primeira fatia executável do MOBS v1 (`2b0d8cfbf84256a846841c165b8272b3d376f71b`): CLI Node.js/TypeScript somente leitura para resolução Projeto → Marca por Project Engine, Core e Brand Engine, com saída factual reproduzível e idempotente.
 - Schemas mínimos de Projeto e Marca em `docs/mobs/schemas/`, limitados ao perfil da fatia vertical aprovada.
 - Diagnósticos separados para parsing, inicialização e execução; rejeição portátil de `paths.source` absoluto em formatos POSIX, Windows com drive e UNC; build, typecheck e 20 testes automatizados aprovados.
