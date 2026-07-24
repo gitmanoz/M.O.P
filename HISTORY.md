@@ -1707,6 +1707,68 @@ Encerramento e registros preparados; commit e push ainda não executados e depen
 
 ---
 
+## 2026-07-23 — Encerramento do Harvest de resolução de contextos da v1
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS v1 — resolução de contextos
+**Baseline analisado:** `7a40a93f5279e9138e67805470fc2d5b93097590`
+**Horário:** não registrado com precisão verificável neste marco
+
+### Contexto
+
+Foi executado Evidence Harvest + Responsibility Harvest sobre resolução de contextos na v1, com foco em Project Engine, Brand Engine, MOBS Core e Validators.
+
+### Objetivo
+
+Julgar, pelas autoridades vigentes, se as lacunas observadas exigiam o nascimento futuro de `RESOLUTION_MODEL.md`, a especialização de uma autoridade existente ou a permanência da questão em aberto.
+
+### Julgamento final
+
+- A questão de resolução permanece **aberta**.
+- `RESOLUTION_MODEL.md` **não** foi criado e permanece candidato futuro.
+- `CONFIGURATION_CONTRACTS.md` possui cobertura normativa suficiente e não foi expandido.
+- A necessidade de `CAPABILITY_MODEL.md` não foi demonstrada.
+- Foram reconhecidos somente possíveis desalinhamentos editoriais localizados em `PROJECT_ENGINE.md` e `BRAND_ENGINE.md`.
+- Nenhuma harmonização desses documentos foi executada neste marco.
+
+A recomendação inicial de especializar `CONFIGURATION_CONTRACTS.md` foi corrigida durante o Harvest e não representa o julgamento final.
+
+### Responsabilidades preservadas
+
+- MOBS Core carrega a entrada declarativa, orquestra, encaminha contextos e consolida resultados; não resolve profundamente Projeto ou Marca.
+- Project Engine permanece resolvedora do contexto de Projeto.
+- Brand Engine permanece resolvedora do contexto de Marca.
+- Validators permanecem responsáveis pela conformidade como finalidade própria; Engines preservam somente a validade necessária à resolução.
+
+### Decisões preservadas como abertas
+
+- schemas e serializações de Projeto e Marca;
+- formato físico dos contextos resolvidos;
+- runtime e algoritmos de resolução;
+- modelo concreto de erros e diagnósticos;
+- APIs, transporte e topologia;
+- timing de Validators;
+- primeiro resolvedor universal;
+- mecanismo do fluxo somente Marca;
+- forma física das dependências e da entrada;
+- formato da referência Projeto↔Marca.
+
+### Impacto
+
+O Harvest encerra sem nascimento de modelo, expansão normativa, implementação ou fechamento de decisão física. Eventual harmonização editorial de `PROJECT_ENGINE.md` e `BRAND_ENGINE.md` exige tarefa própria e não altera, por si só, a arquitetura vigente.
+
+### Áreas e documentos envolvidos
+
+- `project/automation/AUTOMATION_ROADMAP.md`
+- `HISTORY.md`
+- `CHANGELOG.md`
+
+### Estado do checkpoint
+
+Encerramento e registros preparados; commit e push ainda não executados e dependentes de aprovação explícita.
+
+---
+
 ## Controles
 
 | Campo | Valor |

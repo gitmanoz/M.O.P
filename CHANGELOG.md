@@ -53,6 +53,7 @@ Categorias usadas apenas quando houver itens:
 
 ### Changed
 
+- `AUTOMATION_ROADMAP.md`: encerramento do Evidence Harvest + Responsibility Harvest de resolução de contextos da v1 registrado no baseline `7a40a93f5279e9138e67805470fc2d5b93097590` — questão mantida aberta; `RESOLUTION_MODEL.md` preservado como candidato futuro, sem criação; cobertura de `CONFIGURATION_CONTRACTS.md` considerada suficiente; necessidade de `CAPABILITY_MODEL.md` não demonstrada; decisões físicas e operacionais permanecem abertas.
 - `AUTOMATION_ROADMAP.md`: estado do Core corrigido de próximo ciclo fundador para validação fundadora concluída — Coverage Harvest, Autonomy Validation, veredito institucional e Stabilization Gate em **Pass**, com alcance restrito ao walkthrough documental da landing, centrado no Projeto Missão OAB e com Marca requerida; sem antecipar novo fundador ou alterar `MOBS_CORE.md`.
 - `PARTNERSHIP_MODEL.md`, §11: institucionalizada a regra de mandato mínimo suficiente — apenas tarefa/resultado, ponto de entrada necessário, informação nova e critérios específicos; sem repetir arquitetura alcançável, com autonomia da informação nova e preservação de sentido, escopo e resultado. A neutralidade do mandato em testes de autonomia permanece conhecimento candidato e não foi institucionalizada.
 - `ARCHITECTURE_TASK_PROTOCOL.md`: §13.2 — nascimento de modelos/autoridades (pedido ≠ necessidade; Evidence/Responsibility antes da implementação; alternativas criar / especializar / perfil / aberto).
