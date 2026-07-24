@@ -135,8 +135,8 @@ Classificação segundo grupos oficiais de [`DOCUMENT_ARCHITECTURE.md`](DOCUMENT
 | **Constituição de contratos** | `docs/mobs/contracts/CONFIGURATION_CONTRACTS.md` | — |
 | **Contratos concretos** | `docs/mobs/contracts/PROJECT_CONTRACT.md`, `docs/mobs/contracts/BRAND_CONTRACT.md` | Irmãos; não hierárquicos entre si |
 | **Modelos arquiteturais** | `docs/mobs/models/PARTNERSHIP_MODEL.md`, `TEST_EXECUTION_MODEL.md`; perfis derivados `AYLA_ARCHITECTURAL_PARTNER.md`, `PROGRAMMER_PARTNER.md` | `RESOLUTION_MODEL`, `CAPABILITY_MODEL` — futuros |
-| **Schemas** | *(nenhum ainda)* | Futuro |
-| **Engines** | `BUILD_SYSTEM.md`, `PROJECT_ENGINE.md`, `BRAND_ENGINE.md` | Taxonomia + Engines de contexto |
+| **Schemas** | `docs/mobs/schemas/project/`, `docs/mobs/schemas/brand/`, `docs/mobs/schemas/asset-generator/` | Perfis v1 + complementar de geração de assets (v2) |
+| **Engines** | `BUILD_SYSTEM.md`, `PROJECT_ENGINE.md`, `BRAND_ENGINE.md`, `ASSET_GENERATOR.md` | Taxonomia + Engines de contexto + Generator documentado |
 | **Governança arquitetural** | `docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md` | — |
 | **Governança documental** | `docs/mobs/governance/DOCUMENT_ARCHITECTURE.md`, `docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md` | — |
 | **Governança operacional** | `PROJECT_RULES.md` | Repositório inteiro, não só MOBS |
@@ -183,6 +183,7 @@ project/automation/
   BUILD_SYSTEM.md
   PROJECT_ENGINE.md
   BRAND_ENGINE.md
+  ASSET_GENERATOR.md
   AUTOMATION_ROADMAP.md
   AUTOMATION_RULES.md
   future/
@@ -344,6 +345,7 @@ Até lá, novos documentos MOBS devem seguir o plano como **diretriz aprovada** 
 | `BUILD_SYSTEM.md` | `project/automation/` | **permanece** | — | — | **N/A** |
 | `PROJECT_ENGINE.md` | `project/automation/` | **permanece** | — | — | **N/A** |
 | `BRAND_ENGINE.md` | `project/automation/` | **permanece** | — | — | **N/A** |
+| `ASSET_GENERATOR.md` | `project/automation/` | **permanece** | — | — | **N/A** |
 | `AUTOMATION_ROADMAP.md` | `project/automation/` | **permanece** | — | — | **N/A** |
 | `AUTOMATION_RULES.md` | `project/automation/` | **permanece** | — | — | **N/A** |
 | `future/` | `project/automation/` | **permanece** | — | — | **N/A** |

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MOBS v2 Asset Generator Export Job",
+  "description": "Operational export job for the first MOBS v2 Asset Generator slice. Declares only masterKey and format; output filename is determined by the Generator as {masterKey}.png. masterKey uses the same logical identifier rule as masters catalog keys.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "masterKey",
+    "format"
+  ],
+  "properties": {
+    "masterKey": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Safe portable logical identifier. No directory separators; must produce an unambiguous output basename.",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "format": {
+      "type": "string",
+      "const": "png"
+    }
+  }
+}

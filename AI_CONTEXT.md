@@ -126,6 +126,7 @@ Antes de realizar mudanças relevantes, consulte os arquivos adequados:
 - `project/automation/MOBS_CORE.md`
 - `project/automation/PROJECT_ENGINE.md`
 - `project/automation/BRAND_ENGINE.md`
+- `project/automation/ASSET_GENERATOR.md` (quando a tarefa for Asset Generator / exports derivados)
 - `project/automation/AUTOMATION_ROADMAP.md`
 - `project/automation/AUTOMATION_RULES.md`
 

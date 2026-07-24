@@ -154,8 +154,8 @@ Categorias permanentes **derivadas** da arquitetura existente — não arbitrár
 | **Constituição de contratos** | Regras gerais de todo contrato de configuração | `CONFIGURATION_CONTRACTS.md` |
 | **Contratos concretos** | Especialização por entidade do domínio | `PROJECT_CONTRACT.md`, `BRAND_CONTRACT.md` |
 | **Modelos arquiteturais** | Formalização de aspectos transversais (parceria, resolução, capabilities, etc.) | `PARTNERSHIP_MODEL.md`, `TEST_EXECUTION_MODEL.md`; perfis derivados `AYLA_ARCHITECTURAL_PARTNER.md`, `PROGRAMMER_PARTNER.md`; *futuros:* `RESOLUTION_MODEL`, `CAPABILITY_MODEL` |
-| **Schemas** | Recortes mecanicamente validáveis derivados de contratos | *futuro* |
-| **Engines** | Responsabilidade documental de cada Engine | `PROJECT_ENGINE.md`, `BRAND_ENGINE.md`, `BUILD_SYSTEM.md` |
+| **Schemas** | Recortes mecanicamente validáveis derivados de contratos / perfis de módulo | `docs/mobs/schemas/` (perfis v1 de Projeto/Marca; perfil complementar de Marca e job de export da fatia v2) |
+| **Engines** | Responsabilidade documental de cada Engine / Generator documentado | `PROJECT_ENGINE.md`, `BRAND_ENGINE.md`, `ASSET_GENERATOR.md`, `BUILD_SYSTEM.md` |
 | **Governança arquitetural** | Como tarefas arquiteturais são executadas e aprovadas | `ARCHITECTURE_TASK_PROTOCOL.md` |
 | **Governança documental** | Como a documentação se organiza fisicamente | `DOCUMENT_ARCHITECTURE.md` (este) |
 | **Governança operacional** | Fluxo de trabalho, commits, regras do repositório | `PROJECT_RULES.md` |

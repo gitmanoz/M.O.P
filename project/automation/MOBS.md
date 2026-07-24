@@ -163,6 +163,7 @@ Com o MOBS, um novo produto deve precisar **apenas de configuração** para herd
 | [`MOBS_CORE.md`](MOBS_CORE.md) | Identidade, responsabilidades, relações condicionais e fronteiras do MOBS Core |
 | `PROJECT_ENGINE.md` | Modelo multi-projeto, contexto inicial e relação projeto↔marca |
 | `BRAND_ENGINE.md` | Modelo multi-marca (config-driven) |
+| `ASSET_GENERATOR.md` | Generator — primeira fatia v2 (master → PNG → `exports/`) |
 | `AUTOMATION_ROADMAP.md` | Evolução versionada dos módulos |
 | `AUTOMATION_RULES.md` | Regras permanentes de toda automação |
 | `future/` | Espaço reservado para módulos e specs futuras |

@@ -191,9 +191,10 @@ Qual é a tarefa?
 │    → project/automation/MOBS_CORE.md                      ← identidade, responsabilidades e fronteiras do orquestrador
 │    → project/automation/PROJECT_ENGINE.md
 │    → project/automation/BRAND_ENGINE.md
+│    → project/automation/ASSET_GENERATOR.md             ← carregar se Asset Generator / exports derivados
 │    → project/automation/AUTOMATION_ROADMAP.md
 │    → project/automation/AUTOMATION_RULES.md
-│    (carregar Engines adicionais só se a tarefa citar)
+│    (carregar Engines/Generators adicionais só se a tarefa citar)
 │
 ├─ Automação / Build / Deploy / Geração automática
 │    → mesmo conjunto de Engenharia (mínimo: docs/mobs/foundation/WHY_MOBS.md opcional se só execução; MOBS + AUTOMATION_RULES + Engine afetada)
@@ -239,6 +240,8 @@ MOBS_CORE.md         ← identidade, responsabilidades e fronteiras do orquestra
 PROJECT_ENGINE.md
   ↓
 BRAND_ENGINE.md
+  ↓
+ASSET_GENERATOR.md   ← quando a tarefa for geração de assets / exports
   ↓
 AUTOMATION_ROADMAP.md
   (+ AUTOMATION_RULES.md sempre que for criar/alterar automação)
@@ -340,6 +343,7 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `HISTORY.md` / `CHANGELOG.md` | Diário cronológico (HISTORY) e registro técnico versionável (CHANGELOG) |
 | `project/automation/` | MOBS — plataforma de engenharia do Ecossistema Missão |
 | `project/automation/MOBS_CORE.md` | Documento fundador do orquestrador MOBS Core |
+| `project/automation/ASSET_GENERATOR.md` | Spec do Generator de exports derivados (fatia v2) |
 | `assets/brand/` | Identidade visual oficial do produto atual (SVGs em `source/`) |
 | `index.html` | Landing page |
 | `css/` / `js/` / `img/` | Estilos, scripts e mídia da landing |
@@ -385,6 +389,7 @@ Onde procurar cada tipo de informação (sem detalhar conteúdo):
 | `project/automation/MOBS_CORE.md` | Identidade, responsabilidades, relações condicionais e fronteiras do MOBS Core |
 | `project/automation/PROJECT_ENGINE.md` | Contexto de projeto e relação projeto↔marca |
 | `project/automation/BRAND_ENGINE.md` | Modelo multi-marca (config-driven) |
+| `project/automation/ASSET_GENERATOR.md` | Generator de exports derivados (fatia v2) |
 | `project/automation/AUTOMATION_ROADMAP.md` | Evolução versionada dos módulos |
 | `project/automation/AUTOMATION_RULES.md` | Regras permanentes de automações |
 

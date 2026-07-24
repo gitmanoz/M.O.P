@@ -175,6 +175,8 @@ Entrada: contexto de marca (+ perfis de export).
 Saída: derivados em `exports/` e pastas correlatas.  
 Nunca escreve em `source/` mestres sem autorização.
 
+→ `ASSET_GENERATOR.md` (primeira fatia v2: master declarado → PNG → `exports/`)
+
 ### Release Engine
 
 Entrada: contexto de projeto + versão alvo.  

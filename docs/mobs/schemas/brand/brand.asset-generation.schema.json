@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MOBS v2 Brand Asset-Generation Context Profile",
+  "description": "Complementary Brand context profile for MOBS v2 Asset Generator. Does not replace or universalize the v1 brand resolution profile. sourcePath and exportsPath are relative to the Brand declaration file (same base as paths.source). masters values are relative portable SVG paths under sourcePath. Logical master keys share the same identifier rule as export-job.masterKey.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "brandId",
+    "sourcePath",
+    "exportsPath",
+    "masters"
+  ],
+  "properties": {
+    "brandId": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "sourcePath": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Relative portable directory path resolved against the Brand declaration file directory.",
+      "pattern": "^[A-Za-z0-9_-]+(?:/[A-Za-z0-9_-]+)*$"
+    },
+    "exportsPath": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Relative portable directory path resolved against the Brand declaration file directory.",
+      "pattern": "^[A-Za-z0-9_-]+(?:/[A-Za-z0-9_-]+)*$"
+    },
+    "masters": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*$"
+      },
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Relative portable path to a final SVG master under sourcePath. Rejects absolute forms, .. escapes, backslashes, reference/, and *_INK.svg.",
+        "pattern": "^(?!.*(?:^|/)reference(?:/|$))(?!.*_INK\\.svg$)[A-Za-z0-9_-]+(?:/[A-Za-z0-9_-]+)*\\.svg$"
+      }
+    }
+  }
+}
