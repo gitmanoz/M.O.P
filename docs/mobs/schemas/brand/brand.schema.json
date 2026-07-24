@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MOBS v1 Brand Resolution Profile",
+  "description": "Minimal Brand declaration for the approved vertical flow. paths.source is resolved relative to this declaration file.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "paths"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "paths": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source"
+      ],
+      "properties": {
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      }
+    }
+  }
+}

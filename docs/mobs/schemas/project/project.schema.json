@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MOBS v1 Project Resolution Profile",
+  "description": "Minimal Project declaration for the approved Project-centered vertical flow. brandId is required by this profile, not by the universal Project contract.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "brandId"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "brandId": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    }
+  }
+}
