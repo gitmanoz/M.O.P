@@ -2,7 +2,8 @@ export type DiagnosticComponent =
   | "interface"
   | "core"
   | "project-engine"
-  | "brand-engine";
+  | "brand-engine"
+  | "asset-generator";
 
 export type DiagnosticStatus = "ok" | "failed";
 
@@ -45,4 +46,41 @@ export interface FactualDiagnostic {
 export interface VerticalFlowInput {
   projectPath: string;
   brandPath: string;
+}
+
+export interface AssetGenerationBrandContext {
+  brandId: string;
+  sourcePath: string;
+  exportsPath: string;
+  masters: Record<string, string>;
+}
+
+export interface ExportJob {
+  masterKey: string;
+  format: "png";
+}
+
+export interface AssetGeneratorBrandContextView {
+  brandId: string;
+  sourcePath: string;
+  exportsPath: string;
+}
+
+export interface AssetGeneratorJobContextView {
+  masterKey: string;
+  format: "png";
+}
+
+export interface AssetGeneratorContexts {
+  brand?: AssetGeneratorBrandContextView;
+  job?: AssetGeneratorJobContextView;
+}
+
+export interface AssetGeneratorDiagnostic {
+  status: DiagnosticStatus;
+  steps: DiagnosticStep[];
+  filesRead: string[];
+  filesWritten: string[];
+  contexts: AssetGeneratorContexts;
+  failure?: FactualFailure;
 }
