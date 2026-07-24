@@ -12,7 +12,7 @@
 ## Objetivo
 
 Planejar a evolução do MOBS em versões.  
-Nenhuma versão abaixo está implementada nesta etapa — apenas priorizada.
+A v1 possui uma primeira fatia executável; sua implementação integral e as versões seguintes permanecem em evolução planejada.
 
 ---
 
@@ -86,27 +86,28 @@ Uma versão só avança para implementação quando:
 | Item | Estado |
 |---|---|
 | Arquitetura documental MOBS | **Aprovada** v0.1.1 (2026-07-20) — apenas documentação |
-| **MOBS 0.2 — Configuration Contracts** | `docs/mobs/domain/DOMAIN_MODEL.md` + `docs/mobs/contracts/CONFIGURATION_CONTRACTS.md` + `docs/mobs/contracts/PROJECT_CONTRACT.md` + `docs/mobs/contracts/BRAND_CONTRACT.md` + `docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md` (contratos concretos irmãos; protocolo de tarefas; **sem** schemas ainda) |
+| **MOBS 0.2 — Configuration Contracts** | `docs/mobs/domain/DOMAIN_MODEL.md` + `docs/mobs/contracts/CONFIGURATION_CONTRACTS.md` + `docs/mobs/contracts/PROJECT_CONTRACT.md` + `docs/mobs/contracts/BRAND_CONTRACT.md` + `docs/mobs/governance/ARCHITECTURE_TASK_PROTOCOL.md`; schemas mínimos de Projeto e Marca materializados para a primeira fatia executável |
 | **MOBS 0.2 — Fase 1 (estrutura documental)** | `docs/mobs/governance/DOCUMENT_ARCHITECTURE.md` + `docs/mobs/governance/DOCUMENT_STRUCTURE_PLAN.md` — **institucionalizada** |
 | **MOBS 0.2 — Fase 2** | Fundação, domínio e contratos em `docs/mobs/` — **concluída** |
 | **MOBS 0.2 — Fase 3** | Governança em `docs/mobs/governance/` — **concluída** |
 | **MOBS 0.2 — Fase 4** | Etapa **estrutural concluída**: raiz local `missao-oab` → `missao-mobs` (validada). **Não** é migração de `docs/product` nem renomeação do produto Missão OAB. |
 | **Ciclo fundador do Core** | **Validação fundadora concluída** — Coverage Harvest, Autonomy Validation, veredito institucional e Stabilization Gate: **Pass** no baseline `8c2e4c5f9eb78cd9b4a37ec2b741b1031d6986d8`; alcance restrito ao walkthrough documental da landing, centrado no Projeto Missão OAB, com Marca explicitamente requerida |
 | **Resolução de contextos v1 — Harvest** | Evidence Harvest + Responsibility Harvest **concluídos** no baseline `7a40a93f5279e9138e67805470fc2d5b93097590`; questão mantida aberta, sem nascimento de `RESOLUTION_MODEL.md`, sem expansão de `CONFIGURATION_CONTRACTS.md` e sem necessidade demonstrada de `CAPABILITY_MODEL.md` |
-| v1–v10 implementação | Não iniciada |
-| Scripts oficiais | Nenhum |
+| **v1 — implementação** | **Iniciada** — primeira fatia executável consolidada em `2b0d8cfbf84256a846841c165b8272b3d376f71b`: schemas mínimos, Project Engine, Core, Brand Engine e diagnóstico factual; v1 ainda não concluída integralmente |
+| **v2–v10 — implementação** | Não iniciada |
+| **CLI executável** | Primeira interface somente leitura, reproduzível e idempotente; build, typecheck e 20 testes aprovados |
 
 ### Nota sobre Configuration Contracts
 
-Antes de schemas e implementação de serializações de projeto/marca, a sequência documental está em `docs/mobs/domain/DOMAIN_MODEL.md` → `docs/mobs/contracts/CONFIGURATION_CONTRACTS.md` → (`docs/mobs/contracts/PROJECT_CONTRACT.md` ∥ `docs/mobs/contracts/BRAND_CONTRACT.md`).
-Essa sequência **não substitui** a linha v1–v10 deste roadmap; **precede** schemas e serialização.
+A sequência documental `docs/mobs/domain/DOMAIN_MODEL.md` → `docs/mobs/contracts/CONFIGURATION_CONTRACTS.md` → (`docs/mobs/contracts/PROJECT_CONTRACT.md` ∥ `docs/mobs/contracts/BRAND_CONTRACT.md`) fundamenta os schemas mínimos já materializados e continua governando sua evolução.
+Essa sequência **não substitui** a linha v1–v10 deste roadmap nem implica conclusão universal de schemas e serializações.
 Este roadmap **não** governa ciclos fundadores paralelos (Partnership, Core); apenas registra o estado quando necessário para não contradizer a história.
 
 ### Nota sobre resolução de contextos v1
 
 O Harvest concluiu que as autoridades vigentes cobrem suficientemente as responsabilidades de Core, Project Engine, Brand Engine e Validators no nível conceitual. `RESOLUTION_MODEL.md` permanece candidato futuro, não autorizado neste estado.
 
-Possíveis desalinhamentos editoriais em `PROJECT_ENGINE.md` e `BRAND_ENGINE.md` não alteram responsabilidades nem abrem tarefa automática de harmonização. Permanecem abertas as decisões sobre schemas, contextos físicos, runtime, erros, transporte, timing de Validators e mecanismo do fluxo somente Marca.
+Possíveis desalinhamentos editoriais em `PROJECT_ENGINE.md` e `BRAND_ENGINE.md` não alteram responsabilidades nem abrem tarefa automática de harmonização. O checkpoint `2b0d8cfbf84256a846841c165b8272b3d376f71b` materializou decisões físicas mínimas para a primeira fatia Projeto → Marca — schemas, contextos, runtime e diagnósticos — sem fechá-las universalmente; transporte, timing de Validators e mecanismo do fluxo somente Marca permanecem abertos.
 
 ### Nota sobre Fase 1 (estrutura documental)
 

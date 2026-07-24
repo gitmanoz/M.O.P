@@ -25,6 +25,9 @@ Categorias usadas apenas quando houver itens:
 
 ### Added
 
+- Primeira fatia executável do MOBS v1 (`2b0d8cfbf84256a846841c165b8272b3d376f71b`): CLI Node.js/TypeScript somente leitura para resolução Projeto → Marca por Project Engine, Core e Brand Engine, com saída factual reproduzível e idempotente.
+- Schemas mínimos de Projeto e Marca em `docs/mobs/schemas/`, limitados ao perfil da fatia vertical aprovada.
+- Diagnósticos separados para parsing, inicialização e execução; rejeição portátil de `paths.source` absoluto em formatos POSIX, Windows com drive e UNC; build, typecheck e 20 testes automatizados aprovados.
 - `docs/mobs/models/PARTNERSHIP_MODEL.md`: fundador da Arquitetura de Parceria (colaboração genérica entre parceiros).
 - `docs/mobs/models/AYLA_ARCHITECTURAL_PARTNER.md`: identidade institucional e papel arquitetural da Ayla (derivado do Partnership).
 - `docs/mobs/models/PROGRAMMER_PARTNER.md`: perfil derivado — materialização técnica sob mandato (P1–P3); fronteira com Ayla.

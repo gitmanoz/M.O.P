@@ -1769,6 +1769,46 @@ Encerramento e registros preparados; commit e push ainda não executados e depen
 
 ---
 
+## 2026-07-24 00:35 — Primeiro checkpoint técnico executável do MOBS v1
+
+**Fuso horário:** America/Sao_Paulo
+**Versão ou marco:** MOBS v1 — primeira fatia executável
+**Commit consolidado:** `2b0d8cfbf84256a846841c165b8272b3d376f71b`
+
+### Contexto
+
+Após a validação fundadora do Core e o Harvest de resolução, foi aprovada a menor materialização executável capaz de ler declarações mínimas de Projeto e Marca, preservar as responsabilidades de Project Engine, Core e Brand Engine e tornar a resolução observável.
+
+### Objetivo
+
+Comprovar em execução real o fluxo vertical de resolução de contextos, sem antecipar assets, Generators, Validators institucionais ou Release.
+
+### Decisões e resultados
+
+- Foram criados schemas mínimos de Projeto e Marca para o perfil desta fatia.
+- Project Engine resolve o contexto de Projeto; o Core encaminha a associação; Brand Engine resolve o contexto de Marca e `paths.source`.
+- A CLI é somente leitura, reproduzível e idempotente e produz diagnóstico factual em `stdout`.
+- Caminhos absolutos POSIX, Windows com drive e UNC são rejeitados independentemente do sistema operacional.
+- Falhas de parsing, inicialização e execução possuem classificação e exit codes próprios, sem exposição pública de stack trace.
+- Build, typecheck e 20 testes automatizados foram aprovados.
+
+### Impacto
+
+A implementação do MOBS v1 deixa de estar “não iniciada” e passa a possuir um primeiro checkpoint técnico verificável. O marco não representa conclusão integral da v1: cobre somente a fatia Projeto → Marca aprovada.
+
+### Áreas e documentos envolvidos
+
+- Schemas em `docs/mobs/schemas/`
+- Runtime, CLI, Core e Engines em `project/automation/`
+- `project/automation/AUTOMATION_ROADMAP.md`
+- `HISTORY.md`, `CHANGELOG.md`
+
+### Próximos passos
+
+Evoluir a v1 por checkpoints próprios, mantendo assets, Generators, Validators institucionais e Release fora deste marco até autorização específica.
+
+---
+
 ## Controles
 
 | Campo | Valor |
